@@ -1,2 +1,4 @@
-package com.itheima;public interface InterfaceDemo {
+package com.itheima;
+
+public interface InterfaceDemo {
 }
