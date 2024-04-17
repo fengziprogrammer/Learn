@@ -1,16 +1,11 @@
 package com.itheima;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class JavaDemo {
     public static void main(String[] args) {
-        String st1 = "ABC";
-        String st2 = "abc";
-        System.out.println(st1.equalsIgnoreCase(st2));
+        String[] arr = {"zzzzzz","aaaaaa"};
+        System.out.println(arr[0]);
     }
-
-    public static void getMax(int a, int b) {
-    }
-
-    public static void getMax(int a, int b  ,int c) {
-    }
-    ;
 }
