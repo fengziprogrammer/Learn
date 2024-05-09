@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>表单</title>
+    </head>
+    <body>
+        <form action="http://www.baidu.com/s" target="_blank">
+            <h2>文本输入框</h2>
+            <input type="text" value="高小乐" disabled> <br>
+            <input> <br>
+            <input type="text" maxlength="10">
+
+            <h2>密码输入框</h2>
+            <input type="password" value="123456"> <br>
+            <input type="password" maxlength="6" disabled>
+
+            <h2>单选框</h2>
+            选择性别：
+            <input type="radio" name="gender" value="male">男
+            <input type="radio" name="gender" value="female">女
+            <input type="radio" name="gender" checked value="else" disabled>其他
+
+            <h2>复选框</h2>
+            爱好：
+            <input type="checkbox" value="1" disabled>唱
+            <input type="checkbox" value="2" disabled>跳
+            <input type="checkbox" checked vlaue="3" disabled>RAP
+            <input type="checkbox" value="4">打篮球
+            <input type="checkbox" checked vlaue="5">敲代码
+
+            <h2>文本域</h2>
+            <textarea rows="10" cols="60" disabled>请输入自我介绍...</textarea>
+
+            <h2>提交按钮</h2>
+            <input type="submit" disabled>
+            <input type="submit" value="免费注册">
+            <button type="submit">提交</button>
+            <button>登录</button>
+
+            <h2>重置按钮</h2>
+            <input type="reset">
+            <button type="reset">重置</button>
+
+            <h2>普通按钮 没有任何功能的按钮</h2>
+            <input type="button" value="普通按钮01">
+            <button type="button">普通按钮02</button>
+
+            <h2>下拉选项</h2>
+            <select>
+                <option value="a">江苏省</option>
+                <option value="b">安徽省</option>
+                <option value="c">河南省</option>
+                <option value="d" selected>新疆维吾尔自治区</option>
+                <option vlaue="e" disabled>内蒙古自治区</option>
+                <option value="f">广西壮族自治区</option>
+            </select>
+        </form>
+
+
+
+        <img src="../../../Day02_HTML/课堂案例/04-超链接和锚点/images/05-小乐.jpg" alt="">
+
+
+    </body>
+</html>

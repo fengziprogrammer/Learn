@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>表格</title>
+    </head>
+    <body>
+        <!-- 
+            thead、tbody、tfoot、tr、td、th 具有 align 属性,设置横向对齐方式，属性值： left、right、center 
+            thead、tbody、tfoot、tr、td、th 具有 valign 属性,设置纵对齐方式，属性值： top、bottom、middle 
+
+         -->
+       
+         <table border="1" width="800" height="600" cellspacing="0" cellpadding="10">
+            <!-- 表格标题 -->
+            <caption>用户信息表</caption>
+            <!-- 表格头 -->
+            <thead align="left" valign="bottom">
+                <tr height="80">
+                    <th>序号</th>
+                    <th>姓名</th>
+                    <th align="center">性别</th>
+                    <th>电话</th>
+                    <th>地址</th>
+                </tr>
+            </thead>
+            <!-- 表格体 -->
+            <tbody align="right" valign="bottom">
+                <tr>
+                    <td>1</td>
+                    <td>曹操</td>
+                    <td>男</td>
+                    <td>13378652389</td>
+                    <td>上海市松江区</td>
+                </tr>
+                <tr align="center">
+                    <td>2</td>
+                    <td align="left">刘备</td>
+                    <td>男</td>
+                    <td>13378652388</td>
+                    <td>上海市浦东区</td>
+                </tr>
+                <tr valign="top">
+                    <td>3</td>
+                    <td>高小乐</td>
+                    <td>男</td>
+                    <td valign="middle">13378652387</td>
+                    <td>上海市松江区</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>孙悟空</td>
+                    <td>男</td>
+                    <td>13378652386</td>
+                    <td>上海市黄浦区</td>
+                </tr>
+            </tbody>
+         </table>
+
+
+    </body>
+</html>
