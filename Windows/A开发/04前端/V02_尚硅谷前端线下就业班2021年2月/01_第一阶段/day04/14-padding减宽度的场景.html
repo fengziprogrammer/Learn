@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+			padding减宽度的场景: 当块元素没有设置固定宽度时,宽度和父元素一样,给该元素设置
+			水平方向的padding时,不会撑宽盒子,会从content自动减去padding值,宽度的尺寸是不
+			变的
+			当块元素设置固定宽度时.此时设置水平方向的padding,盒子的尺寸会变大
+			 */
+			.box{
+				height: 400px;
+				background: pink;
+			}
+			.phone{
+				width: 500px;
+				height: 200px;
+				background: red;
+				font-size: 60px;
+				color:green;
+				padding-left: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="phone">
+				手机
+			</div>
+		</div>
+	</body>
+</html>
