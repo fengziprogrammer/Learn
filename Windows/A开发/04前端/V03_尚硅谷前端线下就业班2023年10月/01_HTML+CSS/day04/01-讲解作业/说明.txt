@@ -1,0 +1,9 @@
+案例线上示例地址：
+表格：https://example.fuming.site/HTML&CSS/01-简历表格.html
+表单：https://example.fuming.site/HTML&CSS/02-表单.html
+
+
+表格尺寸要求：
+表格总宽度 600
+列宽 120
+行高 40 
