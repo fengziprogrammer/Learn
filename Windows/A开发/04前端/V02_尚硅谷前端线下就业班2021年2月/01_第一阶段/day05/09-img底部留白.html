@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+			img底部留白:由于img是行内块元素,底部和文本的基线对齐,所有会有一部分留白
+			
+			解决方案:
+			1.将img转换成块元素,display:block
+			2.将box的字体设置成0
+			 */
+			.box{
+				border: 1px solid red;
+				/* 第一种 */
+				/* font-size: 0; */
+			}
+			.box img{
+				/* 第二种 */
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="liuzhiyuan.jpg" >老刘
+		</div>
+	</body>
+</html>
