@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+/* banner开始 */
+.banner{
+    /* 为了适配更多的分辨率，不要将宽度写死 */
+    width: 100%;
+    height: 670px;
+    /* background-color: red; */
+    background-image: url(./../images/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* banner结束 */
