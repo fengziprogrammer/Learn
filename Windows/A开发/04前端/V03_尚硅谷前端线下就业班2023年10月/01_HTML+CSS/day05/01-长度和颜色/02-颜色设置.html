@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 250px;
+            padding: 20px;
+        }
+
+        /* 使用颜色名 设置颜色 */
+        .box01 {
+            color: green;
+            background:  red;
+        }
+
+        /* rgb方式 设置颜色 */
+        /*
+            计算机三元色
+            red         0~255   0%~100%
+            green       0~255   0%~100%
+            blue        0~255   0%~100%
+        */
+        .box02 {
+            background: rgb(100, 200, 120);
+            background: rgb(255, 0, 0);
+            background: rgb(255, 0, 255);
+
+            /* 三个元色 取相同的数值  灰色 */
+            /* 数值越大颜色越浅，全是255是白色，数值越小颜色越深，全是0是黑色 */
+            background: rgb(255, 255, 255);
+            background: rgb(0, 0, 0);
+            background: rgb(100, 100, 100);
+            background: rgb(199, 199, 199);
+
+            /* 使用百分比 */
+            background: rgb(45%, 80%, 74%);
+        }
+
+
+        /* 十六进制 原理同rgb一样 */
+        /* 
+            十进制：    0 1 2 3 4 5 6 7 8 9 10 11 12 13 ... 19 20 21 ... 99 100 ...
+            二进制：    0 1 10 11 100 101 110 111 1000 ...
+            十六进制：  0 1 2 3 4 5 6 7 8 9 a b c d e f 10 11 ... 1f 20 21 ... ff 100 ...
+        */
+        /* 
+            十进制255 = 十六进制ff
+            两位十六进制的数字可以表示一种原色，六位十六进制数字能够表示三元色
+        */
+        .box03 {
+            /* 使用6位十六进制的数字表示颜色 每两位表示一个元色 */
+            background: #4fa8bb;
+            background: #0000ff;
+            background: #ababab;
+            background: #131313;
+
+            /* 表示一种元色的两个数字是相同的，且三组元色各自都是相同， 可以简写为3位十六进制数字 */
+            background: #a8c;  /* #aa88cc */
+            background: #bbb;  /* #bbbbbb */
+            background: #ab2233;  /* 不可简写 */
+        }
+    </style>
+</head>
+<body>
+    <h1>颜色设置方式</h1>
+    <h2>颜色名</h2>
+    <div class="box01">杨重中是友更即，完台成种足量不迷后胆了胆有可解定一，才正德。</div>
+
+    <h2>rgb 方式设置颜色</h2>
+    <div class="box02">乌向切己肯搏的十时即十国特与，勉彷说而们娇，揽德着孔否是他。</div>
+
+    <h2>hex 十六进制方式表示颜色</h2>
+    <div class="box03">德斯己吴，韩禀出的秦应为掉，事高鲜家志，低曰千而，皇什虽俭。</div>
+</body>
+</html>

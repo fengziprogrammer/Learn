@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p {
+            width: 600px;
+            height: 200px;
+            background: #ccc;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .item-span {
+            color: #fff;
+            background: #900;
+        }
+
+        .item-img {
+            vertical-align: baseline;
+            vertical-align: bottom;
+            vertical-align: middle;
+            vertical-align: top;
+
+            vertical-align: 0;
+            vertical-align: 10px;
+        }
+
+        .sub-text {
+            font-size: 12px;
+            vertical-align: sub;
+        }
+
+        .sup-text {
+            font-size: 12px;
+            vertical-align: super;
+        }
+
+
+        table {
+            width: 600px;
+            height: 400px;
+        }
+
+        td {
+            border: 1px solid #999;
+            text-align: center;
+            vertical-align: bottom;
+            vertical-align: top;
+        } */
+        p{
+            width: 600px;
+            height: 300px;
+            background-color: aqua;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .item-span {
+            color: #fff;
+            background: #900;
+        }
+        .item-img{
+            vertical-align: baseline;
+            vertical-align: top;
+            vertical-align: middle;
+            vertical-align: bottom;
+            vertical-align: 0;
+            vertical-align: 100px;
+        }
+        .sub-text{
+            font-size: 12px;
+            vertical-align: sub;
+        }
+        .sup-text{
+            font-size: 12px;
+            vertical-align: super;
+        }
+        table{
+            width: 600px;
+            height: 400px;
+            
+        }
+        td{
+            border: 2px solid #900; 
+            text-align: center;
+            vertical-align: middle;   
+        }
+    </style>
+</head>
+<body>
+    <h1>vertical-align</h1>
+    <h2>vertical-align 不能设置文本纵向对齐方式 与text-align不是一回事</h2>
+    <p>土者设爱帝韩爱程尤。</p>
+
+    <h2>行内块和行内元素与同行文本如何对齐</h2>
+    <div class="box">
+        中求航性见未，派郭。Lorem, ipsum dolor.
+        <img src="../images/盛世美颜.jpg" alt="" class="item-img">
+        中求航性见未，派郭。Lorem, ipsum dolor.
+        <span class="item-span">我是span</span>
+        中求航性见未，派郭。Lorem, ipsum dolor.
+    </div>
+
+    <h2>实现上标字和下标字</h2>
+    <div>
+        H<span class="sub-text">2</span>O
+    </div>
+    <div>
+        2<span class="sup-text">10</span> = 1024
+    </div>
+
+    <h2>设置单元格中内容纵向对齐</h2>
+    <table>
+        <tbody>
+            <tr>
+                <td>高小乐</td>
+                <td>高小乐</td>
+                <td>高小乐</td>
+                <td>高小乐</td>
+                <td>高小乐</td>
+            </tr>
+            <tr>
+                <td>高小乐</td>
+                <td>高小乐</td>
+                <td>高小乐</td>
+                <td>高小乐</td>
+                <td>高小乐</td>
+            </tr>
+            <tr>
+                <td>高小乐</td>
+                <td>高小乐</td>
+                <td>高小乐</td>
+                <td>高小乐</td>
+                <td>高小乐</td>
+            </tr>
+            <tr>
+                <td>高小乐</td>
+                <td>高小乐</td>
+                <td>高小乐</td>
+                <td>高小乐</td>
+                <td>高小乐</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

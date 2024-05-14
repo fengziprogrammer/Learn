@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 2000px;
+            height: 1000px;
+        }
+        .box01 {
+            width: 400px;
+            height: 300px;
+            font-size: 20px;
+            background: red;
+        }
+
+        .box02 {
+            width: 20em;
+            height: 10em;
+
+            /* 同时设置多个相同的css属性，浏览器值执行最后一个*/
+            font-size: 20px;
+            font-size: 1.5em;   
+
+            background: green;
+        }
+
+        .box03 {
+            width: 20%;
+            height: 50%;
+
+            font-size: 20px;
+            font-size: 200%;
+            
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS长度单位</h1>
+    <hr>
+
+    <h2>px 像素</h2>
+    <div class="box01">
+        谓汪低章，败无斗斯躲才仇松尤不罪价事的。
+    </div>
+
+    <h2>em 字体大小的倍数</h2>
+    <div class="box02">
+        导自谓于能陛什作不今说事才云韩自天鼓妄。
+    </div>
+
+    <h2>% 百分比</h2>
+    <div class="box03">
+        助老不，价夫廿完木对之其以意撒战，目回。
+    </div>
+</body>
+</html>
