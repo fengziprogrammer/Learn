@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 1.有个5个a标签,默认状态,宽是100,高是30,背景色是yellow,字体颜色是green,文本水平且居中a标签,去掉下划线
+			 2.鼠标移入a时,背景色变成yellowgreen,字体颜色变成red,加上,下划线
+			 3.5个a标签水平居中box, box背景色是pink
+			 */
+			
+			
+			
+			
+			/* 
+			seo:搜索引擎优化,如果将多个a标签堆积在一起,搜索引擎会认为是在作弊
+			
+			浮动元素不在具备之前的显示模式,在不设置宽高时,是由内容决定的
+			
+			浮动元素当父元素的宽度不够时,会自动换行
+			 */
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			.box{
+				background: pink;
+			}
+			.box ul {
+				width: 550px;
+				margin: 0 auto;
+				border: 1px solid blue;
+			}
+			.box ul li{
+				float:left;
+				margin-right: 10px;
+				margin-top: 10px;
+			}
+			.box ul li a{
+				width: 100px;
+				height: 30px;
+				background: yellow;
+				display: block;
+				text-align: center;
+				line-height: 30px;
+				text-decoration: none;
+				
+				
+			}
+			.box ul li a:hover{
+				background: yellowgreen;
+				color:red;
+			}
+			.clearFix::after{
+				content:"";
+				display: block;
+				clear: both;
+			}
+			.footer{
+				height: 300px;
+				background: gray;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<!-- 要给父元素清除浮动造成的影响 -->
+			<ul class="clearFix">
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<!-- <li></li> -->
+			</ul>
+		</div>
+		<div class="footer"></div>
+	</body>
+</html>
