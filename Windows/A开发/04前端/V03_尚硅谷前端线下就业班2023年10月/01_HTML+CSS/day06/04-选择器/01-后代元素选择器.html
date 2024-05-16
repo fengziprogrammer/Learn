@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            margin-bottom: 100px;
+        }
+
+        li {
+            margin-top: 10px;
+            width: 600px;
+            padding: 10px;
+            border: 1px solid #999;
+        }
+
+        /* .news后代中的 li */
+        /* .news li {
+            border: 2px solid #900;
+        } */
+        .news li{
+            border: 3px solid #900;
+        }
+
+        /* ol 后代中的 li */
+        /* ol li {
+            border: 2px solid #900;
+        } */
+
+        /* .news .item {
+            border: 2px solid #900;
+        } */
+
+        .news ol .item {
+            border: 2px solid #900;
+        }
+    </style>
+</head>
+<body>
+    <ul class="news">
+        <li>今则让奔找，马死程看必沫活，乏俭气，笔。</li>
+        <li class="item">今则让奔找，马死程看必沫活，乏俭气，笔。</li>
+        <li>
+            今则让奔找，马死程看必沫活，乏俭气，笔。
+            <ol class="item">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li class="item">Lorem ipsum dolor sit amet.</li>
+                <li class="item">Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ol>
+        </li>
+        <li>今则让奔找，马死程看必沫活，乏俭气，笔。</li>
+        <li class="item">
+            今则让奔找，马死程看必沫活，乏俭气，笔。
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+            </ul>
+        </li>
+        <li>今则让奔找，马死程看必沫活，乏俭气，笔。</li>
+        <li>今则让奔找，马死程看必沫活，乏俭气，笔。</li>
+    </ul>
+
+    <ol class="musics">
+        <li>妙么妙视始屯德仍气重恶自于到守憾落玉，人非惜师，他此说，乐。</li>
+        <li>妙么妙视始屯德仍气重恶自于到守憾落玉，人非惜师，他此说，乐。</li>
+        <li class="item">妙么妙视始屯德仍气重恶自于到守憾落玉，人非惜师，他此说，乐。</li>
+        <li>妙么妙视始屯德仍气重恶自于到守憾落玉，人非惜师，他此说，乐。</li>
+        <li>妙么妙视始屯德仍气重恶自于到守憾落玉，人非惜师，他此说，乐。</li>
+        <li>妙么妙视始屯德仍气重恶自于到守憾落玉，人非惜师，他此说，乐。</li>
+    </ol>
+</body>
+</html>
