@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 一级后代选择器 > */
+			.box>ul>li{
+				border:1px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<ul>一级ul
+				<li>
+					一级li
+					<ul>二级ul
+						<li>二级li</li>
+					</ul>
+				</li>
+				<li>
+					一级li
+				</li>
+				<li>
+					一级li
+				</li>
+				<li>
+					一级li
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
