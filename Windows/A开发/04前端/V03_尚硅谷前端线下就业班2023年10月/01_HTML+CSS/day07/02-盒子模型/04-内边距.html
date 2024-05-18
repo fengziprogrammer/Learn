@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 20px;
+            width: 1000px;
+        }
+        .box {
+            width: 600px;
+            background: #ccc;
+            border: 2px solid #900;
+
+            padding-left: 20px;
+            padding-right: 30px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+
+            /* 负值无效 */
+            /* padding-left: -20px;
+
+            padding-left: 10%;
+            padding-top: 5%;
+            padding-bottom: 5%; */
+            padding-left: -10px;
+            padding-left: 20%;
+        }
+
+
+        .item {
+
+            width: 600px;
+            color: #fff;
+            background: #900;
+
+            /* 1个值: 上下左右 */
+            padding: 20px;
+            /* 2个值： 上下 左右*/
+            padding: 40px 30px;
+            /* 3个值： 上 左右 下*/
+            padding: 10px 20px 30px;
+            /* 4个值： 上 右 下 左*/
+            padding: 15px 25px 35px 45px;
+        }
+
+        span {
+            display: inline-block;
+            /* display: block; */
+            padding: 20px;
+            color: pink;
+            background: #099;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>内边距值的设置规则</h2>
+    <div class="box">对交之欲姑天不自方来前了便害尺仍，乌自斯，的于着价自之几，中君有之落国没打一为斯赏量一杀，由用承治，是却变这到身回廿也己自救骂国兄，舟二不更章陈历珍在上之才若人资第爱，人何云乌九魂罪惶沾禀都越命，慧中统间统皇关领应虑满后乐评极，相善认可他承轻为子冷玉开真。</div>
+    
+    <h2>padding复合属性</h2>
+    <div class="item">韩一月为答夫天活国，帮下五沾终曰归了之上禀冷风，如才以尹价谓几为失勇一本衣导，方六足，不高了谓流大策圣国以轻到韩特极与创种牛，动一关发在妙一不水尽平有到，的如有，听首之不是不在投极对并弄，躲属司秦说书王故，互郭属洞德劫，乌落话太，活交绪弟年却使从，虽的生。</div>
+
+    <h2>不同显示模式的元素的内边距</h2>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptas labore natus magnam? Quia id dolorum, sapiente adipisci sit neque.
+    <br>
+    <span>行内元素</span>
+    <span>行内元素</span>
+    <span>行内元素</span>
+    <br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eius voluptate ducimus sed aliquid aspernatur? Sequi repudiandae vel vero minus!
+</body>
+</html>
