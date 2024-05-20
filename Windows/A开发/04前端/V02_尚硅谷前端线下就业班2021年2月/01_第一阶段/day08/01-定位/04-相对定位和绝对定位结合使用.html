@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 当元素设置绝对定位后,设置宽高起作用 */
+			/* 
+			绝对定位的参考点: 绝对定位的起始参考点是设置相对定位的父元素(离自身最近的),如果没有设置相对定位的父元素,默认
+			参考点是body初始包含块
+			
+			子绝父相:父子指的是标签关系,绝指的是子元素是绝对定位,相指的父元素是相对定位
+			 */
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			.box {
+				width: 1000px;
+				height: 500px;
+				border: 1px solid #000;
+				margin: 0 auto;
+				position: relative;
+			}
+
+			span {
+				width: 100px;
+				height: 30px;
+				background: red;
+				/* 绝对定位 */
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			.header {
+				height: 1000px;
+				background: blue;
+			}
+			.box2{
+				width: 500px;
+				height: 300px;
+				border: 1px solid blue;
+				margin: 0 auto;
+				position: absolute;
+				left:0;
+				top:0;
+			}
+			
+			.box3{
+				color: yellow !important;
+			}
+			 p{
+				 color:blue;
+			 }
+		</style>
+	</head>
+	<body>
+		<!-- <div class="header"></div> -->
+		<div class="box">
+		<!-- 	哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈老刘哈哈哈哈哈哈 -->
+		    <div class="box2">
+				<span></span>
+				
+			</div>
+		</div>
+		
+		<div class="box3">
+			<p>段落
+				<i>倾斜</i>
+			</p>
+		</div>
+	</body>
+</html>
