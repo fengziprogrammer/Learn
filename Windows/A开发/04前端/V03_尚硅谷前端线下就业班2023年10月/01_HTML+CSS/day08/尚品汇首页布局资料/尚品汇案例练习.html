@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尚品汇案例练习</title>
+    <link rel="stylesheet" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./index-self.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .leftfix{
+            float: left;
+        }
+        .rightfix{
+            float: right;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+
+        /*搜索框-开始*/
+        .sousuokuan{
+            width: 1190px;
+            height: 120px;
+            line-height: 120px;
+            margin: 0 auto;
+        }
+        .ssk-left{
+            width: 190px;
+            height: 120px;
+        }
+        .ssk-ss{
+            vertical-align: middle;
+            line-height: 120px;
+            font-size: 0;
+        }
+        input{
+            height: 36px;
+        }
+        button{
+            height: 36px;
+            vertical-align: middle;
+        }
+        /*搜索框-结束*/
+
+    </style>
+</head>
+<body>
+    <!--导航条-->
+    <div class="topbar ">
+
+        <!--版心-->
+        <div class="container clearfix">
+            <!--z左侧欢迎条-->
+            <div class="welcome leftfix">
+                <span class="huanying">尚品汇欢迎您</span>
+                <span>请</span>
+                <a href="">登录</a>
+                <a href="">免费注册</a>
+            </div>
+            <!--右侧导航条-->
+            <div class="topbar-nav rightfix">
+                <a class="yb dingdan" href="">我的订单</a>
+                <a class="yb gouwuche" href="">我的购物车</a>
+                <a class="yb shangpinhui" href="">我的尚品汇</a>
+                <a class="yb huiyuan" href="">尚品汇会员</a>
+                <a class="yb caigou" href="">企业采购</a>
+                <a class="yb guanzhu" href="">关注尚品汇</a>
+                <a class="yb hezuo" href="">合作招商</a>
+                <a class="yb houtai last" href="">商家后台</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="sousuokuan clearfix" >
+        <div class="ssk-left leftfix" >
+            <img class="ssk-logo" src="./images/logo.png" alt="logo">
+        </div>
+        <div class="ssk-ss rightfix">
+            <input class="shuru" type="text">
+            <button style="background-color: #dd302d;border: 0;"><img src="./images/serch_icon.png" alt=""></button>
+        </div>
+    </div>
+</body>
+</html>

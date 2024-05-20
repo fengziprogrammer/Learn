@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 全局样式 start */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .leftfix {
+            float: left;
+        }
+
+        .rightfix {
+            float: right;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 960px;
+        }
+        /* 全局样式 end */
+
+
+        /* page-header start */
+        .logo {
+            width: 200px;
+            height: 80px;
+            background: #ccc;
+        }
+
+        .banner1 {
+            margin-left: 10px;
+            width: 540px;
+            height: 80px;
+            background: #ccc;
+        }
+
+        .banner2 {
+            width: 200px;
+            height: 80px;
+            background: #ccc;
+        }
+        /* page-header end */
+
+
+        /* page-nav start */
+        .page-nav {
+            margin-top: 10px;
+            height: 30px;
+            background: #ccc;
+        }
+        /* page-nav end */
+
+        /* page-main start */
+        .page-content {
+            width: 750px;
+        }
+
+        .row {
+            margin-top: 10px;
+        }
+
+        .column-a {
+            width: 368px;
+            height: 198px;
+            border: 1px solid #ccc;
+        }
+
+        .column-b {
+            float: left;
+            margin-right: 10px;
+            width: 178px;
+            height: 198px;
+            border: 1px solid #ccc;
+        }
+
+        .column-b.last {
+            margin-right: 0;
+        }
+
+        .page-sidebar {
+            width: 200px;
+        }
+
+        .column-c {
+            margin-top: 10px;
+            width: 198px;
+            height: 128px;
+            border: 1px solid #ccc;
+        }
+        /* page-main end */
+
+        /* page-footer start */
+        .page-footer {
+            margin-top: 10px;
+            height: 60px;
+            background: #ccc;
+        }
+        /* page-footer end */
+    </style>
+</head>
+<body>
+    <!-- 版心 -->
+    <div class="container">
+        <!-- page-header -->
+        <div class="page-header clearfix">
+            <div class="logo leftfix">LOGO</div>
+            <div class="banner1 leftfix">BANNER1</div>
+            <div class="banner2 rightfix">BANNER2</div>
+        </div>
+
+        <!-- page-nav 页面导航 -->
+        <div class="page-nav">导航</div>
+
+        <!-- 主要内容 -->
+        <div class="page-main clearfix">
+            <div class="page-content leftfix">
+                <div class="row clearfix">
+                    <div class="column-a leftfix">栏目一</div>
+                    <div class="column-a rightfix">栏目二</div>
+                </div>
+                <div class="row clearfix">
+                    <div class="column-b">栏目三</div>
+                    <div class="column-b">栏目四</div>
+                    <div class="column-b">栏目五</div>
+                    <div class="column-b last">栏目六</div>
+                </div>
+            </div>
+            <div class="page-sidebar rightfix">
+                <div class="column-c">栏目七</div>
+                <div class="column-c">栏目八</div>
+                <div class="column-c">栏目九</div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <div class="page-footer">页脚</div>
+    </div>
+</body>
+</html>

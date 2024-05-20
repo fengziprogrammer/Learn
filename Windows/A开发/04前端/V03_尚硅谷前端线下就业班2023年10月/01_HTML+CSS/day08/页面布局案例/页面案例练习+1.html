@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面案例</title>
+    <style>
+        *{
+            margin: 0;
+            border:0;
+        }
+        .banxin{
+            width: 960px;
+            margin: 10px auto;
+            text-align: center;
+        }
+        /*页面头部-开始*/
+        .logo{
+            margin-right: 10px;
+            width: 200px;
+            height: 80px;
+            background-color: #ccc;
+        }
+        .binner1{
+            width: 540px;
+            height: 80px;
+            background-color: #ccc;
+        }
+        .binner2{
+            width: 200px;
+            height: 80px;
+            background-color: #ccc;
+        }
+        /*页面头部-结束*/
+
+         /*页面菜单-开始*/
+         .page-cd{
+            height: 30px;
+            background-color: #ccc;
+            margin-top: 10px;
+         }
+         /*页面菜单-结束*/
+
+         /*页面内容-开始*/
+         .lm{
+            border: 1px solid #ccc;
+         }
+         .body-left{
+            width: 750px;
+         }
+         .lanmu1,.lanmu2{
+            width: 368px;
+            height: 198px;
+            margin-top: 10px;
+            line-height: 198px;
+         }
+         .lanmuxia{
+            width: 178px;
+            height: 198px;
+            margin-right: 10px;
+            margin-top: 10px;
+            line-height: 198px;
+         }
+         .last{
+            margin-right: 0;
+         }
+         .lanmu-right{
+            width: 198px;
+            height: 128px;
+            line-height: 128px;
+            margin-top: 10px;
+         }
+         /*页面内容-结束*/
+
+         /*页面页脚-开始*/
+         .page-foot{
+            height: 60px;
+            background-color: #ccc;
+            line-height: 60px;
+            margin-top: 10px;
+         }
+         /*页面页脚-结束*/
+
+        .leftfix{
+            float: left;
+        }
+        .rightfix{
+            float: right;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!--版心-->
+    <div class="banxin">
+        <!--头部-->
+        <div class="page-header clearfix">
+            <div class="logo leftfix">LOGO</div>
+            <div class="binner1 leftfix">BINNER1</div>
+            <div class="binner2 rightfix">BINNER2</div>
+        </div>
+        <!--菜单-->
+        <div class="page-cd">菜单</div>
+        <!--内容-->
+        <div class="page-body clearfix">
+            <div class="body-left leftfix">
+                <div class="body-left-top clearfix">
+                    <div class="lm lanmu1 leftfix">栏目一</div>
+                    <div class="lm lanmu2 rightfix">栏目二</div>
+                </div>
+                <div class="body-left-bm clearfix">
+                    <div class="lm lanmuxia leftfix">栏目三</div>
+                    <div class="lm lanmuxia leftfix">栏目四</div>
+                    <div class="lm lanmuxia leftfix">栏目五</div>
+                    <div class="lm lanmuxia last leftfix">栏目六</div>
+                </div>
+            </div>
+            <div class="body-right rightfix">
+                <div class="lm lanmu-right">栏目七</div>
+                <div class="lm lanmu-right">栏目八</div>
+                <div class="lm lanmu-right">栏目九</div>
+            </div>
+        </div>
+        <!--页脚-->
+        <div class="page-foot">页脚</div>
+    </div>
+</body>
+</html>

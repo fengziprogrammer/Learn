@@ -1,0 +1,42 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,
+blockquote,dl,dt,dd,ul,ol,li,
+pre,form,fieldset,legend,button,
+input,textarea,th,td{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+	border:0;
+}
+
+b,strong {
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+i,em {
+    font-style: normal;
+}
+
+u,ins,s,del {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input,button,select,textarea {
+    outline: none;
+}

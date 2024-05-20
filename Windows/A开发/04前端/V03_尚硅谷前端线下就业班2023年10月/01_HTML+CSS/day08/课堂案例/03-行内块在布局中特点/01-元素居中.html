@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            width: 600px;
+            height: 400px;
+            background: #ccc;
+        }
+
+        .box {
+            padding: 10px;
+            width: 200px;
+            height: 100px;
+            color: #fff;
+            background: #900;
+        }
+
+
+        /* 行内元素居中 */
+        .wrapper01 {
+            text-align: center;
+            line-height: 400px;
+        }
+        .box01 {
+            display: inline;
+        }
+
+
+        /* 行内块元素居中 */
+        .wrapper02 {
+            text-align: center;
+            line-height: 400px;
+        }
+        .box02 {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 100px;
+        }
+
+
+        /* 块级元素居中 */
+        .wrapper03 {
+            overflow: hidden;
+        }
+        .box03 {
+            /* 只有左右外边距设置为auto 才有效果 */
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 140px;
+            /* margin-top: auto;
+            margin-bottom: auto; */
+        }
+
+
+        /* 浮动元素 */
+        .box04 {
+            float: left;
+            margin-left: 190px;
+            margin-top: 140px;
+        }
+
+
+
+        /* 多个元素一起居中 */
+        .navs {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .navs li {
+            display: inline-block;
+            margin: 0 10px;
+            width: 200px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            color: #fff;
+            background: #099;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>行内元素</h2>
+    <div class="wrapper wrapper01">
+        <div class="box box01">行内元素</div>
+    </div>
+
+    <h2>行内块元素</h2>
+    <div class="wrapper wrapper02">
+        小乐
+        <div class="box box02">行内块元素</div>
+        老乐
+    </div>
+
+    <h2>块级元素</h2>
+    <div class="wrapper wrapper03">
+        <div class="box box03">块级元素</div>
+    </div>
+
+    <h2>浮动元素</h2>
+    <div class="wrapper wrapper04">
+        <div class="box box04">浮动元素</div>
+    </div>
+
+    <hr>
+
+    <ul class="navs">
+        <li>导航</li>
+        <li>导航</li>
+        <li>导航</li>
+        <li>导航</li>
+    </ul>
+</body>
+</html>

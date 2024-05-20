@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            margin-top: 20px;
+            width: 800px;
+            /* height: 600px; */
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #999;
+
+            /* 方案一 设置固定高度 */
+            /* height: 400px; */
+
+            /* 方案二： 以浮制浮 */
+            /* float: left; */
+
+            /* 方案三： 设置overflow:hidden */
+            /* overflow: hidden; */
+
+
+            
+
+            
+        }
+
+        /* 方案四 在浮动元素的后面添加兄弟元素（给父元素添加子元素），该子元素设置 clear:border-width: ; */
+
+
+        /* 方案五 原理与方案一致 使用伪元素清除浮动 */
+        .wrapper:after {
+            content: "";
+            display: block;
+            clear:both;
+        }
+
+        .wrapper::after {
+            content: "";
+            display: block;
+            clear:both;
+        }
+
+        .box {
+            /* margin: 10px auto; */
+            width: 150px;
+            height: 120px;
+            padding: 10px;
+
+            float: left;
+            
+        }
+
+        .box01 {
+            background: #900;
+        }
+
+        .box02 {
+            width: 200px;
+            height: 80px;
+            background: #080;
+        }
+
+        .box03 {
+
+            width: 160px;
+            height: 100px;
+            background: #099;
+        }
+
+        .box04 {
+            width: 150px;
+            height: 100px;
+            border: 2px solid #f00;
+            background: #ff0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box box01">元素A</div>
+        <span class="box box02">元素B</span>
+        <div class="box box03">元素C</div>
+        <div class="box box04">元素D</div>
+        <!-- <div style="clear:both"></div> -->
+    </div>
+
+    <p>案人则韩，认斯上为关而皇不月你三杀火血服人后尘又，薪十救互教虑亲那司法德许沾苦人则事，木孔月丐诗前然商够，法招是我但冷，如国不了她娇谓就程我在嗣死战来二，后弄之能高读杀对在看，关疾事介是壬完他不才服孔对得到，向廿谓弟到希无者井乏，太畴文为生君洪，无说预他。</p>
+
+</body>
+</html>

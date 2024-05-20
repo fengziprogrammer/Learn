@@ -1,0 +1,50 @@
+/*基础设置*/
+.container{
+    width: 1190px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+/*导航条-开始*/
+.topbar{
+    height: 30px;
+    background-color: #ececec;
+    text-align: center;
+    font-size: 12px;
+}
+.welcome{
+    height: 30px;
+    line-height: 30px;
+    font-size: 0;
+    color: #666;
+}
+.welcome span,a{
+    font-size: 12px;
+}
+.welcome .huanying{
+    margin-right: 28px;
+}
+a{
+    font-size: 12px;
+    height: 16px;
+    color: #666;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.qingdenglu{
+    border-right:1px solid #666;
+    padding-right: 10px;
+}
+.zhuce{
+    padding-left: 10px;
+}
+.yb{
+    border-right:1px solid #666;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.last{
+    border: 0;
+}
+/*导航条-结束*/

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            text-align: center;
+        }
+        .bancenter{
+            width: 960px;
+            margin: 10px auto;
+        }
+        .header{
+            line-height: 80px;
+        }
+        .logo{
+            width: 200px;
+            height: 80px;
+            background-color: #ccc;
+        }
+        .binner1{
+            margin-left: 10px;
+            width: 540px;
+            height: 80px;
+            background-color: #ccc;
+        }
+        .binner2{
+            width: 200px;
+            height: 80px;
+            background-color: #ccc;
+        }
+        .leftfix{
+            float: left;
+        }
+        .rightfix{
+            float: right;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .bodycd{
+            width: 960px;
+            height: 30px;
+            background-color: #ccc;
+            margin-top: 10px;
+            line-height: 30px;
+        }
+        .bodybigzs{
+            margin-top: 10px;
+            line-height: 198px;
+        }
+        .lm{
+            border: 1px solid #ccc;
+        }
+        .lanmu1{
+            width: 368px;
+            height: 198px;
+            /* margin-top: 10px; */
+        }
+        .lanmu2{
+            width: 368px;
+            height: 198px;
+            margin-left: 10px;
+            /* margin-top: 10px; */
+        }
+        .bodybigzx{
+            margin-top: 10px;
+            line-height: 198px;
+        }
+        .lanmu3,.lanmu4,.lanmu5,.lanmu6{
+            width: 178px;
+            height: 198px;
+        }
+        .lanmu4,.lanmu5,.lanmu6{
+            margin-left: 10px;
+        }
+        .lanmuright{
+            width: 198px;
+            height: 128px;
+            margin-top: 10px;
+        }
+        .foot{
+            height: 60px;
+            line-height: 60px;
+            background-color: #ccc;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bancenter">
+        <!-- 文本头部 -->
+        <div class="header clearfix">
+            <div class="logo leftfix">LOGO</div>
+            <div class="binner1 leftfix">BINNER1</div>
+            <div class="binner2 rightfix">BINNER2</div>
+        </div>
+
+        <!-- 文本菜单 -->
+        <div class="bodycd clearfix">菜单</div>
+        
+        <!-- 文本内容 -->
+        <div class="body clearfix">
+
+            <div class="bodyzuo leftfix">
+                <div class="bodybigzs clearfix">
+                    <div class="lm lanmu1 leftfix">栏目一</div>
+                    <div class="lm lanmu2 leftfix">栏目二</div>   
+                </div>
+                <div class="bodybigzx clearfix">
+                    <div class="lm lanmu3 leftfix">栏目三</div>
+                    <div class="lm lanmu4 leftfix">栏目四</div>
+                    <div class="lm lanmu5 leftfix">栏目五</div>
+                    <div class="lm lanmu6 leftfix">栏目六</div>
+                </div>
+            </div>
+    
+             <div class="bodybigy rightfix">
+                    <div class="lm lanmuright">栏目七</div>
+                    <div class="lm lanmuright">栏目八</div>
+                    <div class="lm lanmuright">栏目九</div>
+            </div>
+        </div>
+      
+        <!-- 文本页脚   -->
+        <div class="foot clearfix">页脚</div>
+    </div>
+</body>
+</html>
