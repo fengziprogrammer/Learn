@@ -1,0 +1,449 @@
+body {
+	height: 10000px;
+	/* 由于版心外的定位的广告超出了
+	   body,所以出现横向滚动条
+	 */
+	/* overflow-x 水平隐藏
+	   overflow-y 垂直隐藏
+	 */
+	overflow-x: hidden;
+}
+
+
+.all-wrap {
+	height: 45px;
+
+	border-bottom: 2px solid #ea4a36;
+}
+
+.all {
+	width: 1200px;
+	height: 45px;
+	/* background: pink; */
+	margin: 0 auto;
+	position: relative;
+}
+
+.all h2 {
+	width: 210px;
+	height: 45px;
+	background: #ea4a36;
+	float: left;
+	font-size: 14px;
+	text-align: center;
+	line-height: 45px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.all ul {
+	float: left;
+}
+
+.all ul li {
+	float: left;
+	font-size: 16px;
+	line-height: 45px;
+	margin: 0 23px;
+}
+
+.main {
+	width: 1200px;
+	height: 461px;
+	/* background: yellow; */
+	margin: 0 auto;
+}
+
+.main .detail {
+	width: 210px;
+	height: 461px;
+	background: #fafafa;
+	float: left;
+}
+
+.main .detail ul {}
+
+.main .detail ul li {
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+	padding-left: 20px;
+	overflow: hidden;
+}
+
+.main .detail ul li:hover {
+	background: darkgray;
+}
+
+.main .detail ul li a:hover {
+	text-decoration: underline;
+}
+
+.main .banner {
+	width: 730px;
+	height: 454px;
+	background: yellowgreen;
+	float: left;
+	margin: 5px 0 0 5px;
+}
+
+.main .banner {
+	position: relative;
+}
+
+.main .banner>span {
+	width: 20px;
+	height: 30px;
+	background: rgba(0, 0, 0, .3);
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	font-size: 24px;
+	border-radius: 0 15px 15px 0;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -15px;
+	display: none;
+	cursor: pointer;
+}
+
+.banner:hover>span {
+	display: block;
+}
+
+.main .banner .rightBtn {
+	left: auto;
+	right: 0;
+	border-radius: 15px 0 0 15px;
+}
+
+.main .banner>ol {
+	position: absolute;
+	left: 50%;
+	margin-left: -35px;
+	bottom: 15px;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+}
+
+.main .banner>ol>li {
+	float: left;
+	width: 8px;
+	height: 8px;
+	background: #fff;
+	border-radius: 50%;
+	margin: 3px;
+	margin-bottom: 2px;
+}
+
+.main .banner>ol li.current {
+	background: orangered;
+}
+
+.main .quick{
+	width: 250px;
+	height: 455px;
+	/* background: yellowgreen; */
+	float:right;
+	margin-top: 5px;
+}
+.quick-top{
+	width: 248px;
+	height: 373px;
+	border: 1px solid #e4e4e4;
+	border-bottom: none;
+}
+.quick-top .tit{
+	height: 37px;
+	border-bottom: 1px solid #e4e4e4;
+	margin: 0 5px;
+}
+.quick-top .list{
+	height: 140px;
+	border-bottom: 1px solid #e4e4e4;
+}
+.quick-top .service{
+	background: url(../img/home/icons.png) no-repeat;
+}
+.quick-top .service  li{
+	width: 61px;
+	height: 64px;
+	border-right:1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	float:left;
+}
+.quick-top .service .width62{
+	width: 62px;
+	border-right: none;
+}
+.quick-top .service li a{
+	display: block;
+	/* 父元素高度的百分比 */
+	height: 100%;
+	/* background: url(../img/home/icons.png) no-repeat 0 0 ; */
+}
+.phone {
+	width: 1200px;
+	height: 330px;
+	background: pink;
+	margin: 0 auto;
+}
+
+.phone>.box {
+	width: 269px;
+	height: 328px;
+	border: 1px solid #e1251b;
+	/* 	margin: 0 auto; */
+	float: left;
+	margin-right: 24px;
+}
+
+.phone>.box a {
+	display: block;
+	height: 328px;
+	text-decoration: none;
+}
+
+.phone>.box .top {
+	height: 233px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.phone>.box .top img {
+	margin: 11px auto 0;
+}
+
+.phone>.box a p {
+	font-size: 12px;
+	color: #333;
+	padding-left: 10px;
+	line-height: 28px;
+}
+
+.phone>.box a h3 {
+	font-weight: 400;
+	font-size: 20px;
+	color: #e1251b;
+	padding-left: 10px;
+}
+
+.phone>.box a:hover p {
+	text-decoration: underline;
+	color: yellowgreen;
+}
+
+.menu {
+	width: 1200px;
+	height: 340px;
+	background: gray;
+	margin: 10px auto 0;
+}
+
+.menu>div {
+	width: 290px;
+	height: 340px;
+	background: #fff;
+	float: left;
+	margin-left: 200px;
+	border: 1px solid blue;
+}
+
+.menu .sq .top,
+.menu .ticket .top {
+	margin: 13px 0 0 19px;
+}
+
+.menu .sq .top h3,
+.menu .ticket .top h3 {
+	float: left;
+	font-size: 24px;
+	color: rgb(51, 51, 51);
+	font-weight: 700;
+}
+
+.menu .sq .top span,
+.menu .ticket .top span {
+	float: left;
+	width: 14px;
+	height: 14px;
+	border: 1px solid #e8554d;
+	border-radius: 50%;
+	margin: 8px 0 0 10px;
+}
+
+.menu .center li {
+	float: left;
+	margin-right: 8px;
+
+}
+
+.menu .center {
+	margin-top: 10px;
+}
+
+.menu .center li a {
+	display: block;
+	width: 62px;
+	height: 20px;
+	line-height: 20px;
+	background: #f6f6f6;
+	color: #999;
+	border-radius: 10px;
+	text-align: center;
+	/* 强制不换行 */
+	white-space: nowrap;
+	overflow: hidden;
+	/* 用省略号代替溢出部分 */
+	text-overflow: ellipsis;
+}
+
+.menu .center li a:hover {
+	background: #e1251b;
+	color: #fff;
+}
+
+.menu .center li .current {
+	background: #e1251b;
+	color: #fff;
+}
+
+.menu .bottom li {
+	height: 70px;
+	/* background: pink; */
+	padding: 0 15px;
+	margin-bottom: 10px;
+}
+
+.menu .bottom li a {
+	display: block;
+	height: 70px;
+	/* background: yellow; */
+}
+
+.menu .bottom li a img {
+	float: left;
+}
+
+.menu .bottom li a .im01 {
+	margin-top: 15px;
+	margin-right: 12px;
+}
+
+.menu .bottom li a p {
+	float: right;
+	/* 	background: yellowgreen; */
+	width: 140px;
+	height: 36px;
+	line-height: 18px;
+	overflow: hidden;
+	font-size: 14px;
+	margin-top: 17px;
+}
+
+.menu .last {
+	width: 290px;
+	height: 280px;
+	background: url(../img/bg.png) no-repeat 0 0;
+	margin-top: 16px;
+}
+
+.menu .last ul li {
+	padding: 0 15px;
+}
+
+.menu .last ul li a {
+	display: block;
+	height: 82px;
+	/* 	background: yellow; */
+}
+
+.menu .last ul li a .circle {
+	width: 66px;
+	height: 66px;
+	background: #fff url(../img/shop.webp) no-repeat center center;
+	border-radius: 50%;
+	float: left;
+	margin: 8px 0 0 7px;
+
+}
+
+.menu .last ul li a .description {
+	float: left;
+	color: #e33333;
+	margin-left: 7px;
+}
+
+.menu .last ul li a .description .money i {
+	font-size: 14px;
+	font-family: arial, sans-serif;
+}
+
+.menu .last ul li a .description .money span {
+	font-size: 28px;
+	font-family: impact, sans-serif;
+}
+
+.menu .last ul li a .description .nine {
+	color: #999;
+}
+
+.menu .last ul li a .description .home {
+	color: #333;
+	margin-top: 6px;
+}
+
+.menu .last ul li a h4 {
+	float: left;
+	width: 12px;
+	line-height: 15px;
+	margin-top: 13px;
+	margin-left: 27px;
+	color: #666;
+}
+
+.menu .last ul li a em {
+	float: left;
+	margin: 33px 0 0 9px;
+	color: #666;
+}
+
+.man {
+	width: 360px;
+	height: 800px;
+	background: url(../img/man.png) no-repeat 0 0;
+	position: absolute;
+	left: -360px;
+	top: 0;
+}
+
+.woman {
+	width: 360px;
+	height: 800px;
+	background: url(../img/woman.png) no-repeat 0 0;
+	position: absolute;
+	right: -360px;
+	top: 0;
+}
+
+.advLeftBottom {
+	width: 360px;
+	height: 570px;
+	background: url(../img/qiuLeft.png) no-repeat 0 0;
+	position: fixed;
+	left: 50%;
+	margin-left: -960px;
+	bottom: 0;
+	z-index: -1;
+}
+.advRightBottom {
+	width: 360px;
+	height: 570px;
+	background: url(../img/qiuRight.png) no-repeat 0 0;
+	position: fixed;
+	left: 50%;
+	margin-left: 600px;
+	bottom: 0;
+	z-index: -1;
+}

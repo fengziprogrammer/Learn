@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 交集选择器: 同时具备多个选择器条件
+			 */
+		/* 	.box p.current{
+				border:1px solid red;
+			} */
+			/* .box .one.box .curent{
+				border:1px solid red;
+			} */
+			
+		/* 	.list li:hover{
+				background: pink;
+			}
+	        .list li.current{
+				background: yellowgreen;
+			}	 */
+			i.one.current.two{
+				border:1px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p class="current one two">段落</p>
+			<p class="current one two">段落</p>
+			<i class="current one two">倾斜</i>
+			<span>span</span>
+			<ul class="list">
+				<li class="current">1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+			
+		</div>
+	</body>
+</html>
