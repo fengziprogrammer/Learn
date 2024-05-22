@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            position: relative;
+        }
+
+        body {
+            position: relative;
+        }
+
+        .wrapper {
+            position: relative;
+            /* z-index: 20; */
+            width: 800px;
+            padding: 20px;
+            border: 4px dashed #999;
+            background: #ccc;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .box01 {
+            position: fixed;
+            left: 100px;
+            top: 150px;
+
+            z-index: 1;
+            z-index: 9999999;
+            z-index: -1;
+            z-index: 100;
+            
+            background: #900;
+        }
+
+        .box02 {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            background: #080;
+        }
+
+        .box03 {
+            position: relative;
+            left: 10px;
+            top: 10px;
+           
+            background: #099;
+        }
+
+
+        p {
+            width: 800px;
+            padding: 20px;
+            background: #ff0;
+            /* 不定位 z-index无效 */
+            z-index: 100000000000000000000000;
+        }
+
+
+        .item {
+            position: absolute;
+            z-index: 80;
+            left: 200px;
+            top: 150px;
+            width: 400px;
+            padding: 20px;
+            color: #fff;
+            background: #909;
+        }
+
+        /* 
+            wrapper z-index: 20
+            box01 z-index: 100
+            item z-index: 80
+        
+        */
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box box01">元素A</div>
+        <div class="box box02">元素B</div>
+        <div class="box box03">元素C</div>
+    </div>
+
+    <p>胜肯必不人文见送融不资我知了，都仍穿使冒尹在动才后皇起六可笔遗掸，人逃救使如他价娘以由三个降毒总司，助个贤作藏拆败起憾服不而杀人，讨破不承和希么吴我勉就到范我得为订，领手的五六说，的其就帅挟，主快己人畴竟方若有范若越长用，一则位要胸国笔了我尝，养回五由定。</p>
+
+    <div class="item">釜厅以如当夹锐只词使用，冇见我商汪牙他策找才揽量出自，人说许是匹，老褒马是所夭李尺到我老水是蒲恩冒属，之使不忧为，死忧明，和其招秦可丑嗣这才后他通派不，姑是他药因，不若云回说为怎与十后君关重罪活学不诗妙，中不沉愿不学尚的心量仓小联活落语有你，能如是极，航。</div>
+   
+</body>
+</html>

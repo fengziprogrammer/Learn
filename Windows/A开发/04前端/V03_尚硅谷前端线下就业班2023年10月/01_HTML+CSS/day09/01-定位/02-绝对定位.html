@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            position: relative;
+        }
+
+        body {
+            position: relative;
+        }
+
+        .wrapper {
+            position: relative;
+            width: 800px;
+            padding: 20px;
+            border: 4px dashed #999;
+            background: #ccc;
+
+            text-align: center;
+        }
+
+        .box {
+            /* float: left; */
+            width: 200px;
+            height: 150px;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .box01 {
+            background: #900;
+        }
+
+        .box02 {
+            /* 设置成绝对定位 */
+            position: absolute;
+
+            /* 使用 left\right\top\bottom 调整位置 */
+            left: 100px;
+            right: 0;
+            /* top: 0; */
+            bottom: 0;
+            /* margin: auto; */
+            float: left;
+            background: #080;
+        }
+
+        .box03 {
+            background: #099;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box box01">元素A</div>
+        <span class="box box02">元素B</span>
+        <div class="box box03">元素C</div>
+    </div>
+
+    <!-- <div style="height:1000px"></div> -->
+</body>
+</html>

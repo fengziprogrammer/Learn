@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .wrapper {
+            position: relative;
+            width: 800px;
+            height: 400px;
+            padding: 20px;
+            border: 4px dashed #999;
+            background: #ccc;
+
+            text-align: center;
+        }
+
+        .box {
+            padding: 10px;
+            color: #fff;
+        }
+
+        .box01 {
+            background: #900;
+
+            position: absolute;
+            /* left: 0;
+            right: 0; */
+            left: 100px;
+            right: 20px;
+
+            top: 0;
+            bottom: 0;
+            /* width: 200px; */
+        }
+
+        .box02 {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 200px;
+            bottom: 200px;
+
+            background: #080;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box box01">元素A</div>
+        <div class="box box02">元素B</div>
+    </div>
+
+</body>
+</html>
