@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- 禁用属性  disable 三种写法和checked一样-->
+		<input type="text" disabled="disabled">
+		<input type="button" value="按钮" disabled="disabled">
+		
+		<!-- 非空验证 -->
+		<form action="http://www.baidu.com">
+			<input type="text" required="required">
+			<!-- 自动获取焦点 -->
+			<input type="text" autofocus="autofocus">
+			<!-- 提示文本 -->
+			<input type="text" placeholder="充气气球">
+			<!-- 自动补全 
+			     off 关闭(默认值)
+				 on  开启
+				 配合name属性使用,根据name的属性值,将成功提交的文本存储到下拉列表
+			-->
+			<input type="text" autocomplete="on" name="zzz">
+			<input type="submit" value="提交">
+		</form>
+	</body>
+</html>

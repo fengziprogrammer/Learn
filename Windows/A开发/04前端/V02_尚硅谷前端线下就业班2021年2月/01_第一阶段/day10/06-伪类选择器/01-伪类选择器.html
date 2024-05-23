@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 伪类选择器:
+			 */
+			/* =================第一种:    受其他元素影响的========================================= */
+			/* 第一个儿子元素 */
+		   /* .list li:first-child{
+				color:red;
+			} */
+			
+			/* 最后一个儿子元素  */
+/* 			.list li:last-child{
+				color:red;
+			}
+			
+ */		
+	        /* 
+			  根据编号选择,编号可以是数字,从1开始,
+			  还可以是单词,odd是基数,even是偶数
+			  还可以是表达式,表达式必须是n,n从0开始
+			 */
+			/* .list li:nth-child(2n+3){
+				color:red;
+			} */
+			
+			/* 倒数根据编号选择 */
+			/* .list li:nth-last-child(2n){
+				color:red;
+			} */
+			
+			/* 唯一一个儿子元素 */
+		/* 	.box span:only-child{
+				color:red;
+			} */
+			
+			/* ===========第二种: 不受其他标签影响=========================== */
+			/* 第一个儿子元素 */
+			/* .list li:first-of-type{
+				color:red;
+			} */
+			
+			/* 最后一个儿子元素  */
+			/* .list li:last-of-type{
+				color:red;
+			} */
+			
+			/*
+			  根据编号选择,编号可以是数字,从1开始,
+			  还可以是单词,odd是基数,even是偶数
+			  还可以是表达式,表达式必须是n,n从0开始
+			 */
+			/* .list li:nth-of-type(odd){
+				color:red;
+			} */
+			
+			/* 倒数根据编号选择 */
+			/* .list li:nth-last-of-type(1){
+				color:red;
+			} */
+			
+				
+				/* 唯一一个儿子元素 */
+			/* .box span:only-of-type{
+				color:red;
+			} */
+			
+			/* =========内容是空(内容包括:文本,标签,空格)================ */
+			.box2:empty{
+				width: 100px;
+				height: 100px;
+				background: red;
+			}
+			
+		 </style>
+	</head>
+	<body>
+		<ul class="list">
+			<span>1111</span>
+			<li>1</li>
+			<li>2</li>
+			<span>1111</span>
+			<li>3</li>
+			<span>1111</span>
+			<li>4</li>
+			<li>5</li>
+			<span>1111</span>
+			<li>6</li>
+			<li>7</li>
+			<span>1111</span>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<span>1111</span>
+		</ul>
+		<div class="box">
+			<i>iiiiiii</i>
+			<i>iiiiiii</i>
+			<i>iiiiiii</i>
+			<i>iiiiiii</i>
+			<i>iiiiiii</i>
+			<span>1</span>
+			<!-- <span>2</span> -->
+		</div>
+		<div class="box2"></div>
+	</body>
+</html>
