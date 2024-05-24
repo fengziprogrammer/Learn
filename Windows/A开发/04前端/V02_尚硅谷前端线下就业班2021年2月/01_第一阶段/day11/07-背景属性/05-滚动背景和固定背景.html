@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				height: 3000px;
+			}
+			.one{
+				width: 200px;
+				height: 200px;
+				background: url(img/1.png) no-repeat 100px 100px;
+				border:1px solid #000;
+				margin-top: 500px;
+				/* 
+				scroll(默认值)滚动背景,背景图默认在盒子内部的左上,当页面滚动时,盒子会跟着页面移动,
+				背景图会跟着盒子移动
+				fixed:固定背景,背景图参考点永远是浏览器窗口,当页面滚动时,背景图是不动的,给哪个元素设置了
+				该背景图,当元素经过浏览器窗口位置的时候,能看到该图片
+				 */
+				background-attachment: fixed;
+			}
+			.two{
+				width: 200px;
+				height: 200px;
+				background: url(img/222.jpg) no-repeat 100px 100px;
+				border:1px solid #000;
+				margin-top: 500px;
+				/* 
+				scroll(默认值)滚动背景,背景图默认在盒子内部的左上,当页面滚动时,盒子会跟着页面移动,
+				背景图会跟着盒子移动
+				 */
+				background-attachment: fixed;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="one"></div>
+		<div class="two"></div>
+	</body>
+</html>

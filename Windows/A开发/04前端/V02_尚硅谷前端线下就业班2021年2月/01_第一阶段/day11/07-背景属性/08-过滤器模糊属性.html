@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 300px;
+				height: 300px;
+				border: 1px solid #000;
+				position: relative;
+				overflow: hidden;
+			}
+			h5{
+				position: absolute;
+				left:50%;
+				top:50%;
+				font-size: 30px;
+				color:red;
+			}
+			.box img{
+				
+				/* 过滤器 */
+				filter: blur(10px);
+			}
+			.cover{
+				/* 全屏遮罩 */
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,.5);
+				left:0;
+				top:0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/timg.jfif" width="300" height="300">
+			<h5>免费观看</h5>
+		</div>
+		<input type="text">
+		<button>按钮</button>
+		<div class="cover"></div>
+	</body>
+</html>

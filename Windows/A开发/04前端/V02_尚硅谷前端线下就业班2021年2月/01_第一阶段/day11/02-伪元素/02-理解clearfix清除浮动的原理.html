@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 1000px;
+			    border:1px solid #000;
+				margin: 0 auto;
+			}
+			.one{
+				width: 100px;
+				height: 100px;
+				background: red;
+				float:left;
+			}
+			.two{
+				width: 100px;
+				height: 100px;
+				background: blue;
+				float:right;
+			}
+			.footer{
+				height: 300px;
+				background: gray;
+			}
+			.three{
+				/* height: 100px; */
+				background: yellow;
+				clear: both;
+			}
+			/* 利用盒子内部的伪元素代替额外标签法,清除浮动造成的影响 */
+			.clearFix::after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box clearFix">
+			<div class="one"></div>
+			<div class="two"></div>
+			
+		</div>
+		<div class="footer"></div>
+	</body>
+</html>
