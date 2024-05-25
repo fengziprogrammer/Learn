@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 400px;
+            height: 30px;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+    <form action="1.php" novalidate>
+        <h2>输入框类</h2>
+        <!-- 邮箱  要求必须输入电子邮箱，否则表单无法提交； 如果不输入不会验证 -->
+        <input type="email" placeholder="请输入邮箱" required>
+        <br>
+        <br>
+
+        <!-- 数字 不是数字无法输入 -->
+        <input type="number" placeholder="请输入数字"> <br>
+        <!-- 设置可输入数字范围，超出表单无法提交， 果不输入不会验证-->
+        <input type="number" placeholder="请输入数字" max="100" min="-20"> <br>
+        <!-- step属性表示数字变化幅度，默认值是1，默认只能输入整数 -->
+        <input type="number" step=".1">
+        <br>
+        <br>
+
+        <!-- URL 要求必须输入URL， 否则表单无法提交； 如果不输入不会验证 -->
+        <input type="url" placeholder="请输入网址">
+        <br>
+        <br>
+
+        <!-- 电话号码  没有验证功能，手机端会自动弹出数字键盘 -->
+        <input type="tel" placeholder="请输入电话号码">
+        <br>
+        <br>
+
+        <!-- 搜索框 没有验证功能-->
+        <input type="search" placeholder="请搜索...">
+        <br>
+        <br>
+
+        <h2>范围选择框</h2>
+        <!-- 拖动滑块 选择数字 默认0~100 -->
+        <input type="range" name="n1"> <br>
+        <!-- 修改所选数字的范围 -->
+        <input type="range" name="n2" max="50" min="-50" value="40"> <br>
+        <!-- step属性设置数字的变化幅度 -->
+        <input type="range" name="n3" max="50" min="-50" step="10">
+        
+        <h3>颜色选择框</h3>
+        <input type="color" name="color">
+
+        <h3>日期时间选择框类</h3>
+        <!-- 选择日期 年月日 -->
+        <input type="date"> <br><br>
+        <!-- 选择年月 -->
+        <input type="month"> <br><br>
+        <!-- 选择年、第几周 --> 
+        <input type="week"> <br><br>
+        <!-- 选择时间 小时 分钟 -->
+        <input type="time"> <br><br>
+        <!-- 选择日期和时间 -->
+        <input type="datetime-local">
+
+
+        <hr>
+        <button>提交</button>
+    </form>
+</body>
+</html>

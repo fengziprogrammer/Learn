@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 1000px;
+        }
+
+        .page-header {
+            height: 200px;
+            text-align: center;
+            background: #ccc;
+            overflow: hidden;
+        }
+
+        .page-nav {
+            margin-top: 10px;
+            text-align: center;
+            line-height: 40px;
+            background:#ccc;
+        }
+
+        .page-banner {
+            margin-top: 10px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+            background: #ccc;
+        }
+
+        .page-main {
+            margin-top: 10px;
+        }
+
+        .page-main::after {
+            content: "";
+            display: block;
+            clear:both;
+        }
+
+        .page-main article {
+            float: left;
+            width: 790px;
+        }
+
+        .page-main article img {
+            width: 100%;
+        }
+
+        .page-main aside {
+            float: right;
+            padding: 20px 0;
+            text-align: center;
+            width: 200px;
+            height: 800px;
+            background: #ccc;
+        }
+
+        .page-footer {
+            margin-top: 10px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+         <!-- 页头 -->
+        <header class="page-header">
+            <h1>小乐的交友网站</h1>
+        </header>
+
+        <!-- 主导航 -->
+        <nav class="page-nav">
+            <a href="#">导航</a>
+            <a href="#">导航</a>
+            <a href="#">导航</a>
+            <a href="#">导航</a>
+            <a href="#">导航</a>
+            <a href="#">导航</a>
+        </nav>
+
+        <!-- banner 页面中的独立区域-->
+        <section class="page-banner">banner</section>
+
+        <!-- 主要内容部分 -->
+        <main class="page-main">
+            <!-- 文章 -->
+            <article>
+                <h2>鲁迅给你的35条忠告</h2>
+                <section>
+                    <h3>学习篇</h3>
+                    <p>德得沫，我非关母，而汪满惶李花人于太千不若道畴定，的后非，一毒命陀珍起在方谭，学非因在至劝一，才来作几，斗无胜互承秦卑不是派小先程到罪了出磊，拆不在贤高家反会之仇太国己争是中但回，国爱生韩留后韩个范嗣用为月挟妄后诗事，弟起不新挟母，大谭落，语我打人，落气。</p>
+                    <p>策承会未大己，呼系哥亓普，盲德责马不皇金釜将人，之落找会天而身有娇因今非对设杨，盲重沫夭前不生之洪领，何也国会谢五，十一血房说而兴病是说光，你厄貂胆他若艳，今为不即情他陀尝陀担已量，出哥冷郭才自是评二她不并在五，王母死死惊见也郭郭战其害促磊要，人第司败次。</p>
+                    <p>才沫的流地会故灰姑却，见身秦畴保，徨郭设春气陛山一之能韩不，人上回褒赏国的吴救衣而斯掸，日有婵事褒刑盲谓历遗皮是别请了，胜洪人为，纯里葬情韩决，行娘是样，面你有洋说君灰，徒价主穿领将云乐保轻给台策在实，解丈总如今什保家国劫找变出洪家丹死始，由程争保人斯者。</p>
+                </section>
+                <section>
+                    <h3>生活篇</h3>
+                    <p>卧言专土雷回商不生所老也，语仃月普极交苟生，丑国秦将斯在且生公也久年从，王谢可投选极今使说将不终居打病叹斗人王，程己挟时狂，一一来沫说火但落，下卧争叩生是十以你皇白，颜来恩今打皇了上对张洪六他，夭之志骨今关书天张在词他国，只德下入六高属人能相为对互好，才。</p>
+                    <p>乌恼终要仍的价久不韩要，娘韩活爻生穿磊者说叩心吴，人死皇者太新即杂生但，事笔京言由太终骂了山恩，侯航极在定国天服已想那弄少宫，易感只好李令过于挟者子永爻皇谢家不什，着登足马不着龄日人生应可们之，位的九使派是子严切样，了学的张文韩而密，解快鼓找极亓说我，廿。</p>
+                    <figure>
+                        <img src="../dist/imgs/bg04.jpg" alt="">
+                        <figcaption>(使用华为meta50拍摄)</figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h3>情感篇</h3>
+                    <p>召视头总未娘本十普登仑会秦穿，谢对终书刑卞后为，丰评临设担脱是，秦绛自而评争罪尘尝，在太锐就得嗣快韩，文句极秦郭国以他大我司可送历望云己秦，回始卅杀极，看在应至身你狱人范和偶关马略承房才服变，呼国落了如秦订收家出，升他自有此面见对而偶且才畴用丈投份，一不。</p>
+                    <p>三未为被服派官，评或量世今不价生曾，子安郭夭谷我者前时首，份是遗是因雷笔二解为夫了杨用子台老略，百三将着，大无明，冇设事师胜量她望不人，人收人掸讨娘中人一兮非妄学好，有谢嗣句失者掸别同夫关皇骨，者才都那气选一郭应也，着普感，么范貂世，妄的我导洪低土何那通。</p>
+                    <p>明极奔法车己乏资念君定土着之，尝攻惜降价，准李谭目如愚在事山而郭此是过想，不反为便皇，惊被县命他动太苦入尝哥，更欲人下月却言量心，衣尽色到非者色身念拿只，家后会对才要落亲俭善君之姑劝友不则人，日普是而招时乐法语极，赏属惜，始永败，次设况，我火会娘，善助韩。</p>
+                </section>
+            </article>
+            <!-- 侧边栏 -->
+            <aside>
+                侧边栏
+            </aside>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="page-footer">
+            页脚
+        </footer>
+    </div>
+   
+</body>
+</html>

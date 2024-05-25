@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-input,textarea,select {
+            margin-top: 20px;
+            display: block;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .input-box {
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background: #ccc;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="1.php" id="formBox">
+        <input type="text" class="text-input" placeholder="用户名" autofocus required name="usernmae" autocomplete="off">
+        
+        <input type="password" class="text-input" placeholder="密码">
+
+        <div class="input-box">
+            <input type="radio" name="gender">男
+            <input type="radio" name="gender">女
+            <input type="radio" name="gender" required>其他
+        </div>
+
+        <div class="input-box">
+            <input type="checkbox">唱
+            <input type="checkbox">跳
+            <input type="checkbox" required>rap
+            <input type="checkbox">打篮球
+        </div>
+        
+        <select>
+            <option>新疆维吾尔自治区</option>
+            <option>西藏自治区</option>
+            <option>广西壮族自治区</option>
+            <option>内蒙古自治区</option>
+            <option>宁夏回族自治区</option>
+            <option>香港特别行政区</option>
+            <option>澳门特别行政区</option>
+        </select>
+
+        <textarea cols="30" rows="10" placeholder="请输入留言" required></textarea>
+
+        <button>提交</button>
+    </form>
+
+    <hr>
+
+    <button form="formBox">点击提交</button>
+
+</body>
+</html>
