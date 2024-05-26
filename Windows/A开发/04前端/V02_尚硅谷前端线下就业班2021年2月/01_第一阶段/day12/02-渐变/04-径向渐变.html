@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 径向渐变: 从原点到半径之间的一个渐变
+			 
+			 图形:
+			 正方向盒子: circle圆 默认值  ellipse椭圆
+			 正方向盒子: circle圆   ellipse椭圆 默认值
+			 
+			 closest-side： 指定径向渐变的半径长度为从圆心到离圆心最近的边 
+			 closest-corner： 指定径向渐变的半径长度为从圆心到离圆心最近的角 
+			 farthest-side： 指定径向渐变的半径长度为从圆心到离圆心最远的边 
+			 farthest-corner： 指定径向渐变的半径长度为从圆心到离圆心最远的角 
+			 
+			 改变圆心的位置:
+			 
+			 */
+			div:nth-of-type(1){
+				width: 300px;
+				height: 300px;
+				background-image: radial-gradient(circle farthest-side,red 50px,yellow 100px,blue 150px);
+			}
+			div:nth-of-type(2){
+				width: 300px;
+				height: 200px;
+				/*                                图形  到哪的半径  圆心水平坐标   圆心的垂直坐标, 颜色 值,.......... */
+				background-image: radial-gradient(circle closest-corner at 50px 50px,red 30%,yellow 50%,blue 80%);
+				margin-top: 5px;
+			}
+			.box {
+			  border-style: solid;
+			  border-width: 1px;
+			  border-color: rgb(255, 0, 0);
+			
+			  background-image:radial-gradient(  circle closest-side at 50% 50%, rgb(24,24,24) 0%, rgb(255,255,255) 100%);
+			  position: absolute;
+			  left: 412px;
+			  top: 152px;
+			  width: 98px;
+			  height: 98px;
+			  z-index: 6;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div class="box"></div>
+	</body>
+</html>

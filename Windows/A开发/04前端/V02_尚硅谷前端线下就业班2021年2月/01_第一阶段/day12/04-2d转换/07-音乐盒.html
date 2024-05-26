@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				
+			}
+			body{
+				height: 3000px;
+			}
+			.box{
+				width: 300px;
+				height: 300px;
+				border-radius: 50%;
+				margin: 100px auto;
+				position: relative;
+			}
+			.box img:nth-of-type(1){
+				border-radius: 50%;
+				border: 1px solid #000;
+				
+				position: absolute;
+				left: 0;
+				top:0;
+				transition: all .5s;
+			}
+			.box img:nth-of-type(2){
+				border-radius: 50%;
+				border: 1px solid #000;
+				position: absolute;
+				left: 0;
+				top:0;
+				transition: all .5s;
+				transform-origin: bottom;
+			}
+			.box:hover img:nth-of-type(1){
+					transform: rotate(360deg);
+				}
+			
+			.box:hover img:nth-of-type(2){
+				transform: rotateX(-180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box" id="box">
+			<img src="img/musicb.jpg" >
+			<img src="img/musict.jpg" >
+		</div>
+		<audio src="yinyue.mp3" id="aud" ></audio>
+		<script type="text/javascript">
+			var aud = document.getElementById('aud');
+			var box = document.getElementById('box');
+			box.onmouseover = function(){
+				aud.play();
+			}
+			box.onmouseout = function(){
+				aud.pause();
+			}
+		</script>
+	</body>
+</html>

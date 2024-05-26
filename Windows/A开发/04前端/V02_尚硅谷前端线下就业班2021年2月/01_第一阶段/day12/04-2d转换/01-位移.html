@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+			2d转换:
+			位移:水平 正直向右,负值向左
+			     垂直 正直向下,负值向上
+			 */
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div:nth-of-type(1){
+				width: 200px;
+				height: 200px;
+				background: red;
+				/* 和相对定位类似 */
+				/*  水平,垂直  */
+				/* transform: translate(-100px,-100px); */
+				/*              自身宽度的百分比,自身高度的百分比 */
+				transform: translate(50%,50%);
+				
+			}
+			div:nth-of-type(2){
+				position: absolute;
+				/* 水平垂直居中 */
+				left:50%;
+				top:50%;
+				transform: translate(-50%,-50%);
+				/* margin-left: ; */
+				
+			}
+			.inner{
+				width: 200px;
+				height: 200px;
+				background: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div>
+			<p class="inner"></p>
+		</div>
+	</body>
+</html>

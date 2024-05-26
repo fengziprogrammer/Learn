@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 280px;
+				height: 330px;
+				border: 1px solid red;
+				margin: 200px auto;
+			}
+			.box img{
+				transition: all 1s;
+				/* 
+				  旋转中心点设置
+				  单词:
+				  水平: left/center/right
+				  垂直: top/center/bottom
+				  数值:水平 垂直
+				  沿着z轴旋转有无数个中心点
+				  沿着x轴旋转,旋转中心点在y轴上
+				  沿着Y轴旋转,旋转中心点在x轴上
+				 */
+				transform-origin:50px top ;
+			}
+			.box:hover img{
+				/* 旋转轴 */
+				/*  rotate(360deg) 沿着z轴旋转, 正值是顺时针旋转,负值时逆时针旋转*/
+				/*  rotateX(-180deg) 沿着x轴旋转,从右往左看,  正值是顺时针旋转,负值时逆时针旋转*/
+				/*  rotateY(-180deg) 沿着y轴旋转,从下往上看, 正值是顺时针旋转,负值时逆时针旋转*/
+				/* transform: rotate(360deg); */
+				/* transform: rotateX(-180deg); */
+				transform: rotateY(-180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/liuzhiyuan.jpg" >
+		</div>
+		<div class="box">
+			<img src="img/fengche.png" >
+		</div>
+	</body>
+</html>
