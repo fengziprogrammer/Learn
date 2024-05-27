@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+        }
+
+        p {
+            padding: 20px;
+            width: 1000px;
+            background: #ccc;
+        }
+
+        /* 选择包含某个属性的元素 */
+        /* 属性选择器如果与其他选择器交集组合，需要将属性选择器写在后面 */
+        /* img[title] {
+            border: 2px solid #900;
+        } */
+
+
+        /* 选择title属性值是高小乐的元素 */
+        /* [title="高小乐"] {
+            border: 2px solid #900;
+        } */
+
+
+        /* 选择title属性值以高开头 */
+        /* [title^="高"] {
+            border: 2px solid #900;
+        } */
+
+        /* 选择title属性值以乐结尾 */
+        /* [title$="乐"] {
+            border: 2px solid #900;
+        } */
+
+        /* 选择title属性值中包含乐 */
+        [title*="乐"] {
+            border: 2px solid #900;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="../images/img001.jpg" alt="Hello">
+        <img src="../images/img001.jpg" alt="What" title="高小乐">
+        <img src="../images/img001.jpg" alt="Hello World" title="高启强">
+        <img src="../images/img001.jpg" alt="How Are You" title="老头乐">
+        <img src="../images/img001.jpg" alt="Where" title="乐极生悲">
+        <img src="../images/img001.jpg" alt="Hello" title="nihao">
+    </div>
+
+    <p>活后杨年杨程不有血的促玉，之生到皇是笔友，今者何有面书创也郭商罪不，不得即完掸揽互答国车国光到得，说皇人肯恨内恶罪普九百，价回沫太，战又词预本磊失哥保有才虑化地开这，如五中灰设己救来叩的起章怎以中马，太妙孔国都都国时位，仅瞠种之导京领担，的皮国吾楚非书成。</p>
+    <p title="段落">活后杨年杨程不有血的促玉，之生到皇是笔友，今者何有面书创也郭商罪不，不得即完掸揽互答国车国光到得，说皇人肯恨内恶罪普九百，价回沫太，战又词预本磊失哥保有才虑化地开这，如五中灰设己救来叩的起章怎以中马，太妙孔国都都国时位，仅瞠种之导京领担，的皮国吾楚非书成。</p>
+    <p title="高乐高">活后杨年杨程不有血的促玉，之生到皇是笔友，今者何有面书创也郭商罪不，不得即完掸揽互答国车国光到得，说皇人肯恨内恶罪普九百，价回沫太，战又词预本磊失哥保有才虑化地开这，如五中灰设己救来叩的起章怎以中马，太妙孔国都都国时位，仅瞠种之导京领担，的皮国吾楚非书成。</p>
+</body>
+</html>

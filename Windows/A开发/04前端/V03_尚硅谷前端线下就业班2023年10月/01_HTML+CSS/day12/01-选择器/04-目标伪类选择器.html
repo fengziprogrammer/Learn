@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section {
+            text-align: center;
+            line-height: 600px;
+            height: 600px;
+            border-top: 2px dashed #999;
+        }
+
+        nav {
+            position:sticky;
+            top: 0;
+            line-height: 40px;
+            background: #ccc;
+        }
+
+        :target {
+            color: #fff;
+            font-size: 80px;
+            background: #900;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#page01">第一部分</a>
+        <a href="#page02">第二部分</a>
+        <a href="#page03">第三部分</a>
+        <a href="#page04">第四部分</a>
+        <a href="#page05">第五部分</a>
+    </nav>
+
+    <div class="section" id="page01">第一部分</div>
+    <div class="section" id="page02">第二部分</div>
+    <div class="section" id="page03">第三部分</div>
+    <div class="section" id="page04">第四部分</div>
+    <div class="section" id="page05">第五部分</div>
+</body>
+</html>

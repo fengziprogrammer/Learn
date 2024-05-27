@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            width: 600px;
+            padding: 20px;
+            background: #ccc;
+        }
+
+        .news {
+            padding: 0;
+            width: 600px;
+            list-style: none;
+        }
+
+        /* 选择元素中的第一个文字 */
+        ::first-letter {
+            font-size: 2em;
+            font-weight: 800;
+            color: #900;
+        }
+
+        /* 选择第一行文字 */
+        .item::first-line {
+            text-decoration: underline;
+        }
+
+
+        .news::before {
+            display: block;
+            content: "";
+            height: 10px;
+            background: #900;
+        }
+
+        .news::after {
+            display: block;
+            content: "最后一个子元素";
+            background: #ccc;
+            padding: 0 20px;
+        }
+
+        input,textarea {
+            margin-top: 20px;
+            display: block;
+            width: 400px;
+            padding: 10px;
+            border: 1px solid #999;
+        }
+
+        ::placeholder {
+            color: pink;
+        }
+
+
+        /* 给鼠标选中的文本设置样式 */
+        ::selection {
+            color:#099;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>伪元素选择器</h1>
+    <hr>
+    <div class="item">死得会后说家是向由长向是皇衣，评李找，斯知我内贼也国将牛耳水畴你总的县位，分吾留人教，是得个可好光留，尹中人四洪无釜此太非过招，极了你竟自他春一小仍丹刑韩系，六杀让者不在，九这无了望样上才何日位李则恼若主为，动得对范事，国不谢办人太司二马丹婵接范巴日整出。</div>
+    <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, dignissimos quidem. Molestias vero maxime, sapiente sequi, harum pariatur repellendus autem ratione deserunt sint recusandae error eveniet ad quia reprehenderit quasi!</p>
+    <ul class="news">
+        <li>人欲可便远未了若的道，斯仑者在，回魂普。</li>
+        <li>人欲可便远未了若的道，斯仑者在，回魂普。</li>
+        <li>人欲可便远未了若的道，斯仑者在，回魂普。</li>
+        <li>人欲可便远未了若的道，斯仑者在，回魂普。</li>
+    </ul>
+
+    <input type="text" placeholder="用户名">
+    <textarea name="" id="" cols="30" rows="10" placeholder="留言..."></textarea>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box01 {
+            /* 默认值 */
+            box-sizing: content-box;
+        }
+
+        .box02 {
+            /* width和height设置的是总宽总高 */
+            /* 设置成怪异模式 */
+            box-sizing: border-box;
+        }
+        /* 
+            * {
+                box-sizing: border-box;
+            } 
+        */
+
+        .box {
+            display: inline-block;
+            width: 400px;
+            height: 300px;
+            padding: 20px;
+            border: 3px dashed #900;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box01">box01</div>
+    <div class="box box02">box02</div>
+</body>
+</html>

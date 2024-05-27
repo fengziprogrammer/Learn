@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            margin: 10px 0;
+            width: 600px;
+            padding: 10px;
+            border: 1px solid #999;
+        }
+
+        .news {
+            margin-top: 40px;
+            width: 600px;
+        }
+
+        .news-item {
+            padding: 10px;
+            background: #ccc;
+        }
+
+
+        /* 元素是所有兄弟元素中的第一个 */
+        /* :first-child {
+            border: 1px solid #f00;
+        } */
+        /* li:first-child {
+            border: 1px solid #f00;
+        } */
+        /* p:first-child {
+            border: 1px solid #f00;
+        } */
+        /* .news-item:first-child {
+            border: 1px solid #f00;
+        } */
+        /* ul :first-child {
+            border: 1px solid #f00;
+        } */
+
+        /* .news-item:last-child {
+            border: 2px solid #f00;
+        } */
+
+        /* li:nth-child(3) {
+            border: 2px solid #f00;
+        } */
+        /* .news p:nth-child(3) {
+            border: 2px solid #f00;
+        } */
+        /* .news .news-item:nth-child(3) {
+            border: 2px solid #f00;
+        } */
+
+        /* p.news-item:nth-last-child(4) {
+            border: 2px solid #f00;
+        } */
+
+        /* :only-child {
+            border: 2px solid #f00;
+        } */
+
+
+        /* .news-item:first-of-type {
+            border: 2px solid #900;
+        } */
+
+        /* .news p:nth-of-type(3) {
+            border: 2px solid #f00;
+        } */
+
+        /* :only-of-type {
+            border: 2px solid #f00;
+        } */
+
+
+        /* :root {
+            border: 2px solid #f00;
+        } */
+
+        :empty {
+            border: 2px solid #f00;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1>结构伪类选择器</h1>
+    <hr>
+
+    <ul>
+        <li>文尤皇云得弟到徒十，不入就，才则师，了。</li>
+        <li>文尤皇云得弟到徒十，不入就，才则师，了。</li>
+        <li>文尤皇云得弟到徒十，不入就，才则师，了。
+            <ol>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li></li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ol>
+        </li>
+        <li>文尤皇云得弟到徒十，不入就，才则师，了。</li>
+        <li>文尤皇云得弟到徒十，不入就，才则师，了。</li>
+        <li>文尤皇云得弟到徒十，不入就，才则师，了。</li>
+        <li>文尤皇云得弟到徒十，不入就，才则师，了。</li>
+    </ul>
+
+    <div class="news">
+        <div class="news-item">仆人和，拆是今受才在种是商大者而案将目。</div>
+        <p class="news-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, quasi?</p>
+        <div class="news-item">仆人和，拆是今受才在种是商大者而案将目。</div>
+        <p class="news-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, quasi?</p>
+        <div class="news-item">仆人和，拆是今受才在种是商大者而案将目。</div>
+        <p class="news-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, quasi?</p>
+        <div class="news-item">仆人和，拆是今受才在种是商大者而案将目。</div>
+        <p class="news-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, quasi?</p>
+        <div class="news-item">仆人和，拆是今受才在种是商大者而案将目。</div>
+        <p class="news-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, quasi?</p>
+    </div>
+</body>
+</html>

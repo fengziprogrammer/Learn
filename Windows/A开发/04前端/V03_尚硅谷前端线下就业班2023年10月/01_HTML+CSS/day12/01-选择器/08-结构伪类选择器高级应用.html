@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .news {
+            width: 800px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .news li {
+            padding: 10px 20px;
+        }
+
+
+        /* 
+            :nth-child()
+            :nth-of-type()
+            :nth-last-child()
+            :nth-last-of-type()
+        */
+
+        /* 奇数行颜色是灰色 */
+        /* .news li:nth-child(odd) {
+            background: #ccc;
+        } */
+        /* .news li:nth-of-type(odd) {
+            background: #ccc;
+        } */
+        .news li:nth-child(2n+1) {
+            background: #ccc;
+        }
+
+
+        /* 偶数行颜色是蓝色 */
+        /* .news li:nth-child(even) {
+            background: #099;
+        } */
+        .news li:nth-child(2n) {
+            background: #099;
+        }
+
+
+        /* 选择行号是3的倍数的元素 */
+        .news li:nth-child(3n) {
+            border-bottom: 2px solid #f00;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <ul class="news">
+        <li>土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+        <li>土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+        <li>土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+        <li>土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+        <li>土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+        <li>土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+        <li>土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+        <li>土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+        <li>土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+        <li>土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+    </ul>
+</body>
+</html>

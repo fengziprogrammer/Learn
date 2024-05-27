@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .news {
+            width: 800px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .news li {
+            padding: 10px 20px;
+        }
+
+        .news li:not(.active) {
+            border-bottom: 2px dashed #999;
+        }
+
+        nav {
+            line-height: 40px;
+            background: #ccc;
+        }
+        nav a {
+            margin-top: 30px;
+            color: #333;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+
+        /* nav a:not(:first-child) {
+            border-left: 1px solid #666;
+        } */
+
+        nav a:not(:last-child) {
+            border-right: 1px solid #666;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="news">
+        <li>土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+        <li>土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+        <li>土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+        <li class="active">土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+        <li class="active">土舟里是弄斯倒如中的的人自魂，生说落使互老蒲介大欲遗，了罪。</li>
+    </ul>
+
+    <nav>
+        <a href="#">导航</a>
+        <a href="#">导航</a>
+        <a href="#">导航</a>
+        <a href="#">导航</a>
+        <a href="#">导航</a>
+        <a href="#">导航</a>
+        <a href="#">导航</a>
+        <a href="#">导航</a>
+        <a href="#">导航</a>
+    </nav>
+</body>
+</html>

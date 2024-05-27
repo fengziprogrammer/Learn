@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-input,textarea,select {
+            margin-top: 20px;
+            display: block;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .input-box {
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background: #ccc;
+            border: none;
+        }
+
+        /* :enabled {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #f00;
+        } */
+
+        /* :disabled {
+            width: 100px;
+            height: 100px;
+            background: #333;
+            border: 2px solid #f00;
+        } */
+
+        :checked {
+            width: 40px;
+            height: 40px;
+            color: #f00;
+        }
+
+
+        .tab {
+            width: 600px;
+        }
+
+        .tab-nav label {
+            display: inline-block;
+            line-height: 40px;
+            padding: 0 20px;
+            background: #ccc;
+        }
+
+        .tab-content input {
+            display: none;
+        }
+
+        .tab-item {
+            display: none;
+            padding: 20px;
+            height: 100px;
+            border: 1px solid #ccc;
+        }
+
+       
+
+        .tab-content :checked + .tab-item {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="1.php" id="formBox">
+        <input type="text" class="text-input" placeholder="用户名" required name="usernmae" autocomplete="off">
+        
+        <input type="password" class="text-input" placeholder="密码">
+
+        <div class="input-box">
+            <input type="radio" name="gender">男
+            <input type="radio" name="gender">女
+            <input type="radio" name="gender" required disabled>其他
+        </div>
+
+        <div class="input-box">
+            <input type="checkbox">唱
+            <input type="checkbox">跳
+            <input type="checkbox" required checked>rap
+            <input type="checkbox">打篮球
+        </div>
+        
+        <select>
+            <option>新疆维吾尔自治区</option>
+            <option>西藏自治区</option>
+            <option>广西壮族自治区</option>
+            <option>内蒙古自治区</option>
+            <option>宁夏回族自治区</option>
+            <option>香港特别行政区</option>
+            <option>澳门特别行政区</option>
+        </select>
+
+        <textarea cols="30" rows="10" placeholder="请输入留言" required></textarea>
+
+        <button disabled>提交</button>
+    </form>
+
+    <hr>
+
+    <div class="tab">
+        <div class="tab-nav">
+            <label for="tab01">未发货订单</label>
+            <label for="tab02">未收货订单</label>
+            <label for="tab03">未评价订单</label>
+        </div>
+        <div class="tab-content">
+            <input type="radio" name="tab" id="tab01" checked>
+            <div class="tab-item">这里是未发货的订单</div>
+
+            <input type="radio" name="tab" id="tab02">
+            <div class="tab-item">这里是未收货的订单</div>
+
+            <input type="radio" name="tab" id="tab03">
+            <div class="tab-item">这里是未评价的订单</div>
+        </div>
+    </div>
+
+</body>
+</html>
