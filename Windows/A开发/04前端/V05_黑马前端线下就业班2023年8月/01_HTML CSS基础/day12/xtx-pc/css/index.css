@@ -1,0 +1,414 @@
+/* banner 开始 */
+.banner {
+  height: 500px;
+  background-color: #F5F5F5;
+}
+
+.banner .wrapper {
+  position: relative;
+  /* 溢出隐藏 */
+  overflow: hidden;
+  height: 500px;
+}
+
+.banner .wrapper>ul {
+  display: flex;
+  width: 300%;
+  /* width: 3720px; */
+}
+
+.banner .circle {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.banner .circle li {
+  width: 22px;
+  height: 22px;
+  padding: 4px;
+  margin-left: 10px;
+  /* background-color: pink; */
+  border-radius: 50%;
+  /* 小手 */
+  cursor: pointer;
+}
+
+.banner .circle .active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.banner .circle li::after {
+  content: "";
+  /* 转换块级才有大小 */
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.banner .subnav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, .42)
+}
+
+.banner .subnav li {
+  position: relative;
+  height: 50px;
+  padding-left: 29px;
+  line-height: 50px;
+  /* background-color: pink; */
+}
+
+.banner .subnav li::after {
+  /* 到iconfont.css 里面去复制 */
+  content: "\e687";
+  position: absolute;
+  top: 0px;
+  right: 29px;
+  color: #fff;
+  /* 声明字体图标的字体 */
+  font-family: iconfont;
+}
+
+.banner .subnav li:hover {
+  background-color: var(--lv);
+}
+
+.banner .subnav li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.banner .subnav li a:first-child {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+/* 新鲜好物 */
+.hd {
+  display: flex;
+  justify-content: space-between;
+  /* 侧轴垂直居中 */
+  align-items: center;
+  padding: 40px 0 30px;
+
+}
+
+.hd h2 {
+  font-size: 30px;
+}
+
+.hd h2 span {
+  font-size: 16px;
+  color: var(--hui);
+  margin-left: 30px;
+}
+
+.hd .all {
+  font-size: 16px;
+  color: var(--hui);
+}
+
+.hd .all:hover {
+  color: var(--lv);
+}
+
+
+
+.bd ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bd ul li {
+  width: 304px;
+  height: 404px;
+  background-color: #EEF9F4;
+  text-align: center;
+  transition: all .3s;
+}
+
+.bd ul li:hover {
+  margin-top: -5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .42);
+}
+
+.bd ul li a {
+  display: block;
+  height: 100%;
+}
+
+.bd ul li .pic {
+  width: 304px;
+  height: 304px;
+  background-color: skyblue;
+}
+
+.bd ul li h4 {
+  font-size: 20px;
+  margin: 18px 15px 9px;
+
+}
+
+.bd ul li p {
+  color: #AA2113;
+  font-size: 17px;
+}
+
+.bd ul li p span {
+  font-size: 22px;
+}
+
+.recommend .bd li {
+  background-color: #fff;
+}
+
+.recommend .bd li p {
+  font-size: 16px;
+  color: var(--hui);
+}
+
+/* 热门品牌 */
+.brand {
+  height: 468px;
+  background-color: #f5f5f5;
+  margin-top: 50px;
+}
+
+/* brand里面的hd 加相对定位 */
+.brand .hd {
+  position: relative;
+}
+
+.brand .btn {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  display: flex;
+
+}
+
+.brand .btn a {
+  width: 20px;
+  height: 20px;
+  background-color: #e2e2e2;
+  margin-left: 12px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+}
+
+.brand .btn .btnright {
+  background-color: var(--lv);
+}
+
+.brand .bd li {
+  width: 244px;
+  height: 306px;
+}
+
+/* 让生鲜模块里面的li 一行显示 */
+.hd ul {
+  display: flex;
+  margin-right: 65px;
+}
+
+.hd ul li {
+  margin-right: 13px;
+}
+
+.hd ul li a {
+  padding: 0 5px;
+}
+
+/* 鼠标经过添加底色和文字颜色 */
+.hd ul li a:hover {
+  background-color: var(--lv);
+  color: #fff;
+}
+
+.fresh .hd h2 {
+  flex: 1;
+}
+
+/* 内容区域 */
+.fresh .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fresh .content .left {
+  width: 248px;
+  height: 610px;
+  /* background-color: pink; */
+}
+
+.fresh .content .right {
+  width: 968px;
+  height: 610px;
+  /* background-color: skyblue; */
+}
+
+.fresh .content .right ul {
+  display: flex;
+  /* 强制换行 */
+  flex-wrap: wrap;
+}
+
+.fresh .content .right li {
+  overflow: hidden;
+  position: relative;
+  width: 242px;
+  height: 304px;
+  /* background-color: pink; */
+  /* 颜色透明 transparent */
+  border: 2px solid transparent;
+
+}
+
+.fresh .content .right li:hover {
+  /* border: 2px solid var(--lv); */
+  border-color: var(--lv);
+}
+
+.fresh .content .right li>a {
+  display: block;
+  height: 100%;
+  padding: 10px 0 0 20px;
+}
+
+.fresh .content .pic {
+  width: 200px;
+  height: 180px;
+  background-color: purple;
+}
+
+.fresh .content .info {
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 19px;
+
+}
+
+.fresh .content .info h5 {
+  font-size: 16px;
+}
+
+.fresh .content .price {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #AF2F22;
+}
+
+.fresh .content .price span {
+  font-size: 22px;
+}
+
+.fresh .content .find {
+  position: absolute;
+  left: 0;
+  bottom: -84px;
+  width: 242px;
+  height: 84px;
+  background-color: var(--lv);
+  padding: 15px 55px 0;
+  text-align: center;
+  /* 谁做动画（过渡）给谁加 */
+  transition: all .3s;
+}
+
+.fresh .content .right li:hover .find {
+  bottom: 0;
+}
+
+.fresh .content .find h4 {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.11);
+  color: #fff;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+  font-size: 18px;
+}
+
+.fresh .content .find a {
+  color: #fff;
+  font-size: 13px;
+}
+
+.fresh .content .find a i {
+  font-size: 13px;
+}
+
+/* 最新专题 */
+.news {
+  margin-bottom: 50px;
+}
+
+.news .bd ul li {
+  width: 405px;
+  height: 355px;
+  background-color: #fff;
+}
+
+.news .bd ul li .pic {
+  position: relative;
+  width: 405px;
+  height: 288px;
+  /* background-color: skyblue; */
+}
+
+.news .pic .txt {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 405px;
+  height: 90px;
+  /* background-color: skyblue; */
+  padding: 20px 15px 0;
+  text-align: left;
+  /* 渐变色  从红色到绿色  竖着*/
+  /* background-image: linear-gradient(red, green); */
+  /* background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.6)); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+
+.news .pic .txt h5 {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.news .pic .txt .left p {
+  color: #fff;
+}
+
+.news .pic .right {
+  width: 79px;
+  height: 25px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 25px;
+  color: #AA2113;
+}
+
+.news .bd .desc {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+
+}
+
+.news .bd .desc p span {
+  color: #666;
+  font-size: 14px;
+  margin-right: 5px;
+}
