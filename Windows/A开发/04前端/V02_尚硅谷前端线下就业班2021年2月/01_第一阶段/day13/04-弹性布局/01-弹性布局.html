@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+			弹性布局:是父元素和子元素之间的关系,也叫伸缩布局,弹性盒子,伸缩盒子,flex布局
+			父元素叫做弹性空间
+			子元素叫做弹性元素,弹性项
+			
+			
+			 */
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box1{
+				border: 1px solid red;
+				/* 开启弹性空间 */
+				display: flex;
+			}
+			.box1>div{
+				width: 100px;
+				height: 100px;
+				
+			}
+			.box1>div:nth-of-type(1){
+				background: #0000FF;
+			}
+			.box1>div:nth-of-type(2){
+				background: yellowgreen;
+			}
+			.box1>div:nth-of-type(3){
+				background: yellow;
+			}
+			.box1>div:nth-of-type(4){
+				background: pink;
+			}
+			.box1>div:nth-of-type(5){
+				background: orangered;
+			}
+			.box1>div:nth-of-type(6){
+				background: skyblue;
+			}
+			.box1>div:nth-of-type(7){
+				background: purple;
+			}
+			.box1>div:nth-of-type(8){
+				background: gold;
+			}
+			.box1>div:nth-of-type(9){
+				background: darkred;
+			}
+			.box1>div:nth-of-type(10){
+				background: silver;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</div>
+	</body>
+</html>

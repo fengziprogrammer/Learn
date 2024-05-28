@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+			弹性布局:是父元素和子元素之间的关系,也叫伸缩布局,弹性盒子,伸缩盒子,flex布局
+			父元素叫做弹性空间
+			子元素叫做弹性元素,弹性项
+			
+			主轴:默认是水平方向,左边开始,右边结束
+			侧轴(交叉轴,垂轴):默认是垂直方向,上边开始,下边结束
+			 */
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box1,.box2{
+				border: 1px solid red;
+				/* 开启弹性空间 */
+				display: flex;
+				flex-direction: column;
+			   /* 弹性元素是否换行 
+			      nowrap 不换行,当弹性元素超出父元素时,会自身进行压缩
+				  wrap 换行,当弹性元素超出父元素时,会换行
+				  wrap-reverse 反向换行
+			   */
+			   flex-wrap: wrap-reverse;
+			}
+			.box2{
+				margin-top: 10px;
+				border-color: #000;
+				width: 1300px;
+				height: 500px;
+			}
+			.box1>div,.box2>div{
+				width: 100px;
+				height: 100px;
+				
+			}
+			.box1>div:nth-of-type(1),.box2>div:nth-of-type(1){
+				background: #0000FF;
+			}
+			.box1>div:nth-of-type(2),.box2>div:nth-of-type(2){
+				background: yellowgreen;
+			}
+			.box1>div:nth-of-type(3),.box2>div:nth-of-type(3){
+				background: yellow;
+			}
+			.box1>div:nth-of-type(4),.box2>div:nth-of-type(4){
+				background: pink;
+			}
+			.box1>div:nth-of-type(5),.box2>div:nth-of-type(5){
+				background: orangered;
+			}
+			.box1>div:nth-of-type(6),.box2>div:nth-of-type(6){
+				background: skyblue;
+			}
+			.box1>div:nth-of-type(7),.box2>div:nth-of-type(7){
+				background: purple;
+			}
+			.box1>div:nth-of-type(8),.box2>div:nth-of-type(8){
+				background: gold;
+			}
+			.box1>div:nth-of-type(9),.box2>div:nth-of-type(9){
+				background: darkred;
+			}
+			.box1>div:nth-of-type(10),.box2>div:nth-of-type(10){
+				background: silver;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</div>
+		<div class="box2">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</div>
+	</body>
+</html>
