@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin-top: 30px;
+            width: 400px;
+            height: 200px;
+            padding: 20px;
+            color: #fff;
+            border: 1px solid #ccc;
+        }
+
+        .box01 {
+            /* 最少需要两个颜色 */
+            background-image: linear-gradient(#900, #009);
+        
+            /* 设置渐变方向 */
+            /* 使用关键字设置渐变方向 */
+            background-image: linear-gradient(to top, #900, #009);
+            background-image: linear-gradient(to right, #900, #009);
+            background-image: linear-gradient(to right top, #900, #009);
+            background-image: linear-gradient(to top left, #900, #009);
+            /* 使用角度设置渐变方向 */
+            background-image: linear-gradient(10deg, #900, #009);
+
+        }
+
+        .box02 {
+            background-image: linear-gradient(90deg, #900 100px, #080);
+            background-image: linear-gradient(90deg, #900 100px, #080 200px);
+            background-image: linear-gradient(45deg, #900 50%, #080 60%);
+            background-image: linear-gradient(90deg, #900 50%, #080 50%);
+        }
+
+        .box03 {
+            background-image: linear-gradient(45deg, #900, #990, #099, #909, #009);
+            background-image: linear-gradient(90deg, #900 20%,#990 20%, #990 40%, #099 40%, #099 60%, #909 60%, #909 80%, #009 80%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box box01">后惊领对手手我耐地归竟主先为人，对上普胜夭少与书领者的作才人不曰，大由在当收得羊在范同，妙中说五她道吞小身但洪羊宋里但。</div>
+    <div class="box box02">后惊领对手手我耐地归竟主先为人，对上普胜夭少与书领者的作才人不曰，大由在当收得羊在范同，妙中说五她道吞小身但洪羊宋里但。</div>
+    <div class="box box03">后惊领对手手我耐地归竟主先为人，对上普胜夭少与书领者的作才人不曰，大由在当收得羊在范同，妙中说五她道吞小身但洪羊宋里但。</div>
+</body>
+</html>

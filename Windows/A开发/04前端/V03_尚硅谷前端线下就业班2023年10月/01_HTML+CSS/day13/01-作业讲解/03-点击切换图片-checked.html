@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+        }
+
+        .play-box {
+            margin: 100px auto 0;
+            width: 730px;
+        }
+
+        .larges input {
+            display: none;
+        }
+
+        .larges img {
+            display: none;
+            width: 730px;
+            height: 454px;
+        }    
+
+        .larges input:checked + img {
+            display: block;
+        }
+
+        .smalls label {
+            float: left;
+        }
+
+        .smalls img {
+            width: 146px;
+        }
+    </style>
+</head>
+<body>
+    <div class="play-box">
+        <div class="larges">
+            <input type="radio" id="img01" name="img" checked>
+            <img src="../images/jd001.jpg" alt="">
+            <input type="radio" id="img02" name="img">
+            <img src="../images/jd002.jpg" alt="">
+            <input type="radio" id="img03" name="img">
+            <img src="../images/jd003.jpg" alt="">
+            <input type="radio" id="img04" name="img">
+            <img src="../images/jd004.jpg" alt="">
+            <input type="radio" id="img05" name="img">
+            <img src="../images/jd005.jpg" alt="">
+        </div>
+        <div class="smalls">
+            <label for="img01">
+                <img src="../images/jd001.jpg" alt="">
+            </label>
+            <label for="img02">
+                <img src="../images/jd002.jpg" alt="">
+            </label>
+            <label for="img03">
+                <img src="../images/jd003.jpg" alt="">
+            </label>
+            <label for="img04">
+                <img src="../images/jd004.jpg" alt="">
+            </label>
+            <label for="img05">
+                <img src="../images/jd005.jpg" alt="">
+            </label>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+        }
+
+        .play-box {
+            margin: 100px auto 0;
+            width: 730px;
+        }
+
+        .larges {
+            height: 454px;
+        }
+
+        .larges img {
+            position: absolute;
+            width: 730px;
+            height: 454px;
+        }    
+
+        .larges img:target {
+            z-index: 10;
+        }
+
+        .smalls a {
+            float: left;
+        }
+
+        .smalls img {
+            width: 146px;
+        }
+    </style>
+</head>
+<body>
+    <div class="play-box">
+        <div class="larges">
+            <img src="../images/jd001.jpg" alt="" id="img01">
+            <img src="../images/jd002.jpg" alt="" id="img02">
+            <img src="../images/jd003.jpg" alt="" id="img03">
+            <img src="../images/jd004.jpg" alt="" id="img04">
+            <img src="../images/jd005.jpg" alt="" id="img05">
+        </div>
+        <div class="smalls">
+            <a href="#img01">
+                <img src="../images/jd001.jpg" alt="">
+            </a>
+            <a href="#img02">
+                <img src="../images/jd002.jpg" alt="">
+            </a>
+            <a href="#img03">
+                <img src="../images/jd003.jpg" alt="">
+            </a>
+            <a href="#img04">
+                <img src="../images/jd004.jpg" alt="">
+            </a>
+            <a href="#img05">
+                <img src="../images/jd005.jpg" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+</html>

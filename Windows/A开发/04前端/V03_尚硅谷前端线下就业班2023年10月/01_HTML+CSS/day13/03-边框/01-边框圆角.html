@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin-top: 30px;
+            width: 400px;
+            height: 100px;
+            padding: 20px;
+            background: #ccc;
+            border: 2px solid #900;
+        }
+
+        .box01 {
+            /* 设置右上角圆角 */
+            border-top-right-radius: 20px; 
+
+            /* 设置椭圆圆角 */
+            border-bottom-right-radius: 100px 20px;
+
+            /* 使用百分比 */
+            border-bottom-left-radius: 10% 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        .box02 {
+            /* 同时设置4个角 */
+            border-radius: 20px;
+            /* 左上和右下  左下和右上 */
+            border-radius: 10px 100px;
+            /* 左上 左下和右上 右下 */
+            border-radius: 10px 100px 50px;
+            /* 左上 右上 右下 左下 */
+            border-radius: 10px 30px 50px 80px;
+        }
+
+        .box03 {
+            /* 分被设置 x 半径和 y 半径 */
+            border-radius: 100px / 10px;
+
+            /*  左上和右下x半径:100px; 左下和右上x半径:30px /  左上y半径:10px; 左下和右上y半径:40px; 右下y半径:50px  */
+            /* 左上:100px 10px;  右上:30px 40px;  右下:100px 50px; 左下:30px 40px */
+            border-radius: 100px 30px / 10px 40px 50px;
+        }
+
+        .box04 {
+            width: 100px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box01">box01</div>
+    <div class="box box02">box02</div>
+    <div class="box box03">box03</div>
+    <div class="box box04">box04</div>
+</body>
+</html>

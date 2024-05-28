@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 1000px;
+            height: 600px;
+            padding: 20px;
+
+            /*
+            background-color: #ccc;
+            background-image: url(../images/bg-tl.png), url(../images/bg-tr.png);
+            background-repeat: no-repeat;
+            background-position: left top, right top;
+            */
+
+            background: url(../images/bg-tl.png) no-repeat left top, 
+                        url(../images/bg-tr.png) no-repeat right top,
+                        url(../images/bg-bl.png) no-repeat left bottom,
+                        url(../images/bg-br.png) no-repeat right bottom,
+                        url(../images/bg05.jpg) center/cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        
+    </div>
+</body>
+</html>
