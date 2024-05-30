@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 
+			弹性布局:是父元素和子元素之间的关系,也叫伸缩布局,弹性盒子,伸缩盒子,flex布局
+			父元素叫做弹性空间
+			子元素叫做弹性元素,弹性项
+			
+			主轴:默认是水平方向,左边开始,右边结束
+			侧轴(交叉轴,垂轴):默认是垂直方向,上边开始,下边结束
+			 */
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box1,.box2{
+				border: 1px solid red;
+				/* 开启弹性空间 */
+				display: flex;
+				/* 主轴的方向 */
+				flex-direction:;
+				/* 在主轴的位置分布 */
+				/* justify-content: space-evenly; */
+				/* 是否换行 */
+				/* flex-wrap:wrap ; */
+				/* 弹性元素在侧轴的位置分布(当前行) 
+				stretch默认值 在换行时,当弹性元素不设置宽度和高度时,如果主轴是水平方向,
+				宽度是内容撑开的,高度和当前行的高度一样,如果主轴是垂直方向时,高度是内容撑开的,
+				宽度和当前行的宽度一样
+				flex-start 居当前行的开始
+				center     居当前行的居中
+				flex-end   居当前行的结束
+				
+				*/
+			/* 	align-items:center ; */
+			/* 弹性元素在侧轴的位置分布(整体的) 
+			 stretch默认值 在换行时,当弹性元素不设置宽度和高度时,如果主轴是水平方向,
+			 宽度是内容撑开的,高度和当前行的高度一样,如果主轴是垂直方向时,高度是内容撑开的,
+			 宽度和当前行的宽度一样
+			 flex-start 居开始
+			 center     居居中
+			 flex-end   居结束
+			 space-around 空间包含元素
+			 space-between 元素包含空间
+			 space-evenly 空间包含元素(元素左右相等的间距)
+			 
+			 注意:当align-items和align-content同时存在时,align-items失效
+			*/
+			/* align-content:flex-start; */
+			}
+			.box2{
+				margin-top: 10px;
+				border-color: #000;
+				width: 300px;
+				height: 1500px;
+			}
+			.box1>div,.box2>div{
+			  /* width: 100px; */
+				/* height: 100px; */
+				
+			}
+			.box1>div:nth-of-type(1),.box2>div:nth-of-type(1){
+				background: #0000FF;
+				
+			}
+			.box1>div:nth-of-type(2),.box2>div:nth-of-type(2){
+				background: yellowgreen;
+				
+			}
+			.box1>div:nth-of-type(3),.box2>div:nth-of-type(3){
+				background: yellow;
+				
+			}
+			.box1>div:nth-of-type(4),.box2>div:nth-of-type(4){
+				background: pink;
+			   /* 弹性元素的排序,在整体的最后按编号顺序排列 */
+			   order: 1;
+			}
+			.box1>div:nth-of-type(5),.box2>div:nth-of-type(5){
+				background: orangered;
+			
+			}
+			.box1>div:nth-of-type(6),.box2>div:nth-of-type(6){
+				background: skyblue;
+				order: 2;
+				}
+			.box1>div:nth-of-type(7),.box2>div:nth-of-type(7){
+				background: purple;
+				
+			}
+			.box1>div:nth-of-type(8),.box2>div:nth-of-type(8){
+				background: gold;
+				
+			}
+			.box1>div:nth-of-type(9),.box2>div:nth-of-type(9){
+				background: darkred;
+				order: 3;
+			}
+			.box1>div:nth-of-type(10),.box2>div:nth-of-type(10){
+				background: silver;
+			
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</div>
+		<div class="box2">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+		</div>
+	</body>
+</html>

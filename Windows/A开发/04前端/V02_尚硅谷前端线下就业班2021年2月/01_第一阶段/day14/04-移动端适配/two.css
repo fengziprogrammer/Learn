@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  /*
+	
+	   0.5px  0.13333vw
+	   扩大10倍
+	   5px    1.33333vw
+	   扩大20倍
+	   10px   2.66666vw
+	   扩大30倍
+	   15px   3.99999vw
+	   扩大40倍
+	   20px  
+	   20px   5.33332vw
+	 */
+  font-size: 5.33332vw;
+}
+.box {
+  /*
+		 vw单位:
+		 1vw = 当前屏幕的1%
+		 100vw = 屏幕的宽度
+		 
+		 
+		 在750px屏幕下
+		 1vw = 7.5px
+		 100vw = 750px
+		 
+		 1px = 0.13333vw
+		 60px = 60*0.13333vw = 8vw
+		 
+		 在375px屏幕下
+		 0.5px = 0.13333vw
+		 1px = 0.266666vw
+		 */
+  width: 8.2rem;
+  height: 1.5rem;
+  background: red;
+}

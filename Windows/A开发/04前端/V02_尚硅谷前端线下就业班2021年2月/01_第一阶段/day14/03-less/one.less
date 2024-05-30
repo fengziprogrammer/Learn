@@ -1,0 +1,23 @@
+.box{
+	// 错误的写法
+	// width: (200+100)px;
+	width: 200+100px;
+	height: 200px;
+	background: red; 
+	float:right;
+	margin: 10px; 
+	// 单行注释 ctrl+/
+    /*
+	 多行注释 ctrl+shift+/
+	*/
+	// &表示父级
+	& h1{
+		span{
+			color:blue;
+		}
+	}
+	
+	&.one{
+		font-size: 40px;
+	}
+}

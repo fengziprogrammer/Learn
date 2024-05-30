@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 400px;
+				height: 200px;
+				border: 1px solid #000;
+				display: flex;
+			}
+			.box>div{
+				/* 弹性元素的压缩率(收缩因子),默认值是1 */
+				/* flex-shrink: 0; */
+				/* 
+					每份压缩的数值px = 超出的数值(200px)/总分数(6) = 33.33px
+					元素剩余的宽度 = 自身宽度-每份压缩的数值*压缩的份数 = 
+				 */
+			}
+			.one{
+				width: 200px;
+				height: 200px;
+				background: red;
+				flex-shrink: 1;
+				/* 剩余宽度 */
+				/* 200-33.33  = 166.67*/
+			}
+			.two{
+				width: 200px;
+				height: 200px;
+				background: green;
+				flex-shrink: 2;
+			}
+			.three{
+				width: 200px;
+				height: 200px;
+				background: blue;
+				flex-shrink: 3;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="one"></div>
+			<div class="two"></div>
+			<div class="three"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				/*
+				 vw单位:
+				 1vw = 当前屏幕的1%
+				 100vw = 屏幕的宽度
+				 
+				 
+				 在750px屏幕下
+				 1vw = 7.5px
+				 100vw = 750px
+				 
+				 1px = 0.13333vw
+				 60px = 60*0.13333vw = 8vw
+				 
+				 在375px屏幕下
+				 */
+				width:8vw;
+				/* 由于css不支持数学运算,此时会报错 */
+				height: 60*0.13333vw;
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>
