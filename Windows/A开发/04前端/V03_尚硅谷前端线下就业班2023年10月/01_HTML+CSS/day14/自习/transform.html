@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-wrapper{
+            margin: 120px auto;
+            width: 300px;
+            height: 100px;
+            border: 4px dashed #900;
+        }
+
+        .box{
+            box-sizing: border-box;
+            padding: 20px;
+            width: 300px;
+            height: 100px;
+            color: #fff;
+            background-color: rgba(0, 166, 166, 0.5);
+        }
+
+        p {
+            width: 600px;
+            padding: 20px;
+            background: #ccc;
+
+            /* 居中 */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+
+        .box01{
+            transform: translateX(100px);
+            transform: translateX(50%);
+            transform: translateX(-30px);
+            transform: translate(100%);
+
+            transform: scaleX(2);
+            transform: scaleX(1);
+            transform: scaleX(-1);
+
+            transform: rotate(15deg);
+
+            transform-origin: left top;
+        }
+
+        .box02{
+            transform: translateY(100px);
+            transform: translateY(50%);
+            transform: translateY(-30px);
+            transform: translateY(100%);
+
+            transform: scaleY(1.2);
+            transform: scale(2);
+            transform: scaleY(0.5);
+
+            transform: skewX(30deg);
+        }
+
+        .box03{
+            transform: translate(100px,200px);
+            transform: translate(50%);
+            transform: translate(-30px);
+            transform: translate(100%);
+        }
+        .box02 {
+            padding: 40px;
+            font-size: 20px;
+            transform: scale(.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>2D位移</h1>
+    <div class="box-wrapper">
+        <div class="box box01">box01</div>
+    </div>
+
+    <div class="box-wrapper">
+        <div class="box box02">box02</div>
+    </div>
+
+    <div class="box-wrapper">
+        <div class="box box03">box03</div>
+    </div>
+
+    <!-- <p>化一尘传一到他，使之斯年入郭幕为了土者次低，韩愚的冇临别由极人，够国绪那花一畴皇一尽前只自回将韦可，掸一他快皇冈们航，回战丈，护到得心范己死两清皇人变生李才有法养六，胜马书风是者兄，高留遗国后招韩死魂不评备母慷叹笔在和婵，自畴不张报老厄备是郭那，这不我导。</p> -->
+
+</body>
+</html>

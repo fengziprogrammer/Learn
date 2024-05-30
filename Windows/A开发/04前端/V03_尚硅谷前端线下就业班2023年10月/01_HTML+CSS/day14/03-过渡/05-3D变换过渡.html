@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item-wrapper {
+            margin: 100px auto;
+            width: 354px;
+            height: 501px;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            border: 4px solid #900;
+        }
+
+        .item {
+            position: relative;
+            width: 354px;
+            height: 501px;
+            transform-style: preserve-3d;
+            transition: 800ms;
+        }
+
+        .item img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+        }
+
+        .front {
+            transform: translateZ(-1px) rotateY(180deg);
+        }
+
+        .item-wrapper:hover .item{
+            transform: rotateY(180deg);
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="item-wrapper">
+        <div class="item">
+            <img src="../images/pk02.png" alt="扑克牌正面" class="front">
+            <img src="../images/pk01.png" alt="扑克牌反面" class="back">
+        </div>
+    </div>
+</body>
+</html>

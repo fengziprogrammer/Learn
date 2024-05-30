@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            width: 1000px;
+            height: 200px;
+            border: 4px solid #900;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition-duration: 5s;
+        }
+
+        .ball01 {
+            background: radial-gradient(at 40% 40%, #fff, #009);
+            /* 设置匀速运动 */
+            transition-timing-function: linear;
+            /* transition-timing-function: ease; */
+        }
+
+        .ball02 {
+            background: radial-gradient(at 40% 40%, #fff, #090);   
+            /* 默认平滑运动 */
+            /* 加速 */
+            transition-timing-function: ease-in;
+            /* 减速 */
+            transition-timing-function: ease-out;
+            /* 先加速后减速 */
+            transition-timing-function: ease-in-out;
+            /* 贝塞尔曲线 */
+            transition-timing-function: cubic-bezier(.72,1.65,.96,1.68);
+            /*  分步运动 */
+            transition-timing-function: steps(5);
+            transition-timing-function: steps(5, end);
+            transition-timing-function: steps(5, start);
+            transition-timing-function: step-start;
+            transition-timing-function: step-end;
+        }
+
+        .wrapper:hover .ball {
+            margin-left: 900px;
+            transform: rotate(3600deg);
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            background: #900;
+            transition-duration: 5s;
+            transition-timing-function: steps(10);
+        }
+
+        .box:hover {
+            background: #009;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="ball ball01"></div>
+        <div class="ball ball02"></div>
+    </div>
+
+    <hr>
+
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes xiaole {
+            from {
+                border-radius: 10px;
+            }
+
+            to {
+                border-radius: 50px;
+            }
+        }
+
+        @keyframes dale {
+            20% {
+                width: 600px;
+                height: 600px;
+            }
+            50% {
+                width: 200px;
+                height: 200px;
+            }
+            100% {
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+
+        @keyframes laole {
+            from {
+                background: #f00;
+            }
+            50% {
+                background: #009;
+            }
+            to {
+                background: #090;
+            }
+        }
+
+
+        .box {
+            width: 200px;
+            height: 100px;
+            background: #900;
+
+            /* 设置关键帧 */
+            animation-name: xiaole,dale,laole;
+            /* 动画持续时间 */
+            animation-duration: 5s;
+        }
+
+        p {
+            width: 600px;
+            padding: 20px;
+            background: #ccc;
+
+            animation-name: xiaole,laole;
+            animation-duration: 10s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p>宋人介快不胜杨，实羊判极之设不为褒秦尹，使能舟轻也火陛量如，法策高县鼓生牙他不着畴无洪回看，然有朋得罪杨皮下被化为，如亓得郭赠不实官个定国老太若仍德法，曾谭面病娘投自死量高快那为也范，身拢对作恶不夫韩许元非后，出我视洪后第曾极是，丑变马仑人没因屯仃就，陀。</p>
+</body>
+</html>
