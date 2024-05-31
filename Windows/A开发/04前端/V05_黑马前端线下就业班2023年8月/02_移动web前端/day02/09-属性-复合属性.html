@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #000;
+
+      /* animation-name: move;
+      animation-duration: 2s;
+      animation-iteration-count: infinite; */
+
+      /* 1、合起来写：没有play-state这控制 */
+      /* 2、按照顺序写：如果中间某些属性不需要设置，隔开过就OK */
+      animation: move 2s infinite alternate;
+    }
+
+    .box:hover {
+      /* 单独控制 */
+      animation-play-state: paused;
+    }
+
+
+    @keyframes move {
+      0% {
+        transform: translateX(0px);
+        background-color: green;
+      }
+
+      100% {
+        transform: translateX(1000px);
+        background-color: blue;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>

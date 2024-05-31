@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #000;
+      animation-name: move;
+      animation-duration: 6s;
+    }
+
+    div:nth-child(1) {
+      /* 默认：慢-快-慢 */
+    }
+
+    div:nth-child(2) {
+      /*    linear：匀速 */
+      animation-timing-function: linear;
+    }
+
+    div:nth-child(3) {
+      /*    steps()：不是补帧（补充特别详细），是逐帧动画 【记住】*/
+      animation-timing-function: steps(8);
+    }
+
+
+    @keyframes move {
+      0% {
+        transform: translateX(0px);
+        background-color: green;
+      }
+
+      100% {
+        transform: translateX(1000px);
+        background-color: blue;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</body>
+
+</html>

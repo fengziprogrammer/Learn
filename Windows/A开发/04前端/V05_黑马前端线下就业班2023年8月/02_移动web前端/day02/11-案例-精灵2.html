@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 140px;
+      height: 140px;
+      background: url(./imgs/bg.png) no-repeat;
+
+      /* 思考：怎么往左走？控制背景图位置 */
+      /* background-position: -100px 0; */
+      animation: run 0.4s steps(12) infinite,
+        box 5s forwards;
+
+      /* 同一个盒子：可以做多组动画 */
+      /* animation: 动画1控制,动画2控制,...; */
+    }
+
+    @keyframes run {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: -1680px 0;
+      }
+    }
+    @keyframes box {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(800px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

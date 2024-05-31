@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* css： */
+    /*   1、定义动画:多状态 */
+    /*   key：关键   frames：帧*/
+    /*   动画名称：随便起，尽量英文 */
+    @keyframes ani {
+      0% {
+        transform: scale(1);
+      }
+      30% {
+        transform: scale(2);
+      }
+      60% {
+        transform: scale(0.7);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* 2、使用动画 animation: 动画名称 时长s;*/
+    div {
+      width: 690px;
+      height: 454px;
+      background: url(./imgs/hero.jpeg) no-repeat;
+      margin: 100px auto;
+      animation: ani 0.7s;
+    }
+
+    /* 动画：补帧动画 */
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

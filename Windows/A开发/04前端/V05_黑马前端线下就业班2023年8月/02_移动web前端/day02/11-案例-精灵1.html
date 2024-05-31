@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 140px;
+      height: 140px;
+      overflow: hidden;
+      animation: box 3s forwards;
+    }
+    img {
+      animation: move 0.5s steps(12) infinite;
+    }
+    @keyframes move {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-1680px);
+      }
+    }
+    @keyframes box {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(800px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <img src="./imgs/bg.png" alt="">
+  </div>
+</body>
+</html>

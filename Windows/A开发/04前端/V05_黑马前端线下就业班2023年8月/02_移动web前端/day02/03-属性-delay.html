@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      height: 600px;
+      border: 1px solid #000;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: end;
+    }
+
+    .son {
+      width: 50px;
+      height: 60px;
+      border-radius: 25px;
+      background-color: green;
+
+      animation-name: move;
+      animation-duration: 2s;
+    }
+
+    @keyframes move {
+      0%{
+        transform: translateY(0);
+      }
+      50%{
+        transform: translateY(-200px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .son:nth-child(1) {
+      animation-delay: 0s;
+    }
+    .son:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+    .son:nth-child(3) {
+      animation-delay: 1s;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="son"></div>
+    <div class="son"></div>
+    <div class="son"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #000;
+
+      animation-name: move;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    /* 一般配合hover，鼠标进入的时候，让动画暂停 */
+    .box:hover {
+      animation-play-state: paused;
+    }
+
+
+    @keyframes move {
+      0% {
+        transform: translateX(0px);
+        background-color: green;
+      }
+
+      100% {
+        transform: translateX(1000px);
+        background-color: blue;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>
