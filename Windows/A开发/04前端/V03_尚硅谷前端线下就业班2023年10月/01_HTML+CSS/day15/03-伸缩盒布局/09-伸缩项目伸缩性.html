@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        .wrapper {
+            margin: 20px auto;
+            /* padding: 20px; */
+            width: 1000px;
+            height: 300px;
+            background: #ccc;
+            /* 设置为伸缩容器  flex inline-flex */
+            display: flex;
+            
+
+          
+        }
+
+        .item {
+            flex-basis: 100px;
+            flex-basis: auto;
+
+
+            box-sizing: border-box;
+            /* padding: 10px; */
+            color: #fff;
+            width: 220px;
+            height: 100px;
+
+            /* 设置扩展比率 */
+            /* flex-grow: 0;
+            flex-grow: 1; */
+        }
+
+        .item01 {
+            flex-grow: 1;
+            flex-shrink: 5;
+            width: 100px;
+            background: #900;
+        }
+
+        .item02 {
+            flex-grow: 6;
+            flex-shrink: 3;
+            width: 200px;
+            background: #009;
+        }
+
+        .item03 {
+            flex-grow: 3;
+            flex-shrink: 2;
+            width: 300px;
+            background: #090;
+        }
+
+
+        /* 
+                        原来的主轴长度  扩展比率    瓜分比重
+            .item01         100            1        1/10     100+40
+            .item02         200            6        6/10     200+240
+            .item03         300            3        3/10     300+120
+
+            富余空间： 400
+            分母： 1+6+3=10
+
+        */
+
+
+
+        .wrapper01 {
+            width: 500px;
+            /* flex-wrap: wrap; */
+        }
+
+
+         /* 
+
+
+                        原来的主轴长度    收缩比率    瓜分比重
+            .item01         100            5        500/1700     100-100*5/17
+            .item02         200            3        600/1700     200-100*6/17
+            .item03         300            2        600/1700     300-100*6/17
+
+            亏空长度： 100
+            分母：    100*5 + 200*3 + 300*2 = 1700 
+
+        */
+
+    </style>
+</head>
+<body>
+    <h2>扩展 flex-grow</h2>
+    <div class="wrapper">
+        <div class="item item01">item01</div>
+        <div class="item item02">item02</div>
+        <div class="item item03">item03</div>
+    </div>
+
+    <h2>收缩 flex-shrink</h2>
+    <div class="wrapper wrapper01">
+        <div class="item item01">item01</div>
+        <div class="item item02">item02</div>
+        <div class="item item03">item03</div>
+    </div>
+
+</body>
+</html>

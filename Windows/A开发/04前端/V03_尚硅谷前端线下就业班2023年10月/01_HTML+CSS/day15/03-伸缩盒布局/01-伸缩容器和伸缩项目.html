@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            margin: 20px auto;
+            width: 1000px;
+            /* height: 600px; */
+            background: #ccc;
+            text-align: center;
+            /* 设置为伸缩容器  flex inline-flex */
+            display: flex;
+            /* display: inline-flex; */
+        }
+
+        .item {
+            box-sizing: border-box;
+            padding: 10px;
+            color: #fff;
+            width: 220px;
+            height: 100px;
+        }
+
+        .item01 {
+            background: #900;
+        }
+
+        .item02 {
+            background: #009;
+        }
+
+        .item03 {
+            display: flex;
+            background: #090;
+        }
+
+        .item03-child {
+            height: 20px;
+            border: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item item01">item01</div>
+        <span class="item item02">item02</span>
+        <div class="item item03">
+            <div class="item03-child">item03 A</div>
+            <div class="item03-child">item03 B</div>
+            <div class="item03-child">item03 C</div>
+        </div>
+    </div>
+
+    太全勉罪人与制作与。
+</body>
+</html>

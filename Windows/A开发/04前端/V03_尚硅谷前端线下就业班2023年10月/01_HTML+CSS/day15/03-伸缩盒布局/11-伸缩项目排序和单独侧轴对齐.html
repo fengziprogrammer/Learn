@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            margin: 20px auto;
+            padding: 20px 0;
+            height: 300px;
+            background: #ccc;
+            display: flex;
+
+            align-items: center;
+        }
+
+        .item {
+            box-sizing: border-box;
+            padding: 10px;
+            color: #fff;
+            width: 220px;
+            height: 100px;
+
+            
+        }
+
+        .item01 {
+            background: #900;
+        }
+
+        .item02 {
+            order: 1;
+            background: #009;
+
+            align-self: auto;
+            align-self: stretch;
+            align-self: flex-end;
+        }
+
+        .item03 {
+            order: -10;
+            background: #090;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item item01">item01 hello</div>
+        <div class="item item02">item02</div>
+        <div class="item item03">item03</div>
+    </div>
+
+</body>
+</html>

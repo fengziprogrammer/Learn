@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            margin: 20px auto;
+            padding: 20px;
+            width: 1000px;
+            background: #ccc;
+            /* 设置为伸缩容器  flex inline-flex */
+            display: flex;
+            /* display: inline-flex; */
+
+            /* 修改主轴方向 */
+            flex-direction: row;
+            flex-direction: row-reverse;  /*水平 从右到左*/
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+        }
+
+        .item {
+            box-sizing: border-box;
+            padding: 10px;
+            color: #fff;
+            width: 220px;
+            height: 100px;
+        }
+
+        .item01 {
+            background: #900;
+        }
+
+        .item02 {
+            background: #009;
+        }
+
+        .item03 {
+            background: #090;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item item01">item01</div>
+        <span class="item item02">item02</span>
+        <div class="item item03">item03</div>
+    </div>
+
+</body>
+</html>

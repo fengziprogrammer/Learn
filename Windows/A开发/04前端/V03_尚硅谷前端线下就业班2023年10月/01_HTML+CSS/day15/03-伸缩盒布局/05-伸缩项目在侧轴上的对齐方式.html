@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        .wrapper {
+            margin: 20px auto;
+            /* padding: 20px; */
+            width: 1000px;
+            height: 400px;
+            background: #ccc;
+            /* 设置为伸缩容器  flex inline-flex */
+            display: flex;
+
+        }
+
+        .item {
+            box-sizing: border-box;
+            padding: 10px;
+            color: #fff;
+            width: 220px;
+            /* height: 100px; */
+        }
+
+        .item01 {
+            background: #900;
+        }
+
+        .item02 {
+            background: #009;
+        }
+
+        .item03 {
+            background: #090;
+        }
+
+        .item04 {
+            background: #099;
+        }
+
+        .item05 {
+            background: #990;
+        }
+
+        .item06 {
+            background: #909;
+        }
+
+        .wrapper01 {
+            /* 伸缩项目侧轴对齐方式 */
+            align-items: stretch;
+            /* align-items: flex-start;
+            align-items: flex-end;
+            align-items: center; */
+            /* align-items: baseline; */
+            align-items: stretch;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+            align-items: baseline;
+        }
+
+
+        .wrapper02 {
+            flex-wrap: wrap;
+
+            /* 侧轴对齐 */
+            /* align-items: stretch;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center; */
+
+            /* 侧轴对齐 多行 （设置行与行之间如何对齐） */
+            align-content:  stretch;
+            align-content:  flex-start;
+            align-content:  flex-end;
+            align-content:  center;
+            align-content:  space-between;
+            align-content:  space-around;
+            align-content:  space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <h2>伸缩项目没有换行</h2>
+    <div class="wrapper wrapper01">
+        <div class="item item01">item01</div>
+        <span class="item item02">item02</span>
+        <div class="item item03">item03</div>
+        <div class="item item04">item04</div>
+    </div>
+
+
+    <h2>伸缩项目换行</h2>
+    <div class="wrapper wrapper02">
+        <div class="item item01">item01</div>
+        <span class="item item02">item02</span>
+        <div class="item item03">item03</div>
+        <div class="item item04">item04</div>
+        <div class="item item05">item05</div>
+        <div class="item item06">item06</div>
+    </div>
+</body>
+</html>

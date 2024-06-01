@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes loadingAnimation {
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .loading-box {
+            margin-top: 200px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .loading-box span {
+            display: inline-block;
+            animation: loadingAnimation 300ms infinite alternate;   
+        }
+
+   
+        .loading-box span:nth-child(2) {
+            animation-delay: 100ms;
+        }
+
+        .loading-box span:nth-child(3) {
+            animation-delay: 200ms;
+        }
+
+        .loading-box span:nth-child(4) {
+            animation-delay: 300ms;
+        }
+
+        .loading-box span:nth-child(5) {
+            animation-delay: 400ms;
+        }
+
+        .loading-box span:nth-child(6) {
+            animation-delay: 500ms;
+        }
+
+        .loading-box span:nth-child(7) {
+            animation-delay: 600ms;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-box">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+    </div>
+</body>
+</html>

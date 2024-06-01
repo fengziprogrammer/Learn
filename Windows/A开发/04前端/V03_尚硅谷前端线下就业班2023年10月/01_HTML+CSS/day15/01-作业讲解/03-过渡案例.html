@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            position: relative;
+            margin: 100px auto;
+            width: 300px;
+            height: 200px;
+            border: 5px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .item img {
+            display: block;
+        }
+
+        .mask {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .mask-item {
+            position:relative;
+            float: left;
+            width: 150px;
+            height: 100px;
+            overflow:hidden;
+        }
+
+        .mask-item img {
+            position: absolute;
+            transition: 600ms;
+        }
+
+        .mask-item01 img {
+            left: 0;
+            top: 0;
+        }
+
+        .mask-item02 img {
+            right: 0;
+            top: 0;
+        } 
+
+        .mask-item03 img {
+            left: 0;
+            bottom: 0;
+        } 
+
+        .mask-item04 img {
+            right: 0;
+            bottom: 0;
+        } 
+
+        .item:hover .mask-item01 img {
+            top: 100%;
+        }
+
+        .item:hover .mask-item02 img {
+            right: 100%;
+        }
+
+        .item:hover .mask-item03 img {
+            left: 100%;
+        }
+
+        .item:hover .mask-item04 img {
+            bottom: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="item">
+        <img src="./images/about1.jpg" alt="香港风景图">
+        <div class="mask">
+            <div class="mask-item mask-item01">
+                <img src="./images/about2.png" alt="区旗">
+            </div>
+            <div class="mask-item mask-item02">
+                <img src="./images/about2.png" alt="区旗">
+            </div>
+            <div class="mask-item mask-item03">
+                <img src="./images/about2.png" alt="区旗">
+            </div>
+            <div class="mask-item mask-item04">
+                <img src="./images/about2.png" alt="区旗">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
