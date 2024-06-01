@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 5.333332vw;
+}
+.box {
+  width: 1.5rem;
+  height: 1rem;
+  background: red /* 
+	vw单位 1vw=当前屏幕宽度的1%
+	
+	在750屏幕下
+	1vw = 7.5px
+	100vw = 750px
+	1px = 0.13333vw
+	60px = 60*0.13333vw = 8vw
+	在375屏幕下
+	1vw = 3.75px;
+	100vw = 375px
+	1px = 0.266666vw
+	0.5px = 0.133333vw
+	
+	
+	 */;
+}
