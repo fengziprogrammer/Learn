@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            最小屏幕 <768  container 宽度100%   #900
+            小屏幕 768~992 container 宽度750px 居中  #090
+            中等屏幕 992~1200 container 宽度970px 居中 #099
+            大屏幕 >1200 container 宽度1170px 居中 #990
+        */
+
+        body {
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 200px;
+            background: #900;
+        }
+
+        /* 小屏幕 */
+        @media (min-width:768px) {
+            .container {
+                margin-left: auto;
+                margin-right: auto;
+                width: 750px;
+                background: #090;
+            }
+        }
+
+        /* 中等屏幕 */
+        @media (min-width: 992px) {
+            .container {
+                width: 970px;
+                background: #099;
+            }
+        }
+
+        /* 大屏幕 */
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px;
+                background: #990;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>响应式布局</title>
+    <style>
+        /* 重置样式表 start */
+        * { font-family: Arial; font-size: 14px; margin: 0; padding: 0; border: none; }
+        a { text-decoration: none; }
+        ul { list-style: none; }
+        img {display: block; }
+        /* 重置样式表 end */
+
+        /* 全局样式 start */
+        body {
+            background: #efefef;
+        }
+        /* 全局样式 end */
+
+
+        /* page-header start */
+        .page-header {
+            position: relative;
+            display: flex;
+            height: 40px;
+            padding: 8px 0 15px;
+            background: #88C5E1;
+            border-bottom: 5px solid #54ABD4;
+        }
+
+        .logo {
+            width: 25%;
+            background-image: url(./images/Brand-S.png);
+            background-size: auto 40px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        /* .logo img {
+            margin:0 auto;
+            height: 40px;
+        } */
+
+        /* .small-logo {
+            display: block;
+        }
+
+        .middle-logo {
+            display: none;
+        }
+
+        .large-logo {
+            display: none;
+        } */
+
+        .search-box {
+            display: flex;
+            width: 60%;
+        }
+
+        .search-box input {
+            box-sizing: border-box;
+            width: 80%;
+            height: 40px;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .search-box button {
+            width: 20%;
+            height: 40px;
+            border: 1px solid #ccc;
+            border-top-right-radius:10px; 
+            border-bottom-right-radius:10px; 
+        }
+
+        .page-nav {
+            display: flex;
+            width: 15%;
+        }
+
+        .menu-btn {
+            margin: auto;
+            padding: 9px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .menu-btn span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: #888;
+        }
+
+        .menu-btn span:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+        .nav-list {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 68px;
+            height: 0;
+            overflow: hidden;
+            background: #88C5E1;
+            transition: 600ms;
+        }
+
+        .nav-list li {
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .nav-list li a {
+            color: #fff;
+            font-size: 12px;
+        }
+
+        .menu-btn:active + .nav-list {
+            height: 160px;
+        }
+
+        @media (min-width: 640px) {
+            .logo {
+                background-image: url(./images/Brand-M.png);
+            }
+
+            .search-box {
+                width: 50%;
+            }
+
+            .page-nav {
+                width: 25%;
+            }
+
+            .menu-btn {
+                display: none;
+            }
+
+            .nav-list {
+                position: static;
+                display: flex;
+                width: 100%;
+                height: 40px;
+            }
+
+            .nav-list li {
+                flex: 1 1 0;
+            }
+            /* .small-logo {
+                display: none;
+            }
+
+            .middle-logo {
+                display: block;
+            }
+
+            .large-logo {
+                display: none;
+            } */
+        }
+        
+        @media (min-width: 1024px) {
+            .logo {
+                background-image: url(./images/Brand-L.png);
+            }
+
+
+            /* .small-logo {
+                display: none;
+            }
+
+            .middle-logo {
+                display: none;
+            }
+
+            .large-logo {
+                display: block;
+            } */
+        }
+        /* page-header end */
+
+
+        /* banner start */
+        .banner img {
+            width: 100%;
+        }
+        /* banner end */
+
+
+    </style>
+</head>
+<body>
+    <header class="page-header">
+        <a href="#" class="logo">
+            <!-- 响应式图片方案一 -->
+            <!-- <img src="./images/Brand-S.png" alt="logo" class="small-logo">
+            <img src="./images/Brand-M.png" alt="logo" class="middle-logo">
+            <img src="./images/Brand-L.png" alt="logo" class="large-logo"> -->
+        </a>
+        <form action="#" class="search-box">
+            <input type="text">
+            <button>搜索</button>
+        </form>
+        <nav class="page-nav">
+            <button class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-list">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">课程</a></li>
+                <li><a href="#">公告</a></li>
+                <li><a href="#">登录</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <!-- 方案三  从上到小依次判断，满足条件加载图片，后面不再执行-->
+        <picture>
+            <source srcset="./images/Banner-L.png" media="(min-width:1024px)">
+            <source srcset="./images/Banner-M.png" media="(min-width:640px)">
+            <img src="./images/Banner-S.png" alt="banner">
+        </picture>
+
+
+        <!-- 方案四 -->
+        <!-- <img srcset="./images/Banner-S.png 640w,
+                    ./images/Banner-M.png 1024w,
+                    ./images/Banner-L.png 1440w" 
+             src="./images/Banner-L.png" 
+             alt=""> -->
+    </div>
+    
+</body>
+</html>

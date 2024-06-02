@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .wrapper {
+            display: flex;
+            height: 600px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .left {
+            flex: 0 0 auto;
+            width: 200px;
+            background: #900;
+        }
+
+        .right {
+            flex: 0 0 auto;
+            width: 200px;
+            background: #009;
+        }
+
+        .content {
+            flex: 1 1 0;
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left">LEFT</div>
+        <div class="content">CONTENT</div>
+        <div class="right">RIGHT</div>
+    </div>
+</body>
+</html>

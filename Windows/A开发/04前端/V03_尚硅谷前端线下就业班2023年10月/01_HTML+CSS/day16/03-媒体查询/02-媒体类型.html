@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #333;
+        }
+
+        h1 {
+            font-size: 4em;
+            color: #fff;
+        }
+
+        /* 针对屏幕设置进行样式设置 */
+        @media screen {
+            h1 {
+                text-align: center;
+            }
+
+            body {
+                background: #099;
+            }
+        }
+
+        /* 针对打印机设置样式 */
+        @media print {
+            h1 {
+                text-align: right;
+            }
+
+            body {
+                height: 600px;
+                border: 2px solid #900;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>媒体特性</h1>
+</body>
+</html>
