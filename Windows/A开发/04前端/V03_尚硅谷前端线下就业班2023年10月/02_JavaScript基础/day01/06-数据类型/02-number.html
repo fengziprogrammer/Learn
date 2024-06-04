@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 整型
+        var n01 = 764;   // 十进制表示
+        var n02 = 012;   // 八进制表示     只能用于表示整数
+        var n03 = 0x12;  // 十六进制表示    只能用于表示整数
+        console.log(n01);
+        console.log(n02);
+        console.log(n03);
+        console.log('');
+        console.log('');
+
+        // 浮点
+        var n04 = 67.008;
+        console.log(n04);
+        console.log(1 + 2);
+        console.log(0.1 + 0.2);    // 0.30000000000000004
+        console.log('');
+        console.log('');
+
+
+        // 使用科学计数法表示number
+        var n05 = 1.3e4;
+        var n06 = 1.67e78;
+        var n07 = 2.3e-2;
+        console.log(n05);
+        console.log(n06);
+        console.log(n07);
+        console.log('');
+        console.log('');
+
+
+        // NaN 
+        console.log(NaN);
+        console.log(typeof(NaN));
+        console.log(NaN * 0);
+        console.log(NaN / 189);
+
+        console.log(250 == 250);
+        console.log(250 == 150);
+        console.log(250 == NaN);
+        console.log(NaN == NaN);
+        // 判断一个数据是不是NaN  以布尔值作为结果
+        console.log(isNaN(NaN));
+        console.log(isNaN(250));
+        console.log(isNaN('hello'));
+        console.log('');
+        console.log('');
+
+
+
+        // 数字的有效范围
+        var n08 = 4.5e400;
+        console.log('JS中能表示的最大的数：', Number.MAX_VALUE);
+        console.log('JS中能表示的最小的数：', -Number.MAX_VALUE);
+        console.log('JS中能表示的最大的正数：', Number.MIN_VALUE);
+
+        var n08 = 3e400;
+        var n09 = -3e400;
+        var n10 = 3e-400;
+        console.log(n08);
+        console.log(n09);
+        console.log(n10); // 0
+        console.log(Infinity);
+        console.log(-Infinity);
+        console.log(isFinite(100));
+        console.log(isFinite(Infinity));
+        console.log(isFinite(-Infinity));
+        console.log(isFinite(NaN));
+        console.log(isFinite(4e500));
+
+
+
+
+
+    </script>
+</body>
+</html>
