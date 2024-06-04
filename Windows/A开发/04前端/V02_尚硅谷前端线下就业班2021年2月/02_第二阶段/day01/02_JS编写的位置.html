@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS的编写位置</title>
+    <!--1. 可以直接将js代码编写在script标签中-->
+<!--    <script>-->
+<!--        alert('Hello!');-->
+<!--    </script>-->
+
+    <!--
+        2. 可以将js代码编写在外部的js文件中，然后通过script标签进行引入
+            script标签要么用来引入，要么用来写代码
+    -->
+<!--    <script src="app.js"></script>-->
+
+</head>
+<body>
+
+<!--
+    3. 还可以将js代码编写在标签的指定属性中
+-->
+<button onmouseenter="alert('你点我干嘛！');">点我一下</button>
+
+<!--
+    4. 可以将js代码编写在href属性后边的，以javascript: 开头
+-->
+<!--<a href="javascript:alert('hello');">我是一个超链接</a>-->
+<a href="javascript:">我是一个超链接</a>
+
+</body>
+</html>
