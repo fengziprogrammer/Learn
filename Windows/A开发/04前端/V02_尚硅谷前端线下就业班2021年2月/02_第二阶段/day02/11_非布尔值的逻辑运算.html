@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        *   与运算：
+        *       - 如果对非布尔值进行与运算，
+        *           会首先将其转换为布尔值，然后运算，最终返回原值
+        *       - 如果第一个值是true，则返回第二个值
+        *           如果第一个值是false，则返回第一个值
+        *
+        *   或运算
+        *       - 如果第一个值是true，则直接返回第一个，否则返回第二个
+        *
+        *   与找false，或找true
+        * */
+
+        //          true && true
+        let result = 'hello' && 1; // 1
+        result = 1 && 'hello'; // 'hello'
+        // true && false
+        result = 1 && NaN; //NaN
+
+        // false && true
+        result = NaN && 1; //NaN
+
+        // false && false
+        result = NaN && 0; //NaN
+        result = 0 && NaN; //0
+
+
+        result = 1 || 'hello';
+        result = 1 || true;
+        result = 1 || NaN;
+        result = NaN || 'hello';
+        result = NaN || 0;
+        result = NaN || 33;
+
+        result = '' && 123;
+        result = 1 && 'hello';
+        result = 1 || 'hello';
+        result = null || 'hello';
+
+
+
+        console.log('result =', result);
+
+
+
+    </script>
+</head>
+<body>
+</body>
+</html>

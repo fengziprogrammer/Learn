@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        *   自增（++）
+        *       - 自增分为前++（++a） 和 后++（a++）
+        *       - 无论是++a还是a++，对于a来说都是一样的
+        *           都会使变量a立刻增加1
+        *       - a++和++a的返回结果不同
+        *           a++ 返回的是变量自增前的值，旧值
+        *           ++a 返回的是变量自增后的值，新值
+        *
+        *
+        * */
+
+        let a = 10;
+
+
+        // ++a;
+        // console.log('++a =', ++a); // 11
+        // console.log('a++ =', a++); // 11
+        // console.log('a =', a); // 12
+
+        // a = 10
+        // a = a++;
+        // console.log('a =', a);
+
+        a = 10;
+        //          10  + 12 + 12
+        let result = a++ + ++a + a;
+        // console.log('result =', result);
+
+
+        a = 10;
+        /*
+        *
+        * 自减（--）
+        *   - 自减分为前--(--a) 和后--(a--)
+        *   - 无论是--a还是a--都会使变量a立刻自减1
+        *   - 不同点在于 --a 和 a--的值不同
+        *        --a是自减后的值，新值
+        *        a--是自减前的值，旧值
+        *
+        * */
+
+        // a--;
+        // --a;
+
+        // console.log('a-- =', a--);
+        // console.log('--a =', --a);
+        // console.log('a =', a);
+
+        let n, n1 = 20, n2 = 20;
+
+        n = n1++;
+        console.log('n =', n); // 20
+        console.log('n1 =', n1); // 21
+
+        n = ++n1
+        console.log('n =', n); // 22
+        console.log('n1 =', n1); // 22
+
+        n = n2--;
+        console.log('n =', n); // 20
+        console.log('n2 =', n2); // 19
+
+        n = --n2
+        console.log('n =', n); // 18
+        console.log('n2 =', n2); // 18
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
