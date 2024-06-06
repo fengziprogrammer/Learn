@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // typeof
+        var res = typeof 100;
+        console.log(res);
+        console.log(typeof 100);
+        console.log('');
+        console.log('');
+
+
+        // 逗号运算符
+        // 同时创建多个变量并赋值   1+2+3
+        var a=100,b=200,c=300;
+        // 同时修改多个变量的值
+        var res = (a=1000,c=2000);
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(res);
+        console.log((a=1000,c=2000));
+        console.log('');
+        console.log('');
+        console.log('');
+
+
+        // 字符串连接符
+        console.log(45 + '8');   // '458'
+        console.log('hello' + a);  // 'hello1000'
+        console.log(true + null);  // 1
+        // 字符串连接赋值
+        b += 'hello';    // b = b + 'hello';
+        console.log(b);
+
+
+    </script>
+</body>
+</html>

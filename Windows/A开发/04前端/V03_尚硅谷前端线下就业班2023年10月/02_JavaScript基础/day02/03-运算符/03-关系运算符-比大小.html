@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 两个操作数都是数字
+        console.log(100 > 20);  // true
+        console.log(67 <= 30);  // false
+        console.log(100 > NaN); // false
+        console.log(100 < NaN); // false
+        console.log(100 > Infinity);  // false
+        console.log(100 < Infinity);  // true
+        console.log('');
+        console.log('');
+
+
+        // 两个操作数不都是数字   会转为number 再比大小
+        console.log(true > false);   // true
+        console.log(null >= '');     // true
+        console.log(null <= '');     // true
+        console.log('  ' < 100);     // true
+        console.log('hello' > undefined);    // false
+        console.log('hello' < undefined);    // false
+        console.log('');
+        console.log('');
+
+
+        // 如果两个操作数都是string，会按照字符串的规则比大小
+        // 使用字符对应的unicode编码比大小  
+        // 连个字符串一个字符一个字符的比
+        console.log('c' > 'a');   // true
+        console.log('hl' > 'hello');   // true
+        console.log('A' > 'a');   // false
+        console.log('a' >= 97);   // false
+    </script>
+</body>
+</html>

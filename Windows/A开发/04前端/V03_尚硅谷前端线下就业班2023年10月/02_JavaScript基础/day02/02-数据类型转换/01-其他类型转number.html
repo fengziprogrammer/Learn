@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 已经两个函数： isNaN() isFinite() alert() document.write() console.log()
+        // 函数： Number()   参数写在小括号里
+
+
+        // string -> number
+        var msg = 'Hello 高小乐';
+        var n1 = Number(msg);
+        console.log(n1);
+        
+        // 只有纯数字字符串才能转为有效数字，否则转为NaN
+        var n2 = Number('45.67');
+        // console.log('45.67');
+        console.log(n2);
+        console.log(Number('0xab'));   // 171
+        console.log(Number('045'));   // 45
+        console.log(Number('32e2'));   // 3200
+        console.log(Number('56hello')); // NaN
+
+        // 字符串转 number 之前会自动去掉两端所有的空格，去除空格之后再转
+        console.log(Number('  213.32        '));  // 213.32
+        console.log(Number('  213 32   ')); // NaN
+
+        console.log(Number(''));   // 0  
+        console.log(Number('        '));   // 0  
+        console.log('');
+        console.log('');
+        console.log('');
+
+        // ---------------------------------------------------------
+        // boolean -> number
+        console.log(Number(true));
+        console.log(Number(false));
+
+        console.log(Number(null));  // 0
+        console.log(Number(undefined));  // NaN
+
+
+
+    </script>
+</body>
+</html>

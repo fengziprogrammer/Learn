@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // == !== 相等 不相等
+        // 两个操作数都是 number
+        console.log(101 == 101);
+        console.log(NaN == NaN);   // false
+        console.log(NaN != NaN);   // true
+        console.log('');
+
+        // 两个操作数类型不一致 转为Number再比较
+        console.log(false == '');  // true
+        console.log(true == 1);    // true
+        console.log('');
+
+        // 两个操作数类型一致， 不需要转为number
+        console.log(true == true);
+        console.log(null == null);
+        console.log('hello' == 'hello');
+        console.log('');
+
+
+        // null 判等情况特殊
+        console.log(null == '');    // false
+        console.log(null == false); // false 
+        console.log(null == 0);     // false 
+        console.log(null == undefined);     // true
+        console.log(''); 
+        console.log('');
+        
+        
+
+        // 全等   两个操作数类型不一致，直接判为不全等
+        console.log('' == false);  // true
+        console.log('' === false);  // false
+        console.log(100 === 100);
+        console.log(false === false);
+        console.log(189 === '189');   // false
+        console.log(189 !== '189');   // true
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 转换函数： Boolean()
+        // number -> boolean
+        console.log(Boolean(23.432));
+        console.log(Boolean(-23.432));
+        console.log(Boolean(0));     // false
+        console.log(Boolean(NaN));   // false
+        console.log(Boolean(Infinity));   // true
+        console.log(Boolean(-Infinity));  // true
+        console.log('');
+        console.log('');
+
+
+        // string -> boolean
+        console.log(Boolean('false'));   // true
+        console.log(Boolean(''));       // false
+        console.log(Boolean('   '));       // true
+        console.log('');
+        console.log('');
+
+
+        // null 和 undefined
+        console.log(Boolean(null));
+        console.log(Boolean(undefined));
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建变量
+        var num = 18;
+
+        // 累加累减运算  副作用
+        num ++;
+        console.log(num);  // 19
+
+        ++ num;
+        console.log(num);  // 20
+
+        -- num;
+        console.log(num);  // 19
+
+        num --;
+        console.log(num);  // 18
+        console.log('');
+        console.log('');
+
+
+        // 副作用  要求操作数必须是变量的形式
+        // 5 ++;  // 操作
+        var v = true;
+        v ++;
+        console.log(v); // 2
+        console.log('');
+        console.log('');
+
+
+        // 累加累减组成的表达式的值
+        var v1 = 10;
+        console.log(v1 ++);   // 10
+        console.log(v1);      // 11
+        console.log('');
+
+        var v2 = 10;
+        console.log(++ v2);   // 11 
+        console.log(v2);      // 11 
+        console.log('');
+
+
+        var v3 = 10;
+        console.log(v3 --);    // 10 
+        var v4 = 10;
+        console.log(--v4);     // 9
+        console.log('');
+
+
+
+        var num = 10;
+
+        /*
+            num++ 取值10  变量值:11
+            -
+            num-- 取值11  变量值:10
+            +
+            ++num 取值11  变量值:11
+            +
+            --num 取值10  变量值:10
+            +
+            num++ 取值10  变量值：11
+        
+        */
+        var res = (num++) - (num--) + (++num) + (--num) + (num++);
+        console.log(res);  // 30
+        console.log(num);  // 11
+      
+
+
+    </script>
+</body>
+</html>

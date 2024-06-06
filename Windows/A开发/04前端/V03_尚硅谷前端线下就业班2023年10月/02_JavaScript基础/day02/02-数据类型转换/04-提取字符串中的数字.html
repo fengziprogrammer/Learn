@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 非字符串全部转为 NaN
+        console.log(parseInt(true));   // NaN
+        console.log(parseInt(false));   // NaN
+        console.log(parseInt(null));    // NaN
+        console.log(parseInt(undefined));  // NaN
+        console.log('');
+
+        console.log(parseInt('1223'));
+        console.log(parseInt('45abc'));  // 45
+        console.log(parseInt('hello100'));  //  NaN
+        console.log(parseInt('0xab'));     // 171
+        console.log(parseInt('28e2'));     // 28
+        console.log(parseInt(''));         // NaN
+        console.log(parseInt(' 23 '));         // 23
+        console.log('');
+
+
+        console.log(parseInt('23.89abc'));   // 23
+        console.log(parseFloat('23.89abc'));  // 23.89
+
+        // 可以使用parseInt 去除数字中的整数部分
+        console.log(parseInt(34.1009));
+    </script>
+</body>
+</html>
