@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        *   if-else 语句
+        *       if(条件表达式){
+        *           语句...
+        *       }else{
+        *           语句...
+        *       }
+        *
+        *   执行流程：
+        *       if-else执行时，先对if后的条件表达式进行求值判断
+        *           如果为true，则执行if后的语句
+        *           如果为false，则执行else后的语句
+        *
+        *   if-else if-else语句
+        *       if(条件表达式){
+        *           语句..
+        *       }else if(条件表达式){
+        *           语句..
+        *       }else if(条件表达式){
+        *           语句..
+        *       }else{
+        *           语句..
+        *       }
+        *
+        *   执行流程：
+        *       if-else if-else语句在执行时，
+        *           它会自上向下依次对if后的条件表达式进行求值判断
+        *           如果判断结果为true，则执行当前if后的语句，执行完毕语句结束了
+        *           如果判断结果为false，则继续向下判断，直到找到true为止。
+        *           如果所有的判断结果都是false，则执行else后的语句
+        *
+        *           if-else if-else 语句中，只会有一个代码块执行，
+        *               代码块执行后，其他语句不会再判断，语句立即结束
+        * */
+
+        let age = 66;
+
+        //判断当前年龄是否退休
+        // if(age >= 60){
+        //     alert('你已经退休了~~');
+        // }else{
+        //     alert('你还得好好干~~');
+        // }
+
+        age = 300;
+
+        // if(age >= 300){
+        //     alert('活着可真累啊~');
+        // }else if(age >= 80){
+        //     alert('和楼上比，我还很年轻~');
+        // }else if(age >= 60){
+        //     alert('你已经退休了~~~');
+        // }else if(age >= 30){
+        //     alert('你已经中年了~~~');
+        // }else if(age >= 18){
+        //     alert('你已经成年了~~~');
+        // }else{
+        //     alert('你还是个小孩~~~');
+        // }
+
+        age = 70;
+
+        if(age >= 18 && age < 30){
+            alert('你已经成年了~~~');
+        }else if(age >= 30 && age < 60){
+            alert('你已经中年了~~~');
+        }else if(age >= 60){
+            alert('你已经退休了~~~');
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

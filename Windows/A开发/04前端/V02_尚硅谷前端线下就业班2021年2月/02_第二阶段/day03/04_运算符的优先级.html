@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        /*
+        *   和数学运算一样，JS中运算符也有优先级的问题
+        *       比如：先乘除后加减
+        *
+        *   运算符的优先级根据运算符优先级表来决定
+        *       在表中，位置越考上的优先级越高，优先级越高越优先计算
+        *       优先级一样，按照从左向右的顺序依次计算
+        *   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+        *
+        *       优先级的表不需要记忆，遇到优先级不清的，可以通过()来改变优先级
+        * */
+        let result = (1 + 2) * 3;
+        result = (1 || 2) && 3;
+
+        let a = null;
+
+        a?.toString();
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

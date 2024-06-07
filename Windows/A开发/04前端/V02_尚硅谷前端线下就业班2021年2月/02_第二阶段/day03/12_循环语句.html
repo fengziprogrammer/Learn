@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        /*
+        *   循环语句
+        *       - 循环语句可以让指定的代码反复执行多次
+        *       - 循环有三种
+        *             while语句
+        *             do-while语句
+        *             for语句
+        *
+        *   while语句
+        *       while(条件表达式){
+        *           语句...
+        *       }
+        *
+        *   执行流程
+        *       while语句在执行时，会先对条件表达式进行求值判断
+        *           如果结果为false，则语句直接结束
+        *           如果结果为true，则执行while后的代码（循环体）
+        *           执行完毕，继续对条件表达式进行求值判断，以此类推
+        *
+        * */
+
+        // 条件表达式恒为true的循环，叫做死循环，会一直执行下去（慎用）
+        // while(true){
+        //     alert('hello');
+        // }
+
+        // 循环的三个要件
+
+        // 初始化表达式，创建一个变量来控制循环的执行
+        // let i = 0;
+        //
+        // // 条件表达式，设置循环的执行条件
+        // while(i < 10){
+        //     console.log(i);
+        //     // 更新表达式，修改初始化变量
+        //     i++;
+        // }
+
+        // let i = 1;
+        //
+        // while (i <= 8848){
+        //     document.write(`${i}.今天天气真不错<br>`);
+        //     i++;
+        // }
+
+
+        let i = 0;
+
+        while (true){
+            console.log(i);
+            i++;
+
+            if(i === 5){
+                break; // break也可以用来结束循环语句
+            }
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

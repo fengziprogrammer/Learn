@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        // 根据数字显示中文
+        // 1 --> 壹   2 --> 贰  3 --> 叁
+
+        // let num = 3;
+        //
+        // if(num === 1){
+        //     alert('壹');
+        // }else if(num === 2){
+        //     alert('贰');
+        // }else if(num === 3){
+        //     alert('叁');
+        // }
+
+        /*
+        *   switch 语句
+        *       语法：
+        *           switch(条件表达式){
+        *               case 表达式:
+        *                   语句..
+        *                   break;
+        *               case 表达式:
+        *                   语句..
+        *                   break;
+        *               case 表达式:
+        *                   语句..
+        *                   break;
+        *               default:
+        *                   语句..
+        *                   break;
+        *           }
+        *
+        *       执行流程：
+        *           switch-case语句在执行时，
+        *               会自上向下依次将switch后的条件表达式和ca比较se后的表达式进行全等
+        *               如果全等，则自当前case处开始向下执行代码
+        *               如果不全等，则继续向下比较，直到找到全等的为止
+        *               如果所有的比较都不成立，都是false，则自default处开始执行代码
+        *
+        *           case后的表达式和switch后的表达式全等时
+        *               它是自当前case处开始向下执行代码
+        *               也就是即使代码在其他的case下，也会被执行
+        *               如果不希望执行其他case后的代码，可以在case后使用break
+        *
+        *       switch-case 和 if-else的功能基本上是一致的，
+        *           if能做的事，switch也行，反之依然，但是使用过程中还是以if为主
+        *           当全等的条件比较多时，适合用switch
+        *
+        * */
+
+        let num = 'a';
+        switch (num) {
+            default:
+                alert('输错了！');
+                break;
+            case 1:
+                alert('壹');
+                break;
+            case 2:
+                alert('贰');
+                break;
+            case 3:
+                alert('叁');
+                break;
+
+        }
+
+        // switch (num) {
+        //     case 1:
+        //         alert('壹');
+        //         break;
+        //     case 2:
+        //         alert('贰');
+        //         break;
+        //     case 3:
+        //         alert('叁');
+        //         break;
+        //     case 'a':
+        //     case 'b':
+        //     case 'c':
+        //     case 'd':
+        //         alert('输错了！');
+        //         break;
+        // }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

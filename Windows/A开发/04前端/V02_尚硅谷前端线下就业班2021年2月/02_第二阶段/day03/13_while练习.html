@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        *   假设存款的年利率为5%，问1000存多少年能变成5000？
+        *
+        *   1000 * 0.05
+        *
+        * */
+
+        // console.log(1000 * 1.05);
+
+        // 创建一个变量表示钱
+        let money = 1000;
+
+        // 存一年
+        // money *= 1.05;
+        // money *= 1.05;
+        // money *= 1.05;
+
+        // 定义一个计数器
+        let count = 0;
+
+        // 创建一个循环，来模拟存钱的情况
+        while(money < 5000){
+            money *= 1.05;
+            count++;
+        }
+
+        console.log(`一共存了${count}年！`);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
