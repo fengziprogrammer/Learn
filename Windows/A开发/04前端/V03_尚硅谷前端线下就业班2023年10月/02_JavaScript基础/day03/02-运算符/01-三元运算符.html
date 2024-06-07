@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 第一个操作数成立 取第二个操作数作为表达式的值
+        var res1 = true ? 100 : 200;
+        // 第一个操作数不成立 取第三个操作数作为表达式的值
+        var res2 = false ? 100 : 200;
+        console.log(res1);   // 100
+        console.log(res2);   // 200
+
+        var res3 = 67%4 ? 10*5 : 10*4;
+        console.log(res3); // 50
+        console.log('');
+
+
+        /*
+            n++ 取值10 变量11 成立
+            ?
+            n++ 取值11 变量12
+            :
+            n++ 不会执行
+        */
+        var n = 10;
+        var res4 = n++ ? n++ : n++;
+        console.log(res4);  // 11
+        console.log(n);     // 12
+        console.log('');
+
+
+        var age = 13;
+        var msg = age >= 18 ? '成年人' : '未成年人';
+
+        console.log('恭喜你，你是' + msg + ', 欢迎光临！');
+
+        var a = 100, b = 200;
+        console.log('');
+
+
+
+        /*
+            true && 76
+        */
+        var a = 10;
+        var res = 45 + 4 > 48 && 67 + --a;
+        console.log(res);  
+        console.log('');
+
+
+        // 赋值
+        var a,b,c;
+        a = b = c = 100;
+
+        console.log(a);
+        console.log(b);
+        console.log(c);
+    </script>
+</body>
+</html>

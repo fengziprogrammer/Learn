@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            获取用户输入的成绩
+            60以下      不及格
+            60~69       刚及格
+            70~79       中等
+            80~89       良好
+            90以上       优秀     
+        */
+
+        // 获取用户输入
+        var score = prompt('请输入您的成绩：');
+
+        // 不及格的情况
+        if (score < 60) {
+            alert('您的成绩不及格！');
+        }
+
+        // 刚及格
+        if (score >= 60 && score < 70) {
+            alert('您的成绩刚及格！');
+        }
+
+        // 中等
+        if (score >= 70 && score < 80) {
+            alert('您的成绩中等！');
+        }
+
+        // 良好
+        if (score >= 80 && score < 90) {
+            alert('您的成绩良好');
+        }
+
+        // 优秀
+        if (score > 90) {
+            alert('您的成绩优秀！');
+        }
+        
+    </script>
+</body>
+</html>
