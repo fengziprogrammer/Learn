@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>嵌套循环</title>
+    <script>
+        /*
+
+            在网页中打印一个图形：
+                *****
+                *****
+                *****
+                *****
+                *****
+
+
+                *
+                **
+                ***
+                ****
+                *****
+        */
+
+        /*
+        *   当循环发生嵌套时，外层循环每执行一次，内层循环就执行一圈
+        * */
+
+        // 创建一个循环来控制图形的高度
+        // for(let i=0; i<5; i++){
+        //     // 创建一个内层循环来控制图形的宽度
+        //     for(let j=0; j<5; j++){
+        //         document.write('*&nbsp;&nbsp;');
+        //     }
+        //     document.write('<br>');
+        // }
+
+
+        /*
+
+
+        *     j<1  i=0
+        **    j<2  i=1
+        ***   j<3  i=2
+        ****  j<4  i=3
+        ***** j<5  i=4
+
+
+        *****  j<5  i=0
+        ****   j<4  i=1
+        ***    j<3  i=2
+        **     j<2  i=3
+        *      j<1  i=4
+
+
+        */
+
+        for(let i=0; i<5; i++){
+            // 创建一个内层循环来控制图形的宽度
+            for(let j=0; j<i+1; j++){
+                document.write('*&nbsp;&nbsp;');
+            }
+            document.write('<br>');
+        }
+
+        // for(let i=0; i<5; i++){
+        //     // 创建一个内层循环来控制图形的宽度
+        //     for(let j=0; j<5-i; j++){
+        //         document.write('*&nbsp;&nbsp;');
+        //     }
+        //     document.write('<br>');
+        // }
+
+        /*
+            练习一：
+                在网页中，打印 99乘法表：
+                1x1=1
+                1x2=2 2x2=4
+                1x3=3 2x3=6 3x3=9
+                .....
+                                    9x9=81
+
+
+            练习二：
+                求100以内所有的质数。
+
+
+        */
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        // 创建一个数
+        let num = 5;
+
+        // 检查num是否质数
+        // 如果 5 只能被 1 和 5 整除，那么5就是质数
+        // 如果 5 只有 1 和 5 两个因数，那么5就是质数
+        // 如果 num 只能被 1 和 num整除，那么num就是质数
+        //     检查num是不是质数，只需检查 num 有没有 1和num以外的因数
+        //       如果有，num不是质数
+        //       如果没有，num是质数
+
+        // 获取到所有的可能整除num的数
+        // 获取到 1-num之间的所有数，检查这些数能否整除num
+        //   如果都不能整除num，则num是质数
+        //   如果有任意一个能整除num，则num不是质数
+
+        num = +prompt('请输入一个正整数：');
+        // 创建一个变量，记录检查的状态，默认认为num是质数
+        let flag = true;
+        // 获取到 1-num之间的所有数，检查这些数能否整除num
+        for(let i=2; i<num; i++){
+            // i 现在就是所有的可能整除num的数
+            // 检查 num 能否 被i整除
+            if(num % i === 0){
+                // 如果num不能被i整除，则说明num是质数 （错的）
+                // 如果num能被i整除，则说明num一定不是质数 (对的)
+                // 进入判断，说明 num 一定不是质数， 修改flag的值位false
+                flag = false;
+            }
+        }
+
+        // 输出结果
+        if(flag){
+            // num是质数
+            alert(`${num} 是质数！`);
+        }else{
+            alert(`${num} 不是质数！`);
+        }
+
+        // for(let i=2; i<num; i++){
+        //     if(num % i === 0){
+        //         alert(`${num}不是质数！`);
+        //     }else{
+        //         alert(`${num}是质数！`);
+        //     }
+        // }
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

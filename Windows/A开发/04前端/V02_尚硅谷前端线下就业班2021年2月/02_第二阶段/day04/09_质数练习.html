@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        /*
+        *   求100以内所有的质数
+        * */
+
+        // 获取100以内所有的数
+        for(let i=2; i<100; i++){
+            // 检查i是否是质数，是质数则将其打印
+            // 默认认为i是质数，创建一个变量，记录i的状态
+            let flag = true;
+
+            // 获取所有可能整除i的数（除了1和i本身）
+            for(let j=2; j<i; j++){
+                // 检查i能否被j整除
+                if(i % j === 0){
+                    // 进入判断，说明i一定不是质数，修改flag为false
+                    flag = false;
+                }
+            }
+
+            //判断
+            if(flag){
+                console.log(i);
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
