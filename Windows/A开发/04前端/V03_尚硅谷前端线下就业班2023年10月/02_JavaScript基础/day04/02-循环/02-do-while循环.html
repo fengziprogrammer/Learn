@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // -----------------------------------------------------
+        // 输出10次 "高小乐今天吃了n个韭菜馅的包子"
+        // 定义循环标记变量
+        var i = 0;
+        // 开始循环
+        do {
+            console.log('高小乐今天吃了' + i + '个韭菜馅的包子');
+            i ++;
+        } while (i < 10);
+        console.log('循环结束之后循环标记变量的值：', i);
+        console.log('');
+        console.log('');
+
+
+        // -----------------------------------------------------
+        // 循环输出数字 7~15
+        var i = 7;
+        do {
+            console.log(i);
+            i ++;
+        } while (i <= 15);
+        console.log('循环结束之后循环标记变量的值：', i);
+        console.log('');
+        console.log('');
+
+
+        // -----------------------------------------------------
+        // 倒叙输出数字  56 ~ 43
+        var i = 56;
+        do {
+            console.log(i);
+            i --;
+        } while (i >= 43);
+        console.log('循环结束之后循环标记变量的值：', i);
+        console.log('');
+        console.log('');
+
+
+        // -----------------------------------------------------
+        // 输出10（包括10）以内所有的偶数
+        var i = 0;
+        do {
+            console.log(i);
+            i += 2;
+        } while (i <= 10);
+        console.log('循环结束之后循环标记变量的值：', i);
+        console.log('');
+        console.log('');
+
+        // -----------------------------------------------------
+        // 计算100以内（包括100）所有数字的和
+        var sum = 0;  // 记录和
+        var i = 1;
+        do {
+            sum += i;
+            i ++;
+        } while (i <= 100);
+        console.log('100以内所有数字和：', sum);
+        console.log('循环结束之后循环标记变量的值：', i);
+        console.log('');
+        console.log('');
+
+
+        // -----------------------------------------------------
+        // 计算10以内所有奇数的乘积
+        var res = 1;  // 记录成绩
+        var i = 1;
+        do {
+            res *= i;
+            i += 2;
+        } while (i < 10);
+        console.log('10以内所有奇数的成绩：', res);
+        console.log('循环结束之后循环标记变量的值：', i);
+        console.log('');
+        console.log('');
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // -----------------------------------------------------
+        // 输出10次 "高小乐今天吃了两个韭菜馅的包子"
+        // 定义变量 作为循环标记
+        var num = 0;
+        while (num < 10) {
+            console.log('高小乐第 ' + num + ' 天吃了 ' + num +' 个韭菜馅的包子');
+            num ++;
+        }
+        console.log('循环结束之后循环标记变量的值：', num);
+        console.log('');
+        console.log('');
+
+
+        // -----------------------------------------------------
+        // 循环输出数字 7~15
+        // 定义循环标记变量 
+        var i = 7;
+        // 开始循环
+        while (i <= 15) {
+            console.log(i);
+            i ++;
+        }
+        console.log('循环结束之后循环标记变量的值：', i);
+        console.log('');
+        console.log('');
+
+
+
+        // -----------------------------------------------------
+        // 倒叙输出数字  56 ~ 43
+        // 定义循环标记变量
+        var i = 56;
+        // 开始循环
+        while (i >= 43) {
+            console.log(i);
+            i --;
+        }
+        console.log('循环结束之后循环标记变量的值：', i);
+        console.log('');
+        console.log('');
+
+
+        // -----------------------------------------------------
+        // 输出10（包括10）以内所有的偶数
+        
+        /*
+        // 循环从 0 到 10
+        var i = 0;
+        while (i <= 10) {
+            // i 如果是偶数，就输出
+            if (i % 2 === 0) {
+                console.log(i);
+            }
+            i ++;
+        }
+        */
+
+        var i = 0;
+        while (i <= 10) {
+            console.log(i);
+            i += 2;  // i = i + 2;
+        }
+        console.log('循环结束之后循环标记变量的值：', i);
+        console.log('');
+        console.log('');
+
+
+        // -----------------------------------------------------
+        // 计算100以内（包括100）所有数字的和
+        // 定义变量 记录和
+        var sum = 0;
+        // 定义循环标记变量
+        var i = 1;
+        // 开始循环
+        while (i <= 100) {
+            sum += i; // sum = sum + i;
+            i ++;
+        }
+        console.log('100以内（包括100）所有数字的和：', sum);
+        console.log('循环结束之后循环标记变量的值：', i);
+        console.log('');
+        console.log('');
+
+
+
+        // -----------------------------------------------------
+        // 计算10以内所有奇数的成绩
+        // 定义变量 记录成绩
+        var res = 1;
+        // 循环 10 以内所有的奇数
+        var i = 1;
+        while (i < 10) {
+            res *= i;  // res = res * i;
+            i += 2;
+        }
+        console.log('10以内所有奇数的成绩：', res);
+        console.log('循环结束之后循环标记变量的值：', i);
+        console.log('');
+        console.log('');
+
+
+    </script>
+</body>
+</html>

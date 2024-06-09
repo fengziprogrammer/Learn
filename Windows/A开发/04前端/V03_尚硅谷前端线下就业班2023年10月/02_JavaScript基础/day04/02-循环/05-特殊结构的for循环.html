@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 循环输出10以内的奇数
+
+        // 标准结构
+        for (var i = 1; i < 10; i += 2) {
+            console.log(i);
+        }
+        console.log('');
+        console.log('');
+
+
+        // 循环标记变量写在外面
+        var i = 1;
+        for (; i < 10; i += 2) {
+            console.log(i);
+        }
+        console.log('');
+        console.log('');
+
+
+        // 循环标记变量写在外面 把循环标记变量变化写在大括号中
+        var i = 1;
+        for (; i < 10; ) {
+            console.log(i);
+            i += 2;
+        }
+        console.log('');
+        console.log('');
+
+
+        // 使用两个循环标记变量
+        for (x=1,y=1; x<=15,y<=10; x++,y++) {
+            console.log(x, y);
+        }
+        console.log('循环结束之后：', x, y);
+
+    </script>
+</body>
+</html>

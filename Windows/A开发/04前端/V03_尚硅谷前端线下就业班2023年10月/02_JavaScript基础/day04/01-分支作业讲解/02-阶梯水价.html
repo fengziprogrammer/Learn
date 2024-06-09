@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阶梯水价</title>
+</head>
+<body>
+    <script>
+        /*
+            0~220(含)  	    4.05/m³
+            220~300（含）  5.8/m³
+            300以上        8.79/m³
+        */
+
+        // 获取用户输入
+        var val = prompt('请输入您的用水量(单位：m³)：');
+
+        // 如果用户输入的格式不对
+        if (isNaN(val)) {
+            alert('请输入正确的格式！');
+        } else {
+            // 进行判断
+            if (val <= 220) {
+                // 计算总价
+                var total = 4.05 * val;
+            } else if (val <= 300) {
+                var total = 220 * 4.05 + (val - 220) * 5.8;
+            } else {
+                var total = 220 * 4.05 + 80 * 5.8 + (val - 300) * 8.79;
+            }
+            
+            alert('你需要缴纳水费：' + total);
+        }
+
+        
+    </script>
+</body>
+</html>

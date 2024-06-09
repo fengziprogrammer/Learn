@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // -----------------------------------------------------
+        // 输出10次 "高小乐今天吃了n个韭菜馅的包子"
+        for (var i = 0; i < 10; i ++) {
+            console.log('高小乐今天吃了' + i + '个韭菜馅的包子')
+        }
+        console.log('循环结束之后循环标记变量的值：', i);    // 10
+        console.log('');
+        console.log('');
+
+        // -----------------------------------------------------
+        // 循环输出数字 7~15
+        for (var num = 7; num <= 15; num ++) {
+            console.log(num);
+        }
+        console.log('循环结束之后循环标记变量的值：', num);    // 16
+        console.log('');
+        console.log('');
+
+        // -----------------------------------------------------
+        // 倒叙输出数字  56 ~ 43
+        for (var i = 56; i >= 43; i --) {
+            console.log(i);
+        }
+        console.log('循环结束之后循环标记变量的值：', i);    // 42
+        console.log('');
+        console.log('');
+
+
+        // -----------------------------------------------------
+        // 输出10（包括10）以内所有的偶数
+        /*
+        for (var i = 0; i <= 10; i ++) {
+            if (i % 2 === 0) {
+                console.log(i);
+            }
+        }
+        */
+        for (var i = 0; i <= 10; i += 2) {
+            console.log(i);
+        }
+        console.log('循环结束之后循环标记变量的值：', i);    // 42
+        console.log('');
+        console.log('');
+
+        // -----------------------------------------------------
+        // 计算100以内所有数字的和
+        var sum = 0; // 记录和
+        for (var i = 1; i <= 100; i ++) {
+            sum += i;
+        }
+        console.log('100以内所有数字的和：', sum);
+        console.log('循环结束之后循环标记变量的值：', i);    // 42
+        console.log('');
+        console.log('');
+
+        // -----------------------------------------------------
+        // 计算10以内所有奇数的乘积
+        var res = 1;  // 记录成绩
+        for (var i = 1; i <= 10; i += 2) {
+            res *= i;
+        }
+        console.log('10以内所有奇数的乘积：', res);
+        console.log('循环结束之后循环标记变量的值：', i);    // 42
+        console.log('');
+        console.log('');
+
+
+
+    </script>
+</body>
+</html>

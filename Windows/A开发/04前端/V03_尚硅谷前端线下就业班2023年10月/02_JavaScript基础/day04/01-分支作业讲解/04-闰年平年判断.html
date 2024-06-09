@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>闰年平年判断</title>
+</head>
+<body>
+    <script>
+        /*
+            非世纪年：  闰年：能被4整除
+            世纪年：    闰年：能被400整除
+        */
+        /*
+            判断是否是世纪年？
+            year % 100 === 0 成立是世纪年  不成立是非世纪年
+
+            非世纪年闰年条件？
+            year % 4 === 0
+
+            世纪年闰年条件
+            year % 400 === 0
+        
+        */
+        /*
+            year % 100 !== 0 && year % 4 === 0;   非世纪年闰年
+
+            year % 100 === 0 && year % 400 === 0  世纪年闰年
+            简化成
+            year % 400 === 0
+
+            综合闰年条件
+            year % 100 !== 0 && year % 4 === 0
+
+            year % 400 === 0
+        */
+
+        // 获取用户输入
+        var year = prompt('请输入年份！');
+
+        // 判断是否是闰年
+        if ((year % 100 !== 0 && year % 4 === 0) || (year % 400 === 0)) {
+            alert(year + '是闰年！');
+        } else {
+            alert(year + '不是闰年！');
+        }
+
+      
+    </script>
+    
+</body>
+</html>

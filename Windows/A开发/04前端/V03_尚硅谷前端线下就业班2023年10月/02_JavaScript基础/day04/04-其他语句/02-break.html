@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 循环从1到10
+        for (var i = 0; i <= 10; i ++) {
+            if (i === 5) {
+                break;
+            }
+            console.log(i);
+        }
+        console.log('');
+        console.log('');
+
+
+        // while (rand <= .99) {
+        //     rand = Math.random();
+        //     // console.count();
+        // }
+        
+        // 取大于0.99的随机数
+        while (true) {
+            var rand = Math.random();
+            // console.count();
+            if (rand > .99) {
+                break;
+            }
+        }
+
+
+        console.log('取到大于0.99的随机数是：', rand);
+    </script>
+</body>
+</html>

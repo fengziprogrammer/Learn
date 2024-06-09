@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 800px;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #999;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // 定义变量 指定行数和列数
+        var rows = +prompt('请输入表格的行数：');
+        var cols = +prompt('请输入表格的列数：');
+
+        if (isNaN(rows)) {
+            rows = 0;
+        }
+        if (isNaN(cols)) {
+            cols = 0;
+        }
+
+        // 输出表格 10行 8列
+        document.write('<table>');
+        document.write('<tbody>');
+        
+        // 循环10次 输出10行
+        for (var i = 0; i < rows; i ++) {
+            document.write('<tr>');
+
+            // 循环8次 输出8个单元格
+            for (var j = 0; j < cols; j ++) {
+                document.write('<td>' + i + '</td>');
+            }
+
+            document.write('</tr>');
+        }
+
+        document.write('</tbody>');
+        document.write('</table>');
+        
+    </script>
+</body>
+</html>
