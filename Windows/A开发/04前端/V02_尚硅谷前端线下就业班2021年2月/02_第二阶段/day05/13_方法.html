@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>方法</title>
+    <script>
+
+        // (function () {
+        //     console.log('匿名函数1');
+        // }());
+        //
+        // (function () {
+        //     console.log('匿名函数2');
+        // }());
+
+        /*
+            使用typeof检查一个函数时，会返回function
+        *   任何值都可以成为对象的属性，函数也不例外
+            如果一个对象的属性是函数，
+                则我们称这个函数是这个对象的方法（method）
+                调用函数就称为调用xx对象的xx方法
+
+                函数和方法目前来讲只是称呼的不同，没有本质区别
+        * */
+
+        let obj = {
+            test:function () {
+                alert('我是obj中函数');
+            },
+            tt:function(){
+                alert('嘻嘻嘻');
+            }
+        }
+
+        obj = {
+            test() {
+                alert('哈哈哈');
+            },
+            tt(){
+                alert('嘻嘻嘻');
+            }
+        }
+
+        // console.log(typeof obj.test);
+        obj.tt();
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

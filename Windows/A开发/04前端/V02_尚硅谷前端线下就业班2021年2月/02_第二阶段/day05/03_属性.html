@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>属性</title>
+    <script>
+
+        /*
+            属性
+                属性名：
+                    对象的属性是任意值，不必须遵守标识符的规范
+                       但是如果你起的名字太特殊，必须采取另外的方式进行命名：
+                            对象['属性名'] = 属性值
+                       虽然如此，属性名尽量要遵循标识符的规范
+
+                 读取属性的第二种方式：
+                        对象['属性名']
+                        - 这种方式读取属性更加灵活
+
+
+        */
+        let obj = Object();
+
+        obj.name = '孙悟空';
+        obj.age = 18;
+        obj.gender = '男';
+
+        let a = 'gender';
+
+        // console.log(obj[a]);
+
+        /*
+            属性值：
+                对象的属性值可以是任意的数据类型
+        * */
+        obj.test = Object();
+        obj.test.name = '猪八戒';
+
+        console.log(obj);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
