@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建数组
+        var nameList = ['刘姥姥', '牛姥姥', '马姥姥', '黑天姥姥', '欧阳姥姥'];
+        console.log(nameList);
+        console.log('');
+
+
+        // 添加元素
+        nameList[nameList.length] = '司马姥姥';
+        console.log(nameList);
+        console.log('');
+
+        // 数组方法 push() 添加一个多者多个新元素  添加到数组最后面
+        nameList.push('令狐姥姥');
+        nameList.push('独孤姥姥', '西门姥姥', '东方姥姥');
+        console.log(nameList);
+        console.log('');
+
+        // 数组方法 unshift() 添加一个或多个新元素 添加到数组的最前面
+        nameList.unshift('上官姥姥');
+        nameList.unshift('爱新觉罗姥姥', '纳兰姥姥'); 
+        console.log(nameList);
+        console.log('');
+
+
+        // 数组方法 splice() 指定位置添加新元素
+        nameList.splice(6, 0, '亚历山大姥姥');
+        nameList.splice(2, 0, '维多利亚姥姥', '莎士比亚姥姥', '伊丽莎白姥姥');
+        console.log(nameList);
+        console.log('');
+    </script>
+</body>
+</html>

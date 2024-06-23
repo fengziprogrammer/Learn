@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建字符串
+        var msg = 'Hello 高小乐666。';
+
+        console.log('字符串的长度：', msg.length);
+        console.log('第一个字符：', msg[0]);
+        console.log('第七个字符：', msg[6]);
+        console.log('第最后一个字符：', msg[msg.length-1]);
+        console.log('');
+
+        // 遍历字符串中所有的字符
+        for (var i = 0; i < msg.length; i ++) {
+            console.log(msg[i]);
+        }
+        console.log('');
+        console.log('');
+
+
+        // 字符串具有部分数组特性
+        msg[0] = 'h';
+        console.log(msg);
+
+        msg.length -= 5;
+        console.log(msg);
+    </script>
+</body>
+</html>

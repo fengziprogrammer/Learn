@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            创建数字的方式： 12, 12.34
+            创建字符串的方式： 单引号、双引号
+            创建布尔的方式： true、false
+        */
+        
+        // 第一种创建数组的方式 直接量方式
+        // 空数组
+        var arr1 = [];
+        // 有元素的数组
+        var arr2 = [100, 45.101, '高小乐', false, null, undefined, [100,200,300]];
+
+        console.log(arr1, typeof arr1);
+        console.log(arr2);
+        console.log('');
+        console.log('');
+
+
+        /*
+            Number() 创建数字
+            String() 创建字符串
+            Boolean() 创建布尔
+        */
+        // 第二种创建数组的方式 Array函数
+        var arr3 = Array();
+        var arr4 = Array(200,300,'Hello', '高小乐', [10,20,03]);
+        var arr5 = Array(17);
+        var arr6 = [17];
+
+        console.log(arr3);
+        console.log(arr4);
+        console.log(arr5);
+        console.log(arr6);
+        console.log('');
+        console.log('');
+
+
+        /*
+            new Number()
+            new String()
+            new Boolean()
+        */
+        // 第三种创建数组的方式 Array构造函数
+        var arr7 = new Array();
+        var arr8 = new Array(200,300,'Hello', '高小乐', [10,20,03]);
+        var arr9 = new Array(17);
+
+        console.log(arr7);  // 空的数组
+        console.log(arr8);  // 5个元素的数组
+        console.log(arr9);  // 17个元素的数组
+    </script>
+</body>
+</html>

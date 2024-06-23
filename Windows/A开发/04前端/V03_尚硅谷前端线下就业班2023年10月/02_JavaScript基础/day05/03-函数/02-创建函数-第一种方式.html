@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function 关键字方式创建函数
+        function fun01() {
+            console.log('Hello 我是fun01');
+        }
+        // 调用函数
+        fun01();
+        fun01();
+        fun01();
+        console.log('');
+        console.log('');
+
+
+        // 创建一个有参数的函数
+        function fun02(name, age) {
+            console.log('我是' + name + ',今年' + age + '岁！');
+        }
+        // 调用函数 需要给参数
+        fun02('高小乐', 78);
+        fun02('曹操', 17);
+        console.log('');
+        console.log('');
+
+
+        // 创建一个有返回值的函数
+        function fun03(num01, num02) {
+            return num01 * num02;
+        }
+        // 调用函数
+        console.log(fun03(100,200));
+        console.log(parseInt(19.23));
+
+        var res = fun03(10,67);
+        console.log(res);
+
+    </script>
+</body>
+</html>

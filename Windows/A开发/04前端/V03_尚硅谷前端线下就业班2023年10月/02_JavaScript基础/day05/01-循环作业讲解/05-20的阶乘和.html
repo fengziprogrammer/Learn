@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义变量 记录和
+        var sum = 0;
+        // 循环1~10
+        for (var num = 1; num <= 20; num ++) {
+            // 计算 num 的阶乘
+            var res = 1;
+            for (var i = 1; i <= num; i ++) {
+                res *= i;
+            }
+            // 相加
+            sum += res;
+        }
+        console.log('20的阶乘和：', sum);
+        console.log('');
+        console.log('');
+
+
+
+        // 使用一层循环实现
+        var sum1 = 0, res1 = 1;
+        // 循环从1到20
+        for (var n = 1; n <= 20; n ++) {
+            res1 *= n;  // res1 = res1 * n;
+            sum1 += res1;
+        }
+        console.log('20的阶乘和：', sum1);
+
+    </script>
+</body>
+</html>

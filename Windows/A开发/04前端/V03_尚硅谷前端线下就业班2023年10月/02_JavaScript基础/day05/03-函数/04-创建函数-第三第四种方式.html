@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 用 Function 函数创建函数
+        var arr = Array(10,20,30,40);
+        var num = Number(12);
+        var fun01 = Function('console.log("Hello 我是fun01")');
+        // 调用
+        fun01();
+        fun01();
+        console.log('');
+        console.log('');
+
+        // 创建有参数从函数
+        var fun02 = Function('name', 'console.log("我叫" + name)');;
+        fun02('高小乐');
+        fun02('曹操');
+
+        var fun03 = new Function('console.log("Hello 我是fun01")');
+        var fun04 = new Function('name', 'console.log("我叫" + name)');;
+
+    </script>
+</body>
+</html>

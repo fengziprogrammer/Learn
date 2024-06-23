@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建数组
+        var nameList = ['刘姥姥', '牛姥姥', '马姥姥', '司马姥姥', '欧阳姥姥', '上官姥姥', '东方姥姥'];
+        // nameList 作为对象可以添加很多属性
+        nameList.username = '高小乐';
+        nameList.address = '上海';
+        nameList.age = 19;
+
+
+        // 遍历数组 使用循环结构
+        for (var i = 0; i < nameList.length; i ++) {
+            console.log(nameList[i]);
+            document.write('<li>'+i+' '+nameList[i]+'</li>');
+        }
+        console.log('');
+        console.log('');
+
+
+
+        // 遍历数组 for in 结构
+        for (var n in nameList) {
+            console.log(n, nameList[n]);
+        }
+
+    </script>
+</body>
+</html>

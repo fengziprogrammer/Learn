@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建数组
+        var arr = [100, 45.101, '高小乐', false, null, undefined, [100,200,300]];
+        console.log(arr);   // 7个元素
+
+        arr[12] = 3000;
+        console.log(arr);   // 13个元素
+        console.log(arr[8]);  // undefined
+        console.log('');
+        console.log('');
+
+
+        // 创建数组
+        var arr1 = Array(7);
+        console.log(arr1);
+        console.log('');
+        console.log('');
+
+
+        var arr2 = [100,200,300,400,500,600];
+        console.log(arr2);
+        console.log(arr2.length);
+        arr2.length = 10;
+        console.log(arr2);
+
+        
+    </script>
+</body>
+</html>

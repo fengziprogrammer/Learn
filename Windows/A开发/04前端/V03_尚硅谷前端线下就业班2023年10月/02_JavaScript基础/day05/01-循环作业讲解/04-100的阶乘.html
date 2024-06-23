@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义变量 记录乘积
+        var res = 1;
+
+        // 循环 1到100
+        for (var i = 1; i <= 100; i ++) {
+            res *= i; // res = res * i;
+        }
+
+        /*
+            初始值 res=1
+
+            第一次循环i=1   res = 1;
+            第二次循环i=2   res = 1 * 2 = 2;
+            第三次循环i=3   res = 2 * 3 = 6;
+            
+        
+        */
+
+        console.log('100的阶乘：', res);
+    </script>
+</body>
+</html>

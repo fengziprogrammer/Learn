@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 表达式方式
+        var num = 100;
+        var arr = [100,200,300,400];
+        var fun01 = function() {
+            console.log('Hello, 我是fun01');
+        };
+        // 调用函数
+        fun01();
+        fun01();
+        console.log('');
+        console.log('');
+
+        // 创建有参数的函数 
+        var fun02 = function(name, age) {
+            console.log('我是' + name + ',今年' + age + '岁！');
+        }
+        // 调用
+        fun02('高小乐', 98);
+        fun02('高启强', 48);
+        console.log('');
+        console.log('');
+
+        // 创建有返回值的函数
+        var fun03 = function(num1, num2) {
+            return num1 * num2;
+        }
+        // 调用
+        console.log(fun03(100,56));
+
+
+    </script>
+</body>
+</html>

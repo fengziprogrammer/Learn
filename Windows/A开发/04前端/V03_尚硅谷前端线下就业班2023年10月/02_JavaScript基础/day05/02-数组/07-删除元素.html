@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建数组
+        var nameList = ['爱新觉罗姥姥', '纳兰姥姥', '维多利亚姥姥', '莎士比亚姥姥', '伊丽莎白姥姥', '上官姥姥', '刘姥姥', '牛姥姥', '马姥姥', '亚历山大姥姥', '黑天姥姥', '欧阳姥姥', '司马姥姥', '令狐姥姥', '独孤姥姥', '西门姥姥', '东方姥姥'];
+        console.log(nameList);
+        console.log('');
+
+
+        // 修改数组的length属性
+        // nameList.length -= 1;   // nameList.length = nameList.length - 1;
+        nameList.length -= 2;   // nameList.length = nameList.length - 2;
+        console.log(nameList);
+        console.log('');
+
+        // pop() 方法删除最后一个元素
+        nameList.pop(); 
+        // nameList.pop(); 
+        // nameList.pop(); 
+        console.log(nameList);
+        console.log('');
+
+        // shift() 方法删除第一元素
+        nameList.shift();
+        console.log(nameList);
+        console.log('');
+
+        // splice() 删除指定位置指定数量的元素
+        nameList.splice(2, 3); 
+        console.log(nameList);
+        console.log('');
+</script>
+</body>
+</html>
