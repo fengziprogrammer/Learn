@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        let a = 10;
+
+
+        function fn2() {
+            let a = 20;
+            fn();
+
+            function fn() {
+                console.log(a);
+            }
+        }
+
+        fn2();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

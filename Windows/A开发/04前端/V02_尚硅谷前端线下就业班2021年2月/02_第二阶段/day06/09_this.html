@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        // 设置一个全局变量name
+        var name = '全局的name属性';
+
+        // console.log(name);
+        // console.log(window.name);
+
+
+
+        // 定义一个对象
+        var obj = {
+            name:'孙悟空',
+            sayHello: fn
+        };
+
+        var obj2 = {
+            name:'猪八戒',
+            sayHello: fn
+        };
+
+        // console.log(obj.sayHello === fn);
+        // obj.sayHello();
+        // obj2.sayHello();
+        // fn();
+        /*
+        *   希望：
+        *       obj.sayHello() ---> 孙悟空 --> obj.name
+        *       obj2.sayHello() ---> 猪八戒 --> obj2.name
+        *       window.fn() ---> 全局的name属性 --> window.name
+        *       谁调用的方法就打印谁的name属性
+        * */
+        // 定义一个函数
+        function fn() {
+            console.log(this.name);
+            // console.log(obj2.name);
+            // console.log(window.name);
+
+            /*
+                在调用函数时，浏览器每次都会向函数中传递一个隐含的参数，
+                    这个参数的名字叫做this, this指向的是一个对象！
+
+                this到底是谁呢？
+                    1. 当我们以函数的形式调用一个函数时，this是window
+                    2. 当我们以方法的形式调用一个函数是，this是调用方法的对象
+
+            * */
+
+            // console.log(this);
+        }
+
+        // obj.sayHello(); //obj
+        // fn(); // window
+        // window.fn(); // window
+        // obj2.sayHello(); // obj2
+
+
+        name = '沙和尚';
+
+        let obj3 = {
+            name:'孙悟空',
+            sayHello:function () {
+                alert(this.name);
+            }
+        };
+
+        obj3.sayHello();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
