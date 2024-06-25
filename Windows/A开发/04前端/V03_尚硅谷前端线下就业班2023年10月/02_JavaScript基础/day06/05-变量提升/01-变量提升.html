@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ------------------------------------------------------
+        // 代码正式执行之前，进行预处理，会查找全局代码中的var关键字，提前将变量创建好，不赋值
+        // 使用变量
+        console.log(address);  // undefined
+        // console.log(age);      // 操作
+        // console.log(username);
+
+        // 正式执行声明变量的代码，仅仅进行赋值操作
+        var address = '上海';
+        // 没有var不提升
+        age = 10;
+
+        console.log(address);  // 上海
+        console.log(age);
+        // var for = 100;
+        console.log('');
+        console.log('');
+        console.log('');
+
+        // ------------------------------------------------------
+        // 创建函数
+        function func() {
+            console.log(num);   // undefiend
+            // 正式执行到变量创建语句 才赋值
+            var num = 100;
+            console.log(num);   // 100
+        }
+        // 调用函数
+        // 执行直到调用函数的代码，正式执行函数体语句之前，也会预处理，预处理过程中找函数中的var关键字，提前将变量创建好，不赋值
+        func();
+        console.log('');
+        console.log('');
+        console.log('');
+
+
+
+        // ------------------------------------------------------
+        // 创建全局变量
+        var count = 100;
+        var message = 'What';
+        // 创建函数
+        function fn() {
+            console.log(count);      // undefeind
+            console.log(message);    // What
+
+            var count = 200;
+            message = 'Where';       // 修改的是全局变量
+
+            console.log(count);         // 200
+            console.log(message);       // Where
+        }
+        // 调用函数
+        fn();
+        // 输出变量
+        console.log(count);             // 100
+        console.log(message);           // Where
+    </script>
+</body>
+</html>

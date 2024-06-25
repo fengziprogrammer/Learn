@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 循环数字 100到200
+        for (var num = 100; num <= 200; num ++) {
+            // 标记当前的数字是否是质数
+            var isPrime = true;
+            
+            // 判断 num 是否是质数，如果是质数输出
+            for (var i = 2; i <= num/2; i ++) {
+                if (num % i === 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime) {
+                console.log(num);
+            }
+        }
+    </script>
+</body>
+</html>

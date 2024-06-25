@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 使用ES6方式给形参设置默认值
+        function func(name, age=12, address='北京') {
+            console.log('我叫' + name + ', 年龄' + age + '岁，住在' + address);
+        }
+
+        // 调用函数
+        func('高小乐', 78, '山洞');
+        func('孙悟空', 45);
+        func('曹操');
+       
+    </script>
+</body>
+</html>

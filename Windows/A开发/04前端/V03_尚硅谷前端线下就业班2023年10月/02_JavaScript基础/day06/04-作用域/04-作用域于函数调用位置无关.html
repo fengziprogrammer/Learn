@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建变量
+        var age = 100;
+        
+        // 创建函数
+        function fn() {
+            console.log('fn：', age);
+        }
+
+        // 创建函数
+        function func() {
+            // 创建变量
+            var age = 200;
+            // 调用函数 fn
+            fn();
+        }
+
+        // 调用 func()
+        func();
+
+
+
+    </script>
+</body>
+</html>

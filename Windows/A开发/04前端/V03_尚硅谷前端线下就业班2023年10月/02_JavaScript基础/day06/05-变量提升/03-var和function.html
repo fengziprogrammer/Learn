@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 使用变量
+        console.log(address);  // 函数本身
+        address();
+
+        // 使用var 创建变量   
+        // 仅仅进行赋值操作 修改address的值为'北京'
+        var address = '北京';
+        // 使用 function 关键字创建函数 （也是创建变量）
+        // 正式执行到这里，直接跳过
+        function address() {
+            console.log('我是函数 address');
+        }
+
+        console.log(address);    // '北京'
+        address();  // address is not a function
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 调用函数时传递的数据就是实参
+        parseInt(100.2);
+        var num = 100.2323;
+        parseInt(num);
+        parseInt(num + 78);
+        console.log('');
+        console.log('');
+
+
+        // 形参 创建函数时使用的参数
+        // 形参就是没有赋值的变量 形参可以在函数中使用
+        function fun(name, age) {
+            console.log('我叫' + name + ', 今年' + age + '岁！');
+        }
+        // 调用函数 实参用于给形参赋值
+        fun('高小乐', 23);
+        fun('曹操', 98);
+
+      
+    </script>
+</body>
+</html>

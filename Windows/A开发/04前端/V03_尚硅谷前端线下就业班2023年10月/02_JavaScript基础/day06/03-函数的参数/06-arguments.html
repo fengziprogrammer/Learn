@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建函数
+        function func(arg1, arg2) {
+            console.log(arg1, arg2);
+            
+            // arguments = 100;
+            console.log(arguments);
+
+            // console.log(arguments[0]);
+            // console.log(arguments[1]);
+            // console.log(arguments[2]);
+            // console.log(arguments[4]);
+            for (var i = 0; i < arguments.length; i ++) {
+                console.log(arguments[i]);
+            }
+        }
+
+
+        // 调用函数
+        func(100,200,'hello',400);
+        console.log('');
+        console.log('');
+
+        func(10,20,30,40,50,60,70,80);
+        console.log('');
+        console.log('');
+
+
+
+        // 创建函数 该函数计算所有参数的和
+        function sum() {
+            // 定义变量 记录和
+            var res = 0;
+            // 遍历所有的参数
+            for (var i = 0; i < arguments.length; i ++) {
+                res += arguments[i];
+            }
+            // 返回计算结果
+            return res;
+        }
+
+
+        console.log(sum(1,2,3,4,5,6,7));
+        console.log(sum(11,223,31,43,51,16,732, 23, 12, 12,343, 3434));
+        console.log(sum(1, 5));
+
+    </script>
+</body>
+</html>

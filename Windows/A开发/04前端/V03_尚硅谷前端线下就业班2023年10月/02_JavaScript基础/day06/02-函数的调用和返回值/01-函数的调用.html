@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建函数
+        function fn() {
+            console.log('我是fn');
+        }
+        fn;
+        fn();
+        console.log('');
+        console.log('');
+
+
+        var res1 = Array();
+        var res2 = Array;
+
+        console.log(res1);  // 空数组
+        console.log(res2);  // 输出 
+        console.log('');
+        console.log('');
+
+
+        // 调用res2 创建数组
+        console.log(res2(100,200,300,400));;
+        console.log('');
+        console.log('');
+
+
+        var res3 = fn;
+        res3();
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        // 定义数字
+        var num = 753;
+
+        // 取出数字上百位、十位、个位上的数
+        var n1 = parseInt(num / 100);   // 百位上的数字
+        var n2 = parseInt(num % 100 / 10);  // 十位上的数字
+        var n3 = num % 10;  // 个位上的数字
+
+        // 判断是否是水仙花数
+        if (n1*n1*n1 + n2*n2*n2 + n3*n3*n3 === num) {
+            console.log(num + '是水仙花数');
+        } else {
+            console.log(num + '不是水仙花数');
+        }
+        */
+
+
+
+        // 循环出所有的三位数
+        for (var num = 100; num <= 999; num ++) {
+            // 取出数字上百位、十位、个位上的数
+            var n1 = parseInt(num / 100);   // 百位上的数字
+            var n2 = parseInt(num % 100 / 10);  // 十位上的数字
+            var n3 = num % 10;  // 个位上的数字
+
+            // 判断是否是水仙花数
+            if (n1*n1*n1 + n2*n2*n2 + n3*n3*n3 === num) {
+                console.log(num);
+            }
+
+        }
+    </script>
+</body>
+</html>

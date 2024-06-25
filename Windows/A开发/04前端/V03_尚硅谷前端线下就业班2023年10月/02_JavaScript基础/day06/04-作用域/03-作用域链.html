@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建变量（全局）
+        var username = '高小乐';
+        var age = 100;
+        var address = '上海';
+        var job = '游荡';
+
+        function func01() {
+            // 创建变量（func01的作用域）
+            var username = '孙悟空';
+            var age = 200;
+            var address = '北京';
+            function func02() {
+                // 创建变量（func02作用域）
+                var username = '李逵';
+                var age = 300;
+                // console.log(question);
+                function func03() {
+                    // 创建变量（func03作用域）
+                    var username = '贾宝玉';
+                    var question = 'How Are You';
+                    // 使用变量
+                    console.log(username);    // 贾宝玉
+                    console.log(age);         // 300
+                    console.log(address);     // 北京
+                    console.log(job);         // 游荡
+                    console.log(message);     // 报错误 
+                }
+                func03();
+            }
+            func02();
+        }
+        func01();
+
+
+    </script>
+</body>
+</html>

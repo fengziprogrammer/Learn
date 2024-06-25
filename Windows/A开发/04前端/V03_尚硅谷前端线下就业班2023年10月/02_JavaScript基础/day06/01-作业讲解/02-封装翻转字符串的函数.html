@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+         * 翻转字符串
+         * @param {string} 要进行翻转的字符串
+         * @returns {string} 翻转好的字符串
+        */
+        function reverseString(str) {
+            // 定义新的空字符串
+            var newStr = '';
+            // 遍历传递进来的字符串 倒着遍历
+            for (var i = str.length-1; i >= 0; i --) {
+                newStr += str[i];
+            }
+            // 返回新字符串
+            return newStr;
+        }
+
+
+
+        var msg = 'Hello,高小乐';
+        console.log(reverseString(msg));
+
+        console.log(reverseString('高小乐去钓鱼'));
+        console.log(reverseString('上海自来水来自海上'));
+
+
+    </script>
+</body>
+</html>

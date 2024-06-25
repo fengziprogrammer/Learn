@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建函数
+        function func() {
+            var address = '上海';
+            // 在函数内部不使用var 创建变量,变量是全局变量 (这是设计缺陷，不建议使用)
+            age = 10;
+            console.log(address);
+            console.log(age);
+        }
+        // 调用函数
+        func();
+
+        console.log('');
+        // console.log(address);
+        console.log(age);
+        console.log('');
+
+
+        // ------------------------------------------------------------
+        // 创建全局变量
+        var username = '高小乐';
+        var userage = 100;
+        // 创建函数
+        function fn() {
+            var username = '曹操';
+            // 修改变量的值
+            username = '孙悟空';        // 修改的局部变量 username
+            userage = 200;             // 修改的是全局变量 userage
+            // 输出变量
+            console.log(username);   // 孙悟空
+            console.log(userage);    // 200
+        }
+        // 调用函数
+        fn();
+        // 输出变量
+        console.log(username);       // 高小乐
+        console.log(userage);        // 200
+        console.log('');
+        console.log('');
+
+
+        // ------------------------------------------------------------
+        // 创建全局变量
+        var num01 = 100;
+        var num02 = 200;
+        // 创建函数
+        function fun(num01, num02) {
+            num01 *= 2;  // num01 = num01 * 2;
+            num02 *= 2;  // num02 = num02 * 2;
+            console.log(num01);   // 200
+            console.log(num02);   // 400
+        }
+        // 调用函数
+        fun(num01, num02);
+        console.log(num01);     // 100
+        console.log(num02);     // 200
+
+
+
+    </script>
+</body>
+</html>

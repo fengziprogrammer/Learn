@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 获取用户的输入
+        var num = +prompt('请输入一个数字：');
+        // var num = 973;
+
+        // 定义标记变量 标记是否是质数 默认标记为质数
+        var isPrime = true;
+
+        // 循环从2到num-1   看能否推翻isPrime的默认值
+        for (var i = 2; i <= num/2; i ++) {
+            // 判断num能否被i整除
+            if (num % i === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            alert(num + '是质数！');
+        } else {
+            alert(num + '不是质数！');
+        }
+
+        
+
+
+    </script>
+</body>
+</html>
