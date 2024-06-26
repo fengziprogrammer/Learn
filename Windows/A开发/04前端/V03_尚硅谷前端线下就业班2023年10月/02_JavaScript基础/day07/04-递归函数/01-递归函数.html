@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 递归函数  
+        /*
+        function func() {
+            console.log('func被调用了!');
+            func();
+        }
+        func();
+        */
+
+
+        /*
+            factorial(5) 开始调用 return 5*factorial(4)
+                factorial(4) 开始调用 return 4*factorial(3)
+                    factorial(3) 开始调用 return 3*factorial(2)
+                        factorial(2) 开始调用 
+                        factorial(2) 结束调用 return 2
+                    factorial(3) 结束调用 return 6
+                factorial(4) 结束调用 return 24
+            factorial(5) 结束调用 return 120
+        */
+        // 使用递归实现某个数字的阶乘
+        function factorial(n) {
+            // 递归的结束条件
+            if (n <= 2) {
+                return n;
+            }
+            // n乘以n-1的阶乘
+            return n * factorial(n-1);
+        }
+        // console.log('10的阶乘：', factorial(10));
+        console.log('5的阶乘：', factorial(5));
+        // console.log('8的阶乘：', factorial(8));
+        console.log('');
+        console.log('');
+
+
+        // ------------------------------------------------------------------------
+        /*
+            func(3) 开始调用 输出3
+                func(2) 开始调用 输出2
+                    func(1) 开始调用 输出1
+                    func(1) 输出1 结束调用
+                func(2) 输出2 结束调用
+            func(3) 输出3 结束调用
+        */
+
+        function func(n) {
+            console.log(n);
+        
+            if (n > 1) {
+                func(n-1);   // 递归调用
+            }
+
+            console.log(n);
+        }
+        func(3);
+
+        /*
+            3
+            2
+            1
+            1
+            2
+            3
+        */
+
+
+
+    </script>
+</body>
+</html>

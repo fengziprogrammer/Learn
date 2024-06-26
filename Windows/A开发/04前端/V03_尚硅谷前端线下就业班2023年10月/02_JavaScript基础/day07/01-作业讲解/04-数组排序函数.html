@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var nums = [23,101,12,45,89,56,78,18];
+        console.log('升序：', arraySort(nums));
+        console.log('降序：', arraySort(nums, true));
+        console.log('');
+
+
+        console.log('升序：', arraySort([12, 56, 8, 102, 57, 123, 15]));
+        console.log('降序：', arraySort([12, 56, 8, 102, 57, 123, 15], true));
+
+
+        /**
+         * 数据排序
+         * @param {array} 要排序的数组
+         * @param {boolean}  true:降序 false:升序 默认值是false
+         * @returns {array} 排好序的数组
+        */
+        function arraySort(arr, isDown) {
+            // 外层循环 控制轮数
+            for (var k = 1; k < arr.length; k ++) {
+                // 该轮比较的次数
+                for (var i = 0; i < arr.length-k; i ++) {
+                    // 判断是升序还是降序
+                    if (isDown) {
+                        // 降序 从大到小
+                        var expre = arr[i] < arr[i+1];
+                    } else {
+                        // 升序 从小到大
+                        var expre = arr[i] > arr[i+1];
+                    }
+
+                    // 根据比较表达式交换两个变量的值
+                    if (expre) {
+                        var temp = arr[i];
+                        arr[i] = arr[i+1];
+                        arr[i+1] = temp;
+                    }
+
+                    /*
+                    if (isDown) {
+                        // 降序
+                        if (arr[i] < arr[i+1]) {
+                            var temp = arr[i];
+                            arr[i] = arr[i+1];
+                            arr[i+1] = temp;
+                        }
+                    } else {
+                        // 升序
+                        if (arr[i] > arr[i+1]) {
+                            var temp = arr[i];
+                            arr[i] = arr[i+1];
+                            arr[i+1] = temp;
+                        }
+                    }
+                    */
+                }
+            }
+            // 返回数组
+            return arr;
+        }
+        
+
+    </script>
+</body>
+</html>

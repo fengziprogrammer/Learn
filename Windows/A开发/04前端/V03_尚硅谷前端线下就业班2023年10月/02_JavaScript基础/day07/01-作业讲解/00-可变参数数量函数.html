@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(max(12,343,51, 45, 9, 378,12));
+        console.log(min(12,343,51, 45, 9, 378,12));
+
+
+        // 取参数中的最大值
+        function max() {
+            // 定义变量记录最大值
+            var res = arguments[0];
+            // 遍历所有的参数
+            for (var i = 1; i < arguments.length; i ++) {
+                if (arguments[i] > res) {
+                    res = arguments[i];
+                }
+            }
+            // 返回
+            return res;
+        }
+
+
+         // 取参数中的最小值
+         function min() {
+            // 定义变量记录最大值
+            var res = arguments[0];
+            // 遍历所有的参数
+            for (var i = 1; i < arguments.length; i ++) {
+                if (arguments[i] < res) {
+                    res = arguments[i];
+                }
+            }
+            // 返回
+            return res;
+        }
+      
+    </script>
+</body>
+</html>

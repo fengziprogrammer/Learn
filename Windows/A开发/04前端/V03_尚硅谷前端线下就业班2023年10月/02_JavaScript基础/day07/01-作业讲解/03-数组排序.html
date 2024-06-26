@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义数组
+        var nums = [23,101,12,45,89,56,78,18];
+        console.log('原数组：', nums);
+
+
+        // 升序 从小到大
+        // 控制比较的轮数 轮数是数组长度-1轮
+        for (var k = 1; k < nums.length; k ++) {
+            // 控制该轮比较的次数
+            for (var i = 0; i < nums.length-k; i ++) {
+                // 相邻两个元素进行比较 nums[i] nums[i+1]
+                if (nums[i] > nums[i+1]) {
+                    // 交换两个元素的值
+                    var temp = nums[i];
+                    nums[i] = nums[i+1];
+                    nums[i+1] = temp;
+                }
+            }
+        }
+        console.log('升序排列的数组：', nums);
+
+
+        // 降序 从大到小
+        for (var k = 1; k < nums.length; k ++) {
+            // 控制该轮比较的次数
+            for (var i = 0; i < nums.length-k; i ++) {
+                // 相邻两个元素进行比较 nums[i] nums[i+1]
+                if (nums[i] < nums[i+1]) {
+                    // 交换两个元素的值
+                    var temp = nums[i];
+                    nums[i] = nums[i+1];
+                    nums[i+1] = temp;
+                }
+            }
+        }
+        console.log('降序排列的数组：', nums);
+
+        
+
+        /*
+        // 第一轮比较 找出最大的元素放在最后
+        for (var i = 0; i < nums.length-1; i ++) {
+            // 相邻两个元素进行比较 nums[i] nums[i+1]
+            if (nums[i] > nums[i+1]) {
+                // 交换两个元素的值
+                var temp = nums[i];
+                nums[i] = nums[i+1];
+                nums[i+1] = temp;
+            }
+        }
+        console.log('第一轮比较：', nums);
+
+
+        // 第二轮比较 找出第二大放在倒数第二个
+        for (var i = 0; i < nums.length-2; i ++) {
+            // 相邻两个元素进行比较 nums[i] nums[i+1]
+            if (nums[i] > nums[i+1]) {
+                // 交换两个元素的值
+                var temp = nums[i];
+                nums[i] = nums[i+1];
+                nums[i+1] = temp;
+            }
+        }
+        console.log('第二轮比较：', nums);
+
+        // 第三轮比较 找出第三大放在倒数第三个
+        for (var i = 0; i < nums.length-3; i ++) {
+            // 相邻两个元素进行比较 nums[i] nums[i+1]
+            if (nums[i] > nums[i+1]) {
+                // 交换两个元素的值
+                var temp = nums[i];
+                nums[i] = nums[i+1];
+                nums[i+1] = temp;
+            }
+        }
+        console.log('第三轮比较：', nums);
+
+
+        // 第四轮比较 找出第四大放在倒数第四个
+        for (var i = 0; i < nums.length-4; i ++) {
+            // 相邻两个元素进行比较 nums[i] nums[i+1]
+            if (nums[i] > nums[i+1]) {
+                // 交换两个元素的值
+                var temp = nums[i];
+                nums[i] = nums[i+1];
+                nums[i+1] = temp;
+            }
+        }
+        console.log('第四轮比较：', nums);
+
+
+        // 第五轮比较 找出第五大放在倒数第五个
+        for (var i = 0; i < nums.length-5; i ++) {
+            // 相邻两个元素进行比较 nums[i] nums[i+1]
+            if (nums[i] > nums[i+1]) {
+                // 交换两个元素的值
+                var temp = nums[i];
+                nums[i] = nums[i+1];
+                nums[i+1] = temp;
+            }
+        }
+        console.log('第五轮比较：', nums);
+
+
+        // 第六轮比较 找出第六大放在倒数第六个
+        for (var i = 0; i < nums.length-6; i ++) {
+            // 相邻两个元素进行比较 nums[i] nums[i+1]
+            if (nums[i] > nums[i+1]) {
+                // 交换两个元素的值
+                var temp = nums[i];
+                nums[i] = nums[i+1];
+                nums[i+1] = temp;
+            }
+        }
+        console.log('第六轮比较：', nums);
+
+        // 第七轮比较 找出第七大放在倒数第七个
+        for (var i = 0; i < nums.length-7; i ++) {
+            // 相邻两个元素进行比较 nums[i] nums[i+1]
+            if (nums[i] > nums[i+1]) {
+                // 交换两个元素的值
+                var temp = nums[i];
+                nums[i] = nums[i+1];
+                nums[i+1] = temp;
+            }
+        }
+        console.log('第七轮比较：', nums);
+        */
+    </script>
+</body>
+</html>

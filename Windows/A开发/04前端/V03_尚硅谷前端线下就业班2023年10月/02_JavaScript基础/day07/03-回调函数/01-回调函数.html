@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建数组
+        var nameList = ['欧阳姥姥', '司马姥姥', '令狐姥姥', '独孤姥姥', '西门姥姥', '东方姥姥', '爱新觉罗姥姥'];
+
+        // 数组方法 forEach  用于遍历数组
+        // 匿名函数作为一个回调函数
+        nameList.forEach(function(){
+            console.log('函数被调用了！');
+        });
+        console.log('');
+
+
+        // 有名字的函数作为回调函数
+        function func() {
+            console.log('函数func！');
+        }
+        nameList.forEach(func);
+        console.log('');
+
+
+        // 使用 forEach 遍历数组
+        nameList.forEach(function(item, index) {
+            console.log(item, index);
+        });
+
+
+
+
+
+    </script>
+</body>
+</html>

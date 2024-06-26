@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // -------------------------------------------------
+        // 高阶函数 返回值是一个函数
+        function func() {
+            var res = 100 * 2;
+            return function() {
+                console.log(res * 2);
+            }
+        }
+        func()();
+        console.log('');
+
+
+        // -------------------------------------------------
+        // 高阶函数 参数是个函数
+        function func01(cb) {
+            cb(100, 200);
+        }
+        func01(function(a,b) {
+            console.log('我是回调函数！', a, b);
+        });
+        console.log('');
+
+        // -------------------------------------------------
+        // 高阶函数 参数是函数 返回值也是函数
+        function func02(num01, num02, cb) {
+            return cb(num02, num01);
+        }
+        var res = func02(100, 200, function(a,b) {
+            return a - b;
+        });
+        console.log(res);
+        console.log('');
+
+
+        // -------------------------------------------------
+        // 回调函数和作用域
+        // 作用域于调用位置无关
+        var num = 10;
+        function fn01(fn) {
+            var num = 20;
+            fn();
+        }
+        function fn02() {
+            console.log(num);  // 10
+        }
+        fn01(fn02);
+
+
+
+
+    </script>
+</body>
+</html>

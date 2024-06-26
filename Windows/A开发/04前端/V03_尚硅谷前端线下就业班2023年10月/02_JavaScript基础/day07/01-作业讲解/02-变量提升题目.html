@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // --------------------------------------------------------
+        // var 关键字创建的变量才能提升
+        // alert(a);    
+        // a = 0;  // 报错
+        
+        // --------------------------------------------------------
+        // alert(a);      // undefeind
+        // var a = 0;   
+        // alert(a);      // 0  
+
+        // --------------------------------------------------------
+        // alert(a);       // 函数本身
+        // function a(){ alert('我是函数') }
+        // var a = '我是变量';
+        // alert(a);       // '我是变量'
+
+        // --------------------------------------------------------
+        // alert(a);       // 函数本身
+        // a++;            // a = a + 1
+        // alert(a);       // NaN
+        // var a = '我是变量';
+        // function a(){ alert('我是函数') }
+        // alert(a)        // '我是变量'
+
+        // --------------------------------------------------------
+        alert(a);        // undefiend
+        var a = 0;      
+        alert(a);         // 0
+        function fn(){
+            alert(a);      // undefiend  
+            var a = 1;
+            alert(a);      // 1
+        }
+        fn()            
+        alert(a);          // 0
+
+	
+    </script>
+</body>
+</html>
