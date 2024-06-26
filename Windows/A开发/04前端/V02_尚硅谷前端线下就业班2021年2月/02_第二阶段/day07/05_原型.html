@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        function MyClass() {
+
+        }
+
+        let mc = new MyClass(); // '[object Object]'
+
+        // 如果原型中的方法不能满足我们的需求，可以选择创建一个同名的方法将其覆盖
+        // 这称为方法的重写
+        mc.toString = function(){
+            return 'HELLO';
+        };
+
+        // console.log(mc.toString());
+
+        // alert(mc);
+
+        /*
+        *   实例的隐式原型指向类（构造函数）的显示原型
+        * */
+        // MyClass.prototype 显式原型
+
+        // mc.__proto__  隐式原型
+        // mc.__proto__.__proto__
+
+        // 获取Object的原型
+        // console.log(Object.prototype.__proto__);
+
+        /*
+        *   需要你记住的：
+        *       1.定义类时，独有的属性（方法）在构造函数中通过this添加
+        *       2.公共的方法（属性）在构造函数外部通过原型来添加
+        *       3.当我们使用一个对象的属性或方法时，
+        *           js会先在对象中找，对象中没有去原型中找，
+        *           原型中没有，去原型的原型中找，直到找到object的原型，没有返回undefined
+        * */
+
+        // let obj = new Object();
+        // obj.hasOwnProperty();
+        // Object.assign();
+
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        Person.prototype.toString = function(){
+            return 'Person {name:'+this.name+', age:'+this.age+'}';
+        };
+
+
+        let p1 = new Person('孙悟空', 18);
+        let p2 = new Person('猪八戒', 28);
+
+        alert(p1);
+        alert(p2);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

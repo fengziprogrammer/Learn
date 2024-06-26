@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        let a = 10;
+
+        function fn() {
+            let a = 10;
+        }
+
+        /*
+        *   下列这种函数就创建了一个闭包
+        *       局部变量a，只能被内部函数访问到，其他位置无法访问
+        * */
+        function fn2() {
+            let a = 20;
+            
+            function inner() {
+                console.log('a =', a);
+            }
+
+            return inner;
+        }
+
+        let result = fn2();
+
+        // result();
+
+        function Person(name) {
+            this.name = name;
+        }
+
+        // let per = new Person('孙悟空');
+        // new Person('孙悟空');
+        // Person('孙悟空');
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
