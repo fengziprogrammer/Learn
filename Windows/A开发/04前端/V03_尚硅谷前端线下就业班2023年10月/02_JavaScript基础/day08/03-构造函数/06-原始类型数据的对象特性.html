@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建数字 直接量方式
+        var num01 = 89;
+        // 创建数字 Number 函数方式
+        var num02 = Number(88);
+        // 创建数字 Number 构造函数
+        var num03 = new Number(87);
+
+        console.log(num01);
+        console.log(num02);
+        console.log(num03);
+        console.log('');
+
+        // 不论处于什么状态，需要什么形式转为什么形式
+        console.log(num01 * num03);
+        console.log(num03.constructor);
+        console.log(num01.constructor);
+        console.log(num02.constructor);
+        console.log('');
+
+        console.log(num01 instanceof Number);   // false
+        console.log(num02 instanceof Number);   // false
+        console.log(num03 instanceof Number);   // true
+        console.log('');
+
+
+        console.log('hello'.constructor);
+        console.log('hello'.length);
+        console.log(true.constructor);
+        console.log('');
+
+        console.log(12.2.constructor);
+        console.log((12).constructor);
+        console.log(12..constructor);
+        console.log('');
+
+
+        console.log('');
+        console.log('');
+        console.log('');
+
+
+        var arr = [];
+        arr.address = '上海';
+        console.log(arr.address);
+
+        var msg = '';
+        // 需要msg包装成对象， new String(msg) 临时创建对象，给临时创建的对象添加属性address，本语句执行完，临时对象自动销毁
+        msg.address = '北京';
+        // 使用 msg.address, 又临时创建新对象new String(msg)，从该临时对象中读取属性address，用完即毁
+        console.log(msg.address);
+
+
+    </script>
+</body>
+</html>

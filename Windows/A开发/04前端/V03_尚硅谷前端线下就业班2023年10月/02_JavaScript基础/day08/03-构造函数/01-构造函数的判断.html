@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建对象
+        var arr = [10,20,30,40,50];
+        var fn = function() {};
+        var user = {username:'小乐', age:100};
+        var date = new Date();
+
+
+        // 使用 instanceof 判断
+        console.log(arr instanceof Function);
+        console.log(arr instanceof Date);
+        console.log(arr instanceof Array);
+        console.log('');
+
+        console.log(fn instanceof Array);
+        console.log(fn instanceof Function);
+        console.log('');
+
+        console.log(date instanceof Array);
+        console.log(date instanceof Function);
+        console.log(date instanceof Date);
+        console.log('');
+
+        console.log(user instanceof Array);
+        console.log(user instanceof Function);
+        console.log(user instanceof Object);
+        console.log(arr instanceof Object);
+        console.log(fn instanceof Object);
+        console.log(date instanceof Object);
+        console.log('');
+        console.log('');
+        console.log('');
+        console.log('');
+
+
+        // 每个对象都有属性 constructor, 可获取该对象的构造函数
+        console.log(arr.constructor);
+        console.log(fn.constructor);
+        console.log(user.constructor);
+        console.log(date.constructor);
+        console.log('');
+
+
+        console.log([].constructor === arr.constructor);
+        console.log(parseInt.constructor === fn.constructor);
+
+    </script>
+</body>
+</html>

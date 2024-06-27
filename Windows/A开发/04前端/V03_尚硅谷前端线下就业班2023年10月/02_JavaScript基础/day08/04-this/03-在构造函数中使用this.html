@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 自定义构造函数
+        function User(name, age, address) {
+            this.name = name;
+            this.age = age;
+            this.address = address;
+            this.addShopcart = function(product) {
+                console.log(this.name + '将' + product + '加入购物车！');
+            }
+        }
+
+
+        // 实例化构造函数 创建对象
+        var u1 = new User('高小乐', 19, '上海');
+        console.log(u1);
+        console.log('');
+
+
+        var u2 = new User('曹操', 89, '北京');
+        console.log(u2);
+    </script>
+</body>
+</html>

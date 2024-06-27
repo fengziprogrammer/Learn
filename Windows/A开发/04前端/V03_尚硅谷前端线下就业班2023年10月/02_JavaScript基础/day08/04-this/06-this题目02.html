@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 全局变量就是window的属性 window.foo = 123
+        var foo = 123;
+        function print(){
+            this.foo = 234;	     // window.foo 就是 全局变量 foo   
+            console.log(foo);     
+        }
+        print();    // 234
+        console.log(foo);   // 234	
+    </script>
+</body>
+</html>

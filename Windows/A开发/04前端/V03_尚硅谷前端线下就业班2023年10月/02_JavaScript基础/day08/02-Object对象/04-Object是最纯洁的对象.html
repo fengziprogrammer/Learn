@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建数组
+        var arr = [100,200,300,400,500];
+        // 给数组设置属性
+        arr.username = '高小乐';
+        arr.address = '上海';
+
+        console.log(arr);
+        console.log(arr.address);
+        console.log(arr['address']);
+        console.log('');
+
+        // for in 遍历数组
+        for (var attr in arr) {
+            console.log(attr);
+        }
+        console.log('');
+
+
+        delete arr.address;
+        delete arr[2];
+        console.log(arr);
+        console.log('');
+
+
+        console.log('username' in arr);
+        console.log('length' in arr);
+        console.log('address' in arr);
+        console.log('');
+        console.log('');
+        console.log('');
+
+
+
+
+        // 创建函数
+        function func() {}
+
+        // 给func添加属性
+        func.username = '小乐';
+        func.age = 10;
+        func.address = '上海';
+
+        console.log(func);
+
+        // 遍历 func 的属性
+        for (var attr in func) {
+            console.log(attr, func[attr]);
+        }
+
+        console.log('username' in func);
+        console.log('getInfo' in func);
+
+
+    </script>
+</body>
+</html>

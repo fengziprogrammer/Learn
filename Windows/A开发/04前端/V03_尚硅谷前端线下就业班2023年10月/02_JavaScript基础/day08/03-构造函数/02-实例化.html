@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            系统定义好的构造函数： 
+            Array、Function、Object、Date 
+        */
+
+        // 创建数组
+        var arr1 = new Array();
+        var arr2 = new Array();
+        console.log(arr1);
+        console.log(arr2);
+        console.log(arr1 === arr2);
+
+        // 直接量创建数组  其实就是 new Array() 的简写
+        var arr3 = [];   // new Array()
+        var arr4 = [];   // new Array()
+        console.log(arr3 === arr4);
+
+        // 直接量方式创建对象 其实就是 new Object 的简写
+        var obj1 = {};
+        var obj2 = {};
+        console.log(obj1 === obj2);
+    </script>
+</body>
+</html>

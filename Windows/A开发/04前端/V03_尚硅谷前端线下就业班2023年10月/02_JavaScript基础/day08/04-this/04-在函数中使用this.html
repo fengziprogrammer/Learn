@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建对象
+        var user = {
+            name: '高小乐',
+            age: 189,
+            getInfo: function() {
+                console.log('getInfo');
+                console.log(this);
+                console.log(this.name);
+            },
+            firend: {
+                name: '曹操',
+                say: function() {
+                    console.log('say');
+                    console.log(this);
+                    console.log(this.name);
+                }
+            }
+        };
+
+
+        user.getInfo();
+        console.log('');
+        user.firend.say();
+        console.log('');
+
+        // 修改全局变量 name 的值  全局变量就是window的属性
+        var name = '龙傲天';
+
+        // 创建函数
+        function func() {
+            console.log('func');
+            console.log(this);
+            console.log(this.name);
+        }
+        // 调用函数
+        func();
+        console.log('');
+
+
+        // 创建变量
+        var drink = user.getInfo;
+        drink();
+        console.log('');
+
+
+        // 给对象添加属性
+        user.firend.eat = func;
+        user.firend.eat();
+
+
+        
+    </script>
+</body>
+</html>

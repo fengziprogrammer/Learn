@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建全局变量
+        var address = '上海';
+        function fn() {
+            console.log('fn函数执行了');
+        };
+
+        // 所有的全局变量都是 window 的属性
+        console.log(window.address);
+        window.fn();
+        console.log('');
+
+        // Nunmber、String、Boolean、Object、Array、Function 都是全局变量，都是window的属性
+        window.Number();
+        window.Array();
+
+        console.log(window);
+        console.log(this);
+    </script>
+</body>
+</html>
