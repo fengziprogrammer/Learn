@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建数组
+        var arr = [10,20.,30,40,50,60];
+        arr.username = '高小乐';
+        Array.prototype.address = '上海';
+
+        console.log('length' in arr);    // true
+        console.log('push' in arr);      // true
+        console.log('username' in arr);  // true
+        console.log('address' in arr);   // true
+        console.log('age' in arr);       // false
+        console.log('');
+        
+        
+        console.log(arr.hasOwnProperty('username'));  // true
+        console.log(arr.hasOwnProperty('address'));  // false
+        console.log(arr.hasOwnProperty('length'));  // true
+        console.log(arr.hasOwnProperty('push'));  // false
+        console.log(arr.hasOwnProperty('age'));  // false
+
+    </script>
+</body>
+</html>

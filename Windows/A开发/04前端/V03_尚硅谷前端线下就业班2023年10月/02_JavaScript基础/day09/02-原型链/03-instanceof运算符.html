@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [10,20,30];
+        console.log(arr instanceof Array);      // true
+        console.log(arr instanceof Object);     // true
+        console.log(arr instanceof Function);   // false
+        console.log('');
+
+
+        var fn = function() {};
+        // user -> fn.prototype -> Object.prototype
+        var user = new fn();
+
+        console.log(user instanceof fn);            // true
+        console.log(user instanceof Function);      // false
+        console.log(user instanceof Object);        // true
+
+    </script>
+</body>
+</html>

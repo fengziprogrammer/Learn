@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 全局变量  window的属性 window.age
+        var age = 10;
+
+        // 函数
+        function func(name, age) {
+            this.name = name;
+            this.age = age;
+            this.getInfo = function() {
+                console.log(this.name);
+                console.log(this.age);
+            }
+            console.log(this.name);
+        }
+
+        // 调用  func是函数 里面的this的值是window
+        func('Tom', 19);    // Tom
+
+        // 实例化 func是构造函数 里面的this的值是创建的新对象
+        var o = new func('Tom', 19);   // Tom
+
+        o.getInfo();
+        /*
+            Tom
+            19
+        */
+
+        // 输出全局变量 age
+        console.log(age);  // 19
+
+        // 实例化 o.getInfo  里面的this指向新创建的对象
+        new o.getInfo();
+        /*
+            undefiend
+            undefiend
+        */
+    </script>
+</body>
+</html>

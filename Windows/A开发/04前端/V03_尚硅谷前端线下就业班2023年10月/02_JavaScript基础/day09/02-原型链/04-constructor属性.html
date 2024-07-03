@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建数组
+        // arr -> Array.prototype -> Object.prototype
+        var arr= [10,20,30,40,50];
+        console.log(arr);
+
+        console.log('');
+        console.log(arr.constructor);   // 用的是原型上的constructor
+        console.log(Array.prototype.constructor);  // 用的自身的 constructor
+        console.log(Object.prototype.constructor);
+
+
+        console.log('');
+        console.log('');
+        var user = {};
+        console.log(user);
+        console.log(user.constructor);
+        console.log(Object.prototype.constructor);
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [];
+        // arr 的构造函数是 Array
+        console.log(arr);
+        // arr的原型Array.prototype， Array.prototype的构造函数是Object
+        console.log(Array.prototype);
+        // 顶层原型
+        console.log(Object.prototype);
+        console.log('');
+
+
+        // Array 是个函数， Array的构造函数是 Function
+        console.log(Array);
+        // Function.prototype 是 Array 的原型， Function.prototype 的构造函数是 Object
+        console.log(Function.prototype);
+        // 顶层原型
+        console.log(Object.prototype);
+        console.log('');
+
+
+        // Object 是个函数 Object的构造函数是 Function
+        console.log(Object);
+        // Function.prototype 是 Object 的原型， Function.prototype 的构造函数是 Object
+        console.log(Function.prototype);
+        // 顶层原型
+        console.log(Object.prototype);
+        console.log('');
+
+
+        // Function 是个函数， 构造函数是  Function
+        console.log(Function);
+        // Function.prototype 是 Function 的原型， Function.prototype 的构造函数是 Object
+        console.log(Function.prototype);
+        console.log(Function.__proto__ === Function.prototype);
+        // 顶层原型
+        console.log(Object.prototype);
+        console.log('');
+
+        
+
+        Array.prototype.username = '小乐';
+        Function.prototype.age = 10;
+        Object.prototype.address = '上海';
+
+        // arr -> Array.prototype -> Object.prototype
+        console.log(arr.username);      //  '小乐'
+        console.log(arr.age);       //  undefined
+        console.log(arr.address);   // '上海'
+        console.log('');
+
+        // Array -> Function.prototype -> Object.protytpe
+        console.log(Array.username);       //  undefined
+        console.log(Array.age);        //  10
+        console.log(Array.address);    //  '上海'
+       
+
+
+    </script>
+</body>
+</html>

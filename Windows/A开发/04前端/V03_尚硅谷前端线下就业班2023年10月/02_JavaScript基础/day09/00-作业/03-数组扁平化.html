@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义函数
+        var nums = [
+            [1000, 2000, 3000],
+            'hello',
+            [
+                [10,20,30],
+                [
+                    'a', 
+                    'b', 
+                    ['A', 'B', 'C']
+                ],
+                '小乐'
+            ],
+            12313,
+            [101,202,303]
+        ];
+
+        // 创建新的数组
+        var newNums = [];
+
+        // 使用递归函数遍历旧数组
+        function flatArray(arr) {
+            // 使用循环结构遍历 arr
+            for (var i = 0; i < arr.length; i ++) {
+                // 判断当前的元素是否是数组
+                if (arr[i] instanceof Array) {
+                    // 递归调用
+                    flatArray(arr[i]);
+                } else {
+                    // 将该元素添加到新数组中
+                    newNums.push(arr[i]);
+                }
+            }
+        }
+        
+        // 调用函数
+        flatArray(nums);
+
+
+        console.log(newNums);
+
+
+
+
+    </script>
+</body>
+</html>

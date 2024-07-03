@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建数组
+        var arr = [10,20,30,40]; 
+        console.log(arr);                // Array 类型的对象
+        console.log(Array.prototype);    // Object类型对象
+        console.log(Object.prototype);
+        console.log('');
+
+        // 创建函数
+        var func = function() {};
+        console.log(func);                 // Function类型对象
+        console.log(Function.prototype);   // 等同于 func.__proto__   Object类型的对象
+        console.log(Object.prototype);
+        console.log('');
+
+
+        // 实例化对象
+        var f = new func();
+        console.log(f);                 // func类型的对象
+        console.log(func.prototype);    // Object类型对象
+        console.log(Object.prototype);
+        console.log('');
+
+
+        // 创建 Object 类型对象
+        var user = {};
+        console.log(user);
+        console.log(Object.prototype);
+        console.log('');
+
+
+        console.log(f.__proto__.__proto__ === Object.prototype);  // true
+        console.log(Array.prototype.__proto__ === user.__proto__);    // true
+
+    </script>
+</body>
+</html>
