@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        let arr = [1, 2, 3];
+        // arr.forEach()
+
+        // 类似于 ...args 被称为剩余参数，剩余参数它会获取到所有的没有形参对应的实参
+        /*
+        *   ...args 表示剩余参数，它和arguments的区别：
+        *       1.剩余参数就是一个数组，可以调用数组的方法
+        *       2.args只会保存没有形参对应的参数
+        *       3.剩余参数必须是参数列表中的最后一个
+        *
+        * */
+        function fn(a, b, ...args) {
+            console.log(args);
+        }
+
+        // fn(10, 20, 30, 40, 50);
+
+        let obj = {name:'孙悟空'};
+
+        function fn2() {
+            console.log(this);
+        }
+
+        // fn2.call(obj);
+
+        /*
+        *   bind()也是一个函数的方法，调用方法时bind会返回一个新的函数对象
+        *       这个新的函数对象的功能和原来函数的功能是一样的，不同点在于新函数的this是设置死的
+        * */
+        let fn3 = fn2.bind(obj);
+
+        // console.log(fn3);
+        fn3();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

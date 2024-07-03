@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        *   语法：
+        *       ([参数列表]) => 返回值
+        *
+        *       参数 => 返回值
+        *
+        *       ([参数列表]) => {
+        *           语句...
+        *       }
+        *
+        *   注意：
+        *       箭头函数中的this在函数创建时就以确定,
+        *           它由外层函数（作用域）中的this来决定
+        *           外层的this是谁，它的this就是谁
+        *
+        * */
+
+        let sum = (a, b) => a+b;
+        // console.log(sum(123, 456));
+
+        let arr = ['孙悟空', '猪八戒', '沙和尚'];
+        // arr.forEach(element=>console.log(element));
+
+        let arr2 = [3,4,1,2,5];
+        arr2.sort((a,b)=>a-b);
+        // console.log(arr2);
+
+        let sum2 = (a,b) => {
+            console.log('hello');
+            console.log('你好');
+            return a+b;
+        };
+        // sum2(123,456);
+
+        let fn = ()=>({name:'孙悟空'});
+
+        // fn();
+
+        let fn2 = ()=>alert(this); // window
+
+        let obj = {
+            fn2:fn2,
+
+            test:function () {
+                
+                let fn = ()=> alert(this);
+
+                fn();
+            }
+        };
+
+        obj.fn2();
+        // obj.test();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
