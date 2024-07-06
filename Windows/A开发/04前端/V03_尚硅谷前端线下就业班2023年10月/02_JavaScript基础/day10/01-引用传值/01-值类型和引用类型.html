@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 100;
+        var b = a;  // a的值 100 赋值给b
+        // 直接修改变量的值
+        b = 200;
+        console.log(a);   // 100
+        console.log('');
+        console.log('');
+
+
+        var obj1 = {age: 100};
+        var obj2 = obj1;   // obj1中存储的地址赋值给了 obj2
+        // 通过变量修改对象的属性
+        obj2.age = 200;
+        console.log(obj1.age);  // 200
+        console.log('');
+        console.log('');
+
+        // 新创建了一个对象 赋值给obj2
+        // 修改变量的值
+        obj2 = {age:400};
+        console.log(obj1.age);   // 200
+
+    </script>
+</body>
+</html>

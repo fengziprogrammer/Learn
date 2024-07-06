@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 实例化日期时间对象  不写参数包含当前的日期时间
+        var d1 = new Date();
+        // 实例化日期时间对象  指定日期时间
+        var d2 = new Date('December 17, 1995 03:24:00');
+        // 实例化日期时间对象  指定日期时间
+        var d3 = new Date('2008-09-12T10:06:45');
+        // 实例化日期时间对象  指定日期时间
+        var d4 = new Date(1949,9,1,10,0,12);
+        var d5 = new Date(1997,6);
+        var d6 = new Date(1997,6,10,8);
+        // 实例化日期对象 指定日期时间 参数是unix时间戳(1970.1.1 00:00:00 距离目标日期的毫秒数)
+        var d7 = new Date(360000000000);
+
+        console.log(d1);
+        console.log(d2);
+        console.log(d3);
+        console.log(d4);
+        console.log(d5);
+        console.log(d6);
+        console.log(d7);
+        console.log('');
+        console.log('');
+
+        // 修改日期对象的日期时间
+        d1.setFullYear(2000);
+        d1.setUTCHours(12);
+        d1.setTime(10000000000000);
+
+
+        console.log('年(公元纪年)：', d1.getFullYear());
+        console.log('月：', d1.getMonth() + 1);  // 从0开始算
+        console.log('星期几：', d1.getDay());
+        console.log('日：', d1.getDate());
+        console.log('时：', d1.getHours());
+        console.log('分：', d1.getMinutes());
+        console.log('秒：', d1.getSeconds());
+        console.log('毫秒', d1.getMilliseconds());
+        console.log('');
+        console.log('零时区（年）', d1.getUTCFullYear());
+        console.log('零时区（时）', d1.getUTCHours());
+        console.log('零时区（日）', d1.getUTCDate());
+        console.log('');
+        console.log('时间戳(毫秒数)：', d1.getTime());
+        console.log('');
+
+
+        console.log('此时此刻的时间戳：', Date.now());
+        console.log('指定日期的时间戳（零时区）：', Date.UTC(2000,10,2,10));
+
+    </script>
+</body>
+</html>

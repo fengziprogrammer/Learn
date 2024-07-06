@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建字符串实例
+        var msg = 'Hello，高小乐，你好可爱！';
+
+        console.log('第三个字符：', msg.charAt(2));
+        console.log('第三个字符：', msg[2]);
+        console.log('');
+
+        console.log(msg.indexOf('高'));
+        console.log(msg.indexOf('你好'));
+        console.log(msg.indexOf('，'));      // 5
+        console.log(msg.lastIndexOf('，'));  // 0
+        console.log(msg.indexOf('高启强'));  // -1
+        console.log(msg.lastIndexOf('高启强'));  // -1
+        console.log('');
+
+
+        console.log(msg.slice(4, 8));
+        console.log(msg.slice(4));
+        console.log(msg.substring(4, 8));
+        console.log(msg.substring(4));
+        console.log(msg.substr(4, 8));
+        console.log(msg.substr(4));
+        console.log('');
+
+        console.log(msg.split('，'));
+        console.log(msg.split('高'));
+        console.log(msg.split());
+        console.log(msg.split(''));
+        console.log('');
+
+        console.log(msg.toUpperCase());
+        console.log(msg.toLowerCase());
+        console.log('');
+
+        console.log(msg.charCodeAt(4));
+        console.log(msg.charCodeAt(8));
+        console.log('A'.charCodeAt(0));
+        console.log('a'.charCodeAt(0));
+        console.log('');
+
+
+        // 指定unicode返回字符 unicode编码是数字
+        console.log(String.fromCharCode(98));
+        console.log(String.fromCharCode(20048));
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义数组
+        var users = [
+            {name: '曹操', age: 67, address: '许昌'},
+            {name: '刘备', age: 47, address: '成都'},
+            {name: '孙权', age: 37, address: '南京'},
+            {name: '吕布', age: 51, address: '包头'},
+            {name: '赵云', age: 46, address: '石家庄'},
+            {name: '诸葛亮', age: 53, address: '南阳'}
+        ];
+        console.log(users);
+        console.log('');
+
+        // forEach
+        users.forEach(function(item, index, arr) {
+            console.log(item, index);
+        });
+        console.log('');
+
+
+        // filter 
+        // 找出年龄大于40岁的用户
+        var users01 = users.filter(function(item, index){
+            return item.age > 40;
+        });
+        console.log(users01);
+        console.log('');
+
+
+        // map 
+        // 得到由每个用户的用户名组成的数组
+        var names = users.map(function(item, index) {
+            return item.name;
+        });
+        console.log(names);
+        // 让每个用户的年龄减十岁
+        var users02 = users.map(function(item,index) {
+            item.age -= 10;
+            return item;
+        });
+        console.log(users02);
+        console.log('');
+
+
+        // every
+        // 判断是否所有的用户都是成年人
+        var res01 = users.every(function(item,index){
+            return item.age >= 18;
+        });
+        console.log('判断是否所有的用户都是成年人:', res01);
+        // 判断是否每个用户的名字都是两个字的
+        var res02 = users.every(function(item) {
+            return item.name.length === 2;
+        });
+        console.log('判断是否每个用户的名字都是两个字的：', res02);
+        console.log('');
+
+        // some()
+        // 判断是否有住在南京的用户
+        var res03 = users.some(function(item,index) {
+            return item.address === '南京';
+        });
+        console.log('判断是否有住在南京的用户:', res03);
+        // 判断是否有住在上海的用户
+        var res04 = users.some(function(item,index) {
+            return item.address === '上海';
+        });
+        console.log('判断是否有住在上海的用户:', res04);
+        console.log('');
+
+
+
+        // reduce() 第一个参数是回调函数 第二个参数可选
+        users.reduce(function(prev, item, index, arr) {
+            // prev 是上一次回调函数的返回值， 第一次执行的回调函数没有上一次使用 reduce 的第二个参数
+            console.log(prev, item, index);
+            return item.age;
+        });
+        // 计算所有用户的年龄和
+        var sum = users.reduce(function(prev, item) {
+            return prev + item.age;
+        }, 0);
+        console.log('所有用户年龄和：', sum);
+        /*
+            回调函数第一次执行 prev=0;  return 57;
+            回调函数第二次执行 prev=57;  return 57+37=94;
+            回调函数第三次执行 prev=94;  return 94+27=121;
+            ....
+        */
+
+        // 创建数组
+        var nums = [12,34,12,34,545,231,1212,324];
+        var sum01 = nums.reduce(function(prev, item) {
+            return prev + item;
+        });
+        console.log('数组所有元素的和：', sum01);
+        console.log('');
+        console.log('');
+
+
+        users.reduceRight(function(prev, item, index) {
+            console.log(prev, item, index);
+        }, '高小乐');
+      
+    </script>
+</body>
+</html>

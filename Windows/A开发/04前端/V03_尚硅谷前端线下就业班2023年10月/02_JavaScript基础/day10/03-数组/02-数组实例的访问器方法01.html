@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建数组
+        var nameList = ['欧阳姥姥', '司马姥姥', '独孤姥姥', '令狐姥姥', '东方姥姥', '西门姥姥', '诸葛姥姥'];
+        var nums = [10,20,30,40,50];
+        console.log(nameList);
+        console.log(nums);
+        console.log('');
+
+
+        // 数组连接
+        console.log(nameList.concat(nums));
+        console.log(nums.concat(nameList, [1000,2000,3000], ['a', 'b']));
+        console.log('');
+
+        // 截取数组
+        console.log(nameList.slice(1, 5));
+        console.log('');
+
+        // 将数组合并为字符串
+        console.log(nameList.join());
+        console.log(nameList.join('->'));
+        console.log(nameList.join(''));
+        console.log('');
+
+        // 判断是否存在某个元素
+        console.log(nameList.indexOf('欧阳姥姥'));
+        console.log(nameList.lastIndexOf('欧阳姥姥'));
+        console.log(nameList.indexOf('欧姥姥'));
+        console.log('');
+
+        var user =  {name: '赵云', age: 46, address: '石家庄'};
+        var users = [
+            {name: '曹操', age: 67, address: '许昌'},
+            {name: '刘备', age: 47, address: '成都'},
+            {name: '孙权', age: 37, address: '南京'},
+            {name: '吕布', age: 51, address: '包头'},
+            user,
+            {name: '诸葛亮', age: 53, address: '南阳'}
+        ];
+        console.log(users.indexOf({name: '刘备', age: 47, address: '成都'}));
+        console.log(users.indexOf(user));
+
+
+    </script>
+</body>
+</html>
