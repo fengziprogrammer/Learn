@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        let a = {x:10};
+        let b = a;
+
+        // 连着使用两个等会对变量进行赋值时，赋值时同时完成
+        a.x = a = {n:20};
+
+        /*
+        *   a.x = {n:20}
+        *   a = {n:20}
+        * */
+
+
+        // console.log(a.x);
+        // console.log(b.x);
+
+        // let str = 'hello hello'; // abc --> cba
+        // let result = str.split('');
+        // result.reverse();
+        // str = result.join('');
+
+        let str = 'hello hello';
+        str = str.split('').reverse().join('');
+
+        console.log(str);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

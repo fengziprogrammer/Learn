@@ -1,0 +1,107 @@
+Math
+    - Math是一个用来进行数学运算的工具类
+    - 工具类不需要创建对象，可以直接使用
+    - 在Math中包含了一组数学运算相关的常量和方法
+    - 例子：
+        Math.PI 获取圆周率
+        Math.abs()
+            - 获取一个数的绝对值
+        Math.ceil()
+            - 对一个数向上取整
+        Math.floor()
+            - 对一个数向下取整
+        Math.round()
+            - 对一个数进行四舍五入取整
+        Math.random()
+            - 生成一个0-1之间的随机数
+        Math.pow(x, y)
+            - 求x的y次幂
+        Math.sqrt()
+            - 求一个数的平方根（开方）
+        Math.max()
+            - 取多个值中的较大值
+        Math.min()
+            - 取多个值中的较小值
+
+Date
+    - Date是表示日期的对象，在JS中所有的时间相关的都使用Date来表示
+    - 创建对象：
+        1.创建一个表示当前日期的对象
+            let d = new Date();
+        2.创建一个指定日期的对象
+            let d = new Date('月/日/四位年 时:分:秒');
+    - 对象的方法：
+        d.getDay()
+            - 获取当前是周几
+            - 返回值 0-6
+        d.getDate()
+            - 获取当前是几日
+        d.getMonth()
+            - 获取当前是几月
+            - 返回值 0-11
+                0 1月
+                1 2月
+                ...
+        d.getFullYear()
+            - 获取当前的年份
+        ....
+
+        d.getTime()
+            - 获取当前日期的时间戳
+        Date.now()
+            - 获取当前的时间戳（代码执行这一刻）
+
+包装类
+    - JS中提供了三个包装类String、Number、Boolean
+    - 包装类可以用来创建基本数据类型的对象，但是我们自己千万不要用
+    - 当我们调用字符串、数值、布尔值的方法或属性时，
+        浏览器会调用包装类临时将其转换为对象，然后调用对象的属性或方法
+String
+    - 字符串的方法
+    - 字符串本质上就是一个字符数组
+    - 'abc' ---> ['a', 'b, 'c']
+    - 字符串的方法：
+        str.length
+            - 获取字符串的长度
+        str.charAt()
+            - 根据索引获取指定位置的字符
+        str.charCodeAt()
+            - 根据索引获取指定位置的字符编码
+        String.fromCharCode()
+            - 根据字符编码返回字符
+        str.indexOf()
+            - 查询子串在字符串中第一次出现的位置
+        str.lastIndexOf()
+            - 查询子串在字符串中最后一次出现的位置
+        str.slice()
+            - 截取字符串
+        str.trim()
+            - 去除前后空格
+        str.trimEnd()
+            - 去除结束的空格
+        str.trimStart()
+            - 去除开始的空格
+        str.startsWith()
+            - 检查字符串是否以指定内容开头
+        str.endsWith()
+            - 检查字符串是否以指定内容结尾
+        str.toUpperCase()
+            - 将字符串转换为大写
+        str.toLowerCase()
+            - 将字符串转换为小写
+        str.split()
+            - 将一个字符串拆分为一个数组
+
+DOM
+    - Document Object Model
+    - 文档对象模型
+    - 在DOM中为我们提供了一组对象，通过这些对象可以完成对网页的各种操作
+        - 文档（Document）
+            - 网页就是文档
+        - 对象（Object）
+            - 在网页中一切都是对象
+        - 模型（model）
+            - 模型用来体现文档间的关系
+    - 在浏览器中，document已经为我们提供好了，可以直接使用，
+        document是整个DOM树中最顶级的对象
+        通过document可以获取到其他的任意对象
