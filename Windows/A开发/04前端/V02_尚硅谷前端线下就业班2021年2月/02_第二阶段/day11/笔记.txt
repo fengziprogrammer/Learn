@@ -1,0 +1,118 @@
+节点（node）
+    - 网页里的所有东西都是一个节点
+    - 节点不同类型：
+        文档节点 document  （整个网页）
+        元素节点 element （html body h1 div span...）
+        文本节点 text （标签中的文字）
+        属性节点 attribute （标签中的属性）
+
+    - 事件（event）
+        - 事件就是用户和浏览器的交换瞬间，像鼠标点击，鼠标移动，按下按键...
+        - 我们可以通过为事件设置响应函数来完成和用户的交互
+        - 响应的方式：
+            方式一：
+                <button onclick="alert('....');">点我一下</button>
+            方式二：
+                <script>
+                    let btn = document.getElementById('btn');
+                    btn.onclick = function(){
+                        ... ...
+                    };
+                </script>
+
+    - 文档的加载
+        - 网页的加载是按照自上向下的顺序一行一行加载的，
+            如果将script标签写在前边，这样js执行时页面还没加载完毕
+            将会出现获取不到DOM对象的情况。
+        - 解决方式：
+            1.将script标签放在body的最后
+                <body>
+
+                <script></script>
+                </body>
+
+            2.可以将代码写在window.onload的回调函数中
+                window.onload = function(){
+                    ...
+                };
+
+            3.引入外部js文件时，在script标签上添加defer属性
+                <script defer src='....'></script>
+
+    - DOM查询
+        - 查询指在网页中获取指定的节点
+        - 通过document对象查询
+            - document.getElementById()
+                - 根据id获取一个元素节点对象
+            - document.getElementsByClassName()
+                - 根据class属性值获取一组元素节点对象
+            - document.getElementsByTagName()
+                - 根据标签名获取一组元素节点对象
+                - document.getElementsByTagName('*')
+                    - 获取页面中的所有元素
+            - document.getElementsByName()
+                - 根据元素的name属性获取一组元素节点对象（主要用于表单项）
+            - document.querySelector()
+                - 根据选择器字符串获取符合条件的第一个元素
+            - document.querySelectorAll()
+                - 根据选择器字符串获取符合条件的所有元素
+            - document.documentElement
+                - 获取页面的根元素 （html）
+            - document.body
+                - 获取页面的body元素
+
+        - 通过element进行查询
+            - element.getElementsByTagName()
+                - 根据标签名获取元素中的指定的后代元素
+            - element.childNodes
+                - 获取当前元素的所有子节点
+            - element.children
+                - 获取当前元素的所有子元素
+            - element.firstChild
+                - 获取第一个子节点
+            - element.firstElementChild
+                - 获取第一个子元素
+            - element.lastChild
+                - 获取最后一个子节点
+            - element.lastElementChild
+                - 获取最后一个子元素
+            - element.parentNode
+                - 获取当前元素的父元素
+            - element.previousSibling
+                - 获取前一个兄弟节点
+            - element.previousElementSibling
+                - 获取前一个兄弟元素
+            - element.nextSibling
+                - 获取后一个兄弟节点
+            - element.nextElementSibling
+                - 获取后一个兄弟元素
+
+        - 元素的中的属性：
+            - 如何读取元素的属性：
+                元素.属性名
+                例子：
+                    ele.name
+                    ele.value
+                    ele.id
+                    ele.className
+            - 如何设置：
+                元素.属性名 = 属性值
+                例子：
+                    ele.name = xx
+                    ele.value = xxx
+                    ele.id = xxx
+                    ele.className = xx
+
+        - 其他属性：
+            innerHTML 内部的HTML代码，带标签
+            innerText 内部的文本内容，不带标签
+
+        - 读取一个标签内部的文本：
+            <span>哈哈</span>
+            span.innerHTML
+            span.innerText
+            span.firstChild.nodeValue
+            span.textContent
+
+
+    - DOM修改（创建、删除、修改）
