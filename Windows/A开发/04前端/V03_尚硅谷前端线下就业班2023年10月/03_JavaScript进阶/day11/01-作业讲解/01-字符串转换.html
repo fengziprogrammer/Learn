@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+         * 字符串转换 将短横线分隔的字符串转为小驼峰的形式
+         * @params {string} 要转换的字符串
+         * @returns {string} 转化好的字符串
+        */
+        function toCamel(str) {
+            return str.split('-').map(function(item, index) {
+                return index === 0 ? item.toLowerCase() : item[0].toUpperCase() + item.slice(1).toLowerCase();
+            }).join('');
+        }
+        console.log(toCamel('get-element-by-id'));
+        console.log(toCamel('set-name-by-class-name'));
+
+
+
+
+
+        // 实现思路二  ----------------------------------------------------------------
+        /*
+        // 定义字符串
+        var str = 'get-element-by-id';
+        // 使用 map 进行处理
+        var newStr = str.split('-').map(function(item, index) {
+            return index === 0 ? item.toLowerCase() : item[0].toUpperCase() + item.slice(1).toLowerCase();
+        }).join('');
+        console.log(newStr);
+        */
+
+ 
+        // 实现思路一  ----------------------------------------------------------------
+        /*
+        // 定义字符串
+        var str = 'get-element-by-id';
+        // 将字符串分割成数组
+        var arr = str.split('-');
+        var newStr = '';
+        // 遍历数组
+        arr.forEach(function(item, index) {
+            if (index === 0) {
+                newStr += item.toLowerCase();
+            } else {
+                newStr += (item[0].toUpperCase() + item.slice(1).toLowerCase());
+            }
+        });
+        console.log(newStr);
+        */
+    </script>
+</body>
+</html>

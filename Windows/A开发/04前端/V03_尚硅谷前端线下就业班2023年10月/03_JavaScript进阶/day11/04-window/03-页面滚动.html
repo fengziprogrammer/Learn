@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section {
+            height: 500px;
+            border-bottom: 2px dashed #999;
+        }
+
+        p {
+            width: 2000px;
+        }
+
+        .nav {
+            position: fixed;
+            right: 10px;
+            bottom: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>第一部分</h2>
+    <div class="section"></div>
+    <h2>第二部分</h2>
+    <div class="section">
+        <p>朋亡秦由吞评揽种仁国方宋念智，名在打重极中毒同，不倒花夭貂人因肯京到书不为叩子第己的，面就撒国都真么郭牛葬只，皇衣承的持死其想派的大胜句，之订他劫十秦沾蒲丹杀自让皇舟罪其能头，病魂战外妙训不为但如并上有都路宋于，若无秦恨重李就他求郭他死如专永君十，月梵不。</p>
+    </div>
+    <h2>第三部分</h2>
+    <div class="section"></div>
+    <h2>第四部分</h2>
+    <div class="section"></div>
+    <h2>第五部分</h2>
+    <div class="section"></div>
+    <h2>第六部分</h2>
+
+    <div class="nav">
+        <button id="btn01">scrollTo</button>
+        <button id="btn02">返回页面顶部</button>
+        <button id="btn03">scrollBy</button>
+    </div>
+
+    <script>
+        var btn01 = document.getElementById('btn01');
+        btn01.onclick = function() {
+            scrollTo(400, 200);
+        };
+
+
+        var btn02 = document.getElementById('btn02');
+        btn02.onclick = function() {
+           // 设置两个参数作为坐标
+           // scrollTo(0, 0);
+            
+           // 设置一个参数，该参数是对象
+           scrollTo({
+                left: 0, 
+                top: 0,
+                behavior: 'smooth'
+           });
+        };
+
+        var btn03 = document.getElementById('btn03');
+        btn03.onclick = function() {
+            // 设置两个参数作为滚动的距离
+            // scrollBy(100, 100);
+
+            // 设置一个参数，该参数是对象
+            scrollBy({
+                top: 600,
+                behavior: "smooth"
+            });
+        };
+
+    </script>
+</body>
+</html>

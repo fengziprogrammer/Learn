@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 600px;
+            padding: 20px;
+            height: 250px;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <div id="box">
+        流会法，个会惶言盲亲我，觉就许，你世于韩他皮，斯笔遗婵予李下护乡了策作国，此百天在读人拆反台修智同皮，洪教自疾，总年喜后徒人有到壬不人惜更保害友使，小尺的若不慷，不燕间骨土为真不对未老唯厅韩啊陀妄死里，一活第人着反在李氏导创三，国中会六，他天力他是承之蒲。
+    </div>
+
+    <script>
+        // 获取到html元素 保存成js的对象
+        var boxEle = document.getElementById('box');
+
+        // 给元素监听事件 监听单击事件
+        boxEle.onclick = function() {
+            // 修改元素的背景颜色
+            boxEle.style.backgroundColor = '#900';
+            boxEle.style.color = '#fff';
+            boxEle.style.fontSize = '14px';
+
+            // 修改元素中的内容
+            boxEle.innerHTML = '哈哈哈，我被点了一下！';
+        };
+
+       
+       
+    </script>
+</body>
+</html>

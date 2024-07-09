@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn01">点击修改locaiton的属性</button>
+    <button id="btn02">点击刷新</button>
+    <button id="btn03">assign</button>
+    <button id="btn04">replace</button>
+    <script>
+        console.log(location);
+        console.log('完整的URL：', decodeURI(location.href));
+        console.log('协议：', location.protocol);
+        console.log('主机名：', location.hostname);
+        console.log('端口号：', location.port);
+        console.log('主机名+端口号：', location.host);
+        console.log('路径信息：', decodeURI(location.pathname));
+        console.log('锚点信息：', location.hash);
+        console.log('参数信息：', location.search);
+
+
+        var btn01 = document.getElementById('btn01');
+        btn01.onclick = function() {
+            // location.href = './01-history.html';
+            // location.protocol = 'https';
+            location.hostname = 'localhost';
+            location.hash = '#first';
+            location.search = '?name=xiaole&age=10';
+        };
+
+
+        var btn02 = document.getElementById('btn02');
+        btn02.onclick = function() {
+            location.reload();
+        };
+
+        var btn03 = document.getElementById('btn03');
+        btn03.onclick = function() {
+            location.assign('http://www.jd.com');
+        };
+
+        var btn04 = document.getElementById('btn04');
+        btn04.onclick = function() {
+            location.replace('http://www.jd.com');
+        };
+    </script>
+</body>
+</html>

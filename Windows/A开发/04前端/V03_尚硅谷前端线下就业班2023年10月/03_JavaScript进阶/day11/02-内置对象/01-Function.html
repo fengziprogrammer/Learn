@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Array、String、Object 、parseInt ...
+        // 自定义函数
+        function func(num01, num02) {
+            console.log('func被调用了：', num01*num02, this);
+            return num01+num02;
+        };
+
+        console.log(func.length);
+        console.log(parseInt.length);
+        console.log(Array.length);
+        console.log(isNaN.length);
+        console.log([].join.length);
+        console.log('');
+
+        // 创建对象
+        var user = {
+            name: '曹操',
+            getInfo: func
+        };
+
+        // 调用函数  window调用，里面的this指向 window
+        func(10, 20);
+        user.getInfo(4, 6);
+        console.log('');
+
+        // 执行 func 函数类型的对象的 call 方法； 函数会被调用
+        // call 调用 func的同时可以设置里面的 this
+        var res = func.call({name:'高小乐'}, 10, 6);
+        user.getInfo.call([10,20,30], 8, 5);
+        console.log(res);
+        console.log('');
+
+        // apply 调用函数并设置里面的this
+        // 与call的区别： apply只能接收两个参数，第二个参数是数组
+        var res1 = func.apply('hello', [19, 2]);
+        console.log(res1);
+        user.getInfo.apply(new Date());
+        console.log('');
+
+
+
+        // 使用 forEach 遍历字符串
+        var str = 'Hello高小乐';
+        // Array.prototype.forEach(function(){});
+        [].forEach.call(str, function(item,index, arr){
+            console.log(item, index);
+        });
+        console.log('');
+
+        var str1 = [].reduceRight.call(str, function(prev, item){
+            return prev + item
+        });  
+        console.log(str1);  
+        console.log('');
+        
+
+        // 使用 forEach 配合apply
+        [].forEach.apply(str, [function(item,index, arr){
+            console.log(item, index);
+        }]);
+        console.log('');
+        console.log('');
+        console.log('');
+
+
+        function func(num01, num02) {
+            console.log('func被调用了：', num01*num02, this);
+            return num01+num02;
+        };
+
+        // bind
+        // var fn01 = func;
+        var fn01 = func.bind([10,20,30,40,50]);
+        console.log(fn01(10, 20));
+        console.log('');
+
+        var fn02 = func.bind([10,20,30], 10000);
+        console.log(fn02(2));
+        console.log('');
+
+        var fn03 = func.bind([10,20,30], 100, 200);
+        console.log(fn03());
+
+    </script>
+</body>
+</html>
