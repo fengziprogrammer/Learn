@@ -1,0 +1,56 @@
+- DOM的增删改
+    - 创建元素
+        - document.createElement(标签名)
+            - 创建一个新的元素
+        - document.createTextNode(文本内容)
+            - 创建一个新的文本节点
+
+    - 插入元素
+        - 父节点.appendChild(子节点)
+            - 向父节点中插入一个子节点
+
+        - 元素.insertAdjacentElement('位置', 元素);
+            - 向元素的指定位置插入子元素
+        - 元素.insertAdjacentHTML('位置', 'HTML代码');
+            - 向元素的指定位置插入HTML代码
+        - 元素.insertAdjacentText('位置', '文本内容');
+            - 向元素的指定位置插入文本内容
+            - 位置需要传递一个字符串作为参数：
+                'beforebegin' 开始标签前，成为当前元素的前一个兄弟元素
+                'afterbegin' 开始标签后，成为当前元素的第一个子元素
+                'beforeend' 结束标签前，成为当前元素的最后一个子元素
+                'afterend' 结束标签后，成为当前元素的后一个兄弟元素
+
+        - 父节点.replaceChild(新节点, 旧节点)
+            - 使用新节点替换旧节点
+        - 父节点.insertBefore(新节点, 旧节点)
+            - 将新节点插入到旧节点的前边
+
+    - 复制节点
+        - 节点.cloneNode()
+            - 对节点进行浅复制（只复制节点本身）
+        - 节点.cloneNode(true)
+           - 对节点进行深复制（复制节点本身及所有的后代节点）
+
+    - 删除元素
+        - 子节点.parentNode.removeChild(子节点)
+        - 子节点.remove()
+
+- this
+     - 根据函数的调用方式不同，this的值也不同：
+        1.以函数形式调用，this是window
+        2.以方法的形式调用，this是调用方法的对象
+        3.以构造函数的形式调用，this是新建的对象
+        4.以call和apply的形式调用，this是它们的第一个参数
+        5.箭头函数中的this由它外层作用域决定
+        6.事件的回调函数中，this是绑定事件的对象
+
+- 默认行为
+    - 默认行为指当事件触发时元素默认会做的事情
+        比如：点击超链接后页面会发生跳转，点击表单的提交按钮后页面发生跳转 ...
+    - 有时默认行为会影响到正常功能，需要将其取消，只需要在事件的响应函数中return false即可取消
+    - 例子：
+        link.onclick = function(){
+            ...
+            return false;
+        };
