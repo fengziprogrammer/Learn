@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            margin: 20px auto;
+            width: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            flex: 0 0 auto;
+            margin: 10px;
+            box-sizing: border-box;
+            width: 200px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            background: #ccc;
+            cursor: pointer;
+        }
+
+        .item.active {
+            color: #fff;
+            text-decoration: wavy underline;
+            border: 2px solid #900;
+            background: #099;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+    </div>
+
+    <script>
+        // 获取所有类名是item的元素
+        var itemBoxs = document.querySelectorAll('.item');
+
+        // 遍历所有的item元素
+        itemBoxs.forEach(function(itemBox) {
+            // 给每一个 item 元素添加事件
+            itemBox.onclick = function() {
+                // 判断所点击的元素是否是选中
+                if (itemBox.className === 'item active') {
+                    // 说明当前是选中状态 执行取消选中的操作
+                    itemBox.className = 'item';
+                } else {
+                    // 说明当前是未选中状态 执行选中的操作
+                    itemBox.className = 'item active';
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            padding: 20px;
+            width: 600px;
+            border: 1px dashed #900;
+        }
+
+        p {
+            width: 500px;
+            padding: 20px;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="wrapper">
+        <p>尹了未必极下一，薪的反法没第不人不上老。</p>
+        <p>尹了未必极下一，薪的反法没第不人不上老。</p>
+        <p>尹了未必极下一，薪的反法没第不人不上老。</p>
+        <p>尹了未必极下一，薪的反法没第不人不上老。</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <script>
+        // 获取文档中所有标签名是 p 的元素
+        var pEles = document.getElementsByTagName('p');
+        console.log(pEles);
+
+        // 遍历 pEle 使用循环结构
+        for (var i = 0; i < pEles.length; i ++) {
+            pEles[i].innerHTML = '第' + i + '个段落 ' + Math.random();
+        }
+
+
+        // 获取ID是box的元素
+        var box = document.getElementById('box');
+        // 从box的后代元素中获取所有标签名是p的元素
+        var pEles02 = box.getElementsByTagName('p');
+        console.log(pEles02);
+
+        // 给 pEles02 中的最后一个元素 设置背景色红色
+        pEles02[pEles02.length-1].style.backgroundColor = '#f00';
+
+
+        var liEles = document.getElementsByTagName('li');
+        console.log(liEles);
+    </script>
+</body>
+</html>

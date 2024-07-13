@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>读写属性</h1>
+    <hr>
+
+    <button id="btn01">读取属性值</button>
+    <button id="btn02">设置属性值</button>
+    <br>
+    <br>
+    <img src="./images/img001.jpg" alt="小乐吃蛋糕" width="300" title="小乐正在吃，吃得特别香" loadpic="100.jpg">
+    <br>
+    <input type="checkbox" name="" id="checkboxInput">
+
+
+
+    <script>
+        // 获取到 img 元素
+        var imgBox = document.querySelector('img');
+        // 获取复选框元素
+        var checkboxInput = document.querySelector('#checkboxInput');
+        // 获取按钮元素
+        var btn01 = document.querySelector('#btn01');
+        var btn02 = document.querySelector('#btn02');
+    
+
+        // 点击按钮 读取属性值
+        btn01.onclick = function() {
+            console.log('loadpic属性值：', imgBox.getAttribute('loadpic'));
+            console.log('src属性值：', imgBox.getAttribute('src'));
+            console.log('width属性值：', imgBox.getAttribute('width'));
+            console.log('height属性值：', imgBox.getAttribute('height'));
+            console.log('复选框的checked属性：', checkboxInput.getAttribute('checked'));
+        };
+
+        // 点击按钮 设置属性值
+        btn02.onclick = function() {
+            imgBox.setAttribute('src', './images/pk02.png');
+            imgBox.setAttribute('home-address', '上海');
+        };
+
+      
+   </script>
+</body>
+</html>

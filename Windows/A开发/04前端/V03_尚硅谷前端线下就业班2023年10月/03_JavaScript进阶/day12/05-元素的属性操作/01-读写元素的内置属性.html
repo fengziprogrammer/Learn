@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>读写内置属性</h1>
+    <hr>
+
+    <button id="btn01">读取属性值</button>
+    <button id="btn02">换图</button>
+    <button id="btn03">放大</button>
+    <button id="btn04">复选框的属性</button>
+    <br>
+    <br>
+    <img src="./images/img001.jpg" alt="小乐吃蛋糕" width="300" title="小乐正在吃，吃得特别香">
+    <br>
+    <input type="checkbox" name="" id="checkboxInput">
+
+
+
+    <script>
+        // 获取到 img 元素
+        var imgBox = document.querySelector('img');
+        // 获取复选框元素
+        var checkboxInput = document.querySelector('#checkboxInput');
+        // 获取按钮元素
+        var btn01 = document.querySelector('#btn01');
+        var btn02 = document.querySelector('#btn02');
+        var btn03 = document.querySelector('#btn03');
+        var btn04 = document.querySelector('#btn04');
+
+        // 点击按钮 读取属性值
+        btn01.onclick = function() {
+            console.log(imgBox.title);
+            console.log(imgBox.alt);
+            console.log(decodeURI(imgBox.src));
+            console.log(imgBox.width);
+            console.log(imgBox.height);
+            console.log(imgBox.id);
+        };
+
+        // 点击按钮 换图
+        btn02.onclick = function() {
+            imgBox.src = './images/pk02.png';
+        };
+
+        // 点击图片 放大
+        btn03.onclick = function() {
+            imgBox.width += 50;
+        }
+   
+        // 点击按钮 复选框的属性 checked属性
+        btn04.onclick = function() {
+            console.log(checkboxInput.checked);
+            checkboxInput.checked = !checkboxInput.checked;
+        }
+   </script>
+</body>
+</html>

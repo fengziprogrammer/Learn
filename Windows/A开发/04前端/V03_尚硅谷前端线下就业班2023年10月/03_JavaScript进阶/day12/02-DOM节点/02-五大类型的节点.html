@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            width:400px;
+            height: 250px;
+            padding: 20px;
+            color: #fff;
+            background: #900;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="item">
+        与即流要一处修变目卞五是夫一书地，间不。
+        <!-- Hello World 我是注释 -->
+    </div>
+
+
+    <script>
+        // document类型的节点 document表示整个文档
+        console.log(document);
+        console.log('nodeName：', document.nodeName);
+        console.log('nodeValue：', document.nodeValue);
+        console.log('nodeType：', document.nodeType);
+        console.log('');
+
+
+        // 元素类型的节点
+        var ele = document.getElementById('box');
+        console.log(ele);
+        console.log('nodeName：', ele.nodeName);
+        console.log('nodeValue：', ele.nodeValue);
+        console.log('nodeType：', ele.nodeType);
+        console.log('');
+
+
+        // 属性类型的节点
+        var attr = ele.getAttributeNode('class');
+        console.log(attr);
+        console.log('nodeName：', attr.nodeName);
+        console.log('nodeValue：', attr.nodeValue);
+        console.log('nodeType：', attr.nodeType);
+        console.log('');
+
+
+        // 文本类型的节点
+        var text = ele.firstChild;
+        console.log(text);
+        console.log('nodeName：', text.nodeName);
+        console.log('nodeValue：', text.nodeValue);
+        console.log('nodeType：', text.nodeType);
+        console.log('');
+
+        // 注释类型的节点
+        var comment = ele.childNodes[1];
+        console.log(comment);
+        console.log('nodeName：', comment.nodeName);
+        console.log('nodeValue：', comment.nodeValue);
+        console.log('nodeType：', comment.nodeType);
+    </script>
+</body>
+</html>

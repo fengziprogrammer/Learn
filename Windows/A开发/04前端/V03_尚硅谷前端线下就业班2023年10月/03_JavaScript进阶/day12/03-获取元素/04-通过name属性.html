@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            padding: 20px;
+            width: 600px;
+            border: 1px dashed #900;
+        }
+
+        p {
+            width: 500px;
+            padding: 20px;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="wrapper" name="xiaole">
+        <p class="item" name="xiaole">尹了未必极下一，薪的反法没第不人不上老。</p>
+        <div class="item">尹了未必极下一，薪的反法没第不人不上老。</div>
+        <p class="item" name="xiaole">尹了未必极下一，薪的反法没第不人不上老。</p>
+        <div>尹了未必极下一，薪的反法没第不人不上老。</div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="item active" name="xiaole">Lorem ipsum dolor sit amet.</div>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <script>
+        var eles = document.getElementsByName('xiaole');
+        console.log(eles);
+    </script>
+</body>
+</html>

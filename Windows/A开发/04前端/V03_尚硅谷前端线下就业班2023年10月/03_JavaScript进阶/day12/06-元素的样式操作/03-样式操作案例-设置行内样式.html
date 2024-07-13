@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            margin: 20px auto;
+            width: 1000px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            flex: 0 0 auto;
+            margin: 10px;
+            box-sizing: border-box;
+            width: 200px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            background: #ccc;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+        <div class="item">高小乐</div>
+    </div>
+
+    <script>
+        // 获取所有类名是item的元素
+        var itemBoxs = document.querySelectorAll('.item');
+
+        // 遍历所有的item元素
+        itemBoxs.forEach(function(itemBox) {
+            // 给每一个 item 元素添加事件
+            itemBox.onclick = function() {
+                // 判断当前的item元素是选中还是未选中
+                if (itemBox.style.backgroundColor === 'rgb(0, 153, 153)') {
+                    // 当前是选中 执行取消选中的操作
+                    itemBox.style.border = '';
+                    itemBox.style.backgroundColor = '';
+                    itemBox.style.color = '';
+                } else {
+                    // 当前还未选中 执行选中的操作
+                    itemBox.style.border = '2px solid #900';
+                    itemBox.style.backgroundColor = '#099';
+                    itemBox.style.color = '#fff';
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
