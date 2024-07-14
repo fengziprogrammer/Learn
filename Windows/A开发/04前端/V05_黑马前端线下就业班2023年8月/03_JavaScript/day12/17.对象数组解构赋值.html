@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 对象数组解构
+    const arr = [
+      {
+        uname: '宏昌',
+        age: 30,
+        gender: '男'
+      },
+      {
+        uname: '狗哥',
+        age: 3,
+      }
+    ]
+    const [
+      { uname, age },
+      { uname: uname1, age: age1 }
+    ] = arr
+    console.log(uname, age, uname1, age1)
+  </script>
+</body>
+
+</html>

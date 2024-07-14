@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const uname = '狗哥'
+    const age = 18
+    const obj = {
+      uname: '宏昌',
+      age: 30,
+      gender: '男'
+    }
+    // uname: name  给 uname属性名起别名叫 name
+    const { age: age1, gender, uname: name } = obj
+
+    console.log(age1, gender, name)
+  </script>
+</body>
+
+</html>

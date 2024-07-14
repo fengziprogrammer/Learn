@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08.函数参数-剩余参数(重点)</title>
+</head>
+
+<body>
+  <script>
+    // ...arr 使用 arr变量(形参)接收全部的实参
+    // function getSum(...arr) {
+    //   console.log(arr) // 真数据
+    // }
+    // getSum(1, 2, 3, 4)
+
+    // 解决 => 形参和实参不一致的问题
+    // fn可以求和, 但是最少求两个数的和
+    function fn(a, b, ...c) {
+      console.log(a + b, c)
+    }
+    fn(1, 3, 4, 5, 6)
+  // 注意: 剩余参数只能写在参数的最后面
+  </script>
+</body>
+
+</html>

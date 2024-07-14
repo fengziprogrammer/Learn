@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    fn()
+    // 函数提升=>只存在于 函数声明中
+    // 1. 创建函数方式1: 函数声明
+
+    // 如果用函数声明的方式创建了一个函数,那么这个函数会出现在当前作用域的最前面
+    function fn() {
+      console.log('我是函数声明创建的函数')
+    }
+    fn()
+
+    // 2. 创建函数方式2: 函数表达式 √
+    // 函数表达式,严格来说就是变量赋值,所以不能再赋值之前调用
+    const fun = function () { }
+    fun()
+  </script>
+</body>
+
+</html>

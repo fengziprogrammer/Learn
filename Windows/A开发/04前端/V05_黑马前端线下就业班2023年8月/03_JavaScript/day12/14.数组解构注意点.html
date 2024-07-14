@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // const pc = ['海尔', '联想', '小米', '方正']
+    // 1. 变量和值不匹配的情况
+    // 1.1 值多,会被忽略掉
+    // const [a, b, c] = pc
+    // console.log(a, b, c)
+    // 1.2 变量多,值少 多出来的变量会默认赋值为 undefined
+    // const [a, b, c, d, e] = pc
+    // console.log(a, b, c, d, e)
+
+    // 2. 尽量避免出现 undefined 
+    // const [a = 0, b, c, d, e = 0] = pc
+    // console.log(a, b, c, d, e)
+
+    // 3. 利用 剩余参数 能解决 变量和值不匹配的问题
+    // const [a, b, ...c] = [1, 2, 3, 4, 5, 6]
+    // console.log(a, b, c)
+
+    // 4. 可以按需导入想要的参数
+    // const arr = ['狗哥', '超超', '宏昌']
+    // const [a, , b] = arr
+    // console.log(a, b)
+
+    // 5. 支持多维数组解构
+    const arr = [1, 2, 3, [4, 5, [6, 7]]]
+    // console.log(arr.length)
+    const [a, b, c, [d, e, [f, g]]] = arr
+    console.log(a, b, c, d, e, f, g)
+  </script>
+</body>
+
+</html>

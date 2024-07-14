@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button>按钮</button>
+  <script>
+    // 箭头函数的 this问题
+    const btn = document.querySelector('button')
+    // 箭头函数中没有自己的 this, 箭头函数中的this指向上级作用域
+    // console.log(this)
+    // btn.addEventListener('click', () => {
+    //   console.log(btn)
+    // })
+
+
+    // 定时器中如果想要使用 事件源,推荐使用箭头函数
+    // 需求: 点击按钮禁用, 三秒后在启用
+    btn.addEventListener('click', function () {
+      btn.disabled = true
+      setTimeout(() => {
+        console.log(this)
+        this.disabled = false
+      }, 3000)
+    })
+    // 开发中 如果想使用 箭头函数,那么需要注意 this问题,如果是事件函数, 不推荐使用箭头函数(原因就是this指向问题)
+  </script>
+</body>
+
+</html>

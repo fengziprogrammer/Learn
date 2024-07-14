@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const uname = '狗哥'
+    const age = 18
+    // 对象属性简写: 属性名和属性值 一致的时候才可以,但是属性值一般情况下是变量名
+    const obj = {
+      // uname: uname,
+      // age: age
+      uname,
+      age,
+      // gender: 'gender'
+    }
+    console.log(obj)
+
+    // 对象方法的简写
+    const obj1 = {
+      // sing: function () { }
+      // 方法简写 
+      sing() {
+        console.log('狗哥唱首歌')
+      }
+    }
+    obj1.sing()
+
+  </script>
+</body>
+
+</html>

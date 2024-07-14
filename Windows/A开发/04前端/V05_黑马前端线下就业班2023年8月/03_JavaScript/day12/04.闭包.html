@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 闭包基本写法
+    // function outer() {
+    //   const a = 10
+    //   function fn() {
+    //     console.log(a)
+    //   }
+    //   fn()
+    // }
+    // outer() 
+
+    // 案例: 记录函数的执行次数
+    // let count = 0 // 此时 count是全局变量,能够被修改,不安全
+    // function fn() {
+    //   count++
+    //   console.log(`fn函数掉了${count}次`)
+    // }
+    // fn()
+    // fn()
+
+    // 需求同上: 闭包形式
+    function fn() {
+      let count = 0
+      function fun() {
+        count++
+        console.log(`fn函数掉了${count}次`)
+      }
+      return fun // 返回的是一个函数
+    }
+    const f = fn() // fn调用函数会返回函数的返回值
+    f() // f 调用实际上就是在调用 fun
+    // 总结:
+    // 闭包: 内部函数 + 外部函数的变量
+    // 闭包的作用, 防止全局变量污染
+    // 闭包带来问题: 内存泄漏
+
+    // 闭包常用写法
+    /*
+      function fn() {
+        let count = 10
+        return function () {
+          count++
+          console.log(`fn函数掉了${count}次`)
+        }
+      }
+    */
+
+  </script>
+</body>
+
+</html>

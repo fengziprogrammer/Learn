@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // const pig = {
+    //   name: '佩奇',
+    //   family: {
+    //     mother: '猪妈妈',
+    //     father: '猪爸爸',
+    //     sister: '乔治'
+    //   },
+    //   age: 6
+    // }
+    // 多级对象解构 => 和改名相似
+    // const { family: { mother, father, sister } } = pig
+    // console.log(mother, father, sister)
+
+    // 后期很多数据都是这样的格式
+    const pigs = [
+      {
+        name: '佩奇',
+        family: {
+          mother: '猪妈妈',
+          father: '猪爸爸',
+          sister: '乔治'
+        },
+        age: 6
+      }
+    ]
+    const [{ name: uname, family: { mother, father, sister } }] = pigs
+    console.log(uname, mother, father, sister)
+  </script>
+</body>
+
+</html>

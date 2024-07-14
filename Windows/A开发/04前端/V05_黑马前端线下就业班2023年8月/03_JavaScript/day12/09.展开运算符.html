@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 展开运算符 基本用法
+    // const arr = [1, 2, 3]
+    // console.log(...arr) // 1 2 3
+
+    // const obj = {
+    //   uname: '狗哥',
+    //   age: 18
+    // }
+    // console.log({ ...obj }) //  对象展开需要使用新的对象去包含
+
+    // 应用: 数组的展开 => 求最大最小值 
+    // console.log(Math.max(1, 2, 3, 4, 5))
+    // console.log(Math.max(...arr))
+    // console.log(Math.min(...arr))
+    // 合并数组
+    const arr1 = [1, 2, 3]
+    const arr2 = ['哈哈', '呵呵', '嘿嘿嘿']
+    const arr3 = [...arr1, ...arr2]
+    console.log(arr3)
+
+    // 合并对象k
+    const obj = {
+      uname: 'zs'
+    }
+    const obj1 = {
+      age: 18
+    }
+    const obj2 = {
+      ...obj,
+      ...obj1
+    }
+    console.log(obj2)
+
+  </script>
+</body>
+
+</html>
