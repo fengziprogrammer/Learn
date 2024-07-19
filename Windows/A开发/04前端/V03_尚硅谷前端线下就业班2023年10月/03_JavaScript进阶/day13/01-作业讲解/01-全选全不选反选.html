@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <ul id="checkboxList">
+        <li>
+            <input type="checkbox">
+            的统自们洪爱五张中治间都为松的，是久尚。
+        </li>
+        <li>
+            <input type="checkbox">
+            的统自们洪爱五张中治间都为松的，是久尚。
+        </li>
+        <li>
+            <input type="checkbox">
+            的统自们洪爱五张中治间都为松的，是久尚。
+        </li>
+        <li>
+            <input type="checkbox">
+            的统自们洪爱五张中治间都为松的，是久尚。
+        </li>
+        <li>
+            <input type="checkbox">
+            的统自们洪爱五张中治间都为松的，是久尚。
+        </li>
+        <li>
+            <input type="checkbox">
+            的统自们洪爱五张中治间都为松的，是久尚。
+        </li>
+    </ul>
+
+    <hr>
+
+    <button id="selectAllBtn">全选</button>
+    <button id="selectNotAllBtn">取消全选</button>
+    <button id="reverseBtn">反选</button>
+
+
+    <script>
+        // 获取到所有的复选框元素
+        var checkboxItems = document.querySelectorAll('#checkboxList input');
+
+        // 点击全选按钮
+        var selectAllBtn = document.querySelector('#selectAllBtn');
+        selectAllBtn.onclick = function() {
+            // 遍历所有复选框元素
+            checkboxItems.forEach(function(checkBoxItem) {
+                checkBoxItem.checked = true;
+            });
+        };
+
+        // 点击取消全选
+        var selectNotAllBtn = document.querySelector('#selectNotAllBtn');
+        selectNotAllBtn.onclick = function() {
+            // 遍历所有复选框元素
+            checkboxItems.forEach(function(checkBoxItem) {
+                checkBoxItem.checked = false;
+            });
+        };
+
+        // 点击反选
+        var reverseBtn = document.querySelector('#reverseBtn');
+        reverseBtn.onclick = function() {
+            // 遍历所有的复选框严肃
+            checkboxItems.forEach(function(checkBoxItem){
+                checkBoxItem.checked =  !checkBoxItem.checked; 
+            });
+        };
+
+
+    </script>
+</body>
+</html>
