@@ -1,0 +1,108 @@
+通过JS去操作CSS：
+    - 操作内联样式
+        - 属性：style
+        - 读取样式：
+            元素.style.样式名
+        - 设置样式：
+            元素.style.样式名 = 样式值
+        - 注意：
+            1.通过style属性所读取和设置的样式都是内联样式
+            2.所以通过它所设置的样式通常会立即生效
+            3.如果样式名不符合标识符的规范，需要对样式名就行修改：
+                去掉-，-后的字母大写
+                 background-color ==> backgroundColor
+                 border-left-width ==> borderLeftWidth
+
+    - 获取当前的生效的样式
+        getComputedStyle()
+            - 参数：
+                1.要获取样式的元素
+                2.要获取的伪类（没有可以不写）
+            - 返回值：
+                一个对象，对象中包含了当前元素所有生效的样式
+
+        - 注意：
+            该方法获取的样式全都是只读的，无法修改
+
+    - 其他的样式相关的属性：
+        clientWidth
+        clientHeight
+            - 获取的是内容区和内边距的总大小
+
+        offsetWidth
+        offsetHeight
+            - 获取的是内容区、内边距和边框的总大小
+
+        offsetParent
+            - 获取当前元素的定位父元素
+            - 离当前元素最近的开启了定位的祖先元素，如果所有的祖先都没有开启定位
+                则返回body
+
+        offsetLeft
+        offsetTop
+            - 当前元素距离其定位父元素的距离
+
+        scrollHeight
+        scrollWidth
+            - 获取元素滚动区域的大小
+
+        注意：
+            1.以上属性都是只读属性，无法修改
+            2.以上属性所获取的值都是不带单位的值，可以直接参与运算
+
+        scrollTop
+        scrollLeft
+            - 获取（设置）垂直和水平滚动条滚动的距离
+
+        - 判断滚动条滚动到底：
+            - 垂直：
+                scrollHeight - scrollTop === clientHeight
+            - 水平：
+                scrollWidht - scrollLeft === clientWidth
+
+事件（Event）
+    - 事件对象：
+        - 当事件的回调函数被调用时，浏览器每次都会传递一个对象作为参数
+            这个对象就是事件对象。
+        - 事件对象中存储了事件相关的一切信息：
+            事件触发时，哪个鼠标按键被按下、
+                      哪个键盘上的按键被按下、
+                      鼠标滚轮滚动的方向..
+        - 要获取事件对象，只需在事件的回调函数中定义一个形参即可
+
+    - 事件的冒泡（bubble）
+        - 冒泡指事件的向上传导，
+            子元素上事件触发时，会同时导致其祖先元素上的同类事件也被触发
+        - 冒泡的存在简化了代码的编写
+        - 但是有时我们不希望冒泡的存在，可以通过事件对象来取消冒泡：
+            1.通过cancelBubble属性来取消冒泡
+                event.cancelBubble = true;
+            2.通过stopPropagation()方法来取消冒泡
+                event.stopPropagation();
+
+    - 事件的传播
+        - 事件的传播分成了三个阶段：
+            1.事件的捕获
+                - 指事件从最外层元素开始向内部元素进行事件的捕获
+                - 默认情况下，捕获阶段不会触发事件
+                - 如果希望在捕获时触发事件，可以将addEventListener()的第三个参数设置为true
+            2.目标元素（触发事件的元素）
+                - 捕获到达目标元素停止
+            3.事件的冒泡
+                - 从目标元素开始向外层元素进行事件的冒泡
+                - 默认情况下，冒泡时事件会被触发
+
+    - addEventListener()
+        - 为元素添加事件的响应函数
+        - 参数：
+            1.要绑定的事件的字符串（不要on）
+            2.事件的回调函数
+            3.是否在捕获阶段触发事件，默认为false
+            // https://developer.mozilla.org/en-US/docs/Web/Events
+
+    - removeEventListener()
+        - 移除元素上的指定的事件
+
+
+
+

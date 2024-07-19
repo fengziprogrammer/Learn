@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box1"></div>
+
+<a id="baidu" href="https://www.baidu.com">去Baidu</a>
+
+<script>
+
+    let box1 = document.getElementById('box1');
+    // console.log(getComputedStyle(box1).backgroundColor);
+
+    // box1.onclick = function (event) {
+    //     alert(event);
+    // };
+
+    box1.addEventListener('click', function (event) {
+        alert(event);
+        event.stopPropagation()
+    });
+
+    let baidu = document.getElementById('baidu');
+    baidu.addEventListener('click', function (event) {
+        // 取消默认行为
+        event.preventDefault();
+        alert(123);
+    });
+
+    // baidu.onclick = function (event) {
+    //     event.preventDefault();
+    //     alert(123);
+    // };
+
+</script>
+
+</body>
+</html>
