@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button>按钮</button>
+  <script>
+    // 1. 箭头函数 this指向
+    // fn()
+    // const fn = () => { }
+    // 特点1. 函数表达式的简写=> 不能再函数之前调用
+    // 特点2. 没有自己的this指向, 他始终指向上级作用域
+
+
+    // const fn = () => {
+    //   console.log(this)
+    // }
+    // fn()
+    // 普通函数, 定时器(延时函数间隔函数)
+    // document.querySelector('button').addEventListener('click', function () {
+    // this.disabled = true
+    // setTimeout(() => {
+    // console.log(this)
+    // }, 1000)
+    // })
+    // 在使用箭头函数的时候,一定要明确是否需要使用this,如果需要,则慎重考虑
+
+
+    // 2. 闭包
+    // 组成: 内层函数 + 外层函数的变量 就形成了闭包
+    // 作用: 避免全局变量的污染
+    // 问题: 内存的泄漏
+    // function fn() {
+    //   let num = 10
+    //   return function () {
+    //     num++
+    //   }
+    // }
+
+    // 3. 变量提升 => 老版js中使用 var 声明变量 =>存在变量提升
+    // 变量提升 + 函数提升 => js预解析
+    // 变量提升声明(当前作用域的最前面) 不提升赋值
+    // 函数声明会提升到当前作用域的最前面) 调用不提升
+
+
+    console.log(num)
+    var num = 10
+    fn()
+    console.log(num)
+    function fn() {
+      num = 20
+      console.log(num)
+    }
+
+
+    /* 预解析
+      var num = 20
+      function fn() {
+        num = 20
+        console.log(num) // 20 
+      }
+      执行
+      console.log(num) // undefined
+      // num = 10
+      // fn()
+      console.log(num) // 20
+    */
+  </script>
+</body>
+
+</html>

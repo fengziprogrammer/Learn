@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 需求: 翻转字符串
+    const str = '狗哥无敌'
+    // 1. 将字符串转换为数组
+    /*     
+      const arr = str.split('')
+      console.log(arr)
+      // 2. 将数组进行翻转
+      const newArr = arr.reverse()
+      console.log(newArr)
+      // 3. 再将数组转换为字符串
+      const str1 = newArr.join('')
+      console.log(str1) 
+    */
+    // 简化:
+    const str1 = str.split('').reverse().join('')
+    // 打印对比
+    console.log(str)
+    console.log(str1) 
+  </script>
+</body>
+
+</html>

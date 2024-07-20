@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>02.利用自定义构造函数创建对象</title>
+</head>
+
+<body>
+  <script>
+    // 1. 构造函数首字母大写 
+    // 2. 构造函数需要和new一起使用
+    // 构造函数本质上就是函数
+    function Person(uname, age, gender) {
+      // this.属性名 = 属性值
+      this.uname = uname
+      this.age = age
+      this.gender = gender
+    }
+    // new 函数名() 叫 实例化函数
+    // 返回的结果 叫 实例化对象
+    const obj = new Person('狗哥', 20, '男')
+    const obj1 = new Person('超超', 18, '男')
+    console.log(obj)
+    console.log(obj1)
+  </script>
+</body>
+
+</html>

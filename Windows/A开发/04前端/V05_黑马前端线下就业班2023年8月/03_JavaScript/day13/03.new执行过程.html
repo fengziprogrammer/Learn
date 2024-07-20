@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // new执行过程 (伪代码)
+    function Person(uname) {
+      /* 
+        const obj = {}
+        obj.uname = uname
+        return obj 
+      */
+      this.uname = uname
+    }
+    console.log(new Person('狗哥'))
+
+    // new 构造函数的时候
+    // 1. 在内存中 创建一个空对象
+    // 2. 把构造函数中的 this指向这新对象
+    // 3. 指向构造函数中的代码 this.age = 值
+    // 4. 返回这个新的对象
+  </script>
+</body>
+
+</html>

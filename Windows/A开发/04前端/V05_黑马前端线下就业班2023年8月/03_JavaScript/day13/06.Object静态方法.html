@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 字面量创建的对象 => 实例对象
+    // const obj = {}
+    // obj.keys()
+    // Object 静态方法
+    const obj = {
+      uname: '狗哥',
+      age: '18',
+      gender: '男'
+    }
+    // 1. 获取对象的键(属性名) 构造函数.keys(对象)
+    const keyArr = Object.keys(obj)
+    console.log(keyArr)
+    // 2. 获取对象的值(属性值) 构造函数.values(对象)
+    const valueArr = Object.values(obj)
+    console.log(valueArr)
+    // 3. 拷贝对象 Object.assign(新对象, 旧对象)
+    // const o = obj 这是赋值操作,会让o和obj共用一个内存空间
+    const o = {}
+    Object.assign(o, obj)
+    console.log(o)
+    console.log(o === obj)
+  </script>
+</body>
+
+</html>
