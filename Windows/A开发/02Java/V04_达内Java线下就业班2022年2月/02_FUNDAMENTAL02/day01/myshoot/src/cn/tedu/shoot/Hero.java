@@ -1,0 +1,59 @@
+package cn.tedu.shoot;
+/** Ó¢ÐÛ»ú */
+public class Hero {
+	int width;  //¿í
+	int height; //¸ß
+	int x;      //x×ø±ê
+	int y;      //y×ø±ê
+	int life;   //Ãü
+	int fire;   //»ðÁ¦Öµ
+	
+	/** ÒÆ¶¯ */
+	void step() {
+		System.out.println("Ó¢ÐÛ»úÇÐ»»Í¼Æ¬À²!");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
