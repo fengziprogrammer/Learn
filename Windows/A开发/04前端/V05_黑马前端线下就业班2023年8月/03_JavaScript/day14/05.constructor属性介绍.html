@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05.constructor属性介绍</title>
+</head>
+
+<body>
+  <script>
+    function Person(uname) {
+      this.uname = uname
+    }
+    // 位置: 构造函数的原型对象中
+    console.log(Person.prototype)
+    // console.log(Person.prototype.constructor === Person)
+    // 作用: constructor 属性指向构造函数
+    // 场景: 当需要给构造函数原型对象批量赋值的时候,需要给新的对象指定constructor
+    // Person.prototype.fn1 = function () { }
+    // Person.prototype.fn2 = function () { }
+    // Person.prototype.fn3 = function () { }
+    Person.prototype = {
+      constructor: Person,
+      fn1: function () { },
+      fn2: function () { },
+      fn3: function () { }
+    }
+    console.log(Person.prototype)
+    const mc = new Person('马超')
+
+  </script>
+</body>
+
+</html>

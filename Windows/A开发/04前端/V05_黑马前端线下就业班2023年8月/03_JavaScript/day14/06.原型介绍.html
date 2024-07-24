@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function Person(uname) {
+      this.uname = uname
+    }
+    const mc = new Person('马超')
+    // 每一个对象都有自己的  原型(__proto__), 指向构造函数的原型对象(prototype), 所以对象才能访问原型对象中的属性和方法
+    console.log(Person.prototype)
+
+    // ES6 => ECMAscript2015
+    // 将 __proto__规范化了, 改为了 [[prototype]]
+    console.log(mc.__proto__ === Person.prototype)
+  </script>
+</body>
+
+</html>

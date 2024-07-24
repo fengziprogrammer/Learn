@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function Person(uname) {
+      this.uname = uname
+    }
+    const mc = new Person('马超')
+    // console.log(Person.prototype)
+    // console.log(Object.prototype)
+    // console.log(mc.__proto__.__proto__.__proto__)
+    // console.log(mc.num)
+    // mc.fn()
+
+    console.log(mc instanceof Person)
+    console.log(mc instanceof Object)
+    console.log('-------------')
+
+    const arr = []
+    console.log(arr instanceof Array)
+    console.log(arr instanceof Object)
+    // 我们 以后如果想检测数据类型,我们要先检测是不是数组类型 Array ,在检测是不是对象
+  </script>
+</body>
+
+</html>
