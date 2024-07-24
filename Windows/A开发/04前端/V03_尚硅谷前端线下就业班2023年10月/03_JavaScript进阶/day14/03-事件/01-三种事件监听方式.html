@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 第一种事件监听方式 将事件作为标签的属性 -->
+    <button id="btn01" onclick="console.log('btn01被click了！');" oncontextmenu="console.log('btn01被右击了！')">按钮01</button>
+    <button id="btn02">按钮02</button>
+    <button id="btn03">按钮03</button>
+
+    <script>
+        // 第二种方式 将事件名作为元素对象的属性(方法)
+        var btn02 = document.querySelector('#btn02');
+        btn02.onclick = function() {
+            console.log('btn02 被click了');
+        };
+        btn02.onclick = function() {
+            console.log('btn02 又被click了');
+        };
+
+
+        // 第三种 使用addEventListener方法监听方式
+        var btn03 = document.querySelector('#btn03');
+        btn03.addEventListener('click', function() {
+            console.log('btn03 被 click 了');
+        });
+        btn03.addEventListener('click', function() {
+            console.log('btn03 又被 click 了');
+        });
+    </script>
+</body>
+</html>

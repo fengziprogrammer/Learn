@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 第一种事件监听方式 将事件作为标签的属性 -->
+    <button id="btn01" onclick="console.log('btn01被click了！');">按钮01</button>
+    <button id="btn02">按钮02</button>
+    <button id="btn03">按钮03</button>
+
+    <hr>
+
+    <button id="btn04">点击解除事件监听</button>
+
+    <script>
+        // 获取元素
+        var btn01 = document.querySelector('#btn01');
+        var btn02 = document.querySelector('#btn02');
+        var btn03 = document.querySelector('#btn03');
+        var btn04 = document.querySelector('#btn04');
+
+
+        // 第二种方式 将事件名作为元素对象的属性(方法)       
+        btn02.onclick = function() {
+            console.log('btn02 被click了');
+        };
+
+
+        // 第三种 使用addEventListener方法监听方式
+        function func() {
+            console.log('btn03 被 click 了');
+        }
+        btn03.addEventListener('click', func);
+
+        // 点击解除事件监听
+        btn04.onclick = function() {
+            // 第一种方式监听的事件
+            btn01.onclick = null;
+
+            // 第二种方式监听的事件
+            btn02.onclick = null;
+
+            // 第三种方式监听的事件 
+            btn03.removeEventListener('click', func);
+
+        }
+      
+    </script>
+</body>
+</html>
