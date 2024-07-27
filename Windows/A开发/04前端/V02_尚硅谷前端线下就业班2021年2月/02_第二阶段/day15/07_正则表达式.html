@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+    <style>
+        #box1{
+            font-min-size: ;nt
+        }
+    </style>
+    <script>
+        /*
+        *   正则表达式（对象）
+        *       - 手机号：
+        *           12345678901
+        *       - 电子邮件：
+        *           abc@hello
+        *       - 正则表达式就是用来定义一个字符串的规则，
+        *           计算机可以根据正则表达式来判断一个字符串是否符合规则，
+        *           也可以用来将符合内容的字符串从一段内容中提取出来
+        * */
+
+        // 创建一个正则表达式对象
+        // new RegExp('正则表达式', '匹配模式');
+        let re = new RegExp('a');
+        // 字面量 语法：/正则/匹配模式
+        let re2 = /a/;
+
+        // console.log(typeof re);
+        // console.log(typeof re2);
+
+        // a 表示检查一个字符串中是否含有a
+        re = /a/;
+        re = /ab/;
+
+        // test() 用来检查一个字符串是否符合正则表达式
+        // alert(/a/.test('a'));
+        // alert(/a/.test('abc'));
+        // alert(/a/.test('bbabc'));
+        // alert(/ab/.test('aabccc'));
+
+        // 正则表达式，严格区分大小写
+        // new RegExp('ab', 'i');
+        alert(/ab/i.test('Abc'));
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

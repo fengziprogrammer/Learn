@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*
+        *   创建一个正则，来检查字符串中是否含有 .
+        *   在正则表达式中使用 \ 作为转义字符
+        *       . 表示任意字符
+        *       \. 表示 .
+        *       \w 任意单词字符，相当于[A-Za-z0-9_]
+        *       \W 除了单词字符，相当于[^A-Za-z0-9_]
+        *       \d 任意数字，相当于[0-9]
+        *       \D 除了数字，相当于[^0-9]
+        *       \s 空格
+        *       \S 除了空格
+        * */
+        let re = /\./;
+
+        // re = new RegExp('\\.');
+
+        re = /\w/;
+        re = /\W/;
+        re = /\s/;
+
+        // alert(re.test('abc def'));
+
+        /*
+        *   dalang.wu@163.com
+        *   编写一个正则表达式，来检查一个字符串是否是合法的电子邮件
+        *
+        *   hello                .xxxx                               @   abc                     .com
+        *   任意字母数字_ 一位以上   .任意字母数字_ 一位以上 有没有都行      @   字母数字或- 一位以上    .任意字母 5位  出现一到两次
+        *
+        * */
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

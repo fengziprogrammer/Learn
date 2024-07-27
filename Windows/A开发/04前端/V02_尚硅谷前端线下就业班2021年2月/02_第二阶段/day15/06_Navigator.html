@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<button id="btn01">点我一下</button>
+
+<script>
+
+    document.getElementById('btn01').addEventListener('click', function () {
+
+        /*
+        *  Navigator
+        *   - 代表浏览器的信息，通过Navigator来识别出不同的浏览器
+        *   - 在 Navigator 中大部分属性都没有什么使用价值
+        *   - userAgent 返回的是一个字符串，
+        *       用来表示浏览器的信息
+        *
+        *   - Chrome
+        *       Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36
+        *   - Firefox
+        *       Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0
+        *
+        *   - IE
+        *       Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E)
+        *       Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E)
+        *
+        *   - IE11
+        *       Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; rv:11.0) like Gecko
+        * */
+
+        var ua = navigator.userAgent;
+
+        // console.log(ua);
+
+        // if(ua.indexOf('Firefox') !== -1){
+        //     alert('你是火狐~~');
+        // }else if(ua.indexOf('Chrome') !== -1){
+        //     alert('你是Chrome');
+        // }else if(ua.indexOf('MSIE') !== -1){
+        //     alert('你是IE');
+        // }
+
+
+        if('ActiveXObject' in window){
+            alert('你是IE！');
+        }else if(ua.indexOf('Firefox') !== -1){
+            alert('你是火狐~~');
+        }else if(ua.indexOf('Chrome') !== -1){
+            alert('你是Chrome');
+        }
+
+        // alert(!!window.ActiveXObject);
+
+    });
+
+</script>
+
+</body>
+</html>
