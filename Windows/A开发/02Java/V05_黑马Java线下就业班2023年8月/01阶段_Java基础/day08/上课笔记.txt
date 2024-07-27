@@ -1,0 +1,176 @@
+
+========================== day07回顾 ==========================
+    String
+        创建对象
+            1. String s1 = "abc"; //双引号创建的字符串对象,是一个常量,在字符串常量池中存储
+            2. String s2 = new String(); //空参构造,new出来的都在堆内存
+            3. String s3 = new String("字符串"); //带参构造,new出来的都在堆内存
+        常用方法
+            1. 返回字符串长度 int length();
+            2. 比较字符串内容 boolean equals("字符串");
+            3. 比较字符串内容,但是忽略大小写 boolean equalsIgnoreCase("字符串");
+            4. 去除首尾的空格 String trim();
+        用户登录案例最终版 -> 对应代码完成
+        聊天室案例最终版 -> 对应代码完成
+
+    Integer
+        创建对象
+            1.过时的构造方法
+                Integer i = new Integer(100);
+                Integer i = new Integer("100"); //字符串内容必须是纯数字
+            2.推荐的静态方法
+                Integer i = Integer.valueOf(200); //静态方法可以通过类名调用的方法
+                Integer i = Integer.valueOf("200");
+        常用方法 -> String转int方法 -> 转谁调谁的方法!!! -> 调用Integer的方法
+            int num = Integer.parseInt("80");
+        猜数字小游戏最终版 -> 对应代码完成
+
+    Date
+        创建对象
+        常用方法
+
+    SimpleDateFormat
+        创建对象
+        常用方法
+        手机日期时间显示最终版
+        考勤查询最终版
+
+    知道继承的好处
+        提高了代码的复用性 -> 案例说明
+
+    使用继承改进窗体案例(登录案例的静态版)
+        继承案例: 使用第一次写的用户登录完成改进优化
+            1.创建MyJFrame类,继承JFrame类,JFrame类中的方法我们就可以直接使用了
+            2.提供空参构造,方法体中,完成了如下功能
+                2.1 完成窗体的初始化 -> 抽取成方法initJFrame();
+                2.2 完成基本组件绘制 -> 抽取成方法paintView();
+            3.在测试类中,只需要通过空参,创建MyJFrame类对象 -> 完成窗体展示
+
+========================== day08重点 ==========================
+    什么是数组?
+        是用来存储多个相同类型数据的容器
+
+    数组定义的两种格式?
+        int[] arr; 常用
+        int arr[]; 识别
+
+    数组初始化的两种方式? 应用场景?
+        如果知道具体元素 -> 静态初始化
+            int[] arr = new int[]{1, 2, 3};
+            int[] arr = {1, 2, 3}; //省略格式: 省略new int[]书写
+        如果不知道具体元素,但是知道数组长度 -> 动态初始化
+            int[] arr = new int[长度];
+
+    元素访问格式? 索引?
+        索引: 标识了元素在数组中的位置(理解为编号)
+        特点: 从0开始,连续的,逐个+1
+
+        数组名[索引];
+        arr[0]; //访问arr数组中第一个元素
+
+    数组常见操作 -> 数组案例
+        数组遍历
+            int[] arr = {1, 2, 3};
+            //遍历数组快捷键: arr.fori + 回车
+            for(int i = 0; i < arr.length; i++){
+                //for循环中的变量i,代表每一个索引
+                System.out.println(arr[i]);
+            }
+
+        数组元素最值
+            int[] arr = {4, 7, 10};
+            //暂且认为数组第一个元素是max
+            int max = arr[0];
+            //遍历数组
+            for(int i = 0; i < arr.length; i++){
+                //判断如果当前元素大于max
+                if(arr[i] > max){
+                    //将当前元素赋值给max
+                    max = arr[i];
+                }
+            }
+            //循环结束打印结果
+           System.out.println("max:" + max);
+
+
+        数组元素打乱 -> 1.随机数 2.数据交换
+            //创建随机对象
+            Random r = new Random();
+            //定义数组
+            int[] arr = {1, 2, 3, 4, 5};
+            //遍历数组
+            for(int i = 0; i < arr.length; i++){
+                //1.通过Random对象生成一个随机索引, 范围是索引的范围
+                int index = r.nextInt(arr.length);
+                //2.数据交换,将当前元素,和随机索引指向的元素进行交换
+                int temp = arr[i];
+                arr[i] = arr[index];
+                arr[index] = temp;
+            }
+            //遍历数组查看打乱后的元素
+
+    数组内存图
+        见今天资料
+
+    数组操作的常见异常
+        ArrayIndexOutOfBoundsException数组索引越界, 操作了不存在的索引
+        NullPointerException空指针异常, 引用类型值为null, 而且我们还继续操作它
+
+    什么是二维数组?
+        二维数组就是存储一维数组的数组
+
+    二维数组定义的三种格式?
+        int[][] arr; //常用
+        int arr[][];
+        int[] arr[];
+
+    二维数组初始化的两种方式?
+        静态
+            完整
+                int[][] arr = new int[][]{数组1,数组2..};
+            简化
+                int[][] arr = {数组1,数组2..};
+        动态
+            int[][] arr = new int[m][n];
+            m: 二维数组的长度,也就是一维数组的个数!
+            n: 一维数组的长度
+
+    元素访问格式?
+        数组名[m][n];
+
+    二维数组常见操作 -> 元素打乱案例
+        //定义二维数组
+        //元素打乱
+        //创建随机数对象
+        Random r = new Random();
+        //遍历数组,打乱元素
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                //生成两个随机索引
+                int x = r.nextInt(arr.length); //x代表是哪一个随机一维数组
+                int y = r.nextInt(arr[x].length); //y代表是这个一维数组中的哪一个元素
+                //元素交换
+                int temp = arr[i][j];
+                arr[i][j] = arr[x][y];
+                arr[x][y] = temp;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
