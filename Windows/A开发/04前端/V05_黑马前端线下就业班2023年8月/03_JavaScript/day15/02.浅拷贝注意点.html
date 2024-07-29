@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const person = {
+      name: 'zs',
+      family: {
+        baba: '张巴巴',
+        mama: '张么么'
+      }
+    }
+
+    // 利用浅拷贝,拷贝person对象
+    const obj = { ...person }
+    obj.name = '李四'
+    obj.family.baba = '李巴巴'
+    console.log(person, obj)
+
+    // 如果是浅拷贝, 拷贝单层对象或数组是拷贝值,
+    // 但是如果是多层对象或数组,则拷贝地址
+  </script>
+</body>
+
+</html>

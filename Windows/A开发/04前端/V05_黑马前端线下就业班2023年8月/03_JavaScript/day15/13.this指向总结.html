@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1. 普通函数this指向
+    // 1.1 全局的函数声明 => this window
+    // function fn() { console.log(this) }
+    // fn()
+
+    // 1.2 对象的方法
+    /* 
+      const obj = {
+        sing() { console.log(this) }
+      }
+      obj.sing() 
+    */
+
+    // 1.3 构造函数中和原型对象方法中的this 指向 实例对象
+    /*
+      function Person() {
+        this.name = 'name'
+        // this.sing = function () { console.log(this) }
+      }
+      Person.prototype.sing = function () { console.log(this) }
+      const obj = new Person()
+      obj.sing()
+    */
+    // 1.4 事件中指向事件源
+
+    // 2. 箭头函数 => 指向上级非箭头函数的作用域的this
+  </script>
+</body>
+
+</html>

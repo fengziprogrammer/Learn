@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="box"></div>
+  <script>
+    try {
+      const div = document.querySelector('.box')
+      div.innerHTML = '我是文本'
+    } catch (error) {
+      console.log(error)
+    } finally {
+      // 不论错误有否都会执行 finally,  经常用于加载
+      console.log('尝试是否执行finally')
+    }
+    console.log(111)
+    // try / catch 语句
+    //   不阻止代码执行
+
+
+  </script>
+</body>
+
+</html>

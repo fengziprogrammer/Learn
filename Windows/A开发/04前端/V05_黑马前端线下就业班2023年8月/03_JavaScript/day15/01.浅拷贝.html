@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 赋值符
+    // const obj = {
+    //   uname: '马超',
+    //   age: 18
+    // }
+    // const newObj = obj
+    // newObj.age = 80
+    // console.log(obj, newObj)
+    // 直接赋值, 如果是复杂数据类型, 会复制地址, 但是堆中的空间是同一个, 所以修改其中一个就会影响所有对象
+    // 实现浅拷贝
+    // 1. 拷贝对象
+    // const oldObj = {
+    //   uname: '马超',
+    //   age: 18
+    // }
+    // 1.1 利用 Object静态方法
+    // const newObj = {}
+    // Object.assign(newObj, oldObj)
+    // newObj.age = 80
+    // console.log(oldObj, newObj)
+
+    // 1.2 展开运算符 {...对象} √
+    // const o = { ...oldObj }
+    // o.age = 80
+    // console.log(oldObj, o)
+
+    // 2. 数组的浅拷贝
+    const arr = [1, 2, 3]
+    // 2.1 concat 方法  Array.prototype.concat()
+    // const arr1 = [].concat(arr)
+    // arr1[1] = 10
+    // console.log(arr1, arr)
+    // 2.2 展开运算符
+    const newArr = [...arr]
+    newArr[2] = 20
+    console.log(newArr, arr)
+  </script>
+</body>
+
+</html>

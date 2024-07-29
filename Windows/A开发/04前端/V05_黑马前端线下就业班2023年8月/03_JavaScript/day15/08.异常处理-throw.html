@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function getSum(x, y) {
+      if (!x || !y) {
+        throw new Error('参数不能为空')
+      }
+      return x + y
+    }
+    console.log(getSum())
+    // throw
+    //   会阻止代码执行
+    //   经常和new Error() 构造函数一起使用,抛出一个异常
+  </script>
+</body>
+
+</html>
