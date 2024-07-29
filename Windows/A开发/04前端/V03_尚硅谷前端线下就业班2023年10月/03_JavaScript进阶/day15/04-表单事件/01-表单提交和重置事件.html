@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="1.php">
+        <input type="email" placeholder="请输入邮箱">
+        <br>        
+        <input type="password" placeholder="请输入密码">
+        <br>
+        <button>提交</button>
+        <button type="reset">重置</button>
+    </form>
+
+    <script>
+        // 获取form元素
+        var formBox = document.querySelector('form');
+
+        // 监听表单提交事件
+        formBox.onsubmit = function() {
+            alert('啊，我正在被提交...');
+        };
+
+        // 添加表单重置事件
+        formBox.onreset = function() {
+            alert('啊，我正在被重置...');
+        };
+    </script>
+</body>
+</html>

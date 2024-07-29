@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes boxScroll {
+            100% {
+                transform: translate(1000px, 200px) rotate(3600deg);
+            }
+        }
+
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background: #900;
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+
+            animation: boxScroll 2s 1s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        动画
+    </div>
+
+    <script>
+        // 获取元素
+        var box = document.querySelector('#box');
+
+        // 动画开始事件
+        box.onanimationstart = function(){
+            console.log('animationstart');
+        };
+
+        // 动画结束事件
+        box.onanimationend = function() {
+            console.log('animationend');
+        };
+
+
+        box.onanimationiteration = function() {
+            console.log('animationiteration');
+        }
+    </script>
+</body>
+</html>

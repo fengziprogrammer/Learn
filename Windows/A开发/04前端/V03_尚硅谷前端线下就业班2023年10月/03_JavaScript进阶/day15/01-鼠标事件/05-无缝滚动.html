@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            margin: 100px auto;
+            width: 800px;
+            height: 200px;
+            /* border: 1px solid #f00; */
+            display: flex;
+            overflow: hidden;
+
+        }
+
+        .wrapper img {
+            flex: 0 0 auto;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="wrapper">
+        <img src="./images/db01.jpg" alt="">
+        <img src="./images/db02.jpg" alt="">
+        <img src="./images/db03.jpg" alt="">
+        <img src="./images/db04.jpg" alt="">
+        <img src="./images/db05.jpg" alt="">
+        <img src="./images/db06.jpg" alt="">
+        <img src="./images/db07.jpg" alt="">
+        <img src="./images/db08.jpg" alt="">
+        <img src="./images/db09.jpg" alt="">
+        <img src="./images/db10.jpg" alt="">
+    </div>
+
+    <script>
+        (function() {
+            // 获取包裹元素
+            var box = document.querySelector('#box');
+
+            // 获取一张图片的宽度
+            var imgWidth = box.firstElementChild.offsetWidth;
+            // 获取图片的数量
+            var imgLength = box.children.length;
+          
+            // 将所有的图片复制一份
+            box.innerHTML += box.innerHTML;
+
+            // 开启定时器
+            var intervalId = setInterval(runScroll, 10);
+
+            // 鼠标进入元素，停止定时器
+            box.onmouseenter = function() {
+                clearInterval(intervalId);
+            };
+
+            // 鼠标离开元素，再次开启定时器
+            box.onmouseleave = function() {
+                intervalId = setInterval(runScroll, 10);
+            };
+
+            // 定义定时器的回调函数
+            function runScroll() {
+                box.scrollLeft += 1;
+
+                // 判断临界值
+                if (box.scrollLeft >= imgWidth * imgLength) {
+                    box.scrollLeft = 0;
+                }
+            }
+
+
+        })();
+
+    </script>
+</body>
+</html>

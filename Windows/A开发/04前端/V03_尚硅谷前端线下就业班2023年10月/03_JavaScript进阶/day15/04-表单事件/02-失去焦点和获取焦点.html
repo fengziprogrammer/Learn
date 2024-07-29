@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #999;
+            outline: none;
+        }
+
+        span {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <span id="box"></span>
+
+    <script>
+        // 获取元素
+        var inputBox = document.querySelector('input');
+        var spanBox = document.querySelector('span');
+
+        // 监听获取焦点的事件
+        inputBox.onfocus = function() {
+            spanBox.innerHTML = '正在输入...';
+        };
+
+        // 监听失去焦点的事件
+        inputBox.onblur = function() {
+            spanBox.innerHTML = '输入完毕！';
+        };
+
+        // 输入框中的文本内容被选中
+        inputBox.onselect = function() {
+            alert('啊，我里面的内容被选中！');
+        }
+
+    </script>
+</body>
+</html>

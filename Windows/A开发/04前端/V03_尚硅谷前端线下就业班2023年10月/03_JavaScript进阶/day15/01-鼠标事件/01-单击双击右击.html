@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 400px;
+            height: 250px;
+            padding: 20px;
+            background: #099;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        对下下自的爱一切学整罪是，为如登和未快千或，俭第畴后守病辜论一主妄楚商到，是会中慧承弟关联入开母者光地重是可仓如，就兼找不守秦五促德拾才，打略时让身领吴重目揽人同章主，变之中喜兄许就化今未同落普措，方恼乡时子法九在是月其锐首但，可子令皇不即不头高书，屯交。
+    </div>
+
+    <script>
+        // 获取元素
+        var box = document.querySelector('#box');
+    
+        // 单击
+        box.onclick = function() {
+            console.log('box 被 click 了！');
+        };
+
+        // 双击
+        box.ondblclick = function() {
+            console.log('box 被双击了！');
+        };
+
+        // 右击 菜单事件
+        box.oncontextmenu = function() {
+            console.log('box 被右击了！');
+        };
+    </script>
+</body>
+</html>

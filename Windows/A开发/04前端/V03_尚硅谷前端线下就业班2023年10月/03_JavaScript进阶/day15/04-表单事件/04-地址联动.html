@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        select {
+            width: 160px;
+            height: 36px;
+        }
+    </style>
+</head>
+<body>
+    <h1>请选择地址</h1>
+    <select id="provSel"></select>
+    <select id="citySel"></select>
+
+    <script>
+        (function(){
+            // 定义地址信息
+            var provList = ['江苏', '浙江', '安徽', '河南'];
+            var cityList = [
+                ['南京', '苏州', '徐州', '无锡', '常州'],
+                ['杭州', '宁波', '温州', '绍兴', '湖州'],
+                ['合肥', '芜湖', '滁州', '马鞍山', '黄山'],
+                ['郑州', '洛阳', '开封', '安阳', '许昌'],
+            ];
+
+            // 获取元素
+            var provSel = document.querySelector('#provSel');
+            var citySel = document.querySelector('#citySel');
+
+            // 根据数据 添加省的选项
+            provList.forEach(function(item, index) {
+                provSel.add(new Option(item, index));
+            });
+
+            // 监听省的选项发生改变
+            provSel.onchange = function() {
+                // 获取当前所选择的选项
+                var index = this.selectedIndex;
+                // 清空目前城市的下拉选项
+                citySel.options.length = 0;
+                // 取出城市信息 添加为选项
+                cityList[index].forEach(function(item, index) {
+                    citySel.add(new Option(item, index))
+                });
+            };
+
+            // 手动调用change事件的回调函数
+            provSel.onchange();
+        })()
+
+       
+
+
+      
+
+    </script>
+</body>
+</html>

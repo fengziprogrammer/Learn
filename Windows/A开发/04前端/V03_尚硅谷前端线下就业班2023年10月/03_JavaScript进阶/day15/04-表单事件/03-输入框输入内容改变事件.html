@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #999;
+            outline: none;
+        }
+
+        #res {
+            padding: 10px 20px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div>请输入银行卡号：</div>
+    <input type="text" id="bankCard">
+    <div id="res"></div>
+
+    <br>
+
+    <input type="checkbox" name="" id="">
+
+    <script>
+        (function(){
+            // 获取元素
+            var inputBox = document.querySelector('#bankCard');
+            var resBox = document.querySelector('#res');
+            var checkboxInput = document.querySelector('input[type="checkbox"]');
+
+            // 输入框内容改变就触发
+            inputBox.oninput = function() {
+                resBox.innerHTML = inputBox.value;
+            }
+
+
+            inputBox.onchange = function() {
+                console.log(inputBox.value);
+            }
+
+            checkboxInput.onchange = function() {
+                console.log(this.checked);
+            }
+        })()
+    </script>
+</body>
+</html>

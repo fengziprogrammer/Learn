@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 400px;
+            height: 250px;
+            padding: 20px;
+            background: #099;
+        }
+
+        #box p {
+            min-height: 50px;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p></p>
+        <p></p>
+    </div>
+
+    <script>
+        // 获取元素
+        var box = document.querySelector('#box');
+        
+        // 鼠标进入元素
+        // box.onmouseover = function() {
+        //     console.log('鼠标进入元素，mouseover');
+        // };
+        // // 鼠标离开元素
+        // box.onmouseout = function() {
+        //     console.log('鼠标离开元素，mouseout');
+        // };
+
+         // 鼠标进入元素
+         box.onmouseenter = function() {
+            console.log('鼠标进入元素，mouseenter');
+        };
+        // 鼠标离开元素
+        box.onmouseleave = function() {
+            console.log('鼠标离开元素，mouseleave');
+        };
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #999;
+            outline: none;
+        }
+
+        #res {
+            padding: 10px 20px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div>请输入银行卡号：</div>
+    <input type="text" id="bankCard">
+    <div id="res"></div>
+
+    <script>
+        (function(){
+            // 获取元素
+            var inputBox = document.querySelector('#bankCard');
+            var resBox = document.querySelector('#res');
+
+            // 给输入框元素监听按键抬起事件
+            inputBox.onkeyup = function() {
+                resBox.innerHTML = inputBox.value;
+            }
+        })()
+    </script>
+</body>
+</html>

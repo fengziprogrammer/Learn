@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 400px;
+            padding:10px;
+            border: 1px solid #999;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+
+    <script>
+        // 获取元素
+        var inputBox = document.querySelector('input');
+        // 给输入框监听键盘事件
+        inputBox.onkeydown = function() {
+            console.log('键盘在输入框上按下去了');
+        };
+
+        // 给文档对象监听键盘事件 按键按下
+        document.onkeydown = function(event) {
+            console.log('键盘按键按下！', event.keyCode, event.which, event.key);
+        };
+
+        // 监听按键抬起
+        document.onkeyup = function(event) {
+            console.log('键盘按键抬起！', event.keyCode, event.which, event.key);
+        }
+        
+
+       
+    </script>
+</body>
+</html>

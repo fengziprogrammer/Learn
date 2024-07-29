@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            position: fixed;
+            left: 100px;
+            top: 60px;
+            width: 150px;
+            height: 150px;
+            background: #099;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        (function(){
+            // 获取元素
+            var box = document.querySelector('#box');
+
+            // 鼠标按键按下事件
+            box.onmousedown = function(event) {
+                // 修改背景色
+                this.style.background = '#900';
+
+                // 获取鼠标在 box 上的位置
+                var eleLeft = event.offsetX;
+                var eleTop = event.offsetY;
+                
+                // 监听鼠标移动事件
+                document.onmousemove = function(event) {
+                    // 根据鼠标在视口上的位置和鼠标在元素上的位置 计算元素的位置
+                    var left = event.clientX - eleLeft;
+                    var top = event.clientY - eleTop;
+
+                    // 限制元素的位置
+                    if (left < 0) {
+                        left = 0;
+                    } else if (left > document.documentElement.clientWidth - box.offsetWidth) {
+                        left = document.documentElement.clientWidth - box.offsetWidth;
+                    } 
+                    
+                    if (top < 0) {
+                        top = 0;
+                    } else if (top > document.documentElement.clientHeight - box.offsetHeight) {
+                        top = document.documentElement.clientHeight - box.offsetHeight;
+                    }
+
+                    
+                    // 设置box元素的位置
+                    box.style.left = left + 'px';
+                    box.style.top = top + 'px';
+                };
+            };
+
+            // 鼠标按键抬起事件
+            box.onmouseup = function() {
+                // 改回原背景色
+                this.style.background = '';
+                // 解除 mousemove 事件的监听
+                document.onmousemove = null;
+            };
+        })();
+    </script>
+</body>
+</html>
