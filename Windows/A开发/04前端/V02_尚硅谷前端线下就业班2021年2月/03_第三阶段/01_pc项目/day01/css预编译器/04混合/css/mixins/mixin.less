@@ -1,0 +1,15 @@
+//   混合(mixin)的本质 就相当于在调用的位置   写了混合内部的样式
+//   less的混合 在定义的参数且没有默认值的情况下   调用混合和定义混合的参数个数必须对等  个数必须相同
+//   想要给混合的参数设置默认值   其实就是在定义混合参数时 直接赋值
+//   给混合的参数设置了默认值之后   调用时如果传值 则使用传入的值   如果不传 则使用默认值
+.allCenter(@w:50px,@h:50px,@bg:green){
+  width: @w;
+  height: @h;
+  background: @bg;
+  position: absolute;
+  top: @zero;
+  bottom:@zero;
+  right: @zero;
+  left: @zero;
+  margin: auto;
+}

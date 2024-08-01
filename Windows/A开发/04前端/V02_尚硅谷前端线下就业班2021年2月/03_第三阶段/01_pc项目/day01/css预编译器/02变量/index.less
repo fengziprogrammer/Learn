@@ -1,0 +1,73 @@
+//  变量的基本使用   通过@来声明   冒号后边写变量对应的值 分号结尾
+//  在调用变量时 也需要在变量名称的前边添加@来调用
+@zero:0;
+@bg1:pink;
+//   如果要将变量作为属性名称使用时   需要在变量名称的两边添加大括号（花括号）     @{变量名称}
+@bg:background;
+//   如果要将变量作为选择器使用时 最好将选择器的标签直接写给变量的值  然后调用时和属性名称相同  需要在变量名称两侧添加大括号
+@box:.box1;
+@{box}{
+  width: 400px;
+  height: 400px;
+  @{bg}: @bg1;
+  position: absolute;
+  top: @zero;
+  bottom:@zero;
+  right: @zero;
+  left: @zero;
+  margin: auto;
+}
+
+.box2{
+  width: 300px;
+  height: 300px;
+  background: orange;
+  position: absolute;
+  top: @zero;
+  bottom: @zero;
+  right: @zero;
+  left: @zero;
+  margin: auto;
+}
+.box3{
+  width: 200px;
+  height: 200px;
+  background: yellowgreen;
+  position: absolute;
+  top: @zero;
+  bottom: @zero;
+  right: @zero;
+  left: @zero;
+  margin: auto;
+}
+.box4{
+  width: 100px;
+  height: 100px;
+  background: skyblue;
+  position: absolute;
+  top: @zero;
+  bottom: @zero;
+  right: @zero;
+  left: @zero;
+  margin: auto;
+}
+
+@var: 0;
+.class {
+
+  .brass {
+    @var: 2;
+    three: @var;
+    @var: 3;
+    @var: 4;
+    @var: 5;
+    @var: 6;
+    @var: 7;
+  }
+  one: @var;
+}
+@var :10;
+
+//变量的延迟加载   在当前这个大括号内 不论变量有多少 也不论变量离你使用的位置的远近 都没有关系
+//   只看最后一个
+//如果当前大括号内没有这个变量的话  会想上一层的大括号进行查找 不会向内部去查找  然后依旧遵循延迟加载的原则
