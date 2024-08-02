@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 600px;
+            height: 250px;
+            background: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.atguigu.com">尚硅谷</a>
+
+    <form action="http://www.baidu.com/s">
+        <input type="text" name="wd"> <button>搜索</button>
+    </form>
+
+    <div id="box"></div>
+
+    <div style="height:2000px"></div>
+
+    <script>
+        // 获取到超链接元素 监听click事件
+        var aBox = document.querySelector('a');
+        // aBox.onclick = function(event) {
+        //     alert('超链接被点击了！');
+        //     // 阻止默认行为
+        //     // event.preventDefault();
+        //     return false;
+            
+        // };
+        aBox.addEventListener('click', function(event) {
+            alert('超链接被点击了！');
+            // 阻止默认行为
+            event.preventDefault();
+            // addEventListener 监听的事件，return false 不能阻止默认行为
+            // return false;
+        })
+
+
+        // 获取表单元素 监听提交事件
+        var formBox = document.querySelector('form');
+        formBox.onsubmit = function(event) {
+            console.log('表单正在被提交...');
+            // event.preventDefault();
+            return false;
+        };
+
+
+        // 阻止系统菜单
+        // var box = document.querySelector('#box');
+        // box.oncontextmenu = function(event) {
+        //     console.log('右击！');
+        //     event.preventDefault();
+        // }
+
+        // 阻止整个文档系统菜单
+        document.oncontextmenu = function(event) {
+            console.log('右击！');
+            // event.preventDefault();
+            return false;
+        };
+
+
+        // 监听滚轮事件 无法阻止默认行为
+        window.onmousewheel = function(event) {
+            console.log('滚轮滚了');
+            event.preventDefault();
+        }
+    </script>
+</body>
+</html>

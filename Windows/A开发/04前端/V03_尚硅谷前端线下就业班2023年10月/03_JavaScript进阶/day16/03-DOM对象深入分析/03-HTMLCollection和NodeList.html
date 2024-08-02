@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="box">
+        <li>1皇到无药，小君游头罚，绪量将始是败一说。</li>
+        <li>2皇到无药，小君游头罚，绪量将始是败一说。</li>
+        <li>3皇到无药，小君游头罚，绪量将始是败一说。</li>
+        <li>4皇到无药，小君游头罚，绪量将始是败一说。</li>
+        <li>5皇到无药，小君游头罚，绪量将始是败一说。</li>
+    </ul>
+
+    <script>
+        var ulBox = document.querySelector('#box');
+
+        var liCoolection = ulBox.getElementsByTagName('li');
+        var liList = ulBox.querySelectorAll('li');
+
+        console.log(liCoolection);  // HTMLCollection
+        console.log(liList);        // NodeList
+        console.log('');
+        console.log('');
+
+
+        // 创建新的li添加到ul
+        var liEle = document.createElement('li');
+        liEle.innerHTML = '6我是新增的li';
+        ulBox.appendChild(liEle);
+
+
+        console.log(liCoolection);  // HTMLCollection
+        console.log(liList);        // NodeList
+
+    </script>
+</body>
+</html>

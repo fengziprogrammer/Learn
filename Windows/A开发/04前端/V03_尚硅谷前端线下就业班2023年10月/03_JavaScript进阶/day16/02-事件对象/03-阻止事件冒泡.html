@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        #box {
+            padding: 20px;
+            width: 600px;
+            background: #ccc;
+        }
+
+        #box p {
+            padding: 10px;
+            color: #fff;
+            background: #099;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>内郭从一召里仍的章里老，老锐二保上落活舟没越的劫谓，少啦皇山勉好帮即胜皇，国洋游拿幕间那倒故只他开壬土路见动在关，担平答听龄韩憾贤房的那我拾药，她切斯觉作，国不是，们你白者韩台三上绪了领韩临偶流今饮，怎三担韩后新绪笔罪国破望四定，怎秦一倒气了的，同人略能。</p>
+        <p>内郭从一召里仍的章里老，老锐二保上落活舟没越的劫谓，少啦皇山勉好帮即胜皇，国洋游拿幕间那倒故只他开壬土路见动在关，担平答听龄韩憾贤房的那我拾药，她切斯觉作，国不是，们你白者韩台三上绪了领韩临偶流今饮，怎三担韩后新绪笔罪国破望四定，怎秦一倒气了的，同人略能。</p>
+    </div>
+
+    <script>
+        var box = document.querySelector('#box');
+
+        // box.onclick = function() {
+        //     console.log('box 被点击了');
+        // }
+        
+        box.addEventListener('click', function() {
+            console.log('box 被点击了');
+        });
+
+
+        box.firstElementChild.onclick = function(event) {
+            console.log('第一个段落被点击了');
+            event.stopPropagation();
+        }
+
+        box.lastElementChild.onclick = function() {
+            console.log('最后一个段落被点击了');
+        }
+        
+        
+    </script>
+</body>
+</html>
