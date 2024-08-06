@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 函数A
+        function A() {
+            // 定义数据
+            var num01 = 100, num02 = 200;
+            // 函数B
+            function B(){
+                // 函数B中可以访问到函数A中的数据
+                console.log(num01 + num02);
+            }
+            // 方式一 函数B作为返回值
+            return B;
+            
+            // 方式二 函数B赋值给全局对象的属性
+            // window.func = B;
+        
+            // 方式三 函数B作为事件的回调函数
+            // document.onclick = B;
+        }
+
+        // 调用函数A
+        var fn = A();
+        fn();
+
+        // func();
+
+
+    </script>
+</body>
+</html>

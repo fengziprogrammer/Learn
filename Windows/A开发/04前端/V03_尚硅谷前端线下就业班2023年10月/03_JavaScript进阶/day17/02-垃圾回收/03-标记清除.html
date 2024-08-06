@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 创建完就成了不可到达对象 很快就会被清除
+        [100,200,300];
+
+        // 通过 window.age 可以访问到对象
+        var age = {name:'xiaole'};
+        /// 通过 window.address 也可以访问到对象
+        var address = age;
+        /// 还可以通过 window.address 可以访问到对象
+        age = 200;
+        // 当整个页面关闭，window销毁，无法到达对象，被销毁
+
+
+
+        // 创建对象 
+        // 通过 window.user01到达 小乐
+        var user01 = {name:'小乐'};
+        // 通过 window.user02 到达 老乐
+        var user02 = {name:'老乐'};
+
+        // 通过 window.user01.children 也可以到达老乐
+        user01.children =  user02;
+        // 通过 window.user02.children 也可以到达小乐乐
+        user02.children = user01;
+
+
+        // window.user01不可以到达 小乐
+        user01 = 200;
+        // window.user02 不可以到达 老乐
+        user02 = 250;
+
+
+
+    </script>
+</body>
+</html>

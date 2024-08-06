@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 全局执行上下文对象 创建
+
+        function func(){
+            var n = Math.random();
+            console.log('func被调用了', Math.random());
+        }
+
+        // 调用函数 创建执行上下文对象 进栈，调用结束就出栈
+        func(1);
+        // 调用函数 创建执行上下文对象 进栈，调用结束就出栈
+        func(2);
+        // 调用函数 创建执行上下文对象 进栈，调用结束就出栈
+        func(3);
+
+        //关闭页面 全局执行上下文对象出栈
+    </script>
+</body>
+</html>

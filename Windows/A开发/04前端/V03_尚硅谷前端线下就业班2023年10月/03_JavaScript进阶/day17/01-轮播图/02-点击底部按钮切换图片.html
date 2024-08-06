@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <style>
+        ul, ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        img {
+            display: block;
+        }
+
+        .play-box {
+            position: relative;
+            margin: 100px auto;
+            width: 900px;
+            height: 350px;
+        }
+
+        .images li {
+            display: none;
+            width: 900px;
+            height: 350px;
+        }
+
+        .images li.active {
+            display: block;
+        }
+
+        .btns {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            display: flex;
+        }
+
+        .btns li {
+            margin-left: 10px;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            color: #fff;
+            background: #000;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .btns li.active {
+            color: #f60;
+            border-color: #f60;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 100px;
+            transform: translateY(-50%);
+            background-image: url(./images/index.png);
+            cursor: pointer;
+        }
+
+        .arrow-prev {
+            left: 0;
+        }
+
+        .arrow-next {
+            right: 0;
+            background-position-x: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="play-box" id="playBox">
+        <ul class="images">
+            <li class="active">
+                <a href="#">
+                    <img src="./images/01.jpg" alt="play">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/02.jpg" alt="play">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/03.jpg" alt="play">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/04.jpg" alt="play">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/05.jpg" alt="play">
+                </a>
+            </li>
+        </ul>
+        <ol class="btns">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+        <span class="arrow arrow-prev"></span>
+        <span class="arrow arrow-next"></span>
+    </div>
+
+    <script>
+        (function(){
+            // 获取元素
+            var playBox = document.querySelector('#playBox');
+            var imgItems = playBox.querySelectorAll('.images li');   // 所有图片的集合
+            var btnItems = playBox.querySelectorAll('.btns li');     // 所有按钮的集合
+
+            // 遍历 给每个按钮监听 click 事件
+            btnItems.forEach(function(btnItem, index) {
+                btnItem.onclick = function(){
+                    // 把所有的按钮取消选中,去掉active类名; 把所有的图片隐藏，去掉active类名
+                    btnItems.forEach(function(btnItem, index){
+                        btnItem.classList.remove('active');
+                        imgItems[index].classList.remove('active');
+                    });
+                    // 当前点击按钮选中 添加active类名
+                    btnItem.classList.add('active');
+                    // 当前点击按钮对应的图片显示 添加active类名
+                    imgItems[index].classList.add('active');
+                };
+            });
+
+
+        })();
+    </script>
+</body>
+</html>
