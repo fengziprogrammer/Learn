@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="input01">
+    <input type="number" id="input02">
+    <button id="btn">计算</button>
+
+    <div id="res"></div>
+    <script>
+        // 获取相关元素
+        var input01 = document.querySelector('#input01');
+        var input02 = document.querySelector('#input02');
+        var btn = document.querySelector('#btn');
+        var resBox = document.querySelector('#res');
+
+        // 创建子线程  子线程的代码会执行
+        var worker = new Worker('./child.js');
+
+        // 点击计算按钮 向子线程发送数据
+        btn.onclick = function() {
+            // 定义向子线程发送的数据
+            var nums = [+input01.value, +input02.value] 
+            // 向子线发送数据
+            worker.postMessage(nums);
+        };
+
+
+        // 监听子线程发过来数据
+        worker.onmessage = function(event) {
+            resBox.innerHTML = event.data;
+        }
+     
+    </script>
+</body>
+</html> 
