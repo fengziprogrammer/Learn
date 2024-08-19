@@ -1,0 +1,71 @@
+.container {
+    margin: 0 auto;
+    width: 1200px;
+
+    .wrapper {
+        height: 200px;
+
+        .item {
+            background: #ccc;
+        }
+
+        >.active {
+            background: #099;
+        }
+
+        +.content {
+            background: #aaa;
+        }
+
+        ~div {
+            background: #900;
+        }
+    }
+
+    .news {
+        padding: 0px;
+        margin: 10px;
+
+        li {
+            width: 500px;
+            line-height: 40px;
+
+            &.active {
+                background: #900;
+            }
+
+            &[name='xiaole'] {
+                background: #f90;
+            }
+
+            &:hover {
+                background: #ccc;
+            }
+
+            &::after {
+                content: "";
+                width: 10px;
+            }
+        }
+    }
+}
+
+
+// 媒体查询的嵌套
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width:768px) {
+        width: 750px;
+    }
+
+    @media (min-width: 992px) {
+        width: 970px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 1170px;
+    }
+}

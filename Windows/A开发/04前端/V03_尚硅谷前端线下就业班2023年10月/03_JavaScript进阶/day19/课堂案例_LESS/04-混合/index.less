@@ -1,0 +1,91 @@
+// --------------------------------------
+// 定义混合 没有参数的
+.center-box01() {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -150px;
+}
+
+.item {
+    // 调用混合
+    .center-box01();
+}
+
+.news li {
+    // 调用混合
+    .center-box01();
+    // 其他样式
+    background: #900;
+    border: 1px solid #999;
+}
+
+
+// --------------------------------------
+// 定义混合 有参数
+.center-box02(@width, @height) {
+    position: absolute;
+    width: @width;
+    height: @height;
+    left: 50%;
+    top: 50%;
+    margin-left: -(@width/2);
+    margin-top: -(@height/2);
+}
+
+.item {
+    // 调用有参数的混合 按照顺序传参数
+    .center-box02(600px,500px);
+    background: #900;
+}
+
+.news li {
+    // 调用有参数的混合 按照名字传参
+    .center-box02(@height:600px, @width:700px);
+}
+
+
+
+// --------------------------------------
+// 定义混合 参数设置默认值
+.center-box03(@width:1200px, @height) {
+    position: absolute;
+    width: @width;
+    height: @height;
+    left: 50%;
+    top: 50%;
+    margin-left: -(@width/2);
+    margin-top: -(@height/2);
+}
+
+.item01 {
+    // .center-box03(1000px);
+}
+
+.item02 {
+    .center-box03(1000px, 900px);
+}
+
+.item03 {
+    .center-box03(@height:300px);
+}
+
+
+// --------------------------------------
+// @arguments 获取参数列表
+.box-shadow(@x, @y, @b, @o, @color) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.box {
+    width: 400px;
+    height: 300px;
+    background: #900;
+    .box-shadow(3px, 10px, 15px, 0px, #ccc);
+}

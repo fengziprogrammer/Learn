@@ -1,0 +1,19 @@
+.box {
+  width: 400px;
+  height: 300px;
+  color: #900;
+  width: 500px;
+  height: 400px;
+  background: #900;
+}
+.item {
+  width: 400px;
+  height: 300px;
+  background: #900;
+  color: #900;
+}
+.wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}

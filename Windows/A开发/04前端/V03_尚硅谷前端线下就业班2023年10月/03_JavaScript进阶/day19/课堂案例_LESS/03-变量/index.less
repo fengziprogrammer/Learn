@@ -1,0 +1,49 @@
+// 定义变量
+@len: 600px;
+@master-red: #900;
+@master-green: #080;
+@sencond-red: #600;
+@prop: background-position;
+@sel01: .item;
+// 定义变量 变量值存在特殊符号
+@min768: ~"min-width:768px";
+@min992: ~"min-width:992px";
+@sel02: ~".news li";
+
+
+// 使用变量 
+.box {
+    // 变量作为属性值（大部分情况）
+    width: @len;
+    color: @master-green;
+    background: @master-red;
+    border: 1px solid @master-green;
+    // 变量作为属性名
+    @{prop}: 10px 10px;
+}
+
+// 变量名作为选择器
+@{sel01} {
+    width: @len;
+    height: (@len/2);
+}
+
+
+// ------------------------------
+@media (@min768) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+@media (@min992) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+@{sel02} {
+    width: 100px;
+}

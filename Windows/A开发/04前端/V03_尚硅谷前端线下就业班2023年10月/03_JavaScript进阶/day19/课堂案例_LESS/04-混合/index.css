@@ -1,0 +1,66 @@
+.item {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -150px;
+}
+.news li {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -150px;
+  background: #900;
+  border: 1px solid #999;
+}
+.item {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  margin-top: -250px;
+  background: #900;
+}
+.news li {
+  position: absolute;
+  width: 700px;
+  height: 600px;
+  left: 50%;
+  top: 50%;
+  margin-left: -350px;
+  margin-top: -300px;
+}
+.item02 {
+  position: absolute;
+  width: 1000px;
+  height: 900px;
+  left: 50%;
+  top: 50%;
+  margin-left: -500px;
+  margin-top: -450px;
+}
+.item03 {
+  position: absolute;
+  width: 1200px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  margin-left: -600px;
+  margin-top: -150px;
+}
+.box {
+  width: 400px;
+  height: 300px;
+  background: #900;
+  -webkit-box-shadow: 3px 10px 15px 0px #ccc;
+  -moz-box-shadow: 3px 10px 15px 0px #ccc;
+  -o-box-shadow: 3px 10px 15px 0px #ccc;
+  box-shadow: 3px 10px 15px 0px #ccc;
+}

@@ -1,0 +1,40 @@
+// 定义混合
+.center-box() {
+    width: 400px;
+    height: 300px;
+    background: @master-red;
+
+    @master-red: #900;
+
+    .center-box01() {
+        width: 500px;
+        height: 400px;
+        background: @master-red;
+    }
+}
+
+// 定义清除浮动的混合
+.clearfix() {
+    &::after {
+        content: "";
+        display: block;
+        clear:both;
+    }
+}
+
+
+// 调用混合
+.box {
+    .center-box();
+    color: @master-red;
+    .center-box01();
+}
+
+.item {
+    .center-box();
+    color: @master-red;
+}
+
+.wrapper {
+    .clearfix();
+}

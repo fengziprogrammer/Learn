@@ -1,0 +1,60 @@
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+.container .wrapper {
+  height: 200px;
+}
+.container .wrapper .item {
+  background: #ccc;
+}
+.container .wrapper > .active {
+  background: #099;
+}
+.container .wrapper + .content {
+  background: #aaa;
+}
+.container .wrapper ~ div {
+  background: #900;
+}
+.container .news {
+  padding: 0px;
+  margin: 10px;
+}
+.container .news li {
+  width: 500px;
+  line-height: 40px;
+}
+.container .news li.active {
+  background: #900;
+}
+.container .news li[name='xiaole'] {
+  background: #f90;
+}
+.container .news li:hover {
+  background: #ccc;
+}
+.container .news li::after {
+  content: "";
+  width: 10px;
+}
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

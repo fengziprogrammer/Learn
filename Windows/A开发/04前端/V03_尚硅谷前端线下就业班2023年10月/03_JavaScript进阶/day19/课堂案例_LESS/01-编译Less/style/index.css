@@ -1,0 +1,14 @@
+#box {
+  margin-top: 40px;
+  width: 1000px;
+  height: 250px;
+  color: #900;
+  background: #099;
+  padding: 20px;
+}
+#box .item {
+  width: 600px;
+}
+#box p {
+  padding: 20px;
+}
