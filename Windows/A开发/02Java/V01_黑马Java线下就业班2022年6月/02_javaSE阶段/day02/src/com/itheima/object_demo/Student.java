@@ -1,0 +1,41 @@
+package com.itheima.object_demo;
+
+public class Student extends Object {
+    private String name;
+    private int age;
+
+    public Student() {
+    }
+
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    // alt + insert  选择 toString
+    @Override
+    public String toString() {
+        // Student{name='李沁', age=18}
+        // Student{name='李沁', age=18}
+        return "Student{" +
+                "name='" + this.name + '\'' +
+                ", age=" + this.age +
+                '}';
+    }
+}
