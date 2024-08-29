@@ -1,0 +1,101 @@
+// 入口文件
+// 导入变量
+@import "variables";
+
+// 导入混合
+@import "mixins";
+
+// 导入重置样式表
+@import "reset";
+
+
+// 整体样式设置
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+// topbar
+.topbar {
+    height: 30px;
+    line-height: 30px;
+    background: #eaeaea;
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            padding: 0 10px;
+            &:not(:last-child) {
+                border-right: 1px solid @sep-color;
+            }
+        }
+    }
+}
+
+// logo和搜索框
+.page-header {
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .logo {
+            margin: 25px 45px;
+            width: 175px;
+            height: 56px;
+        }
+
+        form {
+            display: flex;
+            margin-top: 35px;
+            input {
+                box-sizing: border-box;
+                width: 490px;
+                height: 32px;
+                padding: 0 4px;
+                border: 2px solid @form-red;
+                outline: none;
+            }
+
+            button {
+                width: 68px;
+                height: 32px;
+                color: #fff;
+                background: @form-red;
+                border: none;
+            }
+        }
+    }
+}
+
+// 页面导航
+.page-nav {
+    border-bottom: 2px solid @btn-red;
+
+    .container {
+        display: flex;
+        height: 50px;
+        line-height: 50px;
+
+        .all-cates {
+            h2 {
+                width: 210px;
+                text-align: center;
+                color: #fff;
+                font-size: 14px;
+                background: @btn-red;
+            }
+        }
+
+        nav {
+            display: flex;
+            a {
+                margin: 0 22px;
+                color: #333;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
