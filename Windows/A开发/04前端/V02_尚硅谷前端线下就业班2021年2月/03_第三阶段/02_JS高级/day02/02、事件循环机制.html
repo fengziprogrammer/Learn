@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    //setTimeout 的执行是同步   里边的回调函数的执行 走的是异步
+    box.onclick = function () {
+
+    }
+    var a = 0;
+    for (var i = 0; i < 50000; i++) {
+        for (var j = 0; j < 50000; j++) {
+            a++;
+        }
+    }
+    console.log(a);
+    setTimeout(function () {
+        console.log('今天中午吃点啥')
+    },3000);
+
+</script>
+</body>
+</html>
