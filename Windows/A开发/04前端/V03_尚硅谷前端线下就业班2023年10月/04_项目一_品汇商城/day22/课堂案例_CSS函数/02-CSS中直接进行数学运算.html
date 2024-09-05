@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            --len: 1000px;
+
+            width: calc(400px + 200px);  /* 加法：两个加数都必须有单位 */
+            height: calc(var(--len) - 800px);  /* 减法：两个加数都必须有单位 */
+            padding: calc(400px / 10);   /* 除法，第二个除数不能有单位 */
+            margin-top: calc(10 * 2px);  /* 乘法， 其中一个不能有单位 */
+
+            width: calc(50% + 100px);  /* 两个单位不同 */
+
+            background: #ccc;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">金燕于前自轻到仆使极你人绝，斗设放了春颜或今有诗中都人的天由，亲唯前定谢找许灰俭你仄，己为得联人赠五没看磊陈头人极能派骨，由不死降被才中不国谷流，不也老承花看落徒九但大李吴办快未房，失国二主罪少落的念意如次战这了措时快，要姑挟帝这国才一骂一融弟争家承有关。</div>
+</body>
+</html>
