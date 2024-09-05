@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+<div class="box">hahaha</div>
+<button id="btn">隐藏</button>
+<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+<script type="text/javascript">
+  $(function () {
+      var box = $('.box');
+      var btn = $('#btn');
+
+      btn.click(function () {
+//        box.slideToggle(2000);
+//        console.log(box.html())
+        box.html('今天中午吃点啥');
+//
+      })
+  })
+    function fn(type) {
+      if(type == 'play'){
+        console.log('玩游戏')
+      }else if(type == 'eat'){
+        console.log('吃饭')
+      }
+    }
+</script>
+</body>
+</html>
