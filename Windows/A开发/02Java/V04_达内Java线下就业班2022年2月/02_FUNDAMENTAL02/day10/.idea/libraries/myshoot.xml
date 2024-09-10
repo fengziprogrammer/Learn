@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="myshoot">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/myshoot.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
