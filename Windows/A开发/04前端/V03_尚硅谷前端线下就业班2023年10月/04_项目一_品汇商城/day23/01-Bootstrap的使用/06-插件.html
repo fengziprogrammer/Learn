@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap的样式 -->
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+    <style>
+        .xiaole-jumbotron {
+            color: #fff;
+            background: url(./dist/images/play01.jpg) center / cover;
+        }
+
+        .xiaole-tab .tab-pane {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Bootstrap <small>JavaScript 插件</small></h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="xiaole-tab">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                      <li><a href="#profile"  data-toggle="tab">Profile</a></li>
+                      <li><a href="#messages" data-toggle="tab">Messages</a></li>
+                      <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                    </ul>
+                  
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="home">章胆得王是之下可，导下所知变故正心陈丈战其么不，韩身身杨极宋们有苟感丑份郭极才慧，战以六外非派但，临币尹也是作自，方足倒太将呼友承朗，人身回久不设韩自清会月帝，喜喜仍一而的极为生吴，化不动正牛命我下，而化了张什生光只得斯自，日遗给且九从不，命上不的，名说。</div>
+                      <div role="tabpanel" class="tab-pane" id="profile">极雷法策李和过，之何了被前帅虽动足啦，不人才否语快尝了预快惜德要对子答土实揽，为了也见，拢毒老举仆嗣严，就的不通么承回么入评松一大拢是的欲，老法好夹衣灰有张承身妄支勉善皇，逃得办定师如兄其和光六在太往揽人，承大极融守尤命将足感，小遗谭在出程案也商赏书虑的。</div>
+                      <div role="tabpanel" class="tab-pane" id="messages">便谓要第得人领活或越战，破起白你要洋秦么，太举便非不九，仆在正才迷之导承归，们是乌联哉他不非婵生李俭认愿春竟，投满忧撒冈低十头惶价会清得金韩的法少京，牛让奔故生恩若的圣无得之化德了，同论非留仄有俭不报措，头否月身，是子力事，太感作但互可锐的上人常笔，我么。</div>
+                      <div role="tabpanel" class="tab-pane" id="settings">我谓专他出要，没快回落冇，盲三二投蒲老其的韩秦，对一小台说无让，有应严杨千国法，而人日，了许呼人郭同，这制办，子没出我慷留则冷秦是光这，几在音德一一他极不看说盲大，我终同才给竟然，我订接相得的国圣都快准上历学国光，一连说当承天付人即，下明燕褒服你程了这曰。</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="btn-group" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default">Home</button>
+                    <button type="button" class="btn btn-default" id="profile_btn">Profile</button>
+                    <button type="button" class="btn btn-default">Messages</button>
+                    <button type="button" class="btn btn-default">Settings</button>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+            </div>
+        </div>
+
+       
+    </div>
+    
+    <!-- jquery -->
+    <script src="./dist/jquery/jquery-1.12.3.min.js"></script>
+    <!-- bootstrap -->
+    <script src="./dist/js/bootstrap.min.js"></script>
+
+    <script>
+
+        (function(){
+            var btn02 = document.querySelector('#profile_btn');
+
+            btn02.onclick = function() {
+                $('a[href="#profile"]').tab('show');
+            };
+
+
+            $('[data-toggle="tooltip"]').tooltip()
+
+        })()
+    </script>
+</body>
+</html>

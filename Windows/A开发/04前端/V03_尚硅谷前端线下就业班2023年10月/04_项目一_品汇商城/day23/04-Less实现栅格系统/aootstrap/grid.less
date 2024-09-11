@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+[class*="col-"] {
+    flex: 0 0 auto;
+    padding: 10px;
+}
+
+
+.grid(xs);
+
+@media (min-width: @sm-width) {
+    .grid(sm);
+}
+
+@media (min-width: @md-width) {
+    .grid(md);
+}
+
+@media (min-width: @lg-width) {
+    .grid(lg);
+}
