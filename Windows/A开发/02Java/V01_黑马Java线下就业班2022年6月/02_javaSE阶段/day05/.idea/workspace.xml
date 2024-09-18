@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1580b325-8045-44ab-b233-5e084cad75c3" name="Changes" comment="" />
+    <list default="true" id="1580b325-8045-44ab-b233-5e084cad75c3" name="Changes" comment="A开发::02Java::V01_黑马Java线下就业班2022年6月::02_javaSE阶段::day05" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,11 +66,24 @@
       <workItem from="1726637160138" duration="18000" />
       <workItem from="1726637272533" duration="1069000" />
       <workItem from="1726642599767" duration="325000" />
-      <workItem from="1726648537971" duration="525000" />
+      <workItem from="1726648537971" duration="697000" />
     </task>
+    <task id="LOCAL-00001" summary="A开发::02Java::V01_黑马Java线下就业班2022年6月::02_javaSE阶段::day05">
+      <option name="closed" value="true" />
+      <created>1726649214879</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726649214879</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="A开发::02Java::V01_黑马Java线下就业班2022年6月::02_javaSE阶段::day05" />
+    <option name="LAST_COMMIT_MESSAGE" value="A开发::02Java::V01_黑马Java线下就业班2022年6月::02_javaSE阶段::day05" />
   </component>
 </project>
