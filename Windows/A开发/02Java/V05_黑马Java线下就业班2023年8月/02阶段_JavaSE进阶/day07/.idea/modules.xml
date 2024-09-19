@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/day07.iml" filepath="$PROJECT_DIR$/.idea/day07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase-collection/javase-collection.iml" filepath="$PROJECT_DIR$/javase-collection/javase-collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase-log/javase-log.iml" filepath="$PROJECT_DIR$/javase-log/javase-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/movie-buy-basic/movie-buy-basic.iml" filepath="$PROJECT_DIR$/movie-buy-basic/movie-buy-basic.iml" />
+    </modules>
+  </component>
+</project>
