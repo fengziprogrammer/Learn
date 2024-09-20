@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #999;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="input01">
+    <input type="text" id="input02">
+
+    <script>
+        // 获取元素
+        var inputBox01 = document.querySelector('#input01');
+        var inputBox02 = document.querySelector('#input02');
+
+        // 监听事件
+        inputBox01.oninput = changeInput;
+
+        // 监听事件 debounce 生产一个具有防抖功能的新函数
+        inputBox02.oninput = debounce(changeInput, 400);
+
+        
+
+        // 定义事件的回调函数 
+        function changeInput(ev) {
+            console.log('向后端请求搜索数据...', this.value, ev);
+        };
+
+
+        /*
+            1. 两个参数  没有防抖功能的函数，时间间隔
+            2. 返回值是函数
+            3. 返回的函数中调用 method， 使用apply，为了设置 method 中的this是监听事件的元素
+            4. 保证 method 中能够获取到事件对象， 通过 apply 传递进去
+        
+        */
+        // 防抖函数
+        function debounce(method, delay) {
+            var timeId = null;
+            return function() {
+                var that = this;
+                var args = arguments;
+                clearTimeout(timeId);
+                timeId = setTimeout(function() {
+                    method.apply(that, args);
+                }, delay);
+            };
+        }
+    </script>
+</body>
+</html>

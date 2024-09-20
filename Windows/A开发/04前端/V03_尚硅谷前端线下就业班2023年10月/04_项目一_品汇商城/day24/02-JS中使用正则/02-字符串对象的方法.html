@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var reg01 = /\d{6}/;
+        var reg02 = /^\d{6}$/;
+        var msg01 = 'hello666123888sb';
+        var msg02 = '小乐,老乐,大乐.刘姥姥;马姥姥,司马姥姥';
+
+        // search
+        console.log(msg01.search(reg01));   // 5
+        console.log(msg01.search(reg02));   // -1
+        console.log('');
+
+
+        // match
+        console.log(msg01.match(reg01));
+        console.log(msg01.match(reg02));
+        console.log('');
+
+        // repalce 替换
+        console.log(msg01.replace('6', '六'));
+        console.log(msg01.replace(/6/, '六'));
+        console.log(msg01.replace(/6/g, '六'));
+        console.log(msg01.replace(/\d/g, '零'));
+        console.log(msg01.replace(/666/g, '零'));
+        console.log('');
+
+        // 
+        console.log(msg02.split());
+        console.log(msg02.split(','));
+        console.log(msg02.split(/[\.,;]/));
+
+
+    </script>
+</body>
+</html>

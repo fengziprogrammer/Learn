@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>请点击下列按钮</p>
+    <button id="btn1">不作处理</button>
+    <button id="btn2">防抖处理</button>
+    <button id="btn3">节流处理</button>
+
+
+    <script>
+        var btn1 = document.querySelector('#btn1');
+        var btn2 = document.querySelector('#btn2');
+        var btn3 = document.querySelector('#btn3');
+
+        btn1.onclick = clickFn;
+        btn2.onclick = debounce(clickFn, 2000);
+        btn3.onclick = throttle(clickFn, 2000);
+
+
+        function clickFn() {
+            console.log('click event', new Date());
+        }
+
+
+        function debounce(method, delay) {
+            var timeId;
+            return function() {
+                var that = this;
+                var args = arguments;
+                clearTimeout(timeId);
+                timeId = setTimeout(function () {
+                    method.apply(that, args);
+                }, delay)
+            }
+        }
+
+        function throttle(method, delay) {
+            var prev = Date.now();
+            return function() {
+                var that = this;   
+                var args = arguments;
+                var now = Date.now();
+                if (now - prev >= delay) {
+                    method.apply(that, args);
+                    prev = now;
+                }
+            }
+        };
+
+    </script>
+</body>
+</html>

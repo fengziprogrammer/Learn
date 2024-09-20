@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        var msg = ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem expedita fuga vitae pariatur velit alias eveniet porro eum consequuntur fugit repudiandae iure voluptas quod, voluptate laborum, voluptatem minus temporibus provident.';
+
+        // 从字符串中提取 以a开头的单词
+        var reg = /[aA]([a-zA-Z]+)/g;
+
+        console.log(msg.match(reg));
+
+        console.log(reg.exec(msg));
+
+    </script>
+</body>
+</html>

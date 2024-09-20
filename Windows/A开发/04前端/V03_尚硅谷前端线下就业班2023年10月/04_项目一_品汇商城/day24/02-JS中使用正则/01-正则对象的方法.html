@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input,button {
+            padding: 10px;
+            border: 1px solid #099;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="请输入正则表达式" id="regInput">
+    <input type="text" placeholder="请输入字符串" id="strInput">
+    <button id="btn">验证</button>
+    <script>
+        // 创建正则对象
+        // 直接量方式
+        var reg1 = /^1[3-9]\d{9}$/;
+        // RegExp() 函数方式
+        var reg2 = RegExp('^1[3-9]\\d{9}$');
+        // RegExp() 构造函数方式
+        var reg3 = new RegExp('^1[3-9]\\d{9}$');
+        console.log(reg1);
+        console.log(reg2);
+        console.log(reg3);
+        console.log('');
+
+
+        // 获取元素
+        var regInputBox = document.querySelector('#regInput');
+        var strInputBox = document.querySelector('#strInput');
+        var btn = document.querySelector('#btn');
+
+        // 点击按钮
+        btn.onclick = function() {
+            var reg = new RegExp(regInputBox.value);
+
+            console.log(reg.test(strInputBox.value));
+            console.log(reg.exec(strInputBox.value));
+        }
+    </script>
+</body>
+</html>
