@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="box">
+        <li>
+            <span>1</span> 
+            <a href="">刘姥姥</a> 
+        </li>
+    </ul>
+    <script>
+        // 创建字符串
+        const msg = `Hello World`;
+        console.log(typeof msg);
+        console.log(msg);
+        console.log('');
+
+        // 模板字符串中直接写换行
+        const content = `
+        锄禾日当午
+        汗滴禾下土
+        水质盘中餐
+        粒粒皆辛苦
+        `;
+        console.log(content);
+
+
+        // 模板字符串直接插入变量
+        const name = '高小乐';
+        const gender = '男';
+        const hometown = '山西';
+        const hobby = '醋';
+        const money = .25;
+
+        // 拼接字符串
+        const message = `
+        我的名字叫${name},
+        性别${gender},
+        我来自${hometown},
+        我的业余爱好是${hobby},
+        我会进行运算${money + 78 * 2}
+        我学习后的期望薪资是${money} K;`;
+        console.log(message);
+        
+
+        // 定义数组
+        const data = ['刘姥姥', '马姥姥', '司马姥姥', '欧阳姥姥', '宇文姥姥'];
+        const html = data.map(function(item, index) {
+            return `
+            <li>
+                <span>${index+1}</span> 
+                <a href="#">${item}</a> 
+            </li>
+            `
+        }).join('');
+        var box = document.querySelector('#box');
+        box.innerHTML = html;
+
+        
+    </script>
+</body>
+</html>

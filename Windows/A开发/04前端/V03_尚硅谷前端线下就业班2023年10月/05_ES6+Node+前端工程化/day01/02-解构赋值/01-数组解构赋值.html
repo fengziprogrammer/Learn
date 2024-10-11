@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="btns">
+        <button>按钮01</button>
+        <button>按钮02</button>
+        <button>按钮03</button>
+        <button>按钮04</button>
+        <button>按钮05</button>
+    </div>
+    <script>
+        // 1. 声明多个变量并赋值
+        const num = Math.random();
+        // const [v1,v2,v3,v4,v5] = [100,200,{name:'小乐',age:100},function(){alert('ok');}, num];
+        let [v1,v2,v3,v4,v5] = [100,200,{name:'小乐',age:100},function(){alert('ok');}, num];
+        console.log(v1);
+        console.log(v2);
+        console.log(v3);
+        console.log(v4);
+        console.log(v5);
+        console.log('');
+      
+        // 2. 同时修改多个变量的值
+        const data = ['司马姥姥', '欧阳姥姥', '东方姥姥', '西门姥姥'];
+        [v1,v2,v3,v4] = data;
+        console.log(v1);
+        console.log(v2);
+        console.log(v3);
+        console.log(v4);
+        console.log('');
+
+        // 3. 使用解构赋值 交换两个变量的值
+        [v1,v2] = [v2,v1];
+        console.log(v1);
+        console.log(v2);
+        console.log('');
+
+        // 4. 解构赋值用于函数传参  所谓传参就是实参赋值给形参
+        function func([name1,name2,name3]) {
+            console.log(name1 + '和' + name2 + '以及' + name3 + '是好朋友！');
+        }
+        func(['小明', '小刚', '小红']);
+        func(data);
+        console.log('');
+
+
+        // 5. 两边的数组结构不完全一致
+        let [a1,a2,a3] = [100,200,300,400,500];
+        const [b1,b2,b3] = [10000, 20000];
+        [a1,a2,a3] = ['刘姥姥', '马姥姥'];  // 重新赋值
+        console.log(a1);   // 刘姥姥
+        console.log(a2);   // 马姥姥
+        console.log(a3);   // undefiend
+        console.log(b1);
+        console.log(b2);
+        console.log(b3);
+        console.log('');
+
+
+        // 6. 解构赋值 左侧的变量可以指定默认值
+        // const [c1,c2,c3=250] = [100,200,300];
+        // const [c1,c2,c3=250] = [100,200];
+        const [c1,c2,c3=250] = [100];
+        console.log(c1);
+        console.log(c2);
+        console.log(c3);
+        console.log('');
+
+       
+
+        // 7. 解构格式复杂的数组；
+        // 同一个数组可以进行多种形式的解构
+        var arr = [
+            100,
+            ['高小乐', 199],
+            [
+                100,
+                [10, 20]
+            ]
+        ];
+
+        const [a, [b, c], [d, [e, f]]] = arr;
+        const [d1,d2,d3] = arr;
+        console.log(a,b,c,d,e,f);
+        console.log(d1);
+        console.log(d2);
+        console.log(d3);
+        console.log('');
+
+       
+
+        // 8. 伪数组也可以被解构
+        const msg = 'Hello 高小乐';
+        const btns = document.querySelectorAll('.btns button');
+
+        const [s1,s2,s3,s4] = msg;
+        const [btn1,btn2,btn3] = btns;
+        console.log(s1);
+        console.log(s2);
+        console.log(s3);
+        console.log(s3);
+        console.log(btn1);
+        console.log(btn2);
+        console.log(btn3);
+      
+    </script>
+</body>
+</html>

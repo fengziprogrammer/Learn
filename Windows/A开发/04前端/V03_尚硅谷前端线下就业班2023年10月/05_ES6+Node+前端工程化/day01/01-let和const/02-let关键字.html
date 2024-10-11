@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 2. let 创建的变量不会提升
+        console.log(age);
+        // console.log(address);
+        // console.log(func);
+        console.log('');
+
+        // 创建变量
+        let address = '上海';
+        var age = 100;
+        let func = function(){};
+
+        // 1. let 创建的变量不能重复声明
+        // let address = '北京';   报错
+        var age = 200;
+        // let age = 300;  报错
+        // var address = '北京'; 报错
+
+
+        // 3. let 创建的全局变量不是全局对象的属性
+        console.log(window.age);
+        console.log(window.address);
+    </script>
+</body>
+</html>

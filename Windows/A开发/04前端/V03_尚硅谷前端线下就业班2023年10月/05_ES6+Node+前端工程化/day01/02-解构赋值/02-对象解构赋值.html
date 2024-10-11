@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. 对象的解构赋值 按照属性名进行匹配
+        let {name: username, address, num: age} = {name:'高小乐', address:[10,20,30,40], num:{name:'老乐',age:20}};
+        console.log(username);  // '高小乐'
+        console.log(address);   // [10,20,30,40]
+        console.log(age);   // {name:'老乐',age:20}
+        const user = {name:'Jack',address:'上海',length:1000};
+        const {name: u, address: a, num: b} = user;
+        console.log(u);
+        console.log(a);
+        console.log(b);
+        console.log('');
+
+
+        // 2. 对象的结构赋值简写 左边： 属性名与变量名一致
+        // {num01:num01, num02:num02, num03:num03} = {num01:1000, num02:2000, num03:3000};
+        const {num01, num02, num03} = {num01:1000, num02:2000, num03:3000};
+        console.log(num01);
+        console.log(num02);
+        console.log(num03);
+        console.log('');
+
+
+
+        // 3. 对象的解构赋值 用于函数传参
+        function func({content,length,delay}) {
+            console.log(content, length, delay);
+        }
+        const options = {content:'box', delay:2000, duration:3000};
+        func(options);
+        console.log('');
+
+
+        // 4. 对象解构赋值，可以设置默认值 
+        const {n1:n1, n2:n2=250, n3=350, n4} = {n1:100, n3:300};
+        console.log(n1); 
+        console.log(n2); 
+        console.log(n3); 
+        console.log(n4); 
+        console.log('');
+
+        
+
+        // 5. 对于复杂一些对象 进行解构 （按照属性名进行解构， 变量位于属性值的位置）
+        const obj = {
+            email: 'xiaole@qq.com',
+            nums: [100, 200],
+            prop: {
+                content: 'Hello ES6'
+            }
+        };
+        const {email, nums:[nu01, nu02], prop: {content}} = obj; 
+        const {email: em, nums: nus, prop:props} = obj;
+        console.log(email);
+        console.log(nu01);
+        console.log(nu02);
+        console.log(content);
+        console.log(em);
+        console.log(nus);
+        console.log(props);
+        console.log('');
+
+
+        // 6. 一切皆对象 对象的解构赋值可以解构一切数据
+        const {length, push, map} = [10,20,30,40,50];
+        console.log(length);
+        console.log(push);
+        console.log(map);
+
+        const {length:len, indexOf, forEach} = 'Hello 小乐';
+        console.log(len);     // 8
+        console.log(indexOf); // 函数
+        console.log(forEach); // undefined
+
+        const {PI} = Math;
+        console.log(PI);
+
+        
+
+    </script>
+</body>
+</html>

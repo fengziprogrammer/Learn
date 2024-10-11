@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>楚归意视十就，不人。</li>
+        <li>楚归意视十就，不人。</li>
+        <li>楚归意视十就，不人。</li>
+        <li>楚归意视十就，不人。</li>
+        <li>楚归意视十就，不人。</li>
+    </ul>
+    <script>
+        // 定义全局变量
+        let workAddress = '广州';
+        // 定义一个块区域
+        {
+            console.log('我是块区域：');
+            var homeAdress = '上海';
+            let schollAddress = '北京';
+            console.log(homeAdress);
+            console.log(schollAddress);
+            console.log(workAddress);
+            console.log('');
+        };
+        console.log(homeAdress);
+        console.log(workAddress);
+        // console.log(schollAddress);
+        console.log('');
+
+
+        // 分支结构产生块级作用域
+        if (true) {
+            var age01 = 100;   // 全局
+            let age02 = 200;   // 具有块级作用域
+        }
+        console.log(age01);
+        // console.log(age02);   // 报错
+        console.log('');
+
+
+        // 循环结构产生块级作用域
+        for (let i = 0; i < 5; i ++) {
+            console.log(i);
+        }
+        // console.log('循环结束后标记变量的值：', i);
+        console.log('');
+
+
+
+        // 获取li的集合，每个li监听个事件
+        var liBoxs = document.querySelectorAll('li');
+        for (let i = 0; i < liBoxs.length; i ++) {
+            liBoxs[i].onclick = function() {
+                console.log(i);
+            }
+        }
+
+
+    </script>
+</body>
+</html>
