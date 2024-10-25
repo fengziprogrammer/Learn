@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="news">
+        <li>极赏韩为有动有，领。</li>
+        <li>极赏韩为有动有，领。</li>
+        <li>极赏韩为有动有，领。</li>
+        <li>极赏韩为有动有，领。</li>
+        <li>极赏韩为有动有，领。</li>
+        <li>极赏韩为有动有，领。</li>
+    </ul>
+    <script>
+        // 将数组转为逗号分隔的参数序列
+        const nums = [1000,2000,3000,4000];
+        function func(n1,n2,n3,n4) {
+            console.log(n1);
+            console.log(n2);
+            console.log(n3);
+            console.log(n4);
+            console.log('');
+        }
+        func(nums);
+        func(...nums);   // 相当于 func(1000,2000,3000,4000)
+        func(...['刘姥姥', '司马姥姥', '欧阳姥姥']);
+        console.log('');
+        console.log('');
+
+
+
+        // 2 使用扩展运算符 复制数组
+        const arr01 = [100,200,300,400,500];
+        //const arr02 = arr01;      // arr01将地址传递给arr02，两个变量指向同一个数组
+        const arr02 = [...arr01];   // 使用[]创建新数组，将arr01转为参数序列放在新数组中
+        
+        arr02[2] = '刘姥姥';
+        console.log(arr01);
+        console.log(arr02);
+        console.log('');
+        console.log('');
+
+
+        // 3 合并数组
+        const arr03 = [...nums, ...arr01, '刘姥姥'];
+        console.log(arr03);
+        console.log('');
+        console.log('');
+
+
+        // 4. 也可以将可遍历对象转为逗号分隔的参数序列
+        // 将可遍历对象转为纯数组
+        const liBoxs = document.querySelectorAll('.news li');
+        const arr04 = [...liBoxs];
+        const arr05 = [...'Hello World'];
+        console.log(arr04);
+        console.log(arr05);
+    </script>
+</body>
+</html>

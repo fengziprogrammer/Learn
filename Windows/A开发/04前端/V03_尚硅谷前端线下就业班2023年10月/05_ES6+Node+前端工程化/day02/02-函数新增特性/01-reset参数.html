@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fn01(...args) {
+            console.log(args);
+        }
+        fn01();
+        fn01(100,200,250,'高小乐', true);
+        console.log('');
+
+
+        function fn02(name, age, ...data) {
+            console.log(name);
+            console.log(age);
+            console.log('rest参数：', data);
+            console.log('arguments：', arguments);
+        }
+        fn02('高小乐', 101, '司马姥姥', '欧阳姥姥', '爱新觉罗姥姥');
+        console.log('');
+        fn02('高小乐', 78, [100,200,300,400]);
+        console.log('');
+
+
+        // 定义函数 计算所有参数的和
+        function sum(...nums) {
+            return nums.reduce(function(prev, item) {
+                return prev + item;
+            });
+        }
+
+        console.log(sum(10,20,30,40,50,60));
+        console.log(sum(10,20,30));
+
+
+
+    </script>
+</body>
+</html>

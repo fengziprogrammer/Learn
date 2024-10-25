@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1 rest 参数
+        function func(...args) {
+            console.log(args);
+        }
+        func(100,200,300,400,500);
+        console.log('');
+
+
+        // 2 解构赋值中的应用 
+        const [a1,a2,...a3] = ['刘姥姥','马姥姥', '司马姥姥', '欧阳姥姥', '爱新觉罗姥姥'];
+        console.log(a1);
+        console.log(a2);
+        console.log(a3);
+
+    </script>
+</body>
+</html>

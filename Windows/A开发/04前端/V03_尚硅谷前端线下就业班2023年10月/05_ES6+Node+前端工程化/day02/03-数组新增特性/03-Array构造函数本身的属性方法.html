@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="news">
+        <li>极赏韩为有动有，领。</li>
+        <li>极赏韩为有动有，领。</li>
+        <li>极赏韩为有动有，领。</li>
+        <li>极赏韩为有动有，领。</li>
+        <li>极赏韩为有动有，领。</li>
+        <li>极赏韩为有动有，领。</li>
+    </ul>
+    <script>
+        // 创建数组
+        const arr01 = Array.of(100,200,300,400,'欧阳姥姥', [1,2,3], '司马姥姥');
+        const arr02 = Array.of(12);
+        console.log(arr01);
+        console.log(arr02);
+        console.log('');
+
+
+        // 将伪数组转为纯数组
+        const liBoxs = document.querySelectorAll('.news li');
+
+        const arr03 = Array.from(liBoxs);
+        const arr04 = Array.from('Hello 高小乐');
+        console.log(arr03);
+        console.log(arr04);
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 判等
+        console.log(Object.is(100, '100'));
+        console.log(Object.is(100, 100));
+        console.log(Object.is(NaN, NaN));   // true
+        console.log(Object.is(+0, -0));     // false
+        console.log(+0 === -0);             // true
+        console.log('');
+
+        // 创建一个对象
+        const user = {
+            name: '高小乐',
+            age: 45,
+            address: '上海',
+            say() {},
+            drink() {}
+        };
+        console.log(Object.keys(user));
+        console.log(Object.values(user));
+        const user01 = Object.entries(user);
+        console.log(user01);
+        const user02 = Object.fromEntries(user01);
+        console.log(user02);
+        console.log('');
+
+
+        console.log(Object.getPrototypeOf(user));
+        console.log(user.__proto__);
+        console.log('');
+
+
+        const arr = [10,20,30,40];
+        // 修改arr的原型
+        Object.setPrototypeOf(arr, user);
+        console.log(arr.address);
+        console.log(arr.push);
+        console.log('');
+
+
+        console.log(Object.getOwnPropertyDescriptors(user));
+        console.log('');
+
+
+        // 判断属性是否是对象自身的
+        console.log(Object.hasOwn(user, 'address'));
+        console.log(Object.hasOwn(user, 'constructor'));
+
+
+
+    </script>
+</body>
+</html>

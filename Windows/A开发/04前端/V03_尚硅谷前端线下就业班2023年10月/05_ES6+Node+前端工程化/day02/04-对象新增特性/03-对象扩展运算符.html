@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ---------------------------------------
+        // 将对象拆分为逗号分隔的键值对
+        const nums = [100,200,300,400,500,600];
+        const user = {
+            name: '高小乐',
+            age: 45,
+            address: '上海',
+            say() {},
+            drink() {}
+        };
+
+        // console.log(...nums);  // console.log(100,200,300,400,500,600)
+        // console.log(...user);  // console.log(name: '高小乐', age: 45, address: '上海', say:function(){}, drink:function(){})
+
+        // 对象的拷贝
+        const user01 = {...user};  // 相当于 {name: '高小乐', age: 45, address: '上海', say:function(){}, drink:function(){}}
+        user01.name = '高老乐';
+        console.log(user.name);
+        console.log(user01.name);
+        console.log('');
+
+
+        // 对象的合并
+        const user02 = {homeAddress:'北京', schollAddress:'广州', address:'纽约'};
+        const user03 = {...user, ...user02};
+        console.log(user03);
+        console.log('');
+
+        // ---------------------------------------------------------
+        // 将键值对序列合并到对象中
+        // 用于对象的解构赋值
+        const {age,address,...data} = user03;
+        console.log(age);
+        console.log(address);
+        console.log(data);  // {name: '高小乐', homeAddress: '北京', schollAddress: '广州', say: ƒ, drink: ƒ}drink: ƒ drink()homeAddress: "北京"name: "高小乐"say: ƒ say()schollAddress: "广州"[[Prototype]]: Object
+
+    </script>
+</body>
+</html>

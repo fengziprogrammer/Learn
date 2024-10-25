@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 使用var定义全局变量
+        var name = 'window';
+
+        // 定义对象
+        const user01 = {
+            name: '高小乐',
+            say() {
+                console.log('this：', this.name);
+                console.log('super：', super.name);
+            },
+            // drink: function() {
+            //     console.log(super);
+            // }
+            // drink: () => {
+            //     super;
+            // }
+        }
+        // 给user01的原型上设置name属性
+        user01.__proto__.name = '高小乐原型';
+        
+        /*
+            this: 高小乐
+            super: 高小乐原型
+        */
+        user01.say();
+        console.log('');
+
+
+        // 定义对象
+        const user02 = [];
+        user02.name = '高老乐';
+        user02.__proto__.name = '高老乐原型';
+        user02.say = user01.say;
+        /*
+            this: 高老乐
+            super： 高小乐原型
+        */
+        user02.say();
+        console.log('');
+
+
+        const fn = user01.say;
+        /*
+            this: window
+            super: 高小乐原型
+        */
+        fn();
+
+
+
+
+    </script>
+</body>
+</html>

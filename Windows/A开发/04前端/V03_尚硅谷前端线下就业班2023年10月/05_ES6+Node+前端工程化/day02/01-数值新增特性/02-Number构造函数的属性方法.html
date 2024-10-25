@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('最大的安全整数：', Number.MAX_SAFE_INTEGER);
+        console.log('最小的安全整数：', Number.MIN_SAFE_INTEGER);
+        console.log(Number.EPSILON);
+        console.log('');
+
+
+        console.log(Number.isInteger(789));
+        console.log(Number.isInteger(78.9));
+
+        const num = 9007199254740992;
+        console.log(Number.isInteger(num));
+        console.log(Number.isSafeInteger(num));
+        console.log(Number.isSafeInteger(189));
+
+
+    </script>
+</body>
+</html>

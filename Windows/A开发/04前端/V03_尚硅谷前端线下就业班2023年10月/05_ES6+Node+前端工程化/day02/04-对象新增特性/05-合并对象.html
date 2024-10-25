@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user = {
+            name: '高小乐',
+            age: 45,
+            address: '上海',
+            say() {},
+            drink() {}
+        };
+
+        const data = {
+            homeAddress: '伦敦',
+            schollAddress: '纽约',
+            address: '北京'
+        };
+
+        const nums = [10,20,30,40,50,60]
+
+
+        // 合并对象
+        // Object.assign(user, data, nums);
+        const user01 = Object.assign({}, user, data, nums);
+        console.log(user01);
+        console.log('');
+
+
+        // 复制对象
+        const user02 = Object.assign({}, user);
+        user02.name = '高老乐';
+        console.log(user.name);
+        console.log(user02.name);
+        console.log('');
+
+        // 解构赋值 扩展运算符  对象的复制
+        const {...arr} = user;
+        console.log(arr);
+
+        const {...arr01} = nums;
+        console.log(arr01);
+
+    </script>
+</body>
+</html>

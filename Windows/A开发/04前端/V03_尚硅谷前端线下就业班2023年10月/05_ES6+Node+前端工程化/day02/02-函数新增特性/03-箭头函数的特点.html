@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">点我</button>
+    <br>
+    <br>
+
+    <ul id="news">
+        <li>1未系然有为非郭为畴千他之里藏命，了病衣。</li>
+        <li>2未系然有为非郭为畴千他之里藏命，了病衣。</li>
+        <li>3未系然有为非郭为畴千他之里藏命，了病衣。</li>
+        <li>4未系然有为非郭为畴千他之里藏命，了病衣。</li>
+        <li>5未系然有为非郭为畴千他之里藏命，了病衣。</li>
+        <li>6未系然有为非郭为畴千他之里藏命，了病衣。</li>
+    </ul>
+
+    <script>
+        // 使用箭头函数声明函数
+        const func = (name, age, ...args) => {
+            console.log(`${name}的年龄是${age}`);
+            // console.log(arguments);
+            console.log(args);
+        }
+        // 调用
+        func('小乐', 89, '司马姥姥', '欧阳姥姥');
+        // 不能实例化
+        // new func('小乐', 89);
+        console.log('');
+
+
+        // ------------------------------------------------------
+        // 箭头函数内没有自己的this，如果使用this，沿着作用域链找
+        // 创建对象 
+        const user = {
+            name: '小乐',
+            getInfo: () => {
+                console.log(this);
+            }
+        }
+        user.getInfo();
+
+
+        const btn = document.querySelector('#btn');
+        btn.onclick = () => {
+            console.log(this);
+        };
+
+
+        const liBoxs = document.querySelectorAll('#news li');
+        liBoxs.forEach(function(liBox) {
+            // liBox.onclick = function() {
+            //     console.log(this);  // 所点击的 li
+            // };
+        
+            liBox.onclick = () => {
+                console.log(this);
+            };
+        });
+
+
+        const obj = {
+            getInfo: function() {
+                const fn = () => {
+                    console.log(this);
+                }
+                fn();
+            }
+        }
+        obj.getInfo();
+
+        const obj1 = {
+            getInfo: () => {
+                const fn = () => {
+                    console.log(this);
+                }
+                fn();
+            }
+        }
+        obj1.getInfo();
+        obj1.getInfo.call([1,2,3]);
+
+    </script>
+</body>
+</html>
