@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义类
+        class Product {
+            // 给实例设置属性
+            static name = '小乐';
+
+            // 静态属性
+            static getInfo() {
+                console.log('我是 Product 类中的静态方法');
+            }
+        }
+
+        // 静态方法
+        Product.getPrice = function() {}
+
+
+        console.log(Product.getInfo);
+        console.log(Product.name);
+        Product.getInfo();
+    </script>
+</body>
+</html>

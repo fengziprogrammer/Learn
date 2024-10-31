@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义类 继承Array
+        class MyArray extends Array {
+            #name;
+            // 重写构造器方法
+            constructor(name, ...args) {
+                super(...args);
+                this.#name = name;
+            }
+        }
+
+
+        const ma = new MyArray('xiaole', 10,20,30,40,50,60);
+        console.log(ma);
+    </script>
+</body>
+</html>

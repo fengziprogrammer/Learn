@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建数组
+        const arr = [100,200,300,400,500,600,700];
+
+        // 获取由数组arr中的值组成的遍历器对象
+        const valIter = arr.values();
+        console.log(valIter);
+        console.log(valIter.next());
+        console.log(valIter.next());
+        console.log(valIter.next());
+        console.log(valIter.next());
+        console.log(valIter.next());
+        console.log(valIter.next());
+        console.log(valIter.next());
+        console.log(valIter.next());
+        console.log(valIter.next());
+        console.log('');
+        console.log('');
+
+
+
+        // 获取由数组arr中的key组成的遍历器对象
+        const keyIter = arr.keys();
+        console.log(keyIter);
+        while (true) {
+            let data = keyIter.next();
+            if (data.done) {
+                break;
+            }
+            console.log(data.value);
+        }
+        console.log('');
+        console.log('');
+
+
+
+        // 获取由数组arr中的键值对组成的遍历器
+        const kvIter = arr.entries();
+        console.log(kvIter);
+        // console.log(kvIter.next());
+        // 使用  for of 结构遍历遍历器对象
+        for (let v of kvIter) {
+            console.log(v);
+        }
+        // console.log(kvIter.next());
+
+
+
+    </script>
+</body>
+</html>

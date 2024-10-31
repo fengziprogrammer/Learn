@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义类
+        class Product {
+            // 给实例设置属性
+            name;
+            #num;
+            price;
+
+            // 构造器方法
+            constructor(name, price) {
+                this.name = name;
+                this.price = Math.max(price, 100);
+                this.#num = Math.random();
+            };
+
+            // 给实例设置方法
+            buy(n) {
+                console.log(`购买了${n}件${this.name}, 单价是${this.price}`);
+            };
+
+            addShopcar() {
+                console.log('将' + this.name + '加入购物车！');
+            };
+        }
+
+
+        // 定义子类
+        class Phone extends Product {
+            color = 'red';
+
+            constructor(name, price, color) {
+                // 将父类的构造器方法调用一次
+                super(name, price);
+                // 设置自己的属性
+                this.color = color;
+            }
+
+            discount(per) {
+                this.price *= per;
+            }
+
+            buy() {
+                console.log(`购买了${this.name}，价格：${this.price},颜色：${this.color}`);
+            }
+        }
+
+
+        // 实例化子类
+        const p = new Phone('华为P50', 89.9, 'green');
+
+        console.log(p);
+        p.buy(12);
+      
+    </script>
+</body>
+</html>

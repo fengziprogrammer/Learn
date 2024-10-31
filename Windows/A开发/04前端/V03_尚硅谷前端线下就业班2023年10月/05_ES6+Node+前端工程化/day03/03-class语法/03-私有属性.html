@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义类
+        class Product {
+            // 给实例设置属性
+            #name;
+            #price;
+            #num;
+
+            // 构造器方法
+            constructor(name, price) {
+                this.#name = name;
+                this.#price = Math.max(price, 100);
+                this.#num = Math.random();
+            };
+
+            // 给实例设置方法
+            buy(n) {
+                console.log(`购买了${n}件${this.#name}`);
+            };
+
+            addShopcar() {
+                console.log('将' + this.#name + '加入购物车！');
+            };
+        }
+
+
+        // 实例化
+        const p1 = new Product('华为p40', 199);
+        console.log(p1);
+        
+        console.log(p1.name);
+        console.log(p1.price);
+        console.log(p1.num);
+
+        p1.buy(12);
+    </script>
+</body>
+</html>

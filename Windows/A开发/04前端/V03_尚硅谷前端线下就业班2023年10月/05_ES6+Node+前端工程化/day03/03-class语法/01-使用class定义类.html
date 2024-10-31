@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义类
+        class Product {
+            // 给实例设置属性
+            name = '汽车';
+            price = 121.23;
+
+            // 给实例设置方法
+            buy(n) {
+                console.log(`购买了${n}件${this.name}`);
+            };
+
+            addShopcar() {
+                console.log('将' + this.name + '加入购物车！');
+            };
+        }
+
+
+        console.log(Product);
+        console.log(typeof Product);   // function
+        console.log('');
+
+        // Product();   // 不能调用 只能实例化
+        const p1 = new Product();   // 不能调用 只能实例化
+        console.log(p1);
+        p1.buy(45);
+        p1.addShopcar();
+
+    </script>
+</body>
+</html>

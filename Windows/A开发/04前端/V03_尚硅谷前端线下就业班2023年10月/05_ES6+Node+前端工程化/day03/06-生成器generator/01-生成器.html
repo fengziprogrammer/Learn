@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建生成器
+        function* gen() {
+           //console.log(1);
+           yield 100;
+           //console.log(2);
+           yield 200;
+           //console.log(3);
+           yield 300;
+           // return;
+           yield {name:'小乐'};
+           yield 500;
+           yield 600;
+        }
+
+        console.log(typeof gen);   // function
+
+        // 调用生成器 得到遍历器对象
+        const iter = gen();
+        console.log(iter);
+        console.log('');
+        
+        // console.log(iter.next());
+        // console.log(iter.next());
+
+        for (let v of iter) {
+            console.log(v);
+        }
+
+
+        // function func() {
+        //     yield 100;
+        // }
+    </script>
+</body>
+</html>
