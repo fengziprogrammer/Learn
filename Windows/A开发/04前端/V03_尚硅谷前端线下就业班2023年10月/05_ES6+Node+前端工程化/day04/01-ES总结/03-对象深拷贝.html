@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         const user01 = {
+            name: '高小乐',
+            address: '上海',
+            children: ['司马姥姥', '欧阳姥姥', '东方姥姥'],
+            parent: {
+                name: '高育良',
+                age: 100,
+                address: '北京',
+                drink() {}
+            },
+            say() {},
+            getInfo() {}
+        };
+        console.log(user01);
+        console.log('');
+
+        // JSON.stringify() 将对象或数组转为 json 格式的字符串
+        // JSON.parse() 将 json 格式的字符串 恢复成对象或数组
+        // const user02 = JSON.parse(JSON.stringify(user01));
+        // console.log(user02);
+        // user02.name = '低大悲';
+        // user02.children[1] = '伊莉莎呢姥姥';
+        // user02.parent.name = '高启强';
+
+
+        const user02 = deepClone(user01);
+        user02.name = '低大悲';
+        user02.children[1] = '伊莉莎呢姥姥';
+        user02.parent.name = '高启强';
+
+        console.log(user02);
+        console.log(user01);
+
+        /**
+         * 判断数据的类型
+         * @params 要判断类型的数据
+         * @returns string 数据的类型
+        */
+        function getType(data) {
+            const typeStr = Object.prototype.toString.call(data);
+            return typeStr.slice(8, typeStr.length-1);
+        };
+
+        /**
+         * 实现对象和数组的深拷贝
+         * @params 要拷贝的数据
+         * @returns 拷贝好的数据
+        */
+       function deepClone(obj) {
+            // 判断 obj 是 Object 类型还是 Array 类型
+            let res;
+            if (getType(obj) === 'Object') {
+                res = {};
+            } else if (getType(obj) === 'Array') {
+                res = [];
+            } else {
+                return obj;
+            }
+
+            // 遍历 Object数据或者Array数据
+            for (let i in obj) {
+                // 将obj中中的成员添加到 res
+                res[i] = deepClone(obj[i]);
+            }
+
+            // 返回res
+            return res;
+       }
+
+
+
+
+        
+    </script>
+</body>
+</html>

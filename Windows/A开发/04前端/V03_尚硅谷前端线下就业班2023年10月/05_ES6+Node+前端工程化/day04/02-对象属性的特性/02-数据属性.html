@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义对象
+        const person = {
+            name: '高小乐',
+            address: '上海'
+        };
+
+        // 修改 address 属性的特性
+        Object.defineProperty(person, 'address', {
+            configurable: false,
+            enumerable: false,
+            writable: false,
+            value: '北京'
+        });
+        person.address = '深圳';
+        delete person.address;
+        console.log(person.address);
+        console.log('');
+
+        // 添加属性并设置特性
+        Object.defineProperty(person, 'age', {
+            configurable: false,
+            enumerable: true,
+            writable: false,
+            value: 190
+        });
+        person.age = 200;
+        console.log(person.age);
+        console.log('');
+
+        console.log(person);
+
+        for (let i in person) {
+            console.log(i, person[i]);
+        }
+
+
+
+    </script>
+</body>
+</html>

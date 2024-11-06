@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义数组
+        const arr = [10,20,30,40,50];
+        arr.name = '高小乐';
+        arr.address = '上海';
+
+        // 封闭对象
+        // Object.seal(arr);
+
+        // 冻结对象
+        Object.freeze(arr);
+
+        console.log('对象是否被封闭：', Object.isSealed(arr));
+        console.log('对象是否被冻结：', Object.isFrozen(arr));
+        console.log('');
+
+        // 封闭之后 不能添加新属性 旧的属性不可配置
+        // 冻结之后 不能添加新属性 旧的属性不可配置 旧属性不可写
+        arr.age = 100;
+        delete arr.name;
+        arr[0] = 250;
+        arr.address = '北京';
+        console.log(arr);
+
+
+
+    </script>
+</body>
+</html>

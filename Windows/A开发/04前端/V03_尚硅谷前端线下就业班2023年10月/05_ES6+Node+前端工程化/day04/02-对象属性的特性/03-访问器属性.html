@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建对象
+        const person = {
+            name: '高小乐',
+            address: '上海',
+            _age: 0,
+        };
+
+
+        // 添加属性并设置属性的特性
+        Object.defineProperty(person, 'age', {
+            enumerable: true,
+            configurable: true,
+            set: function(val) {
+               val = +val;
+               if (val >= 0 && val <= 200) {
+                    this._age = val;
+               }
+            },
+            get: function() {
+                return this._age;
+            }
+        });
+
+
+        console.log(person);
+
+        person.age = 200;
+        person.age = 400;
+        // person.age = [10,20,30,40];
+        // person.age = '123';
+        console.log(person.age);
+
+
+    </script>
+</body>
+</html>

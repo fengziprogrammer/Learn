@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 定义数组
+        const nums01 = [
+            100,
+            200,
+            ['司马姥姥', '欧阳姥姥', '东方姥姥'],
+            400,
+            500,
+            ['A', 'B', 'C', 'D']
+        ];
+
+
+        // 复制数组 浅拷贝
+        // 使用扩展运算符
+        // const num02 = [...nums01];
+       
+        // 使用数组截取
+        // const nums02 = nums01.slice(0);
+        
+        // 使用concat
+        // const nums02 = nums01.concat();
+        
+
+        // Array.from 将可遍历对象转为纯数组
+        const nums02 = Array.from(nums01);
+        nums02[0] = 250;
+        nums02[2][1] = '伊丽莎白姥姥';
+        console.log(nums01);
+    </script>
+</body>
+</html>
