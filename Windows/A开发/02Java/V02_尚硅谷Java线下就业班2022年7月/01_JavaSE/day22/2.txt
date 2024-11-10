@@ -1,0 +1,12 @@
+尚硅谷太棒了
+public class TestScanner {
+    @Test
+    public void test01()throws Exception{
+        Scanner input = new Scanner(new FileInputStream("2.txt"));
+        while(input.hasNextLine()){
+            String line = input.nextLine();
+            System.out.println(line);
+        }
+        input.close();
+    }
+}
