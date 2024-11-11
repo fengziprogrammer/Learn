@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/javase_net/lib/logback-classic-1.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javase_net/lib/logback-core-1.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javase_net/lib/slf4j-api-1.7.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javase_net/lib/junit-4.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javase_net/lib/commons-io-2.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
