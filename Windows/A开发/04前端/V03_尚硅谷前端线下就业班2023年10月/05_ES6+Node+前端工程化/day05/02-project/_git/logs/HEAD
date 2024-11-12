@@ -1,0 +1,35 @@
+0000000000000000000000000000000000000000 20524d7b9292099983f1ecd4bc5e7eec1fc04855 xiaole <xiaole@qq.com> 1684895381 +0800	commit (initial): 项目的初始化
+20524d7b9292099983f1ecd4bc5e7eec1fc04855 568259ab377baf5fcc4b3e5656ddf72c7221d91b xiaole <xiaole@qq.com> 1684895433 +0800	commit: 添加忽略文件
+568259ab377baf5fcc4b3e5656ddf72c7221d91b 1d1af3e61e765feb85dd7b5bd56f7e5bb4710f42 xiaole <xiaole@qq.com> 1684895468 +0800	commit: 添加js脚本
+1d1af3e61e765feb85dd7b5bd56f7e5bb4710f42 1d1af3e61e765feb85dd7b5bd56f7e5bb4710f42 xiaole <xiaole@qq.com> 1684895752 +0800	checkout: moving from master to dev
+1d1af3e61e765feb85dd7b5bd56f7e5bb4710f42 0000000000000000000000000000000000000000 xiaole <xiaole@qq.com> 1684895954 +0800	Branch: renamed refs/heads/dev to refs/heads/devo
+0000000000000000000000000000000000000000 1d1af3e61e765feb85dd7b5bd56f7e5bb4710f42 xiaole <xiaole@qq.com> 1684895954 +0800	Branch: renamed refs/heads/dev to refs/heads/devo
+1d1af3e61e765feb85dd7b5bd56f7e5bb4710f42 1d1af3e61e765feb85dd7b5bd56f7e5bb4710f42 xiaole <xiaole@qq.com> 1684895991 +0800	checkout: moving from devo to master
+1d1af3e61e765feb85dd7b5bd56f7e5bb4710f42 1d1af3e61e765feb85dd7b5bd56f7e5bb4710f42 xiaole <xiaole@qq.com> 1684896064 +0800	checkout: moving from master to dev
+1d1af3e61e765feb85dd7b5bd56f7e5bb4710f42 8b4563401f58f0c40d08c1183bce47d482e6f86d xiaole <xiaole@qq.com> 1684896174 +0800	commit: 修改首页
+8b4563401f58f0c40d08c1183bce47d482e6f86d aa98d9fc22a831cee3e1f6b377eefe2f7f7619f5 xiaole <xiaole@qq.com> 1684896207 +0800	commit: 添加数据脚本
+aa98d9fc22a831cee3e1f6b377eefe2f7f7619f5 1d1af3e61e765feb85dd7b5bd56f7e5bb4710f42 xiaole <xiaole@qq.com> 1684896304 +0800	checkout: moving from dev to master
+1d1af3e61e765feb85dd7b5bd56f7e5bb4710f42 aa98d9fc22a831cee3e1f6b377eefe2f7f7619f5 xiaole <xiaole@qq.com> 1684896447 +0800	merge dev: Fast-forward
+aa98d9fc22a831cee3e1f6b377eefe2f7f7619f5 aa98d9fc22a831cee3e1f6b377eefe2f7f7619f5 xiaole <xiaole@qq.com> 1684898115 +0800	checkout: moving from master to dev
+aa98d9fc22a831cee3e1f6b377eefe2f7f7619f5 aa98d9fc22a831cee3e1f6b377eefe2f7f7619f5 xiaole <xiaole@qq.com> 1684898206 +0800	checkout: moving from dev to shopcart
+aa98d9fc22a831cee3e1f6b377eefe2f7f7619f5 4b88195e0f41705a2549a44410f999d64545bf99 xiaole <xiaole@qq.com> 1684898265 +0800	commit: 添加购物车页面
+4b88195e0f41705a2549a44410f999d64545bf99 364d152f02998647ee9598133da82af742618b11 xiaole <xiaole@qq.com> 1684898316 +0800	commit: 添加购物车js脚本
+364d152f02998647ee9598133da82af742618b11 aa98d9fc22a831cee3e1f6b377eefe2f7f7619f5 xiaole <xiaole@qq.com> 1684898358 +0800	checkout: moving from shopcart to order
+aa98d9fc22a831cee3e1f6b377eefe2f7f7619f5 e51217cc6701f9952ebc1efe1705e3646c234cff xiaole <xiaole@qq.com> 1684898398 +0800	commit: 添加订单页面
+e51217cc6701f9952ebc1efe1705e3646c234cff aa98d9fc22a831cee3e1f6b377eefe2f7f7619f5 xiaole <xiaole@qq.com> 1684898465 +0800	checkout: moving from order to dev
+aa98d9fc22a831cee3e1f6b377eefe2f7f7619f5 364d152f02998647ee9598133da82af742618b11 xiaole <xiaole@qq.com> 1684898499 +0800	merge shopcart: Fast-forward
+364d152f02998647ee9598133da82af742618b11 eab0338c9a625999f9f10059bd57a6a0abb3ccfb xiaole <xiaole@qq.com> 1684898549 +0800	merge order: Merge made by the 'ort' strategy.
+eab0338c9a625999f9f10059bd57a6a0abb3ccfb aa98d9fc22a831cee3e1f6b377eefe2f7f7619f5 xiaole <xiaole@qq.com> 1684898814 +0800	checkout: moving from dev to master
+aa98d9fc22a831cee3e1f6b377eefe2f7f7619f5 eab0338c9a625999f9f10059bd57a6a0abb3ccfb xiaole <xiaole@qq.com> 1684898818 +0800	merge dev: Fast-forward
+eab0338c9a625999f9f10059bd57a6a0abb3ccfb eab0338c9a625999f9f10059bd57a6a0abb3ccfb xiaole <xiaole@qq.com> 1684898829 +0800	checkout: moving from master to dev
+eab0338c9a625999f9f10059bd57a6a0abb3ccfb eab0338c9a625999f9f10059bd57a6a0abb3ccfb xiaole <xiaole@qq.com> 1684898952 +0800	checkout: moving from dev to shopcart
+eab0338c9a625999f9f10059bd57a6a0abb3ccfb 534c2c7907a882ae85b21b9579c5d8e19a38d88b xiaole <xiaole@qq.com> 1684899002 +0800	commit: 修改购物车
+534c2c7907a882ae85b21b9579c5d8e19a38d88b eab0338c9a625999f9f10059bd57a6a0abb3ccfb xiaole <xiaole@qq.com> 1684899027 +0800	checkout: moving from shopcart to order
+eab0338c9a625999f9f10059bd57a6a0abb3ccfb 3a2ca09f3179dbc5693ecacc7a54ef976ecbd16a xiaole <xiaole@qq.com> 1684899078 +0800	commit: 修改订单
+3a2ca09f3179dbc5693ecacc7a54ef976ecbd16a 534c2c7907a882ae85b21b9579c5d8e19a38d88b xiaole <xiaole@qq.com> 1684899086 +0800	checkout: moving from order to shopcart
+534c2c7907a882ae85b21b9579c5d8e19a38d88b eab0338c9a625999f9f10059bd57a6a0abb3ccfb xiaole <xiaole@qq.com> 1684899108 +0800	checkout: moving from shopcart to dev
+eab0338c9a625999f9f10059bd57a6a0abb3ccfb 534c2c7907a882ae85b21b9579c5d8e19a38d88b xiaole <xiaole@qq.com> 1684899150 +0800	merge shopcart: Fast-forward
+534c2c7907a882ae85b21b9579c5d8e19a38d88b 6eac3ca4e48de06baf38f3eada82163089fafeb2 xiaole <xiaole@qq.com> 1684899504 +0800	commit (merge): 解决冲突
+6eac3ca4e48de06baf38f3eada82163089fafeb2 eab0338c9a625999f9f10059bd57a6a0abb3ccfb xiaole <xiaole@qq.com> 1684899638 +0800	checkout: moving from dev to master
+eab0338c9a625999f9f10059bd57a6a0abb3ccfb 6eac3ca4e48de06baf38f3eada82163089fafeb2 xiaole <xiaole@qq.com> 1684899644 +0800	merge dev: Fast-forward
+6eac3ca4e48de06baf38f3eada82163089fafeb2 6eac3ca4e48de06baf38f3eada82163089fafeb2 xiaole <xiaole@qq.com> 1684900588 +0800	checkout: moving from master to dev
