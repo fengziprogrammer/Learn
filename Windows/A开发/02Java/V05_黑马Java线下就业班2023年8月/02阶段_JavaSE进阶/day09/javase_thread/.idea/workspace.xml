@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="371b2c20-7722-41f8-8fb3-9a643f684b10" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven_Repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../TeacherSoft/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="F:\TeacherSoft\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2HICYDBv477tOgLOPGMda5N6XcZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/itheima/thread/security/demo4" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\WorkSpace\javase\javase_thread\src\com\itheima\thread\security\demo4" />
+      <recent name="F:\WorkSpace\javase\javase_thread\src\com\itheima\thread\dead" />
+      <recent name="F:\WorkSpace\javase\javase_thread\src\com\itheima\thread\security\demo3" />
+      <recent name="F:\WorkSpace\javase\javase_thread\src\com\itheima\thread\security\demo2" />
+      <recent name="F:\WorkSpace\javase\javase_thread\src\com\itheima\thread\security\demo1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.DeadLockDemo">
+    <configuration name="DeadLockDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.thread.dead.DeadLockDemo" />
+      <module name="javase_thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.thread.dead.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.thread.security.demo2.TicketDemo" />
+      <module name="javase_thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.thread.security.demo2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketDemo (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.thread.security.demo3.TicketDemo" />
+      <module name="javase_thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.thread.security.demo3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketDemo (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.thread.security.demo4.TicketDemo" />
+      <module name="javase_thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.thread.security.demo4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.itheima.thread.security.demo1.TicketDemo" />
+      <module name="javase_thread" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itheima.thread.security.demo1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DeadLockDemo" />
+        <item itemvalue="Application.TicketDemo (3)" />
+        <item itemvalue="Application.TicketDemo (2)" />
+        <item itemvalue="Application.TicketDemo (1)" />
+        <item itemvalue="Application.TicketDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="371b2c20-7722-41f8-8fb3-9a643f684b10" name="Default Changelist" comment="" />
+      <created>1667963259656</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667963259656</updated>
+      <workItem from="1667963262290" duration="10179000" />
+      <workItem from="1667982389665" duration="2815000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
