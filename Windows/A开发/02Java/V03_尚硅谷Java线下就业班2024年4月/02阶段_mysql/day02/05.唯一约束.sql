@@ -1,0 +1,5 @@
+CREATE TABLE student(
+  sid INT PRIMARY KEY AUTO_INCREMENT,
+  sname VARCHAR(10),
+  score INT UNIQUE
+);
