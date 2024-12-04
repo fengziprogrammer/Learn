@@ -1,0 +1,20 @@
+{
+  "name": "project01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js",
+    "serve": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "converbyte": "^1.0.0",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.22",
+    "uniq": "^1.0.1"
+  }
+}
