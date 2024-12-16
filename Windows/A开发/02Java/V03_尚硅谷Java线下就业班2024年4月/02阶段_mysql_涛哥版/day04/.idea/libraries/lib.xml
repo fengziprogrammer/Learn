@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/day04_dbutils/lib/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day04_dbutils/lib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day04_dbutils/lib/druid-1.1.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day04_dbutils/lib/mysql-connector-java-8.0.25.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day04_dbutils/lib/c3p0-0.9.5.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/day04_dbutils/lib/mchange-commons-java-0.2.12.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
