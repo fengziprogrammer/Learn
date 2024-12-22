@@ -1,0 +1,77 @@
+-- 查询累计插入和返回数据条数
+show global status like 'Innodb_rows%';
+-- 需求：在千万条数据中查询某条数据。
+use heima01;
+select * from user where id = 88888;
+
+-- 需求：演示添加索引之后查询的效果
+use db2;
+select * from user where id = 88888;
+-- 注意：索引只是优化查询效率的，由于加索引之后，底层会根据根据数据结构进行对数据排序，当做执行增删改
+-- 的时候还要维护顺序，底层会重新排序，效率低
+-- 一般是在作为查询条件的字段加索引
+
+-- 3.查看mysql索引节点大小
+show global status like 'innodb_page_size'; -- 16kb
+
+use day03_heima139;
+-- 用户表
+create table user3 (
+  id int primary key auto_increment,
+  username varchar(30) unique not null,
+  password varchar(30)
+);
+
+insert into user3(username, password) values('zhangsan','123');
+insert into user3(username, password) values('lisi','123');
+insert into user3(username, password) values('wangwu','123');
+
+select * from user3
+
+select id,username as name,password from user3
+
+select * from user3 where username='zhangsan' and password='123'
+-- sql注入的sql语句
+select * from user3 where username='zhangsan' -- ' and password='i182928'
+
+
+
+# 创建账号表
+create table account(
+	id int primary key auto_increment,
+	name varchar(20),
+	money double
+);
+# 初始化数据
+insert into account values (null,'a',1000);
+insert into account values (null,'b',1000);
+
+
+
+
+-- 删除tb_brand表
+drop table if exists tb_brand;
+-- 创建tb_brand表
+create table tb_brand
+(
+    -- id 主键
+    id           int primary key auto_increment,
+    -- 品牌名称
+    brand_name   varchar(20),
+    -- 企业名称
+    company_name varchar(20),
+    -- 排序字段
+    ordered      int,
+    -- 描述信息
+    description  varchar(100),
+    -- 状态：0：禁用  1：启用
+    status       int
+);
+-- 添加数据
+insert into tb_brand (brand_name, company_name, ordered, description, status)
+values ('三只松鼠', '三只松鼠股份有限公司', 5, '好吃不上火', 0),
+       ('华为', '华为技术有限公司', 100, '华为致力于把数字世界带入每个人、每个家庭、每个组织，构建万物互联的智能世界', 1),
+       ('小米', '小米科技有限公司', 50, 'are you ok', 1);
+
+
+SELECT * FROM tb_brand;
