@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+         href属性中支持的路径写法
+            1 网络路径    http://www.baidu.com   http://www.atguigu.com
+            2 相对路径    以当前资源的所在路径为出发点去找目标资源
+                         ./ 表示当前目录 可以省略不写
+                         ../ 表示上一层目录 
+            3 绝对路径    始终以一个固定的目录作为出发点去寻找目标资源
+                         不同的项目中这个固定的出发点可能不同,需要测试确定 
+                         绝对路径要以/开头               
+
+
+     -->
+
+    <a href="http://www.baidu.com" target="_self">
+        百度
+    </a>
+    <br>
+    <a href="first.html" target="_self">
+        first
+    </a>
+    <br>
+    <a href="/demo1-html/first.html" target="_self">
+        first
+    </a>
+</body>
+</html>

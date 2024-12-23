@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        表单标签的开发流程
+        1   定义一对form标签,用于设置
+                            哪些数据需要提交  form标签中的数据
+                            提交的地址        action属性
+                            提交的方式        method属性设置
+                                get  (默认)     
+                                    数据是通过在url后添加?key=value&key=value格式发送数据
+                                    相对不安全
+                                    只能提交文本类型的信息 不能用于上传文件
+                                    提交的数据量不大
+                                    效率略高
+                                post
+                                    数据是通过单独的数据包发送,不在url上体现
+                                    相对安全
+                                    可以提交文本信息  页可以用于上传文件
+                                    提交的数据量比较大
+                                    效率略低
+
+
+        2   在form标签内定义可以让用户输入信息的标签
+        3   注意设置表单输入标签 name和value属性
+        4   添加提交按钮和重置按钮
+     -->
+     <form action="01标题标签.html" method="get" >
+        <!--  隐藏的标签 -->
+        <input type="hidden" name="key1" value="value1">
+        <input type="text" name="key2" value="value2" readonly>
+
+        用户名:<input type="text" name="username" >  <br>
+        密码:<input type="password" name="userpwd" >  <br>
+        请选择性别:
+            <input type="radio" name="gender" value="1" checked > 男
+            <input type="radio" name="gender" value="0" > 女
+                                                       <br> 
+        请选择你喜欢的老师
+            <input type="checkbox" name="goodTeachers" value="1" checked > 苍老师                                                 
+            <input type="checkbox" name="goodTeachers" value="2"> 涛老师                                                 
+            <input type="checkbox" name="goodTeachers" value="3"> 李老师                                                 
+            <input type="checkbox" name="goodTeachers" value="4"> 柳老师                                                 
+            <input type="checkbox" name="goodTeachers" value="5"> 岳云鹏老师 
+             <br>             
+        最喜欢的城市:
+            <select name="city">
+                <option value="1">成都</option>
+                <option value="2" selected>北京</option>
+                <option value="3">上海</option>
+                <option value="4">广州</option>
+                <option value="5">东京</option>
+            </select>
+            <br>    
+        自我介绍
+            <textarea name="intro" style="width: 200px;height: 100px;">123456</textarea>    
+            <br>    
+        选择头像
+            <input type="file" name="headPic">
+
+            <br>
+        <input type="submit" value="登录"> <!-- 触发提交 -->
+        <button type="submit">提交按钮</button> <!-- 触发提交 -->
+        <button>普通按钮</button> <!-- 可以触发提交 -->
+        <input type="button" value="input按钮">    <!-- 不能触发提交 -->   
+
+
+        <input type="reset" value="重置"><!-- 触发重置 -->
+        <button type="reset">重置</button><!-- 触发重置 -->
+     </form>
+     
+
+
+
+</body>
+</html>
