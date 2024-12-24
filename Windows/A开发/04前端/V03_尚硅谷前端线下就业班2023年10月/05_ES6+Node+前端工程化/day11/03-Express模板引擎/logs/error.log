@@ -1,0 +1,38 @@
+192.168.23.62 2023-06-02 11:54:32 GET / 
+ ReferenceError: D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\views\index.ejs:14
+    12|         <div class="page-header">
+    13|             <h1>
+ >> 14|                 <%= title %>
+    15|                 <small>
+    16|                     况之到而惜揽里留耳
+    17|                 </small>
+
+title is not defined
+    at eval ("D:\\Library\\SH230320\\第03阶段_工程化\\Day11_Node\\课堂案例\\03-Express模板引擎\\views\\index.ejs":12:26)
+    at index (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\ejs\lib\ejs.js:703:17)
+    at tryHandleCache (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\ejs\lib\ejs.js:274:36)
+    at exports.renderFile [as engine] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\ejs\lib\ejs.js:491:10)
+    at View.render (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\express\lib\view.js:135:8)
+    at tryRender (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\express\lib\application.js:657:10)
+    at Function.render (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\express\lib\application.js:609:3)
+    at ServerResponse.render (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\express\lib\response.js:1039:7)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\index.js:24:9
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\express\lib\router\layer.js:95:5) 
+
+
+
+ 2023-06-02 14:03:45 GET / 
+ Error: Failed to lookup view "index" in views directory "D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\views"
+    at Function.render (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\express\lib\application.js:597:17)
+    at ServerResponse.render (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\express\lib\response.js:1039:7)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\index.js:36:9
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\express\lib\router\layer.js:95:5)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\03-Express模板引擎\node_modules\express\lib\router\index.js:280:10) 
+
+
+

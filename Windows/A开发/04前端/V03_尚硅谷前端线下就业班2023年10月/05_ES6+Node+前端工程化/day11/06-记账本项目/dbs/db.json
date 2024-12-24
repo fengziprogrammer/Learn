@@ -1,0 +1,28 @@
+{
+  "accounts": [
+    {
+      "id": "S_PIR5fnA",
+      "title": "刘顺看美女直播",
+      "time": "2023-06-01",
+      "type": "-1",
+      "account": "50000",
+      "remarks": "给美女刷了250个火箭"
+    },
+    {
+      "id": "B3HL8IcY0",
+      "title": "继续向小乐借钱",
+      "time": "2023-06-02",
+      "type": "1",
+      "account": "400000",
+      "remarks": "不还"
+    },
+    {
+      "id": "0Q05N5YId",
+      "title": "国务院特殊津贴",
+      "time": "2023-06-02",
+      "type": "1",
+      "account": "126",
+      "remarks": "低保"
+    }
+  ]
+}

@@ -1,0 +1,1290 @@
+192.168.23.62 2023-06-02 10:37:42 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.56 2023-06-02 10:37:42 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.60 2023-06-02 10:37:43 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.36 2023-06-02 10:37:44 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.21 2023-06-02 10:37:57 POST /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.23 2023-06-02 10:38:00 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.38 2023-06-02 10:38:01 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.47 2023-06-02 10:38:02 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.75 2023-06-02 10:38:02 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.67 2023-06-02 10:38:04 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.41 2023-06-02 10:38:09 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.21 2023-06-02 10:38:10 POST /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.65 2023-06-02 10:38:12 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.41 2023-06-02 10:38:12 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.41 2023-06-02 10:38:12 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.41 2023-06-02 10:38:12 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.65 2023-06-02 10:38:16 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.51 2023-06-02 10:38:16 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:23 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.30 2023-06-02 10:38:24 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:25 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:25 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:25 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:25 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:26 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:26 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:26 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:26 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:26 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:26 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:27 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:27 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:27 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:28 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:28 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:28 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:28 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:29 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:29 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:29 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:29 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:29 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:29 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:30 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:30 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:30 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:30 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:30 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:31 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:31 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:31 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:31 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:31 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:31 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.48 2023-06-02 10:38:32 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.31 2023-06-02 10:38:35 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.57 2023-06-02 10:38:36 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.57 2023-06-02 10:38:39 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.57 2023-06-02 10:38:46 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.57 2023-06-02 10:38:46 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.57 2023-06-02 10:38:47 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.57 2023-06-02 10:38:47 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.57 2023-06-02 10:38:47 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.57 2023-06-02 10:38:47 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.57 2023-06-02 10:38:47 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.38 2023-06-02 10:38:54 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.38 2023-06-02 10:38:54 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.38 2023-06-02 10:38:54 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.38 2023-06-02 10:38:54 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:00 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:02 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:02 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:02 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:02 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:02 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:02 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:02 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:02 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:03 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:03 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:03 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:03 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:03 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.37 2023-06-02 10:40:03 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.21 2023-06-02 10:40:30 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
+192.168.23.21 2023-06-02 10:40:32 GET /login 
+ ReferenceError: post is not defined
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:27:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9
+    at Function.process_params (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:346:12)
+    at next (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:280:10)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\index.js:22:5
+    at Layer.handle [as handle_request] (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:328:13)
+    at D:\Library\SH230320\第03阶段_工程化\Day11_Node\课堂案例\01-Express中间件\node_modules\express\lib\router\index.js:286:9 
+
+
+
