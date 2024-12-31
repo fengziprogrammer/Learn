@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        CSS引入方式
+        方式1 行内式
+            在元素上通过style属性引入
+            语法 style='样式名:样式值;样式名: 样式值; ... ...'
+        方式2 内嵌式
+            在head标签中 通过一对style标签定义css样式
+            语法: 在style标签中 要通过选择器确定样式的作用范围    
+        方式3 外部样式表
+            将css代码放入一个.css文件中
+            哪个html需要这些样式,就引入.css文件即可
+            语法: 在head标签中 通过link标签引入外部css文件
+            <link href="css/first.css" rel="stylesheet" />
+
+     -->
+     <style>
+        .a {
+            width: 60px;
+            height: 40px;
+            background-color: rgb(196, 209, 11);
+            border: 3px solid rgb(246, 9, 21);
+            border-radius: 5px;
+            font-family: 隶书;
+            font-size: 20px;
+            color: wheat;
+        }
+     </style>
+</head>
+<body>
+
+    <button id="b1" style="
+        width: 60px;
+        height: 40px;
+        background-color: rgb(11, 209, 11);
+        border: 3px solid rgb(5, 80, 5);
+        border-radius: 5px;
+        font-family: 隶书;
+        font-size: 20px;
+        color: wheat;
+    
+    ">
+        按钮
+    </button>
+
+    <button id="b2" class="a" >按钮</button>
+    <button id="b3" class="a" >按钮</button>
+    <button id="b3" class="a" >按钮</button>
+    <button id="b3" class="a" >按钮</button>
+    <button id="b3" class="a" >按钮</button>
+    <button id="b3" class="a" >按钮</button>
+    <button id="b3" class="a" >按钮</button>
+</body>
+</html>

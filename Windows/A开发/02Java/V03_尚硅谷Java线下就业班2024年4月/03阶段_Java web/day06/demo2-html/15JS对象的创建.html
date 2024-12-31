@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 创建一个对象
+        var person =new Object();
+        // 为对象设置属性
+        person.name='张小明'
+        person.age= 10
+        person.foods = ['苹果','香蕉','葡萄']
+        // 为对象设置方法
+        person.eat = function (){
+            console.log(this.age+'岁的'+this.name+'喜欢的食物有:')
+            for(var index in this.foods){
+                console.log(this.foods[index])
+            }
+        }
+
+        // 访问对象属性
+        console.log(person.name)
+        console.log(person.age)
+        
+
+        // 调用对象的方法
+        person.eat()
+
+
+        /* 创建对象的第二种语法 {属性名:属性值, 属性名:属性值, 方法名: function(){}} */
+        var p = {
+            'name':'李小林',
+            age:10,
+            foods:['苹果','香蕉','大肠刺身'],
+            eat:function (){
+                console.log(this.age+'岁的'+this.name+'喜欢的食物有:')
+                for(var index in this.foods){
+                    console.log(this.foods[index])
+                }
+            }
+        }
+        // 访问对象属性
+        console.log(p.name)
+        console.log(p.age)
+        // 调用对象方法
+        p.eat()
+
+        console.log(p)
+        var pStr =JSON.stringify(p)
+        console.log(pStr)
+
+
+
+
+
+    </script>
+</body>
+</html>

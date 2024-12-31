@@ -1,0 +1,10 @@
+.a {
+    width: 60px;
+    height: 40px;
+    background-color: rgb(196, 209, 11);
+    border: 3px solid rgb(246, 9, 21);
+    border-radius: 5px;
+    font-family: 隶书;
+    font-size: 20px;
+    color: wheat;
+}

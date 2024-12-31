@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* console f12下控制台  console.log("") */
+       /*  document  浏览器正在展示的dom树 document.write('') 将信息打印在浏览器的窗口上 */
+      // 向浏览器窗口打印99乘法表
+      /* var i = 1
+      while(i <=9){
+        var j = 1
+        while(j<=i){
+            document.write( j+'*'+i+'='+(j*i)+'&nbsp;&nbsp;&nbsp;&nbsp;' )    
+            j++;
+        }
+        document.write('<hr>')
+        i++
+      } */
+
+      
+      /* for(var i = 1;i <=9;i++){
+        for(var j = 1;j<=i;j++){
+            document.write( j+'*'+i+'='+(j*i)+'&nbsp;&nbsp;&nbsp;&nbsp;' )    
+        }
+        document.write('<hr>')
+      } */
+
+      var arr = ['北京','上海','深圳','武汉','西安','成都']
+        document.write("<ul>")
+        for(var index in arr){
+            document.write('<li>'+arr[index]+'</li>')
+        }
+        document.write("</ul>")
+
+
+
+    </script>
+</body>
+</html>

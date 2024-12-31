@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /*  
+        js中的数组长度是可变的
+        + new Array()   创建空数组
+        + new Array(5)     创建数组时给定长度
+        + new Array(ele1,ele2,ele3,... ... ,elen);  创建数组时指定元素值
+        + [ele1,ele2,ele3,... ... ,elen];    相当于第三种语法的简写 */
+        /* var arr =[5,6,8,'asdf',true]
+        console.log(arr)
+        arr[0]=10
+        arr[9]=10
+        arr[10]='asdf'
+        arr[11]=true
+        console.log(arr)
+        arr.length=20
+        console.log(arr.length) */
+
+        var names =['jhon','tom','jerry']
+
+        var index =names.findIndex(function (name){
+            return name == 'jerry'
+        })
+
+        console.log(index)
+        console.log(names.indexOf('jerry'))
+
+
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+       var energy = fruits.join();
+       console.log(energy)
+
+
+       var letters =['a','b','c','d','e','f']
+       /* var arr=letters.slice(2,5)
+       console.log(arr)
+
+ */
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.splice(2,0,'lemon','九转肥肠');
+        console.log(fruits)
+
+
+
+
+    </script>
+</body>
+</html>

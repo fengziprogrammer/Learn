@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 通过选择器确定样式的作用范围 */
+        .btn1 {
+            display: block;
+            width: 150px; 
+            height: 40px; 
+            background-color: rgb(245, 241, 129); 
+            color: rgb(238, 31, 31);
+            border: 3px solid rgb(238, 23, 66);
+            font-size: 22px;
+            font-family: '隶书';
+            line-height: 30px;
+            border-radius: 5px;
+        }
+    </style>
+
+
+<!-- 
+    js的
+        第一种引入方式  在head中通过一对script标签引入 
+        第二种引入方式  可以将JS代码放入一个.js文件中  在HTML的head中用一对script标签引入外部JS脚本
+        两种方式可以同时使用 一个HTML中可以有多个script标签
+
+-->
+  
+    <script src="js/hello.js" ></script>
+    <script>
+        function showHaha(){
+            alert("哈哈哈")
+        }
+    </script>
+</head>
+<body>
+    
+    <button class="btn1" onclick="showSuprise()">点我有惊喜</button>
+    <button class="btn1" onclick="showHaha()">点我有惊吓</button>
+</body>
+</html>

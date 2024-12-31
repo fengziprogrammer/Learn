@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1(){
+            console.log("fun1")
+        }
+        function fun2(){
+            console.log("fun2")
+        }
+        function fun3(){
+            console.log("fun3")
+        }
+        function fun4(){
+            console.log("fun4")
+        }
+        function fun5(){
+            console.log("fun5")
+        }
+        function fun6(){
+            console.log("fun6")
+        }
+        function fun7(){
+            console.log("fun7")
+        }
+        function fun8(){
+            console.log("fun8")
+        }
+        function fun9(){
+            console.log("fun9")
+        }
+    </script>
+</head>
+<body>
+    <!-- 
+        一个事件可以绑定多个函数
+        一个元素可以同时绑定多个事件
+
+
+     -->
+    <img src="img/tree.png" 
+        onclick="fun1(),fun2()" 
+        ondblclick="fun3()" 
+        onmouseover="fun4()"
+        onmousemove="fun5()"
+        onmouseleave="fun6()"
+
+        >
+     <input type="text" onkeydown="fun7()" onkeypress="fun8()" onkeyup="fun9()">
+
+
+</body>
+</html>
