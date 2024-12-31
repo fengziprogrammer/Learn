@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/javase_reflect_annotation_proxy/javase_jdbc-review/lib/druid-1.0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javase_reflect_annotation_proxy/javase_jdbc-review/lib/junit-4.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/javase_reflect_annotation_proxy/javase_jdbc-review/lib/mysql-connector-java-5.1.37-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

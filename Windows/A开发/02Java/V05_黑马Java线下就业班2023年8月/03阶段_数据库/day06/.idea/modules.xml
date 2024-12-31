@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/day06.iml" filepath="$PROJECT_DIR$/.idea/day06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase_reflect_annotation_proxy/javase_annotation/javase_annotation.iml" filepath="$PROJECT_DIR$/javase_reflect_annotation_proxy/javase_annotation/javase_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase_dom4j/javase_dom4j.iml" filepath="$PROJECT_DIR$/javase_dom4j/javase_dom4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase_reflect_annotation_proxy/javase_jdbc-review/javase_jdbc-review.iml" filepath="$PROJECT_DIR$/javase_reflect_annotation_proxy/javase_jdbc-review/javase_jdbc-review.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase_reflect_annotation_proxy/javase_proxy/javase_proxy.iml" filepath="$PROJECT_DIR$/javase_reflect_annotation_proxy/javase_proxy/javase_proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javase_reflect_annotation_proxy/javase_reflect/javase_reflect.iml" filepath="$PROJECT_DIR$/javase_reflect_annotation_proxy/javase_reflect/javase_reflect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jdbc_to_mybatis/jdbc_to_mybatis.iml" filepath="$PROJECT_DIR$/jdbc_to_mybatis/jdbc_to_mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-easy/mybatis-easy.iml" filepath="$PROJECT_DIR$/mybatis-easy/mybatis-easy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test-mybatis-easy/test-mybatis-easy.iml" filepath="$PROJECT_DIR$/test-mybatis-easy/test-mybatis-easy.iml" />
+    </modules>
+  </component>
+</project>
